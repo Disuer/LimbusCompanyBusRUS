@@ -1,4 +1,5 @@
 # Установка[![]()](../../releases)
+# Данный форк берёт за основу перевод от Найти. Здесь будут некоторые фиксы в основном бранче..
 
 [![]()](../../releases/latest)
 ### 0. Скачайте[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
