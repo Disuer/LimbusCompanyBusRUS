@@ -2,7 +2,7 @@
   "dataList": [
     {
       "id": "Enhancement",
-      "name": "Attack Power Up",
+      "name": "Повышение силы атаки",
       "desc": "Attack Skill Final Power +{0} for this turn.",
       "summary": "ATK Skill Final Power +{0}",
       "undefined": "-"
@@ -16,7 +16,7 @@
     },
     {
       "id": "Endurance",
-      "name": "Defense Power Up",
+      "name": "Повышение силы защиты",
       "desc": "Defense Skill Final Power +{0} for this turn.",
       "summary": "DEF Skill Final Power +{0}",
       "undefined": "-"
@@ -30,14 +30,14 @@
     },
     {
       "id": "Binding",
-      "name": "Bind",
+      "name": "Связывание",
       "desc": "Speed -{0} for this turn.",
       "summary": "SPD -{0}",
       "undefined": "-"
     },
     {
       "id": "Vulnerable",
-      "name": "Fragile",
+      "name": "Слабость",
       "desc": "Take +{0}0% damage this turn. (Max 100%)",
       "summary": "+{0}0% Damage Taken",
       "undefined": "-"
@@ -111,7 +111,7 @@
     },
     {
       "id": "Protection",
-      "name": "Protection",
+      "name": "Защищённость",
       "desc": "Take -{0}0% damage this turn. (Max 100%)",
       "summary": "-{0}0% Damage Taken"
     },
@@ -147,7 +147,7 @@
     },
     {
       "id": "Disarming",
-      "name": "Defense Power Down",
+      "name": "Снижение силы защиты",
       "desc": "Defense Skill Final Power -{0} for this turn.",
       "summary": "DEF Skill Final Power -{0}"
     },
@@ -159,7 +159,7 @@
     },
     {
       "id": "AttackDmgDown",
-      "name": "Damage Down",
+      "name": "Снижение урона",
       "desc": "Deal -{0}0% damage with skills this turn. (Max 100%)",
       "summary": "-{0}0% Damage Dealt"
     },
@@ -252,14 +252,14 @@
     },
     {
       "id": "Nail",
-      "name": "N Corp’s Nails",
+      "name": "Гвозди",
       "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}. Turn End: Reduce this effect by 1.",
       "summary": "Gain 1 Bleed and add +{0} Bleed Count"
     },
     {
       "id": "Inactible",
       "name": "Immobilized",
-      "desc": "Does not act for this turn.",
+      "desc": "Не действует в этот ход.",
       "summary": "Inactive"
     },
     {
@@ -288,31 +288,31 @@
     },
     {
       "id": "Sinking",
-      "name": "Sinking",
+      "name": "Утопание",
       "desc": "The next {1} time(s) the unit is hit, take {0} fixed SP damage. (Abnormalities take Gloom damage.)",
       "summary": "{0} Sinking DMG"
     },
     {
       "id": "Breath",
-      "name": "Poise",
+      "name": "Дыхание",
       "desc": "Boost critical hit chance by {0}x5% for the next {1} hit(s).",
       "summary": "{0}x5% crit chance"
     },
     {
       "id": "BloodPocket",
-      "name": "Blood Sac",
+      "name": "Кровяной мешок",
       "desc": "Use a powerful attack at a certain Count.",
       "summary": "Readies a powerful attack"
     },
     {
       "id": "WaterPocket",
-      "name": "Fluid Sac",
+      "name": "Водяной мешок",
       "desc": "Heals {0} x 20 HP.",
       "summary": "HP heal boost"
     },
     {
       "id": "DogThunder",
-      "name": "Lightning",
+      "name": "Молния",
       "desc": "Powers up at a certain Count.",
       "summary": "Strengthens self"
     },
@@ -324,7 +324,7 @@
     },
     {
       "id": "Operation",
-      "name": "Surgery",
+      "name": "Операция",
       "desc": "Die when Count reaches 5. Reduce Max HP by 20% per Count ({0}). Deal 20% more damage per Count ({0}). Turn Start: Gain {0} Haste.",
       "summary": "Dies at 5 Count"
     },
@@ -336,33 +336,33 @@
     },
     {
       "id": "BabayagaTimeLimit",
-      "name": "Baba Yaga’s Coming!",
+      "name": "Баба яга близко!",
       "desc": "Baba Yaga is closing in. Clear the way or face certain death.",
       "summary": "Baba Yaga approaches!"
     },
     {
       "id": "PinkRibbon_Ishmael",
-      "name": "Pink Ribbons",
+      "name": "Розовые ленточки",
       "desc": "Increase Count by 1 whenever the unit tosses an attack skill Coin. Turn End: Gain Bind by the Count, then remove this effect.",
       "summary": "Gain {0} Bind"
     },
     {
       "id": "Muckworm",
-      "name": "Maggots",
+      "name": "Личинки",
       "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
       "summary": "Gluttony damage; Bleed Count +1"
     },
     {
       "id": "AttackUp",
       "name": "Повышение уровня атаки",
-      "desc": "Увеличивает уровень на +{0}0% в течение этого хода. (Макс. 100%)",
-      "summary": "Уровень атаки +{0}0%"
+      "desc": "Повышение уровня атаки на +{0} на этот ход.",
+      "summary": "Уровень атаки +{0}%"
     },
     {
       "id": "AttackDown",
       "name": "Снижение уровня атаки",
-      "desc": "Снижение уровня атаки на -{0}0% на этот ход. (Макс. 100%)",
-      "summary": "Уровень атаки -{0}0%"
+      "desc": "Снижение уровня атаки на -{0} на этот ход.",
+      "summary": "Уровень атаки -{0}"
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
@@ -387,13 +387,13 @@
     },
     {
       "id": "SlashDamageUp",
-      "name": "Повышение силы режущих умений",
+      "name": "Повышение режущего урона",
       "desc": "Наносит на +{0}0% больше урона от режущих умений в течение этого хода. (Макс. 100%)",
       "summary": "Урон режущих умений +{0}0%"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "Повышение силы колющих умений",
+      "name": "Повышение пронзающего урона",
       "desc": "Наносит на +{0}0% больше урона от колющих умений в течение этого хода. (Макс. 100%)",
       "summary": "Урон колющих умений +{0}0%"
     },
@@ -550,7 +550,7 @@
     },
     {
       "id": "CrimsonDamageUp",
-      "name": "Wrath DMG Up",
+      "name": "Повышение урона Гневом",
       "desc": "Deal +{0}0% damage with Wrath skills this turn. (Max 100%)",
       "summary": "Wrath damage +{0}0%"
     },
@@ -562,7 +562,7 @@
     },
     {
       "id": "AmberDamageUp",
-      "name": "Sloth DMG Up",
+      "name": "Повышение урона Ленью",
       "desc": "Deal +{0}0% damage with Sloth skills this turn. (Max 100%)",
       "summary": "Sloth damage +{0}0%"
     },
@@ -592,7 +592,7 @@
     },
     {
       "id": "Curse",
-      "name": "Curse",
+      "name": "Проклятие",
       "desc": "Turn End: Gain one of the following, then reduce this effect’s Count by 1. 1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Level Down.",
       "summary": "Gain a negative status effect, then reduce Count by 1"
     },
@@ -673,7 +673,7 @@
     },
     {
       "id": "Assemble",
-      "name": "Fanatic",
+      "name": "Фанатизм",
       "desc": "Skill Final Power +{0} against units with Nails for this turn.",
       "summary": "Final Power +{0}"
     },
@@ -684,7 +684,7 @@
     },
     {
       "id": "Greedy",
-      "name": "Desirous",
+      "name": "Переполнение желанием",
       "desc": "Gain 2 Fragile and 10 Bind this turn. Also, gain a skill slot and change behavior.",
       "summary": "Gain 2 Fragile and 10 Bind"
     },
@@ -707,13 +707,13 @@
     },
     {
       "id": "Poison",
-      "name": "Poison",
+      "name": "Яд",
       "desc": "Turn End: Take {0} fixed damage, then halve the Count.",
       "summary": "{0} HP damage"
     },
     {
       "id": "Cromer_Target",
-      "name": "Gaze of the One Who Grips",
+      "name": "Взгляд Той, что держит",
       "desc": "Staggered for this turn. Take +100% damage from Kromer."
     },
     {
@@ -723,13 +723,13 @@
     },
     {
       "id": "Cromer_Ecstasy",
-      "name": "Ecstatic",
+      "name": "Экстаз",
       "desc": "All the Maw’s physical resistances change to ‘Fatal’.",
       "summary": "Weaken part’s phys. resist"
     },
     {
       "id": "Cromer_Madness",
-      "name": "Purity",
+      "name": "Чистота",
       "desc": "All parts gain 3 Bind and 3 Damage Up, and their phys. resistances change to ‘Fatal’."
     },
     {
@@ -751,7 +751,7 @@
     },
     {
       "id": "Aggressive",
-      "name": "Instincts",
+      "name": "Инстинкты",
       "desc": "Turn End: At 4+ Count, change to an “aggressive” state."
     },
     {
@@ -828,61 +828,61 @@
     },
     {
       "id": "SlashTakeDamageUp",
-      "name": "Slash Fragility",
+      "name": "Слабость к режущему урону",
       "desc": "Take +{0}0% damage from Slash skills this turn. (Max 100%)",
       "summary": "Slash damage taken +{0}0%"
     },
     {
       "id": "PenetrateTakeDamageUp",
-      "name": "Pierce Fragility",
+      "name": "Слабость к пронзающему урону",
       "desc": "Take +{0}0% damage from Pierce skills this turn. (Max 100%)",
       "summary": "Pierce damage taken +{0}0%"
     },
     {
       "id": "HitTakeDamageUp",
-      "name": "Blunt Fragility",
+      "name": "Слабость к дробящему урону",
       "desc": "Take +{0}0% damage from Blunt skills this turn. (Max 100%)",
       "summary": "Blunt damage taken +{0}0%"
     },
     {
       "id": "CrimsonTakeDamageUp",
-      "name": "Wrath Fragility",
+      "name": "Слабость к Гневу",
       "desc": "Take +{0}0% damage from Wrath skills this turn. (Max 100%)",
       "summary": "Wrath damage taken +{0}0%"
     },
     {
       "id": "ScarletTakeDamageUp",
-      "name": "Lust Fragility",
+      "name": "Слабость к Похоти",
       "desc": "Take +{0}0% damage from Lust skills this turn. (Max 100%)",
       "summary": "Lust damage taken +{0}0%"
     },
     {
       "id": "AmberTakeDamageUp",
-      "name": "Sloth Fragility",
+      "name": "Слабость к Лени",
       "desc": "Take +{0}0% damage from Sloth skills this turn. (Max 100%)",
       "summary": "Sloth damage taken +{0}0%"
     },
     {
       "id": "ShamrockTakeDamageUp",
-      "name": "Gluttony Fragility",
+      "name": "Слабость к Чревоугодию",
       "desc": "Take +{0}0% damage from Gluttony skills this turn. (Max 100%)",
       "summary": "Gluttony damage taken +{0}0%"
     },
     {
       "id": "AzureTakeDamageUp",
-      "name": "Gloom Fragility",
+      "name": "Слабость к Унынию",
       "desc": "Take +{0}0% damage from Gloom skills this turn. (Max 100%)",
       "summary": "Gloom damage taken +{0}0%"
     },
     {
       "id": "IndigoTakeDamageUp",
-      "name": "Pride Fragility",
+      "name": "Слабость к Гордыне",
       "desc": "Take +{0}0% damage from Pride skills this turn. (Max 100%)",
       "summary": "Pride damage taken +{0}0%"
     },
     {
       "id": "VioletTakeDamageUp",
-      "name": "Envy Fragility",
+      "name": "Слабость к Зависти",
       "desc": "Take +{0}0% damage from Envy skills this turn. (Max 100%)",
       "summary": "Envy damage taken +{0}0%"
     },
@@ -906,25 +906,25 @@
     },
     {
       "id": "MarkOfHeresy",
-      "name": "Gaze",
+      "name": "Взор",
       "desc": "Take +20% damage from Pierce and Blunt skills this turn. The ally that defeats the marked unit heals 10 SP; if the ally is from N Corp, also apply 1 Fanatic next turn.",
       "summary": "Pierce & Blunt damage taken +20%"
     },
     {
       "id": "HitResultUp",
-      "name": "Blunt Power Up",
+      "name": "Повышение силы дробящего урона",
       "desc": "Blunt Skill Final Power +{0} for this turn.",
       "summary": "Blunt Skill Final Power +{0}"
     },
     {
       "id": "WeaknessAnalysis",
-      "name": "Weakness Analyzed",
+      "name": "Слабость найдена",
       "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] for this turn.",
       "summary": "Weaken [+0.2 dmg multi] an “Endured” or “Normal” resistance"
     },
     {
       "id": "Cycle",
-      "name": "Karma",
+      "name": "Карма",
       "desc": "Take +{0}% damage. Turn End: Die at 108+ Count.",
       "summary": "My Form Empties’ Passive"
     },
@@ -936,27 +936,27 @@
     },
     {
       "id": "VioletResultUp",
-      "name": "Envy Power Up",
+      "name": "Увеличение силы Зависти",
       "desc": "Envy Skill Final Power +{0} for this turn.",
       "summary": "Envy Skill Final Power +{0}"
     },
     {
       "id": "CyclingKarma",
-      "name": "Cyclical Karma",
+      "name": "Цикличная карма",
       "desc": "All units transfer their Karma to their targets after a successful attack. Karma is not transferred to My Form Empties as long as its allies are alive.",
       "summary": "Karma transfers on hit"
     },
     {
       "id": "TakeHpHealReduce",
-      "name": "HP Healing Down",
+      "name": "Снижение лечения ОЗ",
       "desc": "Heal -{0}0% HP from Passives, Skills, and Coin effects this turn. (Max 5)",
       "summary": "HP Healing -{0}0%"
     },
     {
       "id": "AttackLevelAdder",
-      "name": "Повышение уровня+",
-      "desc": "Повышение уровня на +{0} на этот ход.",
-      "summary": "Повышение уровня на +{0}"
+      "name": "Offense level+",
+      "desc": "Offense Level +{0} for this turn.",
+      "summary": "Offense Level +{0}"
     },
     {
       "id": "Thirst",
@@ -1207,6 +1207,264 @@
       "id": "EmittedCurrent",
       "name": "Spark Discharge",
       "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+    },
+    {
+      "id": "DistortedDongrangRadiantVanity",
+      "name": "Radiant Vanity",
+      "desc": "Turn Start: Dongrang gains 1 Protection and 1 Attack Power Up"
+    },
+    {
+      "id": "DistortedDongrangEmptyMark",
+      "name": "Empty Mark",
+      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+    },
+    {
+      "id": "DistortedDongrangEarnestAchievement",
+      "name": "Earnest Accomplishment",
+      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs"
+    },
+    {
+      "id": "DistortedDongrangEmptyHonor",
+      "name": "Empty Honor",
+      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn"
+    },
+    {
+      "id": "DistortedDongrangMomentaryGlory",
+      "name": "Momentary Glory",
+      "desc": "At 3+ Count, Dongrang becomes more powerful"
+    },
+    {
+      "id": "DistortedDongrangEmptiness",
+      "name": "Emptiness",
+      "desc": "At 4+ Count, Dongrang becomes staggered."
+    },
+    {
+      "id": "DistortedDongrangFruition",
+      "name": "Borne Fruition",
+      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+    },
+    {
+      "id": "EgoAwakenDongrangRadiantDesire",
+      "name": "Radiant Desire",
+      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection"
+    },
+    {
+      "id": "EgoAwakenDongrangSeed",
+      "name": "Seeds",
+      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+    },
+    {
+      "id": "EgoAwakenDongrangTree",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "EgoAwakenDongrangOverHeal",
+      "name": "Overheal",
+      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+    },
+    {
+      "id": "SinkingSurge",
+      "name": "Sinking Deluge",
+      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+    },
+    {
+      "id": "Blue",
+      "name": "Tears",
+      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+    },
+    {
+      "id": "AmberResultUp",
+      "name": "Sloth Power Up",
+      "desc": "Sloth Skill Final Power +{0} for this turn",
+      "summary": "Sloth Skill Final Power +{0}"
+    },
+    {
+      "id": "EgoAwakenDongrangTreeDisplay",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "DongbaekFullBloomDisplay",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "EgoAwakenDongrangShardOfBrokenConnection",
+      "name": "Piece of a Broken Bond",
+      "desc": "Yi Sang's skills gain +2 Final Power\nWhen an ally dies, remaining allies gain 1 Haste and 1 Attack Power Up next turn (Once per turn)\nAs long as at least one other ally is alive in this battle, Yi Sang does not die",
+      "summary": ""
+    },
+    {
+      "id": "Choice_1040301",
+      "name": "Unknown Wound",
+      "desc": "Gain 10 Rupture for this turn.",
+      "summary": "Gain 10 Rupture for the turn"
+    },
+    {
+      "id": "TakeHpHealIncrease",
+      "name": "HP Healing Boost",
+      "desc": "Heal +{0}0% HP from Passives, Skills, and Coin effects this turn. (Max 5)",
+      "summary": "HP Healing +{0}0%"
+    },
+    {
+      "id": "Choice_90104001",
+      "name": "Understanding",
+      "desc": "At the start of the battle, gain 2 E.G.O resources for every Affinity",
+      "summary": "Gain +2 E.G.O resource for all Affinities"
+    },
+    {
+      "id": "Choice_9010400101",
+      "name": "Determined",
+      "desc": "All Ally Units gain +2 Skill Final Power for this battle",
+      "summary": "Skill Final Power +2"
+    },
+    {
+      "id": "Choice_90104002",
+      "name": "Longing",
+      "desc": "All Ally Units gain +1 Skill Power for this battle",
+      "summary": "Skill Power +1"
+    },
+    {
+      "id": "S2Mirror2ndFloor",
+      "name": "Mirror of Mirrors - F2",
+      "desc": "Skill Final Power +1",
+      "summary": "Skill Final Power +1"
+    },
+    {
+      "id": "S2Mirror3rdFloor",
+      "name": "Mirror of Mirrors - F3",
+      "desc": "Skill Final Power +1\nSkill Offense Level +3",
+      "summary": "Skill Final Power +1; Skill Offense Level +3"
+    },
+    {
+      "id": "S2Mirror4thFloor",
+      "name": "Mirror of Mirrors - F4",
+      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1",
+      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1"
+    },
+    {
+      "id": "S2Mirror5thFloor",
+      "name": "Mirror of Mirrors - F5",
+      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "SkillPowerUp",
+      "name": "Base Power Up",
+      "desc": "Skill Base Power +{0} for this turn.",
+      "summary": "Skill Base Power +{0}"
+    },
+    {
+      "id": "MaxHpMultiplier",
+      "name": "Max HP Up",
+      "desc": "Increase Max HP by {0}0",
+      "summary": "Max HP +{0}0"
+    },
+    {
+      "id": "StickCoinHeadAndTailToMaxPer",
+      "name": "Meshed Possibilities",
+      "desc": "Every three turns, all Coins on each skill used by allies land on the same side depending on the Coin's type",
+      "summary": "Every 3 turns, all Coins land on the same side based on the type"
+    },
+    {
+      "id": "RemoveBreakSection",
+      "name": "Stalwart Spirit",
+      "desc": "The 1st stagger thresholds of allies are nullified",
+      "summary": "Nullify 1st stagger threshold"
+    },
+    {
+      "id": "KCorpSerum",
+      "name": "K Corp Ampule",
+      "desc": "Turn Start: At less than 4 Count, heal by ({0} * 5)% of Max HP\nAt 4+ Count, the unit dies",
+      "summary": ""
+    },
+    {
+      "id": "Talisman",
+      "name": "Talisman",
+      "desc": "On hit, inflict {0} Rupture; When hit, gain {0} Rupture\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count",
+      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+    },
+    {
+      "id": "S2Mirror2ndFloor_Hard",
+      "name": "Mirror of Mirrors Hard - F2",
+      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "S2Mirror3rdFloor_Hard",
+      "name": "Mirror of Mirrors Hard - F3",
+      "desc": "Skill Final Power +2\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +2; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "S2Mirror4thFloor_Hard",
+      "name": "Mirror of Mirrors Hard - F4",
+      "desc": "Skill Final Power +3\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +3; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "S2Mirror5thFloor_Hard",
+      "name": "Mirror of Mirrors Hard - F5",
+      "desc": "Skill Final Power +5\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +5; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "S2Mirror1stFloor_Hard",
+      "name": "Mirror of Mirrors Hard - F1",
+      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
+      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+    },
+    {
+      "id": "MentalSystemResultIncrease_Typo",
+      "name": "SP Heal Efficiency",
+      "desc": "Amount of SP healed from SP heal conditions"
+    },
+    {
+      "id": "MentalSystemResultDecrease_Typo",
+      "name": "SP Loss Efficiency",
+      "desc": "Amount of SP lost from SP loss conditions"
+    },
+    {
+      "id": "DuelDeclaration",
+      "name": "Declared Duel",
+      "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Effect lifted when the unit that declared duel declares it on a different target. Replaced when another unit declares a duel. "
+    },
+    {
+      "id": "Aggro",
+      "name": "Aggro",
+      "desc": "In focused encounters, slots with higher Aggro values are more likely to be targeted by enemies."
+    },
+    {
+      "id": "BurstVulnerable",
+      "name": "Rupture Fragility",
+      "desc": "Take -{0} damage from Rupture effects this turn."
+    },
+    {
+      "id": "EmergencyFeed",
+      "name": "Emergency Nutrient Supply",
+      "desc": "At the end of the turn, if this unit has healed 15% of Max HP or more, the body is restored next turn."
+    },
+    {
+      "id": "Bullet_Crab",
+      "name": "Molted Shell Shot",
+      "desc": "Resource used by certain skills for additional effects."
+    },
+    {
+      "id": "SinkingVulnerable",
+      "name": "Sinking Fragility",
+      "desc": "Take +{0} damage from Sinking effects this turn."
+    },
+    {
+      "id": "BurstProtection",
+      "name": "Rupture Protection",
+      "desc": "Take -{0} damage from Rupture effects this turn."
+    },
+    {
+      "id": "PseudoLastBoss_KingCrap",
+      "name": "Crab Rage",
+      "desc": "At the start of the turn, apply Attack Power Up to all other allied crabs, and gain 2 Protection if its Shell isn't broken.\n-5 SP to target when using a skill.\nAt 50%- HP, every part gains 2 Attack Power Up and 2 Fragile."
     }
   ]
 }
