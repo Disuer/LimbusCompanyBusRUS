@@ -22,7 +22,7 @@
     },
     {
       "id": "Reduction",
-      "name": "Снижение силы атаки",
+      "name": "Понижение силы атаки",
       "desc": "Attack skills lose final Power by the effect’s Count for one turn."
     },
     {
@@ -72,7 +72,7 @@
       "desc": "At the start of the turn, gain 2 Haste and 2 Fragile."
     },
     {
-      "id": "SelfHarm_Срыв",
+      "id": "SelfHarm_Panic",
       "name": "Побуждение (Срыв)",
       "desc": "At the start of the turn, lose 10 HP."
     },
@@ -82,7 +82,7 @@
       "desc": "At the start of the turn, gain 2 Attack Повышение силы and 2 Fragile."
     },
     {
-      "id": "Blame_Срыв",
+      "id": "Blame_Panic",
       "name": "Всплеск (Срыв)",
       "desc": "At the start of the turn, a random ally loses 20 SP."
     },
@@ -98,7 +98,7 @@
     },
     {
       "id": "ResultEnhancement",
-      "name": "Повышение силы атаки",
+      "name": "Power Up",
       "desc": "Attack skills gain final Power by the effect’s Count for one turn.",
       "summary": "ATK Skill Final Power +{0}"
     },
@@ -137,7 +137,7 @@
     },
     {
       "id": "Disarming",
-      "name": "Снижение силы защиты",
+      "name": "Понижение силы защиты",
       "desc": "Defense skills lose final Power by the effect’s Count for one turn."
     },
     {
@@ -285,7 +285,7 @@
     },
     {
       "id": "AttackDown",
-      "name": "Снижение уровня атаки",
+      "name": "Понижение уровня атаки",
       "desc": "Offense level decreases based on the effect's Potency for one turn."
     },
     {
@@ -512,6 +512,46 @@
       "id": "Meursault_Last_Remodeling",
       "name": "Final Augment",
       "desc": "At the start of the turn, gain 3 Attack Повышение силы, Defense Повышение силы, and Haste; die after 3 turns."
+    },
+    {
+      "id": "Choice_90103301",
+      "name": "Struggle",
+      "desc": "Speed +1 for this battle.",
+      "summary": "SPD +1"
+    },
+    {
+      "id": "Choice_90103402",
+      "name": "Relief",
+      "desc": "Speed +2 for this battle.",
+      "summary": "SPD +2"
+    },
+    {
+      "id": "Choice_901001",
+      "name": "Spreading Flame",
+      "desc": "At the start of the combat phase, allies without Wrath Affinity take 5 Wrath damage."
+    },
+    {
+      "id": "Choice_901007",
+      "name": "Gentle Sendoff",
+      "desc": "Turn Start: Heal 10 HP and SP.",
+      "summary": "HP & SP +10"
+    },
+    {
+      "id": "Choice_901009",
+      "name": "Photopia",
+      "desc": "Combat Start: Skill Final Power -1.",
+      "summary": "Skill Final Power -1"
+    },
+    {
+      "id": "Choice_901010",
+      "name": "Emptied",
+      "desc": "At the start of the battle, allies without Lust Affinity are Staggered."
+    },
+    {
+      "id": "Choice_901019",
+      "name": "Contamination",
+      "desc": "Combat Start: Speed -2.",
+      "summary": "SPD -2"
     },
     {
       "id": "Aggressive",
@@ -807,6 +847,18 @@
       "summary": "Take damage by 2% of Max HP per Count"
     },
     {
+      "id": "InterlockingTime",
+      "name": "Interlocking Time",
+      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+    },
+    {
+      "id": "TimeRental",
+      "name": "Borrowed Time",
+      "desc": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn",
+      "summary": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn"
+    },
+    {
       "id": "ATL_EndureLaceration",
       "name": "Bleed Resistance",
       "desc": "When taking damage from Bleed, reduce the damage by 10% per Count (Max 10)",
@@ -926,6 +978,48 @@
       "undefined": "-"
     },
     {
+      "id": "DongbaekGrow",
+      "name": "Growing",
+      "desc": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)",
+      "summary": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)"
+    },
+    {
+      "id": "DongbaekFlorescence",
+      "name": "Blooming",
+      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFullBloom",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFascination",
+      "name": "Dazzled Mind",
+      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn.\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekShowdown",
+      "name": "Dueling",
+      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekScatterPetal",
+      "name": "Scattering Petals",
+      "desc": "Turn End: At 6+ Count, become staggered",
+      "summary": ""
+    },
+    {
+      "id": "Thorn",
+      "name": "Thorns",
+      "desc": "When hit, return 50% of the damage taken to the attacker",
+      "summary": "Deal 50% of damage taken to attacker"
+    },
+    {
       "id": "Fragile_Mind_LowMorale",
       "name": "Perilous Heart",
       "desc": "Turn Start: Gain 2 Attack Повышение силы and 3 Bind",
@@ -950,7 +1044,7 @@
     },
     {
       "id": "EmittedCurrent",
-      "name": "Spark Discharge",
+      "name": "Разряд искр",
       "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
     },
     {
@@ -1010,12 +1104,12 @@
     },
     {
       "id": "SinkingSurge",
-      "name": "Sinking Deluge",
+      "name": "Шквал утопания",
       "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
     },
     {
       "id": "AmberResultUp",
-      "name": "Sloth Power Up",
+      "name": "Повышение силы Лени",
       "desc": "Sloth skills gain final Power by the effect’s Count for one turn.",
       "summary": "Sloth Skill Final Power +{0}"
     },
@@ -1052,13 +1146,13 @@
     },
     {
       "id": "KCorpSerum",
-      "name": "K Corp Ampule",
+      "name": "Ампула Корп. K",
       "desc": "Turn Start: At less than 4 Count, heal by (Count * 5)% of Max HP\nAt 4+ Count, the unit dies",
       "summary": ""
     },
     {
       "id": "Talisman",
-      "name": "Talisman",
+      "name": "Оберег",
       "desc": "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
       "summary": "Inflict Rupture with attacks and gain Rupture when hit"
     },
