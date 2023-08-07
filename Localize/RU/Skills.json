@@ -16,7 +16,7 @@
         {
           "level": 1,
           "name": "Уворот",
-          "desc": "При победе в поединке, игнорируется атака противника."
+          "desc": "On clash win, lower user’s Stagger Threshold"
         }
       ]
     },
@@ -57,7 +57,22 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 2 Утопания"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Утопание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Отражение",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
                 }
               ]
             }
@@ -78,7 +93,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Утопания"
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Утопание"
                 }
               ]
             }
@@ -94,7 +109,23 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Утопание; Наносит +1 счётчик Утопания"
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание; Наносит +1 счётчик Утопание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "End-stop Stab",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание; Наносит +1 счётчик Утопание"
                 }
               ]
             }
@@ -113,6 +144,35 @@
           "coinlist": [
             {},
             {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если здравомыслие жертвы ниже 0, наносит 1 Слабость"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Анжамб",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                }
+              ]
+            },
             {
               "coindescs": [
                 {
@@ -205,6 +265,40 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Мулине",
+          "desc": "",
+          "keywords": [
+            "Vulnerable"
+          ],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] +1 счётчик к эффекту, наносимому последней монетой"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] +1 счётчик к эффекту, наносимому последней монетой"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Слабость к пронзающему урону на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -258,6 +352,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Ответ",
+          "desc": "[WinDuel] Наносит 3 Паралич на следующий ход\n[WinDuel] Наносит +1 счётчик Разрыв",
+          "keywords": [
+            "Paralysis"
+          ],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Слабость на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -306,6 +427,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Боевая стойка",
+          "desc": "[WhenUse] Получает +2 счётчика Дыхание",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 3 Дыхание на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -324,6 +460,16 @@
         },
         {
           "level": 2,
+          "name": "Резкий поворот",
+          "desc": "[WinDuel] Получает +2 счётчика Дыхание на следующий ход",
+          "keywords": [],
+          "coinlist": [
+            {},
+            {}
+          ]
+        },
+        {
+          "level": 4,
           "name": "Резкий поворот",
           "desc": "[WinDuel] Получает +2 счётчика Дыхание на следующий ход",
           "keywords": [],
@@ -359,6 +505,29 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Боковой удар",
+          "desc": "[WhenUse] Получает 2 Дыхание",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает 2 Дыхание на следующий ход"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "+70% урона, если удар оказывается критическим"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -372,6 +541,21 @@
           "keywords": [],
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "+70% урона, если удар оказывается критическим"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -424,7 +608,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение уровня атаки на следующий ход"
                 }
               ]
             }
@@ -440,7 +624,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 3 Понижение уровня атаки на следующий ход"
                 }
               ]
             }
@@ -460,14 +644,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Понижение силы атаки на следующий ход"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 1 Понижение силы атаки на следующий ход"
                 }
               ]
             }
@@ -493,7 +677,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Energy Cycle",
+          "name": "Энергетический цикл",
           "desc": "",
           "coinlist": [
             {
@@ -518,6 +702,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Энергетический цикл",
+          "desc": "[WhenUse] Получает +2 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Заряд"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -533,7 +731,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 3 Заряд, чтобы наложить 4 Связывани на следующий ход"
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд, чтобы наложить 4 Связывание на следующий ход"
                 }
               ]
             }
@@ -545,6 +743,27 @@
           "desc": "",
           "coinlist": [
             {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд, чтобы наложить 4 Связывание на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Скачок",
+          "desc": "[WhenUse] Получает +3 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +3 счётчика Заряд"
+                }
+              ]
+            },
             {
               "coindescs": [
                 {
@@ -569,7 +788,23 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 5 Заряд, чтобы наложить 2 Снижение силы атаки на следующий ход;\nНаносит 3 Паралич"
+                  "desc": "[OnSucceedAttack] Тратит 5 Заряд, чтобы наложить 2 Понижение силы атаки на следующий ход;\nНаносит 3 Паралич"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Перегрузка",
+          "desc": "At 5+ Charge Count, Clash Power +2",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 5 Заряд, чтобы наложить 2 Понижение силы атаки на следующий ход;\nНаносит 3 Паралич"
                 }
               ]
             }
@@ -611,6 +846,20 @@
           "level": 2,
           "name": "Одиночный удар",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Одиночный удар",
+          "desc": "[WhenUse] Получает +2 счётчика Дыхание",
           "coinlist": [
             {
               "coindescs": [
@@ -681,6 +930,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Глубокие порезы",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Дыхание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Дыхание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 4 Спешка на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Дыхание на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -744,7 +1024,7 @@
         {
           "level": 1,
           "name": "Галоппирующий уклон",
-          "desc": "[WinDuel] Получает 1 Повышение уровня атаки на следующий ход",
+          "desc": "[WinDuel] Получает 1 Повышение силы атаки на следующий ход",
           "coinlist": [
             {}
           ]
@@ -752,9 +1032,23 @@
         {
           "level": 2,
           "name": "Галоппирующий уклон",
-          "desc": "[WinDuel] Получает 2 Повышение уровня атаки на следующий ход",
+          "desc": "[WinDuel] Получает 2 Повышение силы атаки на следующий ход",
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Галоппирующий уклон",
+          "desc": "[WinDuel] Получает 2 Повышение силы атаки на следующий ход",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Кровотечение"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -770,6 +1064,34 @@
             {},
             {},
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Во имя справедливости!",
+          "desc": "Сила монет +2 При Скорости +10",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчик Кровотечение"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -820,6 +1142,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Разрыв",
+          "desc": "At 5+ Charge Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Получает +4 счётчика Заряд"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -846,6 +1185,34 @@
           "level": 2,
           "name": "Скачок",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +4 счётчика Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +4 счётчика Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Слабость"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Скачок",
+          "desc": "At 7+ Charge Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -956,6 +1323,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Перевести дыхание",
+          "desc": "[WhenUse] Получает 2 Спешка на следующий ход",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 3 Дыхание на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1003,6 +1384,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Dual Strike",
+          "desc": "[WhenUse] Если здоровья меньше 50%, получает 4 Спешка на следующий ход",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 2 Дыхание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 3 Спешка на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1013,6 +1415,14 @@
           "level": 3,
           "name": "Передышка",
           "desc": "Сила умения +3 при 10+ скорости",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Передышка",
+          "desc": "Сила умения +5 при 10+ скорости",
           "coinlist": [
             {}
           ]
@@ -1124,6 +1534,22 @@
             {},
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Взмах кистью",
+          "desc": "[StartBattle] Получает 2 Повышение режущего урона",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 Дыхание на следующий ход"
+                }
+              ]
+            },
+            {}
+          ]
         }
       ]
     },
@@ -1145,7 +1571,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Разрещ",
+          "name": "Разрез",
           "desc": "",
           "coinlist": [
             {
@@ -1184,7 +1610,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Понижение уровня защиты"
                 }
               ]
             }
@@ -1198,7 +1624,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня защиты"
                 }
               ]
             }
@@ -1217,7 +1643,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Слабость к режущему урону на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 3 Слабость к режущему урону на следующий ход"
                 }
               ]
             },
@@ -1235,6 +1661,20 @@
           "name": "Контратака",
           "desc": "",
           "coinlist": []
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Слабость к режущему урону"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1259,6 +1699,20 @@
           "level": 2,
           "name": "Сосредоточенный удар",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Паралич"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Сосредоточенный удар",
+          "desc": "If target has 2+ Bleed Count, deal +20% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -1313,7 +1767,31 @@
                   "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 2 Снижение урона"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Чистка",
+          "desc": "If target has 5+ Bleed Count, deal +20% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Накладывает +3 счётчика Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение урона"
                 }
               ]
             }
@@ -1342,7 +1820,31 @@
                   "desc": "[OnSucceedAttack] Наносит +3 счётчика Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 3 Снижение уровня урона"
+                  "desc": "[OnSucceedAttack] Наносит 5 Понижение уровня атаки"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Облачный вихрь",
+          "desc": "If target has 9+ Bleed Count, deal +40% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +3 счётчика Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Понижение уровня атаки"
                 }
               ]
             }
@@ -1462,6 +1964,41 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Des Coups",
+          "desc": "[WhenUse] Получает 3 Защищённость на следующий ход",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Тремор"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1522,6 +2059,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Нападение",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Огонь"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1572,6 +2130,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Крепкая стойка",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Огонь"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели уже есть 6+ Огонь, наносит 3 Огонь на 2 случайных врагов"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1582,6 +2164,37 @@
           "level": 3,
           "name": "Отточенный кулак смерти",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 3 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +3 счётчика Огонь"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели уже есть 6+ Огонь, наносит 3 Огонь на 2 случайных врагов"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Отточенный кулак смерти",
+          "desc": "If target has 5+ Burn, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -1645,6 +2258,20 @@
           "level": 2,
           "name": "Разрыв",
           "desc": "[WhenUse] Получает 2 Защищённость от режущего урона",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +3 счётчика Заряд"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Разрыв",
+          "desc": "[WhenUse] Получает 2 Защищённость от режущего урона\nПолучает +3 счётчика Заряд",
           "coinlist": [
             {
               "coindescs": [
@@ -1718,6 +2345,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Энергетический цикл",
+          "desc": "If at 5+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд, чтобы нанести 2 Слабость к режущему урону"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1732,28 +2390,63 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 1 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Поток энергии",
+          "desc": "If at 5+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд, чтобы нанести 2 Понижение уровня защиты"
                 }
               ]
             }
@@ -1768,6 +2461,14 @@
           "level": 1,
           "name": "Блок",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Блок",
+          "desc": "[StartBattle] Получает +2 счётчик Заряд",
           "coinlist": [
             {}
           ]
@@ -1851,6 +2552,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Двойной удар",
+          "desc": "Если грешник не получил урона в предыдущий ход, Сила монет +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1866,7 +2588,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 2 Снижение силы атаки"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение силы атаки"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Whirlwind",
+          "desc": "Если грешник не получил урона в предыдущий ход, Сила монет +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение силы атаки"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
                 }
               ]
             }
@@ -1879,7 +2622,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Блок",
+          "name": "Уворот",
           "desc": "",
           "coinlist": [
             {}
@@ -1919,6 +2662,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Рассечение",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1934,14 +2692,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
                 }
               ]
             }
@@ -1956,14 +2714,36 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Облачный разрез",
+          "desc": "[BeforeAttack] Если на цели меньше, чем 4 счётчика Кровотечение, снова подкидывает 1 и 2 монету",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
                   "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
                 }
               ]
             }
@@ -2083,14 +2863,45 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] урон +3"
+                  "desc": "[OnSucceedAttackHead] Урон +3"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] урон +3"
+                  "desc": "[OnSucceedAttackHead] Урон +3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Если у цели меньше 25% ОЗ и она пережила предыдущие монеты, снова подкидывает монету\nВыпал орёл: +50% урона для этой монеты"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] +50% урон для этой монеты"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Нож в печень",
+          "desc": "If target has 7+ Bleed, deal +20% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Урон +3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Урон +3"
                 }
               ]
             },
@@ -2127,6 +2938,26 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Исполосовать (Маньяк с ножом)",
+          "desc": "[EnemyKill] Повторяет атаку (только 1 раз)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Урон +7"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] +100% урон для этой монеты"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] If target has 10+ Bleed, deal +50% damage"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2137,6 +2968,14 @@
           "level": 1,
           "name": "Уворот",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Уворот",
+          "desc": "If target has 5+ Bleed, Coin Power +2\n[OnSucceedEvade] Heal 3 SP",
           "coinlist": [
             {}
           ]
@@ -2206,6 +3045,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Избиение",
+          "desc": "[WhenUse] Получает 1 Повышение силы атаки и Повышение урона на следующий ход",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Тремор"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2266,6 +3119,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Самый край",
+          "desc": "Если у грешника менее 50% ОЗ, +2 Сила умения\n[WhenUse] Получает +3 счётчика Дыхание",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -2284,6 +3145,14 @@
           "level": 2,
           "name": "Взмах меча",
           "desc": "Если у грешника менее 25% ОЗ, +2 Сила умения",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flying Sword",
+          "desc": "Если у грешника менее 50% ОЗ, +2 Сила умения\n[WhenUse] Получает +3 счётчика Дыхание",
           "coinlist": [
             {}
           ]
@@ -2313,6 +3182,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Молниеносный удар",
+          "desc": "At 10+ Poise Count, Skill Power +2\nAt less than 50% HP, Atk Weight +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[BeforeAttack] Теряет 5 ОЗ; +50% урон умения для этой монеты"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BeforeAttack] Теряет 5 ОЗ; +50% урон умения для этой монеты"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2323,6 +3213,14 @@
           "level": 1,
           "name": "Контратака",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "[WhenUse] Теряет 5 ОЗ\nAt 3+ Poise Count, Damage +50%",
           "coinlist": [
             {}
           ]
@@ -2513,6 +3411,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Уворот",
+          "desc": "[WhenUse] Получает +1 счётчик Заряд",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -2555,7 +3461,7 @@
         {
           "level": 1,
           "name": "Скольжение",
-          "desc": "[WinDuel] Наносит 1 Снижение силы защиты",
+          "desc": "[WinDuel] Наносит 1 Понижение силы защиты",
           "coinlist": [
             {}
           ]
@@ -2563,9 +3469,23 @@
         {
           "level": 2,
           "name": "Скольжение",
-          "desc": "[WinDuel] Наносит 3 Снижение силы защиты",
+          "desc": "[WinDuel] Наносит 3 Понижение силы защиты",
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Скольжение",
+          "desc": "[WinDuel] Наносит 3 Понижение силы защиты",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Тремор"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -2652,6 +3572,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Удар разума",
+          "desc": "[WhenUse] Получает +2 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Заряд"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2681,6 +3628,20 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Наносит +3 счётчика Утопание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Поджарка",
+          "desc": "[WhenUse] Получает +7 счётчик Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +3 счётчика Утопание"
                 }
               ]
             }
@@ -2737,6 +3698,53 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Хлыст разума",
+          "desc": "Тратит 8 Заряд\nЕсли у грешника менее 8 счётчиков Заряд, выбирает цель случайно для односторонней атаки",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Поднимает границу выносливости на 40% от нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Поднимает границу выносливости на 30% от нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Поднимает границу выносливости на 20% от нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Поднимает границу выносливости на 10% от нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2747,6 +3755,14 @@
           "level": 1,
           "name": "Уворот",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Уворот",
+          "desc": "[OnSucceedEvade] Получает +1 счётчик Заряд",
           "coinlist": [
             {}
           ]
@@ -2799,6 +3815,28 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Взмах меча",
+          "desc": "Если у грешника менее 50% ОЗ, к этому умению добавляется 3 дополнительных Дыхание",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 2 Дыхание"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2821,7 +3859,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Получает +1 счётчика Дыхание"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             }
@@ -2844,6 +3882,28 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Получает +1 счётчик Дыхание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Молниеносный удар",
+          "desc": "[WhenUse] Если у грешника менее 50% ОЗ, снова подкидывает 1 и 2 монеты",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчик Дыхание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчик Дыхание"
                 }
               ]
             }
@@ -2875,6 +3935,28 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Передышка",
+          "desc": "At 5+ Poise Count, +50% Critical Damage",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает 2 Дыхание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Если у грешника менее 25% ОЗ, восстанавливает 100% от нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2889,6 +3971,21 @@
           "coinlist": [
             {},
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "At 5+ Poise Count, +50% Critical Damage",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Дыхание"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -2923,6 +4020,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Пинок",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nIf target has 8+ Tremor, Skill Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Паралич"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2937,7 +4048,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение силы атаки"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Понижение силы атаки"
                 }
               ]
             },
@@ -2965,7 +4076,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение силы атаки"
+                  "desc": "[OnSucceedAttack] Наносит 1 Понижение силы атаки"
                 }
               ]
             },
@@ -3024,6 +4135,41 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Подавление",
+          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 5 Слабость"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3034,6 +4180,14 @@
           "level": 1,
           "name": "Блок",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Блок",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nAt 0 Ammo, gain 2 more Aggro",
           "coinlist": [
             {}
           ]
@@ -3117,6 +4271,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Комбо топором",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3126,7 +4304,7 @@
         {
           "level": 3,
           "name": "Наказание",
-          "desc": "Если СД грешницы нижке 0, Сила умения +1",
+          "desc": "Если СД грешницы ниже 0, Сила умения +1",
           "coinlist": [
             {},
             {},
@@ -3135,6 +4313,41 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Если у цели +6 Кровотечение, наносит +20% урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Наказание",
+          "desc": "Если СД грешницы ниже 0, Сила умения +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Bleed, deal +20% damage"
                 }
               ]
             }
@@ -3181,6 +4394,20 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Получает 4 Дыхание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Заточенное лезвие",
+          "desc": "At 4+ Poise, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 4 Дыхание"
                 }
               ]
             }
@@ -3244,6 +4471,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Рассекающий разрез",
+          "desc": "[WhenUse] Получает +2 счётчик Дыхание\nAt 5+ Poise, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 2 Дыхание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 3 Дыхание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3254,6 +4508,20 @@
           "level": 3,
           "name": "Разрез, расчищающий небо",
           "desc": "Если у цели 6+ Кровотечение, удваивает шанс крита",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Наносит 10 Кровотечение"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Разрез, расчищающий небо",
+          "desc": "Если у цели 6+ Кровотечение, удваивает шанс крита\nAt 10+ Poise, +100% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -3276,6 +4544,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "[WhenUse] Получает 1 Защищённость\n[WhenUse] Получает +2 счётчика Дыхание",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -3286,6 +4562,20 @@
           "level": 3,
           "name": "Разрез, расчищающий небо",
           "desc": "Если у цели 6+ Кровотечение, удваивает шанс крита",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Наносит 10 Кровотечение"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sky-clearing Cut",
+          "desc": "Если у цели 6+ Кровотечение, удваивает шанс крита\nAt 10+ Poise, +100% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -3328,6 +4618,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Удар дубинкой",
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 3 Паралич"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3343,7 +4647,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Снижение силы защиты"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение силы защиты"
                 }
               ]
             }
@@ -3358,7 +4662,22 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 4 Снижение силы защиты"
+                  "desc": "[OnSucceedAttack] Наносит 4 Понижение силы защиты"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Выпад",
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 4 Понижение силы защиты"
                 }
               ]
             }
@@ -3377,10 +4696,34 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 4 Снижение силы защиты"
+                  "desc": "[OnSucceedAttackHead] Наносит 4 Понижение силы защиты"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Снижение уровня защиты"
+                  "desc": "[OnSucceedAttack] Наносит 4 Понижение уровня защиты"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 3 Паралич"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Подавление",
+          "desc": "Если цель не получала урон в этот ход, Сила монет +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 4 Понижение силы защиты"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 4 Понижение уровня защиты"
                 }
               ]
             },
@@ -3478,6 +4821,34 @@
             {},
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Разрез насквозь",
+          "desc": "[WinDuel] Получает 1 Повышение силы атаки",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3521,7 +4892,22 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Получает +2счётчик Дыхание"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчик Дыхание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Взмах и прокалывание",
+          "desc": "If at 3+ Poise Count, Coin Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает +2 счётчик Дыхание"
                 }
               ]
             }
@@ -3587,6 +4973,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Серия разрезов",
+          "desc": "[DefeatDuel] Получает 2 Повышение силы атаки на следующий ход\n[WinDuel] Do not spend Poise Count with critical attacks landed with this skill",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 2 Дыхание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Дыхание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Дыхание"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3609,6 +5023,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Разрезая сквозь кость",
+          "desc": "At 10+ Poise Count, +150% Critical Damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Паралич"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3619,6 +5050,14 @@
           "level": 1,
           "name": "Контратака — \"Новорожденный\"",
           "desc": "[WhenUse] Получает 1 Повышение урона на следующий ход",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака — \"Новорожденный\"",
+          "desc": "[WhenUse] Получает 1 Повышение урона на следующий ход\n[WhenUse] Получает +3 счётчик Дыхание",
           "coinlist": [
             {}
           ]
@@ -3655,6 +5094,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Удар дубинкой",
+          "desc": "[DefeatDuel] Получает 2 Защищённость",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3673,7 +5126,7 @@
                   "desc": "[OnSucceedAttackHead] Наносит 3 Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение урона на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 1 Понижение урона на следующий ход"
                 }
               ]
             }
@@ -3691,7 +5144,25 @@
                   "desc": "[OnSucceedAttack] Наносит 6 Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Снижение урона на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение урона на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Подавление",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Наносит 6 Тремор",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 6 Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение урона на следующий ход"
                 }
               ]
             }
@@ -3718,6 +5189,26 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Сильный удар",
+          "desc": "[WhenUse] Даёт 1 Защищённость союзнику с наименьшими ОЗ\n[WhenUse] Gain +10 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor upon Tremor Burst, gain 2 Protection next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Слабость к дробящему урону"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3728,6 +5219,14 @@
           "level": 1,
           "name": "Блок",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Блок",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -3761,6 +5260,21 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Наносит 4 Утопание"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Основа танца",
+          "desc": "If target has 4+ Sinking, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 4 Утопание"
                 }
               ]
             },
@@ -3833,6 +5347,40 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Страстный танец",
+          "desc": "If target has 6+ Sinking, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчика Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчика Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3852,6 +5400,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Вечеринка с паньятой",
+          "desc": "Если СД цели ниже 0, повысить шанс крита в зависимости от СД цели\nIf user has 5+ Poise Count, +30% Critical Damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Понизить границу выносливости грешника на 50% от нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3862,6 +5424,14 @@
           "level": 1,
           "name": "Уворот",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Уворот",
+          "desc": "[OnSucceedEvade] Получает +1 счётчик Дыхание",
           "coinlist": [
             {}
           ]
@@ -3901,6 +5471,28 @@
               ]
             },
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Обнажённое лезвие",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Разрыв"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -3962,6 +5554,20 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Пронзание",
+          "desc": "Если ОЗ цели выше 50%, наносит +20% урона",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4008,6 +5614,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Обнажить меч",
+          "desc": "At 5+ Poise, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 4 Дыхание"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4043,6 +5663,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Акупунктура",
+          "desc": "[WinDuel] Получает +2 счётчик Дыхание",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает 2 Повышение режущего урона на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4063,6 +5698,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Решающий скачок",
+          "desc": "Если ОЗ цели ниже 50%, Финальная сила +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Поднимает первую границу выносливости на 20% от нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4073,6 +5723,14 @@
           "level": 1,
           "name": "Уворот",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Уворот",
+          "desc": "At 6+ Poise, Coin Power +3",
           "coinlist": [
             {}
           ]
@@ -4100,6 +5758,20 @@
           "level": 2,
           "name": "Руководство",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Даёт 2 Защищённость союзнику с наименьшей скоростью"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Руководство",
+          "desc": "If target has 5+ Sinking, Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -4142,6 +5814,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Приказ атаковать",
+          "desc": "[WhenUse] Даёт 1 Повышение силы атаки союзнику с наименьшей скоростью",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Даёт 2 Повышение урона союзнику с наименьшей скоростью"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4159,7 +5845,27 @@
                   "desc": "[OnSucceedAttack] Наносит 5 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 2 Снижение силы атаки"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение силы атаки"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Крик",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение силы атаки"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 4 Утопание"
                 }
               ]
             }
@@ -4241,7 +5947,27 @@
                   "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Pierce Fragility"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Слабость к пронзающему урону"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Прокол",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Слабость к пронзающему урону"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                 }
               ]
             }
@@ -4335,6 +6061,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Точечное пробитие",
+          "desc": "If target has 6+ Burn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Огонь"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4382,7 +6135,38 @@
                   "desc": "[OnSucceedAttack] Наносит 3 Огонь"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Если у цели 6+ Огонь, получает 1 Повышение уровня атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Если у цели 6+ Огонь, получает 1 Повышение силы атаки на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Внезапный рывок",
+          "desc": "If target has 6+ Burn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Огонь"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если у цели 6+ Огонь, получает 1 Повышение силы атаки на следующий ход"
                 }
               ]
             }
@@ -4416,6 +6200,41 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Огонь"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Отточенный удар ладонью",
+          "desc": "If target has 6+ Burn, deal +10% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Огонь"
                 }
               ]
             },
@@ -4475,6 +6294,21 @@
             },
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Разрубание",
+          "desc": "[WinDuel] +40% урона\nIf target has 5+ Rupture, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Восстанавливает на 50% от нанесённого урона"
+                }
+              ]
+            },
+            {}
+          ]
         }
       ]
     },
@@ -4507,6 +6341,23 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Восстанавливает на 50% от нанесённого урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Расчленение",
+          "desc": "If target has 5+ Rupture, deal +50% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Восстанавливает на 50% от нанесённого урона"
                 }
               ]
             }
@@ -4547,6 +6398,41 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Восстанавливает 100% от нанесённого урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Потрошение",
+          "desc": "If target has 5+ Rupture, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели есть Разрыв, дополнительно наносит 30% от прошедшего урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели есть Разрыв, дополнительно наносит 30% от прошедшего урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели есть Разрыв, дополнительно наносит 30% от прошедшего урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Восстанавливает 100% от нанесённого урона"
                 }
               ]
             }
@@ -4641,6 +6527,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Пронзание",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nAt less than 50% HP, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Понижает границу выносливости грешника на 60% от нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Понижает границу выносливости грешника на 60% от нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4688,7 +6595,31 @@
                   "desc": "[OnSucceedAttack] Наносит 3 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Если у цели 5+ Гвозди, наносит 2 Связывание и 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Гвозди, наносит 2 Связывание и 1 Понижение силы атаки на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Сними грех с тела его",
+          "desc": "[WhenUse] Gain +6 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Связывание на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Гвозди, наносит 2 Связывание и 2 Понижение силы атаки на следующий ход"
                 }
               ]
             }
@@ -4715,6 +6646,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Восстанавливает 50% от нанесённого урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Уничтожение ереси",
+          "desc": "[WhenUse] Gain +6 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Гвозди на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Восстанавливает 50% от нанесённого урона\nHP Heal +3% for each of target's Nails"
                 }
               ]
             }
@@ -4775,6 +6727,33 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Верное забивание гвоздей",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Nails, inflict 1 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Nails, inflict 1 Nails"
                 }
               ]
             }
@@ -4856,6 +6835,29 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Наказание железом",
+          "desc": "+15% урон, если грешница испытывает Фанатизм\nDeal +5% damage for each N Corp. ally present in the party",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4868,6 +6870,20 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Контратака",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Гвозди"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -4968,6 +6984,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Хватка",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Паралич на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит Взор на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4997,6 +7044,34 @@
               "coindescs": [
                 {
                   "desc": "+50% урон целям, имеющим 5+ Гвозди"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Казнь",
+          "desc": "При убийстве, восстанавливает 10 СД всем союзникам и наносит 1 Повышение пронзающего урона и Повышение дробящего урона",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "+70% урон целям, имеющим 5+ Гвозди"
                 }
               ]
             }
@@ -5060,6 +7135,33 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Неумелое забивание гвоздей",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Гвозди на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Гвозди"
                 }
               ]
             }
@@ -5186,6 +7288,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Анализ прогнозов",
+          "desc": "В столкновении, у оппонента -2 Сила столкновения",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Паралич на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5203,7 +7322,7 @@
                   "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Разрыв"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение уровня защиты на следующий ход"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение уровня защиты на следующий ход"
                 }
               ]
             },
@@ -5213,7 +7332,7 @@
                   "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Разрыв"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Наносит 1 Снижение уровня защиты на следующий ход"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение уровня защиты на следующий ход"
                 }
               ]
             }
@@ -5230,7 +7349,7 @@
                   "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение уровня защиты на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня защиты на следующий ход"
                 }
               ]
             },
@@ -5240,7 +7359,34 @@
                   "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение уровня защиты на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня защиты на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Полевое командование",
+          "desc": "В столкновении, у оппонента -2 Сила столкновения",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня защиты на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчик Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня защиты на следующий ход"
                 }
               ]
             }
@@ -5259,7 +7405,32 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит 1 Снижение уровня атак на следующий ход"
+                  "desc": "[OnSucceedAttack] Наносит 1 Понижение уровня атаки на следующий ход"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит дополнительный режущий урон на 15% от прошедшего урона"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит Слабость найдена на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Удар по Ахиллесовой пяте",
+          "desc": "В столкновении, у оппонента -2 Сила столкновения\nIf target has 7+ Rupture, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Понижение уровня атаки на следующий ход"
                 }
               ]
             },
@@ -5370,6 +7541,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Огненный поток",
+          "desc": "If target has 6+ Burn Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь; если на цели уже был Огонь, наносит ещё 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Огонь; при 30+ СД, наносит ещё 1; при 45+ СД, наносит ещё 2."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5380,6 +7572,30 @@
           "level": 3,
           "name": "Кулак алого пламени",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь; если на цели уже был Огонь, наносит +1 счётчик Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Восстанавливает 6 СД"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если у цели 6+ счётчик Огонь, поднимает границу выносливости на 30% от нанесённого урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Кулак алого пламени",
+          "desc": "If target has 6+ Burn Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -5459,6 +7675,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Ку. под.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 2 Аппетит"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5516,6 +7753,34 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Если у цели Кровотечение или Паралич, наносит 3 Снижение лечения ОЗ на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ОзИ",
+          "desc": "[WhenUse] Получает 1 Аппетит",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Связывание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 3 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если у цели Кровотечение или Паралич, наносит 4 Снижение лечения ОЗ на следующий ход"
                 }
               ]
             }
@@ -5614,6 +7879,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Сохранить свеженьким",
+          "desc": "If target has 4+ Bind, deal +30% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Паралич; если на цели есть Кровотечение, наносит 1 Паралич на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5647,6 +7933,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Достаточно свеж?",
+          "desc": "If user's speed is higher than target's by 3+, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчик Кровотечение; Наносит 2 Связывание на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5657,6 +7957,41 @@
           "level": 3,
           "name": "Разделка ингредиентов",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Кровотечение"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Паралич"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Паралич"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Восстанавливает ОЗ в зависимости от количества Кровотечение на цели (Max 20%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Разделка ингредиентов",
+          "desc": "If target has 10+ Bleed Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -5723,6 +8058,24 @@
         },
         {
           "level": 2,
+          "name": "Вынужденный суд",
+          "desc": "[WhenUse] Теряет 7 СД",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Получает 1 Фанатизм на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Огонь"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
           "name": "Вынужденный суд",
           "desc": "[WhenUse] Теряет 7 СД",
           "coinlist": [
@@ -5840,6 +8193,31 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Саморазрушающее очищение",
+          "desc": "[WhenUse] Теряет 15 СД\nЕсли у грешника есть Фанатизм, наносит +15% урона\nЕсли цель —  <Механизированное существо>, наносит +10% урона",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Поднимает границу выносливости на 50% от нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Кровотечение, наносит 7 Огонь"
+                },
+                {
+                  "desc": "[EnemyKill] Получает 1 Повышение силы дробящего урона на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5906,6 +8284,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Чистосердечное очищение",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Гвозди"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5942,6 +8344,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Казнь!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор"
+                },
+                {
+                  "desc": "+30% урон целям, имеющим 5+ Гвозди"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5973,7 +8392,44 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Если у цели 5+ Гвозди, наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttackHead] Если у цели 5+ Гвозди, наносит 1 Понижение силы атаки на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Если у цели 5+ Гвозди, наносит 2 Паралич на следующий ход"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Фанатичный суд",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Гвозди"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Гвозди"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Если у цели 5+ Гвозди, наносит 1 Понижение силы атаки на следующий ход"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Если у цели 5+ Гвозди, наносит 2 Паралич на следующий ход"
@@ -6050,6 +8506,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Набираем обороты",
+          "desc": "[WhenUse] Получает +2 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Получает +4 счётчик Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6094,7 +8574,29 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Наносит 2 Тремор\nПри 3+ счётчиках Заряд, снова подкидывает монету если выпал орёл (До 2 раз)\nНаносит ещё 2 Тремор каждый раз, когда монета была подкинута снова\nЕсли монета была подкинута ещё 2 раза, провоцирует Тремор после его нанесения\nПосле провоцирования Тремор, снижает счётчик Тремор на 1",
-                  "summary": "[OnSucceedAttack] Провоцирует Тремор; В определённых условиях подкидывает монету ещё раз; Наносит +2 Тремор если подкинута снова; Если монета была подкинута ещё 2 раза, провоцирует Тремор then снижает счётчик Тремор"
+                  "summary": "[OnSucceedAttack] Провоцирует Тремор; В определённых условиях подкидывает монету ещё раз; Наносит +2 Тремор если подкинута снова; Если монета была подкинута ещё 2 раза, провоцирует Тремор затем снижает счётчик Тремор"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Вибросжатие",
+          "desc": "If target has 10+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор\nПри 3+ счётчиках Заряд, снова подкидывает монету если выпал орёл (До 2 раз)\nНаносит ещё 2 Тремор каждый раз, когда монета была подкинута снова\nЕсли монета была подкинута ещё 2 раза, провоцирует Тремор после его нанесения\nПосле провоцирования Тремор, снижает счётчик Тремор на 1",
+                  "summary": "[OnSucceedAttack] Провоцирует Тремор; В определённых условиях подкидывает монету ещё раз; Наносит +2 Тремор если подкинута снова; Если монета была подкинута ещё 2 раза, провоцирует Тремор затем снижает счётчик Тремор"
                 }
               ]
             }
@@ -6187,6 +8689,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Взваленная ответственность",
+          "desc": "If target has 5+ Tremor Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6208,7 +8727,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Если у цели 5+ Тремор, наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Тремор, наносит 1 Понижение силы атаки на следующий ход"
                 }
               ]
             }
@@ -6232,7 +8751,31 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Если у цели 5+ Тремор, наносит 1 Снижение силы атаки на следующий ход"
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Тремор, наносит 1 Понижение силы атаки на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Вынужденный перерыв",
+          "desc": "If target has 7+ Tremor Count, Final Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если у цели 5+ Тремор, наносит 1 Понижение силы атаки на следующий ход"
                 }
               ]
             }
@@ -6247,6 +8790,51 @@
           "level": 3,
           "name": "Завершающий рывок",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Заряд"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает +2 счётчик Заряд"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает +2 счётчик Заряд"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 3 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор\nПри провоцировании Тремор, снижает счётчик Тремор на 3, затем тратит весь Заряд на повышение границы выносливости на (счётчик Заряд x 5)% (До 50%)",
+                  "summary": "[OnSucceedAttack] Провоцирует Тремор, затем снижает счётчик Тремор на 3; Тратит Заряд на повышение границы выносливости"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Завершающий рывок",
+          "desc": "If target has 10+ Tremor Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -6335,6 +8923,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Набираем обороты",
+          "desc": "[WhenUse] Получает +2 счётчика Заряд",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6360,6 +8966,23 @@
         },
         {
           "level": 2,
+          "name": "Смазка цепей",
+          "desc": "[WhenUse] Получает +3 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчика Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
           "name": "Смазка цепей",
           "desc": "[WhenUse] Получает +3 счётчика Заряд",
           "coinlist": [
@@ -6409,6 +9032,46 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] Если цель оглушена, наносит +10% урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Распилим их?",
+          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор, затем снижает счётчик Тремор на 2; Тратит до 4 Заряд для нанесения счётчиков Разрыв равных потраченным счётчикам Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если цель оглушена, наносит +10% урона"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если цель оглушена, наносит +10% урона"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
                 }
               ]
             }
@@ -6469,6 +9132,25 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Хлобысь зонтом",
+          "desc": "[WhenUse] Получает +1 счётчик Утопание\n[DefeatDuel] Получает 3 Утопание",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит +2 счётчик Утопание"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6508,6 +9190,38 @@
           "level": 2,
           "name": "Шлёп по слякоти",
           "desc": "[WhenUse] При -15 СД и ниже, Финальная сила +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 3 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 3 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Тратит 5 Утопание для нанесения +20% урона"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Провоцирует Тремор"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Шлёп по слякоти",
+          "desc": "[WhenUse] При -15 СД и ниже, Финальная сила +3\n[WhenUse] При -25 СД и ниже, Финальная сила +2",
           "coinlist": [
             {},
             {
@@ -6594,6 +9308,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Предупреждение",
+          "desc": "[WhenUse] Получает 5 Утопание",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Получает 1 Паралич на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6639,6 +9377,28 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Наносит +1 счётчик Утопание на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Прорастающий бутон",
+          "desc": "[WhenUse] Получает +3 счётчика Тремор",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Утопание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчик Утопание на следующий ход"
                 }
               ]
             }
@@ -6704,6 +9464,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Мимолётный расцвет",
+          "desc": "[StartBattle] Тратит 6 счётчиков Тремор, чтобы сделать эту атаку массовой (Целится в 3 слота)\nIf main target has 6+ Sinking Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание на следующий ход"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6736,6 +9524,37 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 30% of прошедшего урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Окровавленный запах",
+          "desc": "[DefeatDuel] Теряет 20 СД\n[WhenUse] Получает 6 счётчиков Тремор",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Утопание"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели 6+ Утопание, наносит Шквал утопания"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 40% of прошедшего урона"
                 }
               ]
             }
@@ -6777,6 +9596,23 @@
           "level": 2,
           "name": "Тяжёлое…!",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Тяжёлое…!",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Наносит 2 Тремор и 2 Разрыв",
           "coinlist": [
             {
               "coindescs": [
@@ -6836,6 +9672,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Брызжется…!",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Наносит 3 Тремор и 3 Разрыв",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Тремор"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6850,13 +9707,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Провоцирует Тремор"
-                },
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор\nAfter bursting Tremor, снижает счётчик Тремор на 4. Наносит 5 Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Коррозийный всплеск",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Наносит 5 Тремор и 5 Разрыв",
+          "coinlist": [
+            {
+              "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Снижает счётчик Тремор by 4"
-                },
-                {
-                  "desc": "[OnSucceedAttack] После провоцирования Тремор, наносит 5 Разрыв"
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор\nAfter bursting Tremor, снижает счётчик Тремор на 4. Наносит 5 Разрыв"
                 }
               ]
             }
@@ -6871,6 +9736,14 @@
           "level": 1,
           "name": "Блок",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Блок",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -6892,6 +9765,14 @@
           "level": 2,
           "name": "Задержка нарушителей",
           "desc": "Сила монет +2 против целей с 5+ Разрыв",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Задержка нарушителей",
+          "desc": "Сила монет +3 против целей с 5+ Разрыв\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -6942,6 +9823,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Разлагающее лезвие",
+          "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 50% нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 50% нанесённого урона"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6963,7 +9865,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Наносит счётчики Разрыв в зависимости от количества Ампула Корп. K; Наносит +5% урона за Ампула Корп. K"
+                  "desc": "[OnSucceedAttack] Наносит счётчики Разрыв в зависимости от количества Ампула Корп. K; Наносит +5% урона за каждые Ампула Корп. K"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Вырезать цель",
+          "desc": "При 80% и более здоровья, Сила монет +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 4 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит счётчики Разрыв в зависимости от количества Ампула Корп. K; Наносит +5% урона за каждые Ампула Корп. K"
                 }
               ]
             }
@@ -6978,6 +9901,14 @@
           "level": 1,
           "name": "Инъекция ампулы",
           "desc": "[WhenUse] Получает 1 Ампула Корп. K на следующий ход",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Инъекция ампулы",
+          "desc": "[WhenUse] Получает 1 Ампула Корп. K на следующий ход\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -7013,6 +9944,23 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Если на цели 5+ Разрыв, получает 1 Оберег"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Усугубить ранение",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели 5+ Разрыв, получает 1 Оберег"
                 }
               ]
             }
@@ -7081,6 +10029,43 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Больше оберегов",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели Разрыв, получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели Разрыв, получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели Разрыв, получает 1 Оберег"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7103,6 +10088,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Если на цели Оберег, наносит +1 счётчик Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Оберег разрыва",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 5 Оберег на себя; Наносит 5 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели Оберег, наносит +3 счётчик Разрыв"
                 }
               ]
             }
@@ -7151,6 +10157,27 @@
           "level": 2,
           "name": "Рыжий тумак",
           "desc": "Если на цели 3+ Огонь, Сила монет +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Рыжий тумак",
+          "desc": "Coin Power +1 for every 3 Burn on target (Max 2)",
           "coinlist": [
             {
               "coindescs": [
@@ -7228,6 +10255,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Лобовая атака",
+          "desc": "Coin Power +1 for every 6 Burn on target (Max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели 6+ Огонь, наносит +2 счётчика Огонь"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7238,6 +10293,41 @@
           "level": 1,
           "name": "Удар с локтя",
           "desc": "Если на цели 6+ Огонь и счётчика Огонь, наносит +30% урона",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Огонь"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] Если цель оглушена или побеждена, получает 1 Повышение шанса выпадения Орла на следующий ход"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Удар с локтя",
+          "desc": "Если на цели 6+ Огонь и счётчика Огонь, наносит +50% урона",
           "coinlist": [
             {
               "coindescs": [
@@ -7286,6 +10376,579 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Weighty Bash",
+          "desc": "At 10+ Charge Count, Final Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Weighty Bash",
+          "desc": "At 10+ Charge Count, Final Power +1\nAt 7+ Speed, deal +25% Damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Weighty Bash",
+          "desc": "At 10+ Charge Count, Final Power +1\nAt 7+ Speed, deal +25% Damage\n[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Demolish",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Demolish",
+          "desc": "At 7+ Speed, inflict +1 Bleed Count with this skill",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Demolish",
+          "desc": "At 7+ Speed, inflict +1 Bleed Count with this Skill\n[WhenUse] Gain +4 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rhino Ram",
+          "desc": "[WhenUse] At 10+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rhino Ram",
+          "desc": "[WhenUse] At 10+ Charge Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Bioelectricity Induction",
+          "desc": "[WhenUse] If attacked while shielded, gain +1 Charge Count (Max 10 per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Bioelectricity Induction",
+          "desc": "[WhenUse] If attacked while shielded, gain +2 Charge Count (Max 10 per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Careful Obstruction",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Careful Obstruction",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Careful Obstruction",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Focused Defense",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Focused Defense",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Focused Defense",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Subdue Threat",
+          "desc": "At 15+ shield, Coin Power +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 1 Fragile next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Subdue Threat",
+          "desc": "At 15+ Shield, Coin Power +2",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 1 Fragile next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +1\n[WinDuel] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +2\n[WinDuel] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 2 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 2 Haste next turn\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Salut!",
+          "desc": "At 10+ Speed, Coin Power +2\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Declared Duel"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Salut!",
+          "desc": "At 10+ Speed, Coin Power +3\n[WinDuel] Deal more damage based on Clash count (+10% per Clash count, Max 100%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Declared Duel"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Défensive",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Défensive",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "coinlist": [
+            {}
           ]
         }
       ]
