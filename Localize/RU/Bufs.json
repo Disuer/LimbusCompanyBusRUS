@@ -23,7 +23,7 @@
     },
     {
       "id": "Reduction",
-      "name": "Снижение силы атаки",
+      "name": "Понижение силы атаки",
       "desc": "Финальная сила умения -{0} в течение этого хода.",
       "summary": "Финальная сила атакующего умения -{0}",
       "undefined": "-"
@@ -147,7 +147,7 @@
     },
     {
       "id": "Disarming",
-      "name": "Снижение силы защиты",
+      "name": "Понижение силы защиты",
       "desc": "Defense Skill Final Power -{0} for this turn.",
       "summary": "DEF Skill Final Power -{0}"
     },
@@ -159,14 +159,14 @@
     },
     {
       "id": "AttackDmgDown",
-      "name": "Снижение урона",
+      "name": "Понижение урона",
       "desc": "Deal -{0}0% damage with skills this turn. (Max 100%)",
       "summary": "-{0}0% Damage Dealt"
     },
     {
       "id": "DefenseDown",
-      "name": "Снижение уровня защиты",
-      "desc": "Снижение уровня защиты на -{0}0% на этот ход. (Макс. 100%)",
+      "name": "Понижение уровня защиты",
+      "desc": "Понижение уровня защиты на -{0}0% на этот ход. (Макс. 100%)",
       "summary": "Уровень защиты -{0}0%"
     },
     {
@@ -228,7 +228,7 @@
     {
       "id": "Overwhelm_Panic",
       "name": "Ошеломление (Срыв)",
-      "desc": "Does not act for this turn.",
+      "desc": "Не действует в этот ход.",
       "summary": "Inactive",
       "undefined": "-"
     },
@@ -360,8 +360,8 @@
     },
     {
       "id": "AttackDown",
-      "name": "Снижение уровня атаки",
-      "desc": "Снижение уровня атаки на -{0} на этот ход.",
+      "name": "Понижение уровня атаки",
+      "desc": "Понижение уровня атаки на -{0} на этот ход.",
       "summary": "Уровень атаки -{0}"
     },
     {
@@ -768,7 +768,7 @@
     },
     {
       "id": "SlashTakeDamageDown",
-      "name": "Slash Protection",
+      "name": "Защищённость от режущего урона",
       "desc": "Take -{0}0% damage from Slash skills this turn. (Max 100%)",
       "summary": "Slash damage taken -{0}0%"
     },
@@ -900,7 +900,7 @@
     },
     {
       "id": "AssemblePersonality",
-      "name": "Fanatic",
+      "name": "Фанатизм",
       "desc": "Skill Final Power +{0} against units with Nails for this turn.",
       "summary": "Final Power +{0}"
     },
@@ -1097,6 +1097,18 @@
       "summary": "Take damage by {0} * 2% of Max HP"
     },
     {
+      "id": "InterlockingTime",
+      "name": "Interlocking Time",
+      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+    },
+    {
+      "id": "TimeRental",
+      "name": "Borrowed Time",
+      "desc": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down",
+      "summary": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down"
+    },
+    {
       "id": "Bull_FadedHeat",
       "name": "Momentary Cool",
       "desc": "Core and body lose 50% Max HP"
@@ -1128,44 +1140,50 @@
     {
       "id": "Crazy_LowMorale",
       "name": "Безрассудство (Низкий дух)",
-      "desc": "When at low morale for the first time, targets units indiscriminately",
+      "desc": "Когда впервые падает духом, выбирает цель случайно.",
       "undefined": "-"
     },
     {
       "id": "Crazy_Panic",
       "name": "Безрассудство (Срыв)",
-      "desc": "Targets indiscriminately; Clash Power +1, and gain 2 Damage Up",
+      "desc": "Выбирает цель случайно; Сила столкновения +1, и получает 2 Повышение урона.",
       "undefined": "-"
     },
     {
       "id": "Suicide_LowMorale",
       "name": "Суицидальность (Низкий дух)",
-      "desc": "When at low morale for the first time, become unable to act",
+      "desc": "Когда впервые падает духом, перестаёт действовать",
       "undefined": "-"
     },
     {
       "id": "Suicide_Panic",
       "name": "Суицидальность (Срыв)",
-      "desc": "Cannot act for 3 turns. Unit dies at turn start; all its allies lose 10 SP",
+      "desc": "Не может действовать 3 хода. В начале хода персонаж умирает; все союзники при этом теряют 10 СД.",
       "undefined": "-"
     },
     {
       "id": "Prowl_LowMorale",
       "name": "Блуждание (Низкий дух)",
-      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "desc": "Начало хода: Наносит 2 урона по СД союзникам.",
       "undefined": "-"
     },
     {
       "id": "Prowl_Panic",
       "name": "Блуждание (Срыв)",
-      "desc": "Turn End: Deal 5 SP damage to allies. Flees from battle after 3 turns have passed",
+      "desc": "Конец хода: Наносит 5 урона по СД союзникам. Сбегает с поля боя после 3 ходов.",
       "undefined": "-"
+    },
+    {
+      "id": "Thorn",
+      "name": "Thorns",
+      "desc": "When hit, return 50% of the damage taken to the attacker",
+      "summary": "Deal 50% of damage taken to attacker"
     },
     {
       "id": "Fragile_Mind_LowMorale",
       "name": "Perilous Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Up and 3 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Up and 3 Bind"
+      "desc": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание.",
+      "summary": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание."
     },
     {
       "id": "Fragile_Mind_Panic",
@@ -1182,13 +1200,13 @@
     {
       "id": "Blue_LowMorale",
       "name": "Подавленность (Низкий дух)",
-      "desc": "In a clash, if any Coin lands tails, Clash Power -1 for the clash",
+      "desc": "В столкновении, если любая Монета падает решкой, Сила столкновения -1 на столкновение.",
       "undefined": "-"
     },
     {
       "id": "Blue_Panic",
       "name": "Подавленность (Срыв)",
-      "desc": "In a clash, if any Coin lands tails, Clash Power -3 for the clash",
+      "desc": "В столкновении, если любая Монета падает решкой, Сила столкновения -3 на столкновение.",
       "undefined": "-"
     },
     {
@@ -1198,14 +1216,50 @@
       "summary": "When taking damage from Bleed, take {0}0% less damage"
     },
     {
+      "id": "DongbaekGrow",
+      "name": "Growing",
+      "desc": "Turn End: Add +1 Count, and gain Max HP proportionally to the Count (Max 3)",
+      "summary": "Turn End: Add +1 Count, and gain Max HP proportionally to the Count (Max 3)"
+    },
+    {
+      "id": "DongbaekFlorescence",
+      "name": "Blooming",
+      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFullBloom",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFascination",
+      "name": "Dazzled Mind",
+      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it at the end of the turn",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekShowdown",
+      "name": "Dueling",
+      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekScatterPetal",
+      "name": "Scattering Petals",
+      "desc": "Turn End: At 6+ Count, become staggered",
+      "summary": ""
+    },
+    {
       "id": "CrimsonResultUp",
-      "name": "Wrath Power Up",
+      "name": "Повышение силы Гнева",
       "desc": "Wrath Skill Final Power +{0} for this turn",
       "summary": "Wrath Skill Final Power +{0}"
     },
     {
       "id": "EmittedCurrent",
-      "name": "Spark Discharge",
+      "name": "Разряд искр",
       "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
     },
     {
@@ -1265,7 +1319,7 @@
     },
     {
       "id": "SinkingSurge",
-      "name": "Sinking Deluge",
+      "name": "Шквал утопания",
       "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
     },
     {
@@ -1275,7 +1329,7 @@
     },
     {
       "id": "AmberResultUp",
-      "name": "Sloth Power Up",
+      "name": "Повышение силы Лени",
       "desc": "Sloth Skill Final Power +{0} for this turn",
       "summary": "Sloth Skill Final Power +{0}"
     },
@@ -1376,13 +1430,13 @@
     },
     {
       "id": "KCorpSerum",
-      "name": "K Corp Ampule",
+      "name": "Ампула Корп. K",
       "desc": "Turn Start: At less than 4 Count, heal by ({0} * 5)% of Max HP\nAt 4+ Count, the unit dies",
       "summary": ""
     },
     {
       "id": "Talisman",
-      "name": "Talisman",
+      "name": "Оберег",
       "desc": "On hit, inflict {0} Rupture; When hit, gain {0} Rupture\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count",
       "summary": "Inflict Rupture with attacks and gain Rupture when hit"
     },
