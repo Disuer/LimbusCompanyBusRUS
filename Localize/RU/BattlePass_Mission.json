@@ -2,55 +2,55 @@
   "dataList": [
     {
       "id": "CLEAR_STAGE",
-      "content": "Сразиться в битвах {0} раз(а)"
+      "content": "Clear any stage {0} time(s)"
     },
     {
       "id": "KILL_ENEMY_ANY",
-      "content": "Победить {0} противников"
+      "content": "Defeat {0} enemies"
     },
     {
       "id": "KILL_ENEMY_ABNORMALITY",
-      "content": "Усмирить {0} аномалий"
+      "content": "Suppress {0} Abnormalities"
     },
     {
       "id": "SOMEONE_PARTICIPATED_IN_BATTLE",
-      "content": "Взять в битву {1} {0} раз"
+      "content": "Have {1} in battle {0} time(s)"
     },
     {
       "id": "MIRROR_DUNGEON_TRY",
-      "content": "Войти в Зеркальное подземелье {0} раз"
+      "content": "Enter the Mirror Dungeon {0} time(s)"
     },
     {
       "id": "MIRROR_DUNGEON_CLEAR",
-      "content": "Пройти Зеркальное подземелье {0} раз"
+      "content": "Clear Mirror Dungeons {0} time(s)"
     },
     {
       "id": "BATTLEPASS_LEVELUP",
-      "content": "Достигнуть {0} уровня в Баттл Пассе"
+      "content": "Reach Battle Pass Level {0}"
     },
     {
       "id": "USE_EGO_20402",
-      "content": "Использовать \"Пламя четвёртой спички\" Рёшу {0} раз"
+      "content": "Use Ryōshū’s 4th Match Flame {0} time(s)"
     },
     {
       "id": "USE_ANNOUNCER_2",
-      "content": "Взять Грегора комментатором {0} раз"
+      "content": "Have Gregor as the Announcer {0} time(s)"
     },
     {
       "id": "LOGIN_ONCE",
-      "content": "Зайти в игру {0} раз"
+      "content": "{0} daily log-ins"
     },
     {
       "id": "LOGIN_MULTIPLE",
-      "content": "Зайти в игру {0} раз"
+      "content": "{0} total daily log-ins"
     },
     {
       "id": "EXPDUNGEON_CLEAR",
-      "content": "Пройти Светодобычу опыта {0} раз"
+      "content": "Clear EXP Luxcavation {0} time(s)"
     },
     {
       "id": "THREADDENGEON_CLEAR",
-      "content": "Пройти Светодобычу звеньев {0} раз"
+      "content": "Clear Thread Luxcavation {0} time(s)"
     }
   ]
 }
