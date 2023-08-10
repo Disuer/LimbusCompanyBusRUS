@@ -5,17 +5,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 4 Утопание"
                 },
                 {
-                  "desc": "[EnemyKill] Gain 3 E.G.O resources of a random Affinity currently owned"
+                  "desc": "[EnemyKill] Даёт 3 Э.Г.О ресурса случайного греха который есть на руках"
                 }
               ]
             }
@@ -23,17 +23,17 @@
         },
         {
           "level": 3,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 5 Утопание"
                 },
                 {
-                  "desc": "[EnemyKill] Gain 3 E.G.O resources of a random Affinity currently owned; All allies heal 3 SP"
+                  "desc": "[EnemyKill] Даёт 3 Э.Г.О ресурса случайного греха который есть на руках; Лечит всех союзников на 3 ОЗ"
                 }
               ]
             }
@@ -41,17 +41,17 @@
         },
         {
           "level": 4,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[EnemyKill] Gain 3 E.G.O resources of a random Affinity currently owned; All allies heal 3 SP"
+                  "desc": "[EnemyKill] Даёт 3 Э.Г.О ресурса случайного греха который есть на руках; Лечит всех союзников на 3 ОЗ"
                 }
               ]
             }
@@ -64,17 +64,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify]\nTargets randomly",
+          "desc": "[CantIdentify]\nСлучайная цель",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 4 Утопание"
                 },
                 {
-                  "desc": "[EndSkill] All allies gain +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u>."
+                  "desc": "[EndSkill] Даёт всем союзникам +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">Множитель Э.Г.О. ресурсов</color></link></u>."
                 }
               ]
             }
@@ -82,17 +82,17 @@
         },
         {
           "level": 3,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify]\nTargets randomly",
+          "desc": "[CantIdentify]\nСлучайная цель",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 5 Утопание"
                 },
                 {
-                  "desc": "[EndSkill] All allies gain +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u>."
+                  "desc": "[EndSkill] Даёт всем союзникам +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">Множитель Э.Г.О. ресурсов</color></link></u>."
                 }
               ]
             }
@@ -100,17 +100,17 @@
         },
         {
           "level": 4,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify]\nTargets randomly",
+          "desc": "[CantIdentify]\nСлучайная цель",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[EndSkill] All allies gain +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u>., apply 1 Haste next turn"
+                  "desc": "[EndSkill] Даёт всем союзникам +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">Множитель Э.Г.О. ресурсов</color></link></u>., apply 1 Haste next turn"
                 }
               ]
             }
