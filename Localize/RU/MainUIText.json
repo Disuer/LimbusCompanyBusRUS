@@ -1419,6 +1419,46 @@
     {
       "id": "story_dungeon_4_first_open_popup_desc",
       "content": "В этом подземелье нельзя брать идентичность Поддержки для И Сана. И Сан обязан участвовать во всех битвах."
+    },
+    {
+      "id": "attack_level",
+      "content": "Offense Level"
+    },
+    {
+      "id": "defense_level",
+      "content": "Defense Level"
+    },
+    {
+      "id": "personality_level",
+      "content": "Identity Level"
+    },
+    {
+      "id": "enemy_level",
+      "content": "Enemy Level"
+    },
+    {
+      "id": "cannot_enter",
+      "content": "Cannot Enter"
+    },
+    {
+      "id": "lack_of_item_amount",
+      "content": "Not enough {0}"
+    },
+    {
+      "id": "required_count",
+      "content": "Required"
+    },
+    {
+      "id": "on_event_reward_grace_period",
+      "content": "Reward Reception Period"
+    },
+    {
+      "id": "user_level_maximum_notice",
+      "content": "Reached Max Level."
+    },
+    {
+      "id": "user_level_limit_increase_notice",
+      "content": "※ The Max Manager Level may be raised with future updates."
     }
   ]
 }
