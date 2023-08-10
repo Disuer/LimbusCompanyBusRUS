@@ -1422,15 +1422,15 @@
     },
     {
       "id": "attack_level",
-      "content": "Offense Level"
+      "content": "Уровень атаки"
     },
     {
       "id": "defense_level",
-      "content": "Defense Level"
+      "content": "Уровень защиты"
     },
     {
       "id": "personality_level",
-      "content": "Identity Level"
+      "content": "Уровень идентичности"
     },
     {
       "id": "enemy_level",
@@ -1450,7 +1450,7 @@
     },
     {
       "id": "on_event_reward_grace_period",
-      "content": "Reward Reception Period"
+      "content": "Период получения наград"
     },
     {
       "id": "user_level_maximum_notice",
