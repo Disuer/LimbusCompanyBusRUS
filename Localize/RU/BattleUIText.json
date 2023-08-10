@@ -186,7 +186,7 @@
     },
     {
       "id": "ab_event_select_character",
-      "content": "Выбрать грещника"
+      "content": "Выбрать грешника"
     },
     {
       "id": "ab_event_select_desc",
@@ -378,7 +378,7 @@
     },
     {
       "id": "skillinfo_coinabilitytitle",
-      "content": "Эффект умения"
+      "content": "<size=38>Эффект умения</size>"
     },
     {
       "id": "dungeon_save_desc",
@@ -454,7 +454,7 @@
     },
     {
       "id": "skillinfo_keyword",
-      "content": "Ключевые слова"
+      "content": "<size=42>Ключевые слова</size>"
     },
     {
       "id": "ability_turn",
@@ -551,6 +551,14 @@
     {
       "id": "vibration_explosion",
       "content": "Тремор спровоцирован!"
+    },
+    {
+      "id": "sinking_surge",
+      "content": "Шквал утопания!"
+    },
+    {
+      "id": "targetSlotWeight",
+      "content": "Atk Weight"
     }
   ]
 }
