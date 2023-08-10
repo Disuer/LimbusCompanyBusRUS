@@ -82,7 +82,7 @@
     },
     {
       "id": "loginui_loading_battlehint",
-      "content": "Подсказка"
+      "content": "Подсказки"
     },
     {
       "id": "servererror_content",
@@ -143,6 +143,10 @@
     {
       "id": "networkingerror_update",
       "content": "Перейти в магазин"
+    },
+    {
+      "id": "speed_hack_warning",
+      "content": "Было замечено использование запрещенных сторонних программ."
     }
   ]
 }
