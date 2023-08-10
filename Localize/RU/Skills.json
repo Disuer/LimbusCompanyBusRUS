@@ -6,7 +6,7 @@
         {
           "level": 1,
           "name": "Блок",
-          "desc": "При победе в поединке, повышает черту выносливости."
+          "desc": "При победе в поединке, повышает границу выносливости."
         }
       ]
     },
@@ -5103,7 +5103,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
                 }
               ]
             }
@@ -8303,7 +8303,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
                 }
               ]
             }
@@ -9523,7 +9523,7 @@
                   "desc": "[OnSucceedAttack] Если на цели 6+ Утопание, наносит Шквал утопания"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 30% of прошедшего урона"
+                  "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 30% от прошедшего урона"
                 }
               ]
             }
@@ -9554,7 +9554,7 @@
                   "desc": "[OnSucceedAttack] Если на цели 6+ Утопание, наносит Шквал утопания"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 40% of прошедшего урона"
+                  "desc": "[OnSucceedAttack] Если на грешнике 10+ счётчиков Тремор, дополнительно наносит 40% от прошедшего урона"
                 }
               ]
             }
@@ -10386,12 +10386,12 @@
         {
           "level": 1,
           "name": "Weighty Bash",
-          "desc": "At 10+ Charge Count, Final Power +1",
+          "desc": "При 10+ счётчиков Заряд, Финальная сила +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                  "desc": "[OnSucceedAttackHead] Получает +2 счётчика Заряд"
                 }
               ]
             }
@@ -10400,12 +10400,12 @@
         {
           "level": 2,
           "name": "Weighty Bash",
-          "desc": "At 10+ Charge Count, Final Power +1\nAt 7+ Speed, deal +25% Damage",
+          "desc": "При 10+ счётчиков Заряд, Финальная сила +1\nНаносит +25% урона при скорости 7+",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Заряд"
                 }
               ]
             }
@@ -10414,12 +10414,12 @@
         {
           "level": 4,
           "name": "Weighty Bash",
-          "desc": "At 10+ Charge Count, Final Power +1\nAt 7+ Speed, deal +25% Damage\n[WhenUse] Gain +2 Charge Count",
+          "desc": "При 10+ счётчиков Заряд, Финальная сила +1\nНаносит +25% урона при скорости 7+\n[WhenUse] Получает +2 счётчика Заряд",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Заряд"
                 }
               ]
             }
@@ -10438,21 +10438,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                  "desc": "[OnSucceedAttack] Получает +4 счётчика Заряд"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 }
               ]
             }
@@ -10461,26 +10461,26 @@
         {
           "level": 2,
           "name": "Demolish",
-          "desc": "At 7+ Speed, inflict +1 Bleed Count with this skill",
+          "desc": "Наносит +1 счётчик Кровотечение этим умением при скорости 7+",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                  "desc": "[OnSucceedAttack] Получает +4 счётчика Заряд"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 }
               ]
             }
@@ -10489,26 +10489,26 @@
         {
           "level": 4,
           "name": "Demolish",
-          "desc": "At 7+ Speed, inflict +1 Bleed Count with this Skill\n[WhenUse] Gain +4 Charge Count",
+          "desc": "Наносит +1 счётчик Кровотечение этим умением при скорости 7+\n[WhenUse] Получает +4 счётчика Заряд",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                  "desc": "[OnSucceedAttack] Получает +4 счётчика Заряд"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 }
               ]
             }
@@ -10522,31 +10522,31 @@
         {
           "level": 1,
           "name": "Rhino Ram",
-          "desc": "[WhenUse] At 10+ Charge Count, Coin Power +1",
+          "desc": "[WhenUse] При 10+ счётчиков Заряд, Сила монет +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд. Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд. Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд. Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд. Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
@@ -10556,31 +10556,31 @@
         {
           "level": 4,
           "name": "Rhino Ram",
-          "desc": "[WhenUse] At 10+ Charge Count, Coin Power +2",
+          "desc": "[WhenUse] При 10+ счётчиков Заряд, Сила монет +2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд. Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд. Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 2 Заряд. Наносит +1 счётчик Кровотечение"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                  "desc": "[OnSucceedAttack] Тратит 3 Заряд. Наносит +1 счётчик Кровотечение"
                 }
               ]
             },
@@ -10595,7 +10595,7 @@
         {
           "level": 1,
           "name": "Bioelectricity Induction",
-          "desc": "[WhenUse] If attacked while shielded, gain +1 Charge Count (Max 10 per turn)",
+          "desc": "[WhenUse] Если атакован под щитом, то получает +1 счётчик Заряд (Макс 10 за ход)",
           "coinlist": [
             {}
           ]
@@ -10603,7 +10603,7 @@
         {
           "level": 4,
           "name": "Bioelectricity Induction",
-          "desc": "[WhenUse] If attacked while shielded, gain +2 Charge Count (Max 10 per turn)",
+          "desc": "[WhenUse] Если атакован под щитом, то получает +2 счётчика Заряд (Макс 10 за ход)",
           "coinlist": [
             {}
           ]
@@ -10621,14 +10621,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             }
@@ -10642,14 +10642,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Дыхание"
                 }
               ]
             }
@@ -10658,19 +10658,19 @@
         {
           "level": 4,
           "name": "Careful Obstruction",
-          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain +2 Poise Count",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Получает +2 счётчика Дыхание",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Дыхание"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Дыхание"
                 }
               ]
             }
@@ -10684,7 +10684,7 @@
         {
           "level": 1,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
+          "desc": "[WhenUse] При Щите на +15 получает +2 счётчика Дыхание",
           "coinlist": [
             {}
           ]
@@ -10692,12 +10692,12 @@
         {
           "level": 2,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
+          "desc": "[WhenUse] При Щите на +15 получает +2 счётчика Дыхание",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             },
@@ -10707,12 +10707,12 @@
         {
           "level": 4,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Gain +2 Poise Count",
+          "desc": "[WhenUse] При Щите на +15 получает +2 счётчика Дыхание\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Получает +2 счётчика Дыхание",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Получает +1 счётчик Дыхание"
                 }
               ]
             },
@@ -10727,14 +10727,14 @@
         {
           "level": 1,
           "name": "Subdue Threat",
-          "desc": "At 15+ shield, Coin Power +1",
+          "desc": "При Щите на +15, Сила Монет +1",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 1 Fragile next turn"
+                  "desc": "[CriticalOnSucceedAttack] Наносит 1 Слабость на следующий ход"
                 }
               ]
             }
@@ -10743,14 +10743,14 @@
         {
           "level": 4,
           "name": "Subdue Threat",
-          "desc": "At 15+ Shield, Coin Power +2",
+          "desc": "При Щите на +15, Сила Монет +2",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 1 Fragile next turn"
+                  "desc": "[CriticalOnSucceedAttack] Наносит 1 Слабость на следующий ход"
                 }
               ]
             }
@@ -10763,7 +10763,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Guard",
+          "name": "Блок",
           "desc": "",
           "coinlist": [
             {
@@ -10777,7 +10777,7 @@
         },
         {
           "level": 4,
-          "name": "Guard",
+          "name": "Блок",
           "desc": "",
           "coinlist": [
             {
@@ -10797,13 +10797,13 @@
         {
           "level": 1,
           "name": "Remise",
-          "desc": "At 7+ Speed, Coin Power +1",
+          "desc": "Сила монет +1 при скорости 7+",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[WinDuelAttackHead] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10812,13 +10812,13 @@
         {
           "level": 2,
           "name": "Remise",
-          "desc": "At 7+ Speed, Coin Power +1\n[WinDuel] Gain 1 Haste next turn",
+          "desc": "Сила монет +1 при скорости 7+\n[WinDuel] Получает 1 Спешка на следующий ход",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[WinDuelAttackHead] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10827,13 +10827,13 @@
         {
           "level": 4,
           "name": "Remise",
-          "desc": "At 7+ Speed, Coin Power +2\n[WinDuel] Gain 1 Haste next turn",
+          "desc": "Сила монет +2 при скорости 7+\n[WinDuel] Получает 1 Спешка на следующий ход",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[WinDuelAttack] Inflict 1 Bind next turn"
+                  "desc": "[WinDuelAttack] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10847,13 +10847,13 @@
         {
           "level": 1,
           "name": "Flèche",
-          "desc": "[WhenUse] Gain 1 Haste next turn",
+          "desc": "[WhenUse] Получает 1 Спешка на следующий ход",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10862,13 +10862,13 @@
         {
           "level": 2,
           "name": "Flèche",
-          "desc": "[WhenUse] Gain 2 Haste next turn",
+          "desc": "[WhenUse] Получает 2 Спешка на следующий ход",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10877,13 +10877,13 @@
         {
           "level": 4,
           "name": "Flèche",
-          "desc": "[WhenUse] Gain 2 Haste next turn\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "desc": "[WhenUse] Получает 2 Спешка на следующий ход\n[WinDuel] Наносит больше урона от кол-во Столкновений(+5% за каждое Столкновение, макс 50%)",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttack] Наносит 1 Связывание на следующий ход"
                 }
               ]
             }
@@ -10897,12 +10897,12 @@
         {
           "level": 3,
           "name": "Salut!",
-          "desc": "At 10+ Speed, Coin Power +2\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "desc": "Сила монет +2 при скорости 10+\n[WinDuel] Наносит больше урона от кол-во Столкновений(+5% за каждое Столкновение, макс 50%)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict Declared Duel"
+                  "desc": "[OnSucceedAttack] Наносит Объявленная Дуэль"
                 }
               ]
             },
@@ -10912,19 +10912,19 @@
         {
           "level": 4,
           "name": "Salut!",
-          "desc": "At 10+ Speed, Coin Power +3\n[WinDuel] Deal more damage based on Clash count (+10% per Clash count, Max 100%)",
+          "desc": "Сила монет +3 при скорости 10+\n[WinDuel] Наносит больше урона от кол-во Столкновений(+10% за каждое Столкновение, макс 100%)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict Declared Duel"
+                  "desc": "[OnSucceedAttack] Наносит Объявленная Дуэль"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] Heal 15 SP"
+                  "desc": "[EnemyKill] Восстанавливает 15 СД"
                 }
               ]
             }
@@ -10938,7 +10938,7 @@
         {
           "level": 1,
           "name": "Défensive",
-          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "desc": "[OnSucceedEvade] Цель теряет 3 СД",
           "coinlist": [
             {}
           ]
@@ -10946,7 +10946,7 @@
         {
           "level": 4,
           "name": "Défensive",
-          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "desc": "[OnSucceedEvade] Цель теряет 3 СД",
           "coinlist": [
             {}
           ]
