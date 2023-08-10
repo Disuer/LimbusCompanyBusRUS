@@ -2,403 +2,419 @@
   "dataList": [
     {
       "id": "10102_getCondition_normal",
-      "content": "Acquire Seven South Section 6 Yi Sang"
+      "content": "Заполучите 6-я Южная секция ассоциации Севен И Сан"
     },
     {
       "id": "10102_getCondition_gacksung",
-      "content": "Uptie Seven South Section 6 Yi Sang to Tier 3"
+      "content": "Свяжите 6-я Южная секция ассоциации Севен И Сан до 3 Уровня связи"
     },
     {
       "id": "10103_getCondition_normal",
-      "content": "Acquire Blade Lineage Salsu Yi Sang"
+      "content": "Заполучите Сальсу Родословной клинка И Сан"
     },
     {
       "id": "10103_getCondition_gacksung",
-      "content": "Uptie Blade Lineage Salsu Yi Sang to Tier 3"
+      "content": "Свяжите Сальсу Родословной клинка И Сан до 3 Уровня связи"
     },
     {
       "id": "10202_getCondition_normal",
-      "content": "Acquire W Corp. L2 Cleanup Agent Faust"
+      "content": "Заполучите Агент зачистки 2-го уровня Корп. W Фауст"
     },
     {
       "id": "10202_getCondition_gacksung",
-      "content": "Uptie W Corp. L2 Cleanup Agent Faust to Tier 3"
+      "content": "Свяжите Агент зачистки 2-го уровня Корп. W Фауст до 3 Уровня связи"
     },
     {
       "id": "10203_getCondition_normal",
-      "content": "Acquire Lobotomy Corp. Remnant Faust"
+      "content": "Заполучите Пережиток корпорации "Лоботомия" Фауст"
     },
     {
       "id": "10203_getCondition_gacksung",
-      "content": "Uptie Lobotomy Corp. Remnant Faust to Tier 3"
+      "content": "Свяжите Пережиток корпорации "Лоботомия" Фауст до 3 Уровня связи"
     },
     {
       "id": "10302_getCondition_normal",
-      "content": "Acquire W Corp. L3 Cleanup Agent Don Quixote"
+      "content": "Заполучите Агент зачистки 3-го уровня Корп. W Дон Кихот"
     },
     {
       "id": "10302_getCondition_gacksung",
-      "content": "Uptie W Corp. L3 Cleanup Agent Don Quixote to Tier 3"
+      "content": "Свяжите Агент зачистки 3-го уровня Корп. W Дон Кихот до 3 Уровня связи"
     },
     {
       "id": "10303_getCondition_normal",
-      "content": "Acquire Shi South Section 5 Director Don Quixote"
+      "content": "Заполучите Директор 5-й Южной секции ассоциации Си Дон Кихот"
     },
     {
       "id": "10303_getCondition_gacksung",
-      "content": "Uptie Shi South Section 5 Director Don Quixote to Tier 3"
+      "content": "Свяжите Директор 5-й Южной секция ассоциации Си Дон Кихот до 3 Уровня связи"
     },
     {
       "id": "10402_getCondition_normal",
-      "content": "Acquire Seven South Section 6 Ryōshū"
+      "content": "Заполучите 6-я Южная секция ассоциации Севен Рёшу"
     },
     {
       "id": "10402_getCondition_gacksung",
-      "content": "Uptie Seven South Section 6 Ryōshū to Tier 3"
+      "content": "Свяжите 6-я Южная секция ассоциации Севен Рёшу до 3 Уровня связи"
     },
     {
       "id": "10403_getCondition_normal",
-      "content": "Acquire Kurokumo Wakashu Ryōshū"
+      "content": "Заполучите Вакашу клана Курокумо Рёшу"
     },
     {
       "id": "10403_getCondition_gacksung",
-      "content": "Uptie Kurokumo Wakashu Ryōshū to Tier 3"
+      "content": "Свяжите Вакашу клана Курокумо Рёшу до 3 Уровня связи"
     },
     {
       "id": "10502_getCondition_normal",
-      "content": "Acquire Liu South Section 6 Meursault"
+      "content": "Заполучите 6-я Южная секция ассоциации Лю Мерсо"
     },
     {
       "id": "10502_getCondition_gacksung",
-      "content": "Uptie Liu South Section 6 Meursault to Tier 3"
+      "content": "Свяжите 6-я Южная секция ассоциации Лю Мерсо до 3 Уровня связи"
     },
     {
       "id": "10503_getCondition_normal",
-      "content": "Acquire W Corp. L2 Cleanup Agent Meursault"
+      "content": "Заполучите Агент зачистки 2-го уровня Корп. W Мерсо"
     },
     {
       "id": "10503_getCondition_gacksung",
-      "content": "Uptie W Corp. L2 Cleanup Agent Meursault to Tier 3"
+      "content": "Свяжите Агент зачистки 2-го уровня Корп. W Мерсо до 3 Уровня связи"
     },
     {
       "id": "10602_getCondition_normal",
-      "content": "Acquire Kurokumo Wakashu Hong Lu"
+      "content": "Заполучите Вакашу клана Курокумо Хон Лу"
     },
     {
       "id": "10602_getCondition_gacksung",
-      "content": "Uptie Kurokumo Wakashu Hong Lu to Tier 3"
+      "content": "Свяжите Вакашу клана Курокумо Хон Лу до 3 Уровня связи"
     },
     {
       "id": "10603_getCondition_normal",
-      "content": "Acquire Tingtang Gangleader Hong Lu"
+      "content": "Заполучите Босс синдиката Динь-дон Хон Лу"
     },
     {
       "id": "10603_getCondition_gacksung",
-      "content": "Uptie Tingtang Gangleader Hong Lu to Tier 3"
+      "content": "Свяжите Босс синдиката Динь-дон Хон Лу до 3 Уровня связи"
     },
     {
       "id": "10702_getCondition_normal",
-      "content": "Acquire Shi South Section 5 Heathcliff"
+      "content": "Заполучите 5-я Южная секция ассоциации Си Хитклифф"
     },
     {
       "id": "10702_getCondition_gacksung",
-      "content": "Uptie Shi South Section 5 Heathcliff to Tier 3"
+      "content": "Свяжите 5-я Южная секция ассоциации Си Хитклифф до 3 Уровня связи"
     },
     {
       "id": "10703_getCondition_normal",
-      "content": "Acquire R Corp. 4th Pack Rabbit Heathcliff"
+      "content": "Заполучите Кролик 4-й стаи Корп. R Хитклифф"
     },
     {
       "id": "10703_getCondition_gacksung",
-      "content": "Uptie R Corp. 4th Pack Rabbit Heathcliff to Tier 3"
+      "content": "Свяжите Кролик 4-й стаи Корп. R Хитклифф до 3 Уровня связи"
     },
     {
       "id": "10802_getCondition_normal",
-      "content": "Acquire R Corp. 4th Pack Reindeer Ishmael"
+      "content": "Заполучите Олень 4-й стаи Корп. R Измаил"
     },
     {
       "id": "10802_getCondition_gacksung",
-      "content": "Uptie R Corp. 4th Pack Reindeer Ishmael to Tier 3"
+      "content": "Свяжите Олень 4-й стаи Корп. R Измаил до 3 Уровня связи"
     },
     {
       "id": "10803_getCondition_normal",
-      "content": "Acquire Shi South Section 5 Ishmael"
+      "content": "Заполучите 5-я Южная секция ассоциации Си Измаил"
     },
     {
       "id": "10803_getCondition_gacksung",
-      "content": "Uptie Shi South Section 5 Ishmael to Tier 3"
+      "content": "Свяжите 5-я Южная секция ассоциации Си Измаил до 3 Уровня связи"
     },
     {
       "id": "10804_getCondition_normal",
-      "content": "Acquire LCCB Assistant Manager Ishmael"
+      "content": "Заполучите Ассистентка LCCB Измаил"
     },
     {
       "id": "10804_getCondition_gacksung",
-      "content": "Uptie LCCB Assistant Manager Ishmael to Tier 3"
+      "content": "Свяжите Ассистентка LCCB Измаил до 3 Уровня связи"
     },
     {
       "id": "10902_getCondition_normal",
-      "content": "Acquire Kurokumo Wakashu Rodya"
+      "content": "Заполучите Вакашу клана Курокумо Родя"
     },
     {
       "id": "10902_getCondition_gacksung",
-      "content": "Uptie Kurokumo Wakashu Rodya to Tier 3"
+      "content": "Свяжите Вакашу клана Курокумо Родя до 3 Уровня связи"
     },
     {
       "id": "10903_getCondition_normal",
-      "content": "Acquire LCCB Assistant Manager Rodya"
+      "content": "Заполучите Ассистентка LCCB Родя"
     },
     {
       "id": "10903_getCondition_gacksung",
-      "content": "Uptie LCCB Assistant Manager Rodya to Tier 3"
+      "content": "Свяжите Ассистентка LCCB Родя до 3 Уровня связи"
     },
     {
       "id": "11002_getCondition_normal",
-      "content": "Acquire Blade Lineage Salsu Sinclair"
+      "content": "Заполучите Сальсу Родословной клинка Синклер"
     },
     {
       "id": "11002_getCondition_gacksung",
-      "content": "Uptie Blade Lineage Salsu Sinclair to Tier 3"
+      "content": "Свяжите Сальсу Родословной клинка Синклер до 3 Уровня связи"
     },
     {
       "id": "11003_getCondition_normal",
-      "content": "Acquire Zwei South Section 6 Sinclair"
+      "content": "Заполучите 6-я Южная секция ассоциации Цвай Синклер"
     },
     {
       "id": "11003_getCondition_gacksung",
-      "content": "Uptie Zwei South Section 6 Sinclair to Tier 3"
+      "content": "Свяжите 6-я Южная секция ассоциации Цвай Синклер до 3 Уровня связи"
     },
     {
       "id": "11004_getCondition_normal",
-      "content": "Acquire Jefe de Los Mariachis Sinclair"
+      "content": "Заполучите Шеф Мариачи Синклер"
     },
     {
       "id": "11004_getCondition_gacksung",
-      "content": "Uptie Jefe de Los Mariachis Sinclair to Tier 3"
+      "content": "Свяжите Шеф Мариачи Синклер до 3 Уровня связи"
     },
     {
       "id": "11102_getCondition_normal",
-      "content": "Acquire Blade Lineage Cutthroat Outis"
+      "content": "Заполучите Головорез Родословной клинка Отис"
     },
     {
       "id": "11102_getCondition_gacksung",
-      "content": "Uptie Blade Lineage Cutthroat Outis to Tier 3"
+      "content": "Свяжите Головорез Родословной клинка Отис до 3 Уровня связи"
     },
     {
       "id": "11103_getCondition_normal",
-      "content": "Acquire G Corp. Head Manager Outis"
+      "content": "Заполучите Менеджер отдела Корп. G Отис"
     },
     {
       "id": "11103_getCondition_gacksung",
-      "content": "Uptie G Corp. Head Manager Outis to Tier 3"
+      "content": "Свяжите Менеджер отдела Корп. G Отис до 3 Уровня связи"
     },
     {
       "id": "11202_getCondition_normal",
-      "content": "Acquire Liu South Section 6 Gregor"
+      "content": "Заполучите 6-я Южная секция ассоциации Лю Грегор"
     },
     {
       "id": "11202_getCondition_gacksung",
-      "content": "Uptie Liu South Section 6 Gregor to Tier 3"
+      "content": "Свяжите 6-я Южная секция ассоциации Лю Грегор до 3 Уровня связи"
     },
     {
       "id": "11203_getCondition_normal",
-      "content": "Acquire G Corp. Manager Corporal Gregor"
+      "content": "Заполучите Личный помощник Корп. G Грегор"
     },
     {
       "id": "11203_getCondition_gacksung",
-      "content": "Uptie G Corp. Manager Corporal Gregor to Tier 3"
+      "content": "Свяжите Личный помощник Корп. G Грегор до 3 Уровня связи"
     },
     {
       "id": "10504_getCondition_normal",
-      "content": "Acquire N Corp. Großhammer Meursault"
+      "content": "Заполучите Большой молот Корп. N Мерсо"
     },
     {
       "id": "10504_getCondition_gacksung",
-      "content": "Uptie N Corp. Großhammer Meursault to Tier 3"
+      "content": "Свяжите Большой молот Корп. N Мерсо до 3 Уровня связи"
     },
     {
       "id": "10904_getCondition_normal",
-      "content": "Acquire N Corp. Mittelhammer Rodion"
+      "content": "Заполучите Средний молот Корп. N Родя"
     },
     {
       "id": "10904_getCondition_gacksung",
-      "content": "Uptie N Corp. Mittelhammer Rodion to Tier 3"
+      "content": "Свяжите Средний молот Корп. N Родя до 3 Уровня связи"
     },
     {
       "id": "10204_getCondition_normal",
-      "content": "Acquire The One Who Grips Faust"
+      "content": "Заполучите Та, кто держит Фауст"
     },
     {
       "id": "10204_getCondition_gacksung",
-      "content": "Uptie The One Who Grips Faust to Tier 3"
+      "content": "Свяжите Та, кто держит Фауст до 3 Уровня связи"
     },
     {
       "id": "10704_getCondition_normal",
-      "content": "Acquire N Corp. Kleinhammer Heathcliff"
+      "content": "Заполучите Малый молот Корп. N Хитклифф"
     },
     {
       "id": "10704_getCondition_gacksung",
-      "content": "Uptie N Corp. Kleinhammer Heathcliff to Tier 3"
+      "content": "Свяжите Малый молот Корп. N Хитклифф до 3 Уровня связи"
     },
     {
       "id": "11104_getCondition_normal",
-      "content": "Acquire Seven South Section 6 Director Outis"
+      "content": "Заполучите Директор 6-й Южной секции ассоциации Севен Отис"
     },
     {
       "id": "11104_getCondition_gacksung",
-      "content": "Uptie Seven South Section 6 Director Outis to Tier 3"
+      "content": "Свяжите Директор 6-й Южной секции ассоциации Севен Отис до 3 Уровня связи"
     },
     {
       "id": "10604_getCondition_normal",
-      "content": "Acquire Liu South Section 5 Hong Lu"
+      "content": "Заполучите 5-я Южная секция ассоциации Лю Хон Лу"
     },
     {
       "id": "10604_getCondition_gacksung",
-      "content": "Uptie Liu South Section 5 Hong Lu to Tier 3"
+      "content": "Свяжите 5-я Южная секция ассоциации Лю Хон Лу до 3 Уровня связи"
     },
     {
       "id": "10404_getCondition_normal",
-      "content": "Acquire R.B. Chef de Cuisine Ryōshū"
+      "content": "Заполучите Шеф-повар БуР Рёшу"
     },
     {
       "id": "10404_getCondition_gacksung",
-      "content": "Uptie R.B. Chef de Cuisine Ryōshū to Tier 3"
+      "content": "Свяжите Шеф-повар БуР Рёшу до 3 Уровня связи"
     },
     {
       "id": "11204_getCondition_normal",
-      "content": "Acquire R.B. Sous-chef Gregor"
+      "content": "Заполучите Су-шеф БуР Грегор"
     },
     {
       "id": "11204_getCondition_gacksung",
-      "content": "Uptie R.B. Sous-chef Gregor to Tier 3"
+      "content": "Свяжите Су-шеф БуР Грегор до 3 Уровня связи"
     },
     {
       "id": "10304_getCondition_normal",
-      "content": "Acquire N Corp. Mittelhammer Don Quixote"
+      "content": "Заполучите Средний молот Корп. N Дон Кихот"
     },
     {
       "id": "10304_getCondition_gacksung",
-      "content": "Uptie N Corp. Mittelhammer Don Quixote to Tier 3"
+      "content": "Свяжите Средний молот Корп. N Дон Кихот до 3 Уровня связи"
     },
     {
       "id": "11005_getCondition_normal",
-      "content": "Acquire The One Who Shall Grip Sinclair"
+      "content": "Заполучите Тот, кому суждено держать Синклер"
     },
     {
       "id": "11005_getCondition_gacksung",
-      "content": "Uptie The One Who Shall Grip Sinclair to Tier 3"
+      "content": "Свяжите Тот, кому суждено держать Синклер до 3 Уровня связи"
     },
     {
       "id": "10905_getCondition_normal",
-      "content": "Acquire Rosespanner Workshop Rep Rodion"
+      "content": "Заполучите Пред. мастерской Ключа и розы Родя"
     },
     {
       "id": "10905_getCondition_gacksung",
-      "content": "Uptie Rosespanner Workshop Rep Rodion to Tier 3"
+      "content": "Свяжите Пред. мастерской Ключа и розы Родя до 3 Уровня связи"
     },
     {
       "id": "10505_getCondition_normal",
-      "content": "Acquire Rosespanner Workshop Fixer Meursault"
+      "content": "Заполучите Корректировщик мастерской Ключа и розы Мерсо"
     },
     {
       "id": "10505_getCondition_gacksung",
-      "content": "Uptie Rosespanner Workshop Fixer Meursault to Tier 3"
+      "content": "Свяжите Корректировщик мастерской Ключа и розы Мерсо до 3 Уровня связи"
     },
     {
       "id": "10705_getCondition_normal",
-      "content": "Acquire Lobotomy E.G.O::Sunshower Heathcliff"
+      "content": "Заполучите Э.Г.О. \"Лоботомии\"::Слепой дождь Хитклифф"
     },
     {
       "id": "10705_getCondition_gacksung",
-      "content": "Uptie Lobotomy E.G.O::Sunshower Heathcliff to Tier 3"
+      "content": "Свяжите Э.Г.О. \"Лоботомии\"::Слепой дождь Хитклифф до 3 Уровня связи"
     },
     {
       "id": "11205_getCondition_normal",
-      "content": "Acquire Rosespanner Workshop Fixer Gregor"
+      "content": "Заполучите Корректировщик мастерской Ключа и розы Грегор"
     },
     {
       "id": "11205_getCondition_gacksung",
-      "content": "Uptie Rosespanner Workshop Fixer Gregor to Tier 3"
+      "content": "Свяжите Корректировщик мастерской Ключа и розы Грегор до 3 Уровня связи"
     },
     {
       "id": "10104_getCondition_normal",
-      "content": "Acquire Effloresced E.G.O::Spicebush Yi Sang"
+      "content": "Заполучите Расцветшее Э.Г.О.::Линдера И Сан"
     },
     {
       "id": "10104_getCondition_gacksung",
-      "content": "Uptie Effloresced E.G.O::Spicebush Yi Sang to Tier 3"
+      "content": "Свяжите Расцветшее Э.Г.О.::Линдера И Сан до 3 Уровня связи"
     },
     {
       "id": "10805_getCondition_normal",
-      "content": "Acquire Lobotomy E.G.O::Sloshing Ishmael"
+      "content": "Заполучите Э.Г.О. \"Лоботомии\"::Брызги Измаил"
     },
     {
       "id": "10805_getCondition_gacksung",
-      "content": "Uptie Lobotomy E.G.O::Sloshing Ishmael to Tier 3"
+      "content": "Свяжите Э.Г.О. \"Лоботомии\"::Брызги Измаил до 3 Уровня связи"
     },
     {
       "id": "10605_getCondition_normal",
-      "content": "Acquire K Corp. Class 3 Excision Staff Hong Lu"
+      "content": "Заполучите Сотрудник удаления 3-го уровня Корп. K Хон Лу"
     },
     {
       "id": "10605_getCondition_gacksung",
-      "content": "Uptie K Corp. Class 3 Excision Staff Hong Lu to Tier 3"
+      "content": "Свяжите Сотрудник удаления 3-го уровня Корп. K Хон Лу до 3 Уровня связи"
     },
     {
       "id": "11006_getCondition_normal",
-      "content": "Acquire Lobotomy E.G.O::Red Sheet Sinclair"
+      "content": "Заполучите Э.Г.О. \"Лоботомии\"::Алый лист Синклер"
     },
     {
       "id": "11006_getCondition_gacksung",
-      "content": "Uptie Lobotomy E.G.O::Red Sheet Sinclair to Tier 3"
+      "content": "Свяжите Э.Г.О. \"Лоботомии\"::Алый лист Синклер до 3 Уровня связи"
     },
     {
       "id": "10806_getCondition_normal",
-      "content": "Acquire Liu South Section 4 Ishmael"
+      "content": "Заполучите 4-я Южная секция ассоциации Лю Измаил"
     },
     {
       "id": "10806_getCondition_gacksung",
-      "content": "Uptie Liu South Section 4 Ishmael to Tier 3"
+      "content": "Свяжите 4-я Южная секция ассоциации Лю Измаил до 3 Уровня связи"
     },
     {
       "id": "10506_getCondition_normal",
-      "content": "Acquire R Corp. 4th Pack Rhino Meursault"
+      "content": "Заполучите Носорог 4-й стаи Корп. R Мерсо"
     },
     {
       "id": "10506_getCondition_gacksung",
-      "content": "Uptie R Corp. 4th Pack Rhino Meursault to Tier 3"
+      "content": "Свяжите Носорог 4-й стаи Корп. R Мерсо до 3 Уровня связи"
     },
     {
       "id": "10906_getCondition_normal",
-      "content": "Acquire Zwei South Section 5 Rodion"
+      "content": "Заполучите 5-я Южная секция ассоциации Цвай Родя"
     },
     {
       "id": "10906_getCondition_gacksung",
-      "content": "Uptie Zwei South Section 5 Rodion to Tier 3"
+      "content": "Свяжите 5-я Южная секция ассоциации Цвай Родя до 3 Уровня связи"
     },
     {
       "id": "10305_getCondition_normal",
-      "content": "Acquire Cinq South Section 5 Director Don Quixote"
+      "content": "Заполучите Директор 5-й Южной секции ассоциации Сэнк Дон Кихот"
     },
     {
       "id": "10305_getCondition_gacksung",
-      "content": "Uptie Cinq South Section 5 Director Don Quixote to Tier 3"
+      "content": "Свяжите Директор 5-й Южной секции ассоциации Сэнк Дон Кихот до 3 Уровня связи"
     },
     {
       "id": "10807_getCondition_normal",
-      "content": "Acquire Molar Boatworks Fixer Ishmael"
+      "content": "Заполучите Корректировщица верфи Коренного Измаил"
     },
     {
       "id": "10807_getCondition_gacksung",
-      "content": "Uptie Molar Boatworks Fixer Ishmael to Tier 3"
+      "content": "Свяжите Корректировщица верфи Коренного Измаил до 3 Уровня связи"
     },
     {
       "id": "11007_getCondition_normal",
-      "content": "Acquire Molar Boatworks Fixer Sinclair"
+      "content": "Заполучите Корректировщик верфи Коренного Синклер"
     },
     {
       "id": "11007_getCondition_gacksung",
-      "content": "Uptie Molar Boatworks Fixer Sinclair to Tier 3"
+      "content": "Свяжите Корректировщик верфи Коренного Синклер до 3 Уровня связи"
+    },
+    {
+      "id": "11206_getCondition_normal",
+      "content": "Заполучите 4-я Южная секция ассоциации Цвай Грегор"
+    },
+    {
+      "id": "11206_getCondition_gacksung",
+      "content": "Свяжите 4-я Южная секция ассоциации Цвай Грегор до 3 Уровня связи"
+    },
+    {
+      "id": "10205_getCondition_normal",
+      "content": "Заполучите 4-я Южная секция ассоциации Цвай Фауст"
+    },
+    {
+      "id": "10205_getCondition_gacksung",
+      "content": "Свяжите 4-я Южная секция ассоциации Цвай Фауст до 3 Уровня связи"
     }
   ]
 }
