@@ -894,7 +894,7 @@
     },
     {
       "id": "NailPersonality",
-      "name": "Nails",
+      "name": "Гвозди",
       "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}. Turn End: Halve this effect’s Count. (Rounded down)",
       "summary": "Gain 1 Bleed and add +{0} Bleed Count"
     },
@@ -1482,7 +1482,7 @@
     },
     {
       "id": "DuelDeclaration",
-      "name": "Declared Duel",
+      "name": "Объявленная Дуэль",
       "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Effect lifted when the unit that declared duel declares it on a different target. Replaced when another unit declares a duel. "
     },
     {
