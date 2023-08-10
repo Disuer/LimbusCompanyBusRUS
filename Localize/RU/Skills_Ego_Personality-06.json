@@ -5,17 +5,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Heal 2 allies with the lowest HP percentages for 10 HP"
+                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 10 ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Heal 10 SP for 2 allies with the least SP"
+                  "desc": "[EndSkillTail] Восстанавливает 10 СД двум союзникам с наименьшим СД"
                 }
               ]
             }
@@ -23,20 +23,20 @@
         },
         {
           "level": 3,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Heal 2 allies with the lowest HP percentages for 12 HP"
+                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 12 ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Heal 12 SP for 2 allies with the least SP"
+                  "desc": "[EndSkillTail] Восстанавливает 12 СД двум союзникам с наименьшим СД"
                 },
                 {
-                  "desc": "[CriticalEndSkill] Heal the ally with the lowest HP percentage for 6 HP; Heal the ally with the least SP for 6 SP"
+                  "desc": "[CriticalEndSkill] Лечит на 6 ОЗ союзника с наименьшим процентом здоровья; Восстаналивает 6 СД союзнику с наименьшим его запасом"
                 }
               ]
             }
@@ -44,20 +44,20 @@
         },
         {
           "level": 4,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Heal 2 allies with the lowest HP percentages for 15 HP"
+                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 15 ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Heal 15 SP for 2 allies with the least SP"
+                  "desc": "[EndSkillTail] Восстанавливает 15 СД двум союзникам с наименьшим СД"
                 },
                 {
-                  "desc": "[CriticalEndSkill] Heal the ally with the lowest HP percentage for 8 HP; Heal the ally with the least SP for 8 SP"
+                  "desc": "[CriticalEndSkill] Лечит на 8 ОЗ союзника с наименьшим процентом здоровья; Восстаналивает 8 СД союзнику с наименьшим его запасом"
                 }
               ]
             }
@@ -70,17 +70,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify] Targets the unit with the least HP",
+          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 3 Тремор"
                 }
               ]
             }
@@ -88,17 +88,17 @@
         },
         {
           "level": 3,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify] Targets the unit with the least HP",
+          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 4 Тремор"
                 }
               ]
             }
@@ -106,17 +106,17 @@
         },
         {
           "level": 4,
-          "name": "Soda",
+          "name": "Газировка",
           "abName": "Wellcheers",
-          "desc": "[CantIdentify] Targets the unit with the least HP",
+          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttack] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 5 Тремор"
                 }
               ]
             }
