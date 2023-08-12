@@ -82,11 +82,11 @@
     },
     {
       "id": "LoseHpMpSameAmount",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#00ff9c>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#80c9ff>СД</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>СД</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "LoseHpMpDifferentAmount",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#00ff9c>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#80c9ff>{amount} СД</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>{amount} СД</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "GetConfirmedEgogift",
@@ -226,7 +226,7 @@
     },
     {
       "id": "Choice_90101601",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#61822b>грехом Чревоугодия</color> </color=#ebcaa2>восстанавливают</color> <color=#80c9ff>СД</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#61822b>грехом Чревоугодия</color> </color=#ebcaa2>восстанавливают</color> <color=#80c9ff>СД.</color>"
     },
     {
       "id": "Choice_901018",
@@ -246,7 +246,7 @@
     },
     {
       "id": "Choice_901024",
-      "content": "<color=#ebcaa2>Идентичность с самой низкой СД, имеющая</color> <color=#306471>грех Уныния</color> </color=#ebcaa2>fully восстанавливает</color> <color=#fe4b48>HP</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичность с самой низкой СД, имеющая</color> <color=#306471>грех Уныния</color> </color=#ebcaa2>fully восстанавливает</color> <color=#fe4b48>HP.</color>"
     },
     {
       "id": "Choice_901025",
@@ -254,7 +254,7 @@
     },
     {
       "id": "Choice_90102501",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>20 ОЗ</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>20 ОЗ.</color>"
     },
     {
       "id": "Choice_901026",
@@ -262,7 +262,7 @@
     },
     {
       "id": "Choice_90102601",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>10 ОЗ</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>10 ОЗ<.</color>"
     },
     {
       "id": "Choice_901027",
@@ -278,7 +278,7 @@
     },
     {
       "id": "Choice_90102801",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ.</color>"
     },
     {
       "id": "Choice_901032",
@@ -294,7 +294,7 @@
     },
     {
       "id": "Choice_90103501",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#7d4e94>грехом Зависти</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ</color><color=#ebcaa2>.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#7d4e94>грехом Зависти</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ.</color>"
     },
     {
       "id": "Choice_1040301",
@@ -314,7 +314,7 @@
     },
     {
       "id": "Choice_9010400101",
-      "content": "<color=#ebcaa2>All allies haveВсе союзники получают</color> <color=#f8c200>+2 Skill Final Power</color> <color=#ebcaa2>for the next battle</color>"
+      "content": "<color=#ebcaa2>All allies have</color> <color=#f8c200>+2 Skill Final Power</color> <color=#ebcaa2>for the next battle</color>"
     },
     {
       "id": "Choice_90104002",
