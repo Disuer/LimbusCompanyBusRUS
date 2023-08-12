@@ -526,7 +526,7 @@
     },
     {
       "id": "mainui_buy",
-      "content": "Подтвердить"
+      "content": "<size=45>Подтвердить</size>"
     },
     {
       "id": "mainui_use",
@@ -1434,11 +1434,11 @@
     },
     {
       "id": "enemy_level",
-      "content": "Enemy Level"
+      "content": "Уровень противника"
     },
     {
       "id": "cannot_enter",
-      "content": "Cannot Enter"
+      "content": "Доступ закрыт"
     },
     {
       "id": "lack_of_item_amount",
@@ -1454,11 +1454,11 @@
     },
     {
       "id": "user_level_maximum_notice",
-      "content": "Reached Max Level."
+      "content": "Достигнут Максимальный уровень."
     },
     {
       "id": "user_level_limit_increase_notice",
-      "content": "※ The Max Manager Level may be raised with future updates."
+      "content": "※ Максимальный уровень Менеджера может быть повышен в будущих обновлениях."
     }
   ]
 }
