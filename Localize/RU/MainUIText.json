@@ -826,7 +826,7 @@
     },
     {
       "id": "mainui_unlock_condition_by_personality_awaken_level",
-      "content": "Разблокируется на {0} уровне Связи"
+      "content": "<size=25>Разблокируется на {0} уровне Связи</size>"
     },
     {
       "id": "skill_growth_value",
