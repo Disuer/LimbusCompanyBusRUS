@@ -919,14 +919,14 @@
     {
       "id": "WeaknessAnalysis",
       "name": "Слабость найдена",
-      "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] в течение этого хода.",
-      "summary": "Weaken [+0.2 dmg multi] an “Endured” or “Normal” resistance"
+      "desc": "Случайный резист типа 'Нормально' или 'Терпимо' ослабляется [+0.2 к множителю урона ] в течение этого хода.",
+      "summary": "Резист типа 'Нормально' или 'Терпимо' ослабляется [+0.2 к множителю урона ]"
     },
     {
       "id": "Cycle",
       "name": "Карма",
-      "desc": "Take +{0}% damage. Turn End: Die at 108+ Count.",
-      "summary": "My Form Empties’ Passive"
+      "desc": "Получает на {0}% больше урона. Конец хода: Умирает при счетчике больше 108.",
+      "summary": "Пассивная способность 'My Form Empties'"
     },
     {
       "id": "Duress",
