@@ -36,7 +36,7 @@
         {
           "level": 4,
           "name": "Patrolling",
-          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Получает 3 Повышение уровня защиты на следующий ход",
+          "desc": "[WhenUse] Получает +2 Аггро на следующий ход\n[DefeatDuel] Получает 3 Повышение уровня защиты на следующий ход",
           "coinlist": [
             {},
             {
@@ -191,7 +191,7 @@
         {
           "level": 4,
           "name": "Блок",
-          "desc": "[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "desc": "[WhenUse] Получает +3 Аггро на следующий ход",
           "coinlist": [
             {}
           ]
