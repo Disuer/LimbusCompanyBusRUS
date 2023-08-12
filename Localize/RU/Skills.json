@@ -4151,21 +4151,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
+                  "desc": "Тратит 1 Патрон\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
+                  "desc": "Тратит 1 Патрон\n[OnSucceedAttack] Наносит 4 Разрыв; Наносит +2 счётчика Разрыв"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Наносит 5 Слабость"
+                  "desc": "Тратит 1 Патрон\n[OnSucceedAttack] Наносит 5 Слабость"
                 }
               ]
             }
@@ -4347,7 +4347,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ Bleed, deal +20% damage"
+                  "desc": "[OnSucceedAttack] Наносит +20% урона против цели с 6+ Кровотечение"
                 }
               ]
             }
