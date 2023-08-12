@@ -11,14 +11,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +3 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +3 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +2 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +2 счётчика Утопание"
                 }
               ]
             }
@@ -27,19 +27,19 @@
         {
           "level": 2,
           "name": "Ready to Crush",
-          "desc": "[WhenUse] Gain +3 Tremor Count",
+          "desc": "[WhenUse] Получает +3 счётчика Тремор",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +3 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +3 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +2 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +2 счётчика Утопание"
                 }
               ]
             }
@@ -48,19 +48,19 @@
         {
           "level": 4,
           "name": "Ready to Crush",
-          "desc": "[WhenUse] Gain +3 Tremor Count",
+          "desc": "[WhenUse] Получает +3 счётчика Тремор",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +3 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +3 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Sinking Count"
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Утопание"
                 }
               ]
             }
@@ -79,17 +79,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttackHead] Наносит 2 Понижение уровня защиты на следующий ход"
                 }
               ]
             }
@@ -98,25 +98,25 @@
         {
           "level": 2,
           "name": "Explosive Blast",
-          "desc": "At 5+ Tremor Count, Coin Power +1",
+          "desc": "Сила монет +1 при счётчике Тремор 5+",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Tremor Count"
+                  "desc": "[OnSucceedAttack] Наносит +3 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Наносит 3 Понижение уровня защиты на следующий ход"
                 }
               ]
             }
@@ -125,25 +125,25 @@
         {
           "level": 4,
           "name": "Explosive Blast",
-          "desc": "At 5+ Tremor Count, Coin Power +1",
+          "desc": "Сила монет +1 при счётчике Тремор 5+",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Tremor Count"
+                  "desc": "[OnSucceedAttack] Наносит +3 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Наносит 4 Понижение уровня защиты на следующий ход"
                 }
               ]
             }
@@ -157,32 +157,32 @@
         {
           "level": 3,
           "name": "Risky Judgement",
-          "desc": "At 5+ Tremor Count, Coin Power +1\nIf target has 6+ Sinking, deal +20% damage",
+          "desc": "Сила монет +1 при счётчике Тремор 5+\nНаносит +20% урона если на цели есть 6+ Утопание",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +5 Sinking Count"
+                  "desc": "[OnSucceedAttack] Наносит +5 счётчиков Утопание"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 3 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Tremor Count to inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Тратит 5 счётчиков Тремор для нанесения 1 Слабость на следующий ход"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 3 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Tremor Count to inflict 2 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Тратит 5 счётчиков Тремор для нанесения 2 Слабость на следующий ход"
                 }
               ]
             }
@@ -191,32 +191,32 @@
         {
           "level": 4,
           "name": "Risky Judgement",
-          "desc": "Coin Power +1 for every 5 Tremor Count on self (Max 2)\nIf target has 6+ Sinking, deal +40% damage",
+          "desc": "Сила монет +1 за каждые 5 Тремор на себе (Макс 2)\nНаносит +40% урона если на цели есть 6+ Утопание",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +5 Sinking Count"
+                  "desc": "[OnSucceedAttack] Наносит +5 счётчиков Утопание"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 3 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Tremor Count to inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Тратит 5 счётчиков Тремор для нанесения 1 Слабость на следующий ход"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Sinking"
+                  "desc": "[OnSucceedAttack] Наносит 3 Утопание"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Tremor Count to inflict 2 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Тратит 5 счётчиков Тремор для нанесения 2 Слабость на следующий ход"
                 }
               ]
             }
@@ -230,7 +230,7 @@
         {
           "level": 1,
           "name": "Nimble Steps",
-          "desc": "[WhenUse] Gain 2 Rupture Protection (6 times per turn)",
+          "desc": "[WhenUse] Получает 2 Защищённость от Разрыва (6 раз за ход)",
           "coinlist": [
             {
               "coindescs": [
