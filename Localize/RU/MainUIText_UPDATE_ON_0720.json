@@ -2,35 +2,35 @@
   "dataList": [
     {
       "id": "move_to_inventory",
-      "content": "Go to Inventory"
+      "content": "В инвентарь"
     },
     {
       "id": "progress_personality_gacksung",
-      "content": "Uptie"
+      "content": "Связать"
     },
     {
       "id": "mainui_reinforce_support_passive",
-      "content": "Support Passive [{0}] Enhanced"
+      "content": "Поддерживающая пассивка [{0}] усилена"
     },
     {
       "id": "mainui_reinforce_battle_passive",
-      "content": "Combat Passive [{0}] Enhanced"
+      "content": "Боевая пассивка [{0}] усилена"
     },
     {
       "id": "mainui_battle_passsive_reinforce",
-      "content": "Combat Passive Enhanced"
+      "content": "Боевая пассивка усилена"
     },
     {
       "id": "mainui_support_passsive_reinforce",
-      "content": "Support Passive Enhanced"
+      "content": "Поддерживающая пассивка усилена"
     },
     {
       "id": "mainui_target_num_label",
-      "content": "Atk Weight"
+      "content": "Слоты АТК"
     },
     {
       "id": "mainui_awaken_requirement_label",
-      "content": "Currency Req."
+      "content": "Нужно ресурсов"
     }
   ]
 }
