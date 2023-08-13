@@ -3,8 +3,8 @@
     {
       "id": "Enhancement",
       "name": "Повышение силы атаки",
-      "desc": "Финальная сила атакующих навыков увеличивается на {0} в течение этого хода.",
-      "summary": "Финальная сила атакующих навыков +{0}",
+      "desc": "Сила атакующих навыков увеличивается на {0} в течение этого хода.",
+      "summary": "Сила атакующих навыков +{0}",
       "undefined": "-"
     },
     {
@@ -17,15 +17,15 @@
     {
       "id": "Endurance",
       "name": "Повышение силы защиты",
-      "desc": "Финальная сила защитных навыков увеличивается на {0} в течение этого хода.",
-      "summary": "Финальная сила защитных навыков +{0}",
+      "desc": "Сила защитных навыков увеличивается на {0} в течение этого хода.",
+      "summary": "Сила защитных навыков +{0}",
       "undefined": "-"
     },
     {
       "id": "Reduction",
       "name": "Понижение силы атаки",
-      "desc": "Финальная сила атакующих навыков уменьшается на {0} в течение этого хода.",
-      "summary": "Финальная сила атакующего умения -{0}",
+      "desc": "Сила атакующих навыков уменьшается на {0} в течение этого хода.",
+      "summary": "Сила атакующего умения -{0}",
       "undefined": "-"
     },
     {
@@ -56,7 +56,7 @@
     {
       "id": "Target",
       "name": "Отмеченный",
-      "desc": "Отмечен как цель персонажем с пассивным эффектом [Sharp Edge].",
+      "desc": "Отмечен как цель персонажем с пассивным эффектом [Острый край].",
       "undefined": "-"
     },
     {
@@ -241,13 +241,13 @@
     {
       "id": "Anger_Panic",
       "name": "Обозлённость (Срыв)",
-      "desc": "Turn Start: Получает 2 Повышение урона и 5 Уязвимость.",
+      "desc": "Начало хода: Получает 2 Повышение урона и 5 Уязвимость.",
       "summary": "Получает 2 Повышение урона и 5 Уязвимость"
     },
     {
       "id": "Run_LowMorale",
       "name": "Побег",
-      "desc": "Не действует. Если получает удар, этот юнит погибает по завершению навыка.",
+      "desc": "Не действует. Если получает удар, этот участник боя погибает по завершению навыка.",
       "summary": "Неактивен и убегает"
     },
     {
@@ -283,13 +283,13 @@
     {
       "id": "Burst",
       "name": "Разрыв",
-      "desc": "Следующие {1} раз, когда этот участник боя будет получать удар, получает {0} фиксированного урона.",
+      "desc": "Следующие {1} раз, когда этот этот участник боя будет получать удар, получает {0} фиксированного урона.",
       "summary": "{0} фиксированного урона ОЗ"
     },
     {
       "id": "Sinking",
       "name": "Утопание",
-      "desc": "Следующи(й/е) {1} раз, когда юнит получает удар, он также получает {0} фиксированного урона СД. (Абнормалити получают урон Унынием.)",
+      "desc": "Следующи(й/е) {1} раз, когда этот участник боя получает удар, он также получает {0} фиксированного урона СД. (Абнормалити получают урон Унынием.)",
       "summary": "{0} урона Утопанием"
     },
     {
@@ -319,7 +319,7 @@
     {
       "id": "Run_Panic",
       "name": "Угнетение",
-      "desc": "Не действует. Когда получает удар, юнит погибает по окончанию навыка.",
+      "desc": "Не действует. Когда получает удар, этот участник боя погибает по окончанию навыка.",
       "summary": "Неактивен и сбегает"
     },
     {
@@ -343,7 +343,7 @@
     {
       "id": "PinkRibbon_Ishmael",
       "name": "Розовые ленточки",
-      "desc": "Увеличивает счётчик на 1 каждый раз, когда юнит использует монетку атакующего навыка. Конец хода: Получает Связывание за каждую единицу счётчика, затем убирает эффект.",
+      "desc": "Увеличивает счётчик на 1 каждый раз, когда этот участник боя использует монетку атакующего навыка. Конец хода: Получает Связывание за каждую единицу счётчика, затем убирает эффект.",
       "summary": "Получает {0} Связывание"
     },
     {
@@ -355,14 +355,14 @@
     {
       "id": "AttackUp",
       "name": "Повышение уровня атаки",
-      "desc": "Повышает уровень атаки на {0} в течение этого хода.",
-      "summary": "Уровень атаки +{0}"
+      "desc": "Повышает силу атаки на {0} в течение этого хода.",
+      "summary": "Сила атаки +{0}"
     },
     {
       "id": "AttackDown",
-      "name": "Понижение уровня атаки",
-      "desc": "Понижает уровень атаки на {0} в течение этого хода.",
-      "summary": "Уровень атаки -{0}"
+      "name": "Понижение силы атаки",
+      "desc": "Понижает силу атаки на {0} в течение этого хода.",
+      "summary": "Сила атаки -{0}"
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
@@ -617,13 +617,13 @@
       "id": "Choice_90103301",
       "name": "Борьба",
       "desc": "Скорость +1 в течение этого боя.",
-      "summary": "SPD +1"
+      "summary": "СДD +1"
     },
     {
       "id": "Choice_90103402",
       "name": "Облегчение",
       "desc": "Скорость +2 в течение этого боя.",
-      "summary": "SPD +2"
+      "summary": "СДD +2"
     },
     {
       "id": "Choice_901001",
@@ -757,8 +757,8 @@
     {
       "id": "Whistle_Courage",
       "name": "Мужество победить страх",
-      "desc": "Начало хода: Получает 1 Повышение силы атаки и 2 Защищенность.",
-      "summary": "Получает 1 Повышение силы атаки и 2 Защищенность"
+      "desc": "Начало хода: Получает 1 Повышение силы атаки и 2 Защищённость.",
+      "summary": "Получает 1 Повышение силы атаки и 2 Защищённость"
     },
     {
       "id": "Whistle_Fear",
@@ -931,56 +931,56 @@
     {
       "id": "Duress",
       "name": "Captivity",
-      "desc": "Become Staggered for 3 turns. Turn Start: If Kqe-1j-23 is Staggered, remove this status.",
-      "summary": "Kqe’s Passive"
+      "desc": "Оглушается на 3 хода. Начало хода: Если Kqe-1j-23 оглушён, убирает этот эффект.",
+      "summary": "Пассивная способность Kqe"
     },
     {
       "id": "VioletResultUp",
-      "name": "Увеличение силы Зависти",
-      "desc": "Envy Skill Final Power +{0} в течение этого хода.",
-      "summary": "Envy Skill Final Power +{0}"
+      "name": "Увеличение финальной силы навыков Зависти",
+      "desc": "Финальная сила навыков Зависти увеличивается на {0} в течение этого хода.",
+      "summary": "Финальная сила навыков Зависти +{0}"
     },
     {
       "id": "CyclingKarma",
       "name": "Цикличная карма",
-      "desc": "All units transfer their Karma to their targets after a successful attack. Karma is not transferred to My Form Empties as long as its allies are alive.",
-      "summary": "Karma transfers on hit"
+      "desc": "Все участники боя передают свою Карму своим целям после успешной атаки. Карма не передаётся My Form Empties до тех пор, пока его союзники живы.",
+      "summary": "Карма передаётся при ударе"
     },
     {
-      "id": "TakeHpHealReduce",
+      "id": "TakeОЗHealReduce",
       "name": "Снижение лечения ОЗ",
-      "desc": "Heal -{0}0% HP from Passives, Skills, and Coin effects в течение этого хода. (Max 5)",
-      "summary": "HP Healing -{0}0%"
+      "desc": "Восстанавливает на {0}0% меньше ОЗ от пассивных способностей, навыков, и эффектов монет в течение этого хода. (Max 5)",
+      "summary": "Восстановление ОЗ -{0}0%"
     },
     {
       "id": "AttackLevelAdder",
-      "name": "Offense level+",
-      "desc": "Offense Level +{0} в течение этого хода.",
-      "summary": "Offense Level +{0}"
+      "name": "Повышение уровня атаки",
+      "desc": "Уровень атаки повышается на {0} в течение этого хода.",
+      "summary": "Уровень атаки +{0}"
     },
     {
       "id": "Thirst",
       "name": "Аппетит",
-      "desc": "+{0}0% healing from [Rustle Up]. Spent when the Passive activates.",
-      "summary": "[Rustle Up] healing +{0}0% HP"
+      "desc": "+{0}0% восстановления ОЗ от пассивной способности [Быстрое приготовление]. Тратится при активации пассивной способности.",
+      "summary": "[Быстрое приготовление] восстанавливает +{0}0% ОЗ"
     },
     {
       "id": "GainSinStockAdder",
       "name": "Множитель Э.Г.О. ресурсов",
-      "desc": "Gain +{0} E.G.O resources from using skills в течение этого хода.",
-      "summary": "+{0} E.G.O resource gain"
+      "desc": "Получает на {0} больше Э.Г.О. ресурсов от использования навыков в течение этого хода в течение этого хода.",
+      "summary": "+{0} получаемых Э.Г.О. ресурсов"
     },
     {
       "id": "Weak_Chicken",
-      "name": "Poultry Apocalypse",
-      "desc": "The reaction wrought by the Sinners’ cooking. Loses HP by 40% of Max HP.",
-      "summary": "HP -40%"
+      "name": "Птичий апокалипсис",
+      "desc": "Реакция, вызванная готовкой Грешников. Теряет ОЗ в размере 40% от Макс. ОЗ.",
+      "summary": "ОЗ -40%"
     },
     {
       "id": "Strong_Chicken",
-      "name": "Unvented Anger",
-      "desc": "Gain 1 Attack Power Up every turn.",
-      "summary": "Gain 1 Attack Power Up"
+      "name": "Неочищенная злость",
+      "desc": "Получает 1 Повышение силы атаки каждый ход.",
+      "summary": "Получает 1 Повышение силы атаки"
     },
     {
       "id": "DimensionRift",
@@ -990,152 +990,152 @@
     },
     {
       "id": "Scared",
-      "name": "Fear",
-      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
-      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+      "name": "Страх",
+      "desc": "Конец хода: При 20 СД и менее, получает 1 Повышение урона на следующий ход",
+      "summary": "Конец хода: При 20 СД и менее, получает 1 Повышение урона на следующий ход"
     },
     {
       "id": "Stressed",
-      "name": "Stressed",
-      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn",
-      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn"
+      "name": "В стрессе",
+      "desc": "Конец хода: При 25 СД и менее, получает 1 Повышение силы атаки на следующий ход",
+      "summary": "Конец хода: При 25 СД и менее, получает 1 Повышение силы атаки на следующий ход"
     },
     {
       "id": "Nervous",
-      "name": "Nervous",
-      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
-      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+      "name": "Нервный",
+      "desc": "Конец хода: При 15 СД и менее, получает 3 Повышение уровня атаки на следующий ход",
+      "summary": "Конец хода: При 15 СД и менее, получает 3 Повышение уровня атаки на следующий ход"
     },
     {
       "id": "ShardOfUmbrella",
-      "name": "Umbrella Splinters",
-      "desc": "Turn End: Gain {0} x 5 Rupture",
-      "summary": "Turn End: Gain {0} x 5 Rupture"
+      "name": "Обломки зонта",
+      "desc": "Конец хода: Получает {0} x 5 Разрыв",
+      "summary": "Конец хода: Получает {0} x 5 Разрыв"
     },
     {
       "id": "WrappedCurseTag",
-      "name": "Entangled Curse Talisman",
-      "desc": "Deal +{0}X3% damage\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +{0}X3% damage; Gain 2 Attack Power Down at turn start at 9+ Count"
+      "name": "Запутанные талисманы проклятия",
+      "desc": "Наносит на {0}X3% больше урона\nПри счётчике выше 9, получает 2 Понижение силы атаки в начале хода",
+      "summary": "Наносит на {0}X3% больше урона; При счётчике выше 9, получает 2 Понижение силы атаки в начале хода"
     },
     {
       "id": "ReattachedCurseTag",
-      "name": "Reattached Curse Talisman",
-      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
-      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+      "name": "Наложенный заново талисман проклятия",
+      "desc": "При счётчике больше 9, получает 5 Связывание в конце хода.\nПри счётчике больше 12, получает 5 Понижение силы атаки в конце хода.",
+      "summary": "При счётчике больше 9, получает 5 Связывание в конце хода.\nПри счётчике больше 12, получает 5 Понижение силы атаки в конце хода."
     },
     {
       "id": "ElectricStorage",
-      "name": "Capacitor",
-      "desc": "It seems to be storing electricity in its body.",
-      "summary": "표시용"
+      "name": "Конденсатор",
+      "desc": "Похоже, оно накапливает электричество в своём теле.",
+      "summary": "Готовится к действию"
     },
     {
       "id": "SelfCharge",
-      "name": "Self-charge",
-      "desc": "Electric currents seem to flow around its body.",
-      "summary": "표시용"
+      "name": "Самозаряд",
+      "desc": "Разряды электрического тока протекают по его телу.",
+      "summary": "Особый ресурс"
     },
     {
       "id": "Exalted",
-      "name": "Morale Boost",
-      "desc": "Gain {0} Damage Up every turn (Max 5)\nCannot gain the status while Tipsy",
-      "summary": "Gain Damage Up by the effect's Count every turn; Cannot gain the status while Tipsy"
+      "name": "Повышение боевого духа",
+      "desc": "Получает {0} Повышение урона каждый ход (Maкс. 5)\nНе может получить этот эффект, пока есть эффект Пьяный",
+      "summary": "Получает Повышение урона за каждую единицу счётчика эффекта каждый ход; Не может получить этот эффект, пока есть эффект Пьяный"
     },
     {
       "id": "Tipsiness",
-      "name": "Tipsy",
-      "desc": "Clash Power -{0} (Max 5)",
-      "summary": "Lose Clash Power by the effect's Count"
+      "name": "Пьяный",
+      "desc": "Сила в столкновении понижается на {0} (Maкс. 5)",
+      "summary": "Понижает силу в столкновении за каждую единицу счётчика"
     },
     {
       "id": "Predation",
-      "name": "Predation",
-      "desc": "It seems to be preparing a powerful move.",
-      "summary": "표시용"
+      "name": "Хищничество",
+      "desc": "Похоже, оно готовится к мощному удару.",
+      "summary": "Подготовка"
     },
     {
       "id": "ATL_Agility",
-      "name": "Faster!",
-      "desc": "Gain 2 Haste",
-      "summary": "표시용"
+      "name": "Быстрее!",
+      "desc": "Получает 2 Спешка",
+      "summary": "Ускорение"
     },
     {
       "id": "ATL_Breath",
-      "name": "Aim True!",
-      "desc": "Gain 3 Poise",
-      "summary": "표시용"
+      "name": "Цельсь!",
+      "desc": "Получает 3 Равновесие",
+      "summary": "Прицел"
     },
     {
       "id": "ATL_Target",
-      "name": "Get 'Em!",
-      "desc": "Simultaneously attacks one unit",
-      "summary": "표시용"
+      "name": "Убей их!",
+      "desc": "Одновременно атакует одного противника",
+      "summary": "Убей"
     },
     {
       "id": "ATL_EndureCombustion",
-      "name": "Burn Resistance",
-      "desc": "When taking damage from Burn, reduce the damage by {0}0% (Max 10)",
-      "summary": "When taking damage from Burn, take {0}0% less damage"
+      "name": "Огнеупорность",
+      "desc": "Когда получает урон от Горение, уменьшает урон на {0}0% (Maкс. 10)",
+      "summary": "Когда получает урон от Горение, получает на {0}0% меньше урона"
     },
     {
       "id": "Resonate",
-      "name": "Resonant",
-      "desc": "When bursting Tremor or raising stagger threshold, additionally deal {0} * 3 fixed damage and raise stagger threshold by {0} * 3%",
-      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+      "name": "Резонирующий",
+      "desc": "При провоцировании Тремор или поднятии порога оглушения, дополнительно наносит  {0} * 3 фиксированного урона и поднимает порог оглушения на {0} * 3%",
+      "summary": "Провоцирование Тремор и поднятие порога оглушения наносит урон и поднимает больше порог оглушения"
     },
     {
       "id": "VibrationAssimilation",
-      "name": "Tremor Sync",
-      "desc": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have",
-      "summary": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have"
+      "name": "Синхронизация тремора",
+      "desc": "В столкновении, противник имеет на 1 единицу силы столкновения меньше за каждые 5 Тремор в наличии",
+      "summary": "В столкновении, противник имеет на 1 единицу силы столкновения меньше за каждые 5 Тремор в наличии"
     },
     {
       "id": "CollapseAmpoule",
-      "name": "Decay Ampule",
-      "desc": "Take damage by {0} * 2% of Max HP",
-      "summary": "Take damage by {0} * 2% of Max HP"
+      "name": "Разлагающая ампула",
+      "desc": "Получает урон в размере {0} * 2% от Макс. ОЗ",
+      "summary": "Получает урон в размере {0} * 2% от Макс. ОЗ"
     },
     {
       "id": "InterlockingTime",
-      "name": "Interlocking Time",
-      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
-      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+      "name": "Блокировка времени",
+      "desc": "Уменьшает финальный урон на 30% и сохраняет его. При счётчике выше 3, получает фиксированный урон в размере 1.5х от сохранённого урона, и получает 3 Связывание на следующий ход.",
+      "summary": "Уменьшает финальный урон на 30% и сохраняет его. При счётчике выше 3, получает фиксированный урон в размере 1.5х от сохранённого урона, и получает 3 Связывание на следующий ход."
     },
     {
       "id": "TimeRental",
-      "name": "Borrowed Time",
-      "desc": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down",
-      "summary": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down"
+      "name": "Время, взятое взаймы",
+      "desc": "Конец хода: Получает 3 Спешка и 2 Повышение урона; Если счётчик равен 1, получает 4 Связывание и 1 Понижение силы атаки",
+      "summary": "Конец хода: Получает 3 Спешка и 2 Повышение урона; Если счётчик равен 1, получает 4 Связывание и 1 Понижение силы атаки"
     },
     {
       "id": "Bull_FadedHeat",
-      "name": "Momentary Cool",
-      "desc": "Core and body lose 50% Max HP"
+      "name": "Мгновенное охлаждение",
+      "desc": "Ядро и тело теряют 50% Макс. ОЗ"
     },
     {
       "id": "Bull_Fever",
-      "name": "Fever",
-      "desc": "Deal +{0}0% damage\nTurn End: Reduce Count by 1",
+      "name": "Жар",
+      "desc": "Наносит на {0}0% больше урона\nКонец хода: снижает счётчик на 1",
       "summary": ""
     },
     {
       "id": "Bull_Sadness",
-      "name": "Unresolved Sorrow",
-      "desc": "Gain Attack Power Down by the Count next turn.\nTurn End: At 3+ Count, changes to Expanding Sorrow.",
+      "name": "Неразрешённая печаль",
+      "desc": "Получает Понижение силы атаки в зависимости от счётчика на следующий ход.\nКонец хода: При счётчике больше 3, заменяется на Расширяющаяся печаль.",
       "summary": ""
     },
     {
       "id": "Bull_ReinforcedSadness",
-      "name": "Expanding Sorrow",
-      "desc": "Changes behavior.",
-      "summary": "Changes behavior."
+      "name": "Расширяющаяся печаль",
+      "desc": "Меняет поведение.",
+      "summary": "Меняет поведение."
     },
     {
       "id": "Bull_BuzzingEmotion",
-      "name": "Wavering Emotions",
-      "desc": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect",
-      "summary": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect"
+      "name": "Колебающиеся эмоции",
+      "desc": "Начало хода: Случайно получает Понижение силы атаки, Паралич, или Связывание в зависимости от счётчика эффекта, затем убирает этот эффект",
+      "summary": "Начало хода: Случайно получает Понижение силы атаки, Паралич, или Связывание в зависимости от счётчика эффекта, затем убирает этот эффект"
     },
     {
       "id": "Crazy_LowMorale",
@@ -1175,27 +1175,27 @@
     },
     {
       "id": "Thorn",
-      "name": "Thorns",
-      "desc": "When hit, return 50% of the damage taken to the attacker",
-      "summary": "Deal 50% of damage taken to attacker"
+      "name": "Шипы",
+      "desc": "Когда получает удар, возвращает 50% полученного урона атаковавшему",
+      "summary": "Когда получает удар, возвращает 50% полученного урона атаковавшему"
     },
     {
       "id": "Fragile_Mind_LowMorale",
-      "name": "Perilous Heart",
+      "name": "Опасное сердце",
       "desc": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание.",
       "summary": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание."
     },
     {
       "id": "Fragile_Mind_Panic",
-      "name": "Faltering Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "name": "Замирающее сердце",
+      "desc": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание",
+      "summary": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание"
     },
     {
       "id": "ErodingMind",
-      "name": "Corroding Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "name": "Повреждающее сердце",
+      "desc": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание",
+      "summary": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание"
     },
     {
       "id": "Blue_LowMorale",
@@ -1211,314 +1211,314 @@
     },
     {
       "id": "ATL_EndureLaceration",
-      "name": "Bleed Resistance",
-      "desc": "When taking damage from Bleed, reduce the damage by {0}0% (Max 10)",
-      "summary": "When taking damage from Bleed, take {0}0% less damage"
+      "name": "Сопротивление кровотечению",
+      "desc": "Когда получает урон от Кровотечение, уменьшает урон на {0}0% (Maкс. 10)",
+      "summary": "Когда получает урон от Кровотечение, получает на {0}0% меньше урона"
     },
     {
       "id": "DongbaekGrow",
-      "name": "Growing",
-      "desc": "Turn End: Add +1 Count, and gain Max HP proportionally to the Count (Max 3)",
-      "summary": "Turn End: Add +1 Count, and gain Max HP proportionally to the Count (Max 3)"
+      "name": "Прорастание",
+      "desc": "Конец хода: Добавляет +1 к счётчику, и получает Макс. ОЗ пропорционально счётчику (Maкс. 3)",
+      "summary": "Конец хода: Добавляет +1 к счётчику, и получает Макс. ОЗ пропорционально счётчику (Maкс. 3)"
     },
     {
       "id": "DongbaekFlorescence",
-      "name": "Blooming",
-      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "name": "Цветение",
+      "desc": "Конец хода: При счётчике больше 5, получает урон Ленью в размере (Счётчик)% от Макс. ОЗ, и становится Полностью цветущий\nПри счётчике ниже 5, теряет (Счётчик * 5) СД, после чего уменьшает счётчик на 1",
       "summary": ""
     },
     {
       "id": "DongbaekFullBloom",
-      "name": "Fully Bloomed",
-      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "name": "Полностью цветущий",
+      "desc": "Не может действовать\nВ конце хода, теряет 20 СД; если СД достигает -45, полностью восстанавливает СД, затем получает 'Ослепленный разум' на следующий ход.\nЕсли этот эффект не убирается в течение 2 ходов, убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "DongbaekFascination",
-      "name": "Dazzled Mind",
-      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it at the end of the turn",
+      "name": "Ослепленный разум",
+      "desc": "Выбирает союзников целью атаки\nКогда оглушён, убирает этот эффект на следующем ходу\nЕсли этот эффект не убирается в течение 2 ходов, теряет 30 СД и убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "DongbaekShowdown",
-      "name": "Dueling",
-      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "name": "Дуэль",
+      "desc": "Начало хода: Участники боя без этого статуса становятся 'Полностью цветущий'\nЕсли этот эффект наложен на И Сана, Донбаек получает 1 Повышение силы атаки",
       "summary": ""
     },
     {
       "id": "DongbaekScatterPetal",
-      "name": "Scattering Petals",
-      "desc": "Turn End: At 6+ Count, become staggered",
+      "name": "Разбросанные лепестки",
+      "desc": "Конец хода: При счётчике выше 6, оглушается",
       "summary": ""
     },
     {
       "id": "CrimsonResultUp",
-      "name": "Повышение силы Гнева",
-      "desc": "Wrath Skill Final Power +{0} в течение этого хода",
-      "summary": "Wrath Skill Final Power +{0}"
+      "name": "Повышение финальной силы навыков Гнева",
+      "desc": "Финальная сила навыков Гнева увеличивается на {0} в течение этого хода",
+      "summary": "Финальная сила навыков Гнева +{0}"
     },
     {
       "id": "EmittedCurrent",
       "name": "Разряд искр",
-      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+      "desc": "Когда получает удар, атакующий получает +1 к счётчику Заряд; когда получает удар навыком Уныния, получает +1 к счётчику Разрыв, затем уменьшает счётчик на 1"
     },
     {
       "id": "DistortedDongrangRadiantVanity",
-      "name": "Radiant Vanity",
-      "desc": "Turn Start: Dongrang gains 1 Protection and 1 Attack Power Up"
+      "name": "Сияющее тщеславие",
+      "desc": "Начало хода: Донран получает 1 Защищённость и 1 Повышение силы атаки"
     },
     {
       "id": "DistortedDongrangEmptyMark",
-      "name": "Empty Mark",
-      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+      "name": "Пустая отметка",
+      "desc": "Отмечен Донраном. Получает 2 Связывание каждый ход, и принимает на 50% больше урона от Донрана."
     },
     {
       "id": "DistortedDongrangEarnestAchievement",
-      "name": "Earnest Accomplishment",
-      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs"
+      "name": "Серьезное достижение",
+      "desc": "Если этот участник боя побеждён или его ОЗ снижено до 1, атакующий получает усиления"
     },
     {
       "id": "DistortedDongrangEmptyHonor",
-      "name": "Empty Honor",
-      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn"
+      "name": "Пустая честь",
+      "desc": "Если Донран побеждает этого участника боя, он теряет ОЗ, получает 1 Пустота, и ослаблен на следующий ход"
     },
     {
       "id": "DistortedDongrangMomentaryGlory",
-      "name": "Momentary Glory",
-      "desc": "At 3+ Count, Dongrang becomes more powerful"
+      "name": "Момент славы",
+      "desc": "При счётчике выше 3, Донран становится более сильным"
     },
     {
       "id": "DistortedDongrangEmptiness",
-      "name": "Emptiness",
-      "desc": "At 4+ Count, Dongrang becomes staggered."
+      "name": "Пустота",
+      "desc": "При счётчике выше 4, Донран оглушается."
     },
     {
       "id": "DistortedDongrangFruition",
-      "name": "Borne Fruition",
-      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+      "name": "Рожденный плод",
+      "desc": "Участник боя, победивший этого участника боя, восстанавливает ОЗ, и получает 1 Спешка и 1 Повышение силы атаки на следующий ход"
     },
     {
       "id": "EgoAwakenDongrangRadiantDesire",
-      "name": "Radiant Desire",
-      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection"
+      "name": "Рожденный плод",
+      "desc": "Начало хода: Донран получает 1 Защищённость и 1 Повышение урона"
     },
     {
       "id": "EgoAwakenDongrangSeed",
-      "name": "Seeds",
-      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+      "name": "Семена",
+      "desc": "Конец хода: При счётчике выше 5, получает Утечка питания на 2 хода; при счётчике ниже 5, уменьшает счётчик на 1"
     },
     {
       "id": "EgoAwakenDongrangTree",
-      "name": "Nutrient Drain",
-      "desc": "Turn End: Dongrang heals 10 HP"
+      "name": "Утечка питания",
+      "desc": "Конец хода: Донран восстанавливает 10 ОЗ"
     },
     {
       "id": "EgoAwakenDongrangOverHeal",
-      "name": "Overheal",
-      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+      "name": "Сверхлечение",
+      "desc": "Счётчик повышается, когда Донран восстанавливает ОЗ; при счётчике выше 50, получает урон Чревоугодием в зависимости от счётчика, получает 5 Уязвимости, и убирает эффект."
     },
     {
       "id": "SinkingSurge",
       "name": "Шквал утопания",
-      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+      "desc": "Наносит урон СД (счётчик Утопание * количество Утопание), затем убирает Утопание\nЕсли СД цели -45 или ниже, урон СД переводится в урон ОЗ Унынием\n(Участники боя без СД принимают весь урон как урон ОЗ Унынием)"
     },
     {
       "id": "Blue",
-      "name": "Tears",
-      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+      "name": "Слёзы",
+      "desc": "Конец хода: Теряет 5 СД\nМонеты, выпавшие решкой, накладывают 2 Утопание"
     },
     {
       "id": "AmberResultUp",
-      "name": "Повышение силы Лени",
-      "desc": "Sloth Skill Final Power +{0} в течение этого хода",
-      "summary": "Sloth Skill Final Power +{0}"
+      "name": "Повышение финальной силы навыков Лени",
+      "desc": "Финальная сила навыков Лени увеличивается на {0} в течение этого хода",
+      "summary": "Финальная сила навыков Лени +{0}"
     },
     {
-      "id": "EgoAwakenDongrangTreeDisplay",
-      "name": "Nutrient Drain",
-      "desc": "Turn End: Dongrang heals 10 HP"
+      "id": "EgoAwakenDongrangTreeDiСДlay",
+      "name": "Утечка питания",
+      "desc": "Конец хода: Донран восстанавливает 10 ОЗ"
     },
     {
-      "id": "DongbaekFullBloomDisplay",
-      "name": "Fully Bloomed",
-      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "id": "DongbaekFullBloomDiСДlay",
+      "name": "Полностью цветущий",
+      "desc": "Не может действовать\nВ конце хода, теряет 20 СД; если СД достигает -45, полностью восстанавливает СД, затем получает 'Ослепленный разум' на следующий ход.\nЕсли этот эффект не убирается в течение 2 ходов, убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "EgoAwakenDongrangShardOfBrokenConnection",
-      "name": "Piece of a Broken Bond",
-      "desc": "Yi Sang's skills gain +2 Final Power\nWhen an ally dies, remaining allies gain 1 Haste and 1 Attack Power Up next turn (Once per turn)\nAs long as at least one other ally is alive in this battle, Yi Sang does not die",
+      "name": "Часть сломанной связи",
+      "desc": "Навыки И Сана получают +2 финальной силы\nКогда союзник погибает, оставшиеся союзники получают 1 Спешка и 1 Повышение силы атаки на следующий ход (Один раз за ход)\nПока жив хотя бы один союзник в этой битве, И Сан не может умереть",
       "summary": ""
     },
     {
       "id": "Choice_1040301",
-      "name": "Unknown Wound",
-      "desc": "Gain 10 Rupture for this turn.",
-      "summary": "Gain 10 Rupture for the turn"
+      "name": "Неизвестная рана",
+      "desc": "Получает 10 Разрыв в течение этого хода.",
+      "summary": "Получает 10 Разрыв в течение этого хода"
     },
     {
-      "id": "TakeHpHealIncrease",
-      "name": "HP Healing Boost",
-      "desc": "Heal +{0}0% HP from Passives, Skills, and Coin effects в течение этого хода. (Max 5)",
-      "summary": "HP Healing +{0}0%"
+      "id": "TakeОЗHealIncrease",
+      "name": "Усиление восстановления ОЗ",
+      "desc": "Восстанавливает на {0}0% больше ОЗ от пассивных способностей, навыков и эффектов монет в течение этого хода. (Max 5)",
+      "summary": "Восстановление ОЗ +{0}0%"
     },
     {
       "id": "Choice_90104001",
-      "name": "Understanding",
-      "desc": "At the start of the battle, gain 2 E.G.O resources for every Affinity",
-      "summary": "Gain +2 E.G.O resource for all Affinities"
+      "name": "Понимание",
+      "desc": "В начале боя, даёт 2 Э.Г.О. ресурса каждого типа",
+      "summary": "Даёт 2 Э.Г.О. ресурса каждого типа"
     },
     {
       "id": "Choice_9010400101",
-      "name": "Determined",
-      "desc": "All Ally Units gain +2 Skill Final Power в течение этого боя",
-      "summary": "Skill Final Power +2"
+      "name": "Решительность",
+      "desc": "Все союзники получают +2 финальной силы навыков в течение этого боя",
+      "summary": "Финальная сила навыков +2"
     },
     {
       "id": "Choice_90104002",
-      "name": "Longing",
-      "desc": "All Ally Units gain +1 Skill Power в течение этого боя",
-      "summary": "Skill Power +1"
+      "name": "Тоска",
+      "desc": "Все союзники получают +1 финальную силу навыков в течение этого боя",
+      "summary": "Финальная сила навыков +1"
     },
     {
       "id": "S2Mirror2ndFloor",
-      "name": "Mirror of Mirrors - F2",
-      "desc": "Skill Final Power +1",
-      "summary": "Skill Final Power +1"
+      "name": "Зеркало зеркал - Э2",
+      "desc": "Финальная сила навыков +1",
+      "summary": "Финальная сила навыков +1"
     },
     {
       "id": "S2Mirror3rdFloor",
-      "name": "Mirror of Mirrors - F3",
-      "desc": "Skill Final Power +1\nSkill Offense Level +3",
-      "summary": "Skill Final Power +1; Skill Offense Level +3"
+      "name": "Зеркало зеркал - Э3",
+      "desc": "Финальная сила навыков +1\nУровень атаки +3",
+      "summary": "Финальная сила навыков +1; Уровень атаки +3"
     },
     {
       "id": "S2Mirror4thFloor",
-      "name": "Mirror of Mirrors - F4",
-      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1",
-      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1"
+      "name": "Зеркало зеркал - Э4",
+      "desc": "Финальная сила навыков +1\nУровень атаки +3\nБазовая сила навыков +1",
+      "summary": "Финальная сила навыков +1; Уровень атаки +3; Базовая сила навыков +1"
     },
     {
       "id": "S2Mirror5thFloor",
-      "name": "Mirror of Mirrors - F5",
-      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал - Э5",
+      "desc": "Финальная сила навыков +1\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +1; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "SkillPowerUp",
-      "name": "Base Power Up",
-      "desc": "Skill Base Power +{0} for в течение этого хода.",
-      "summary": "Skill Base Power +{0}"
+      "name": "Повышение базовой силы навыков",
+      "desc": "Базовая сила навыков увеличивается на {0} в течение этого хода.",
+      "summary": "Базовая сила навыков +{0}"
     },
     {
-      "id": "MaxHpMultiplier",
-      "name": "Max HP Up",
-      "desc": "Increase Max HP by {0}0",
-      "summary": "Max HP +{0}0"
+      "id": "MaxОЗMultiplier",
+      "name": "Повышение мaкс. ОЗ ",
+      "desc": "Увеличивает Maкс. ОЗ на {0}0",
+      "summary": "Maкс. ОЗ +{0}0"
     },
     {
       "id": "StickCoinHeadAndTailToMaxPer",
-      "name": "Meshed Possibilities",
-      "desc": "Every three turns, all Coins on each skill used by allies land on the same side depending on the Coin's type",
-      "summary": "Every 3 turns, all Coins land on the same side based on the type"
+      "name": "Сетчатые возможности",
+      "desc": "Каждые 3 хода, все монеты на всех навыках каждого союзника падают на одну и ту же сторону в зависимости от типа монеты",
+      "summary": "Каждые 3 хода, все монеты падают на одну сторону в зависимости от типа монеты"
     },
     {
       "id": "RemoveBreakSection",
-      "name": "Stalwart Spirit",
-      "desc": "The 1st stagger thresholds of allies are nullified",
-      "summary": "Nullify 1st stagger threshold"
+      "name": "",
+      "desc": "Первая граница оглушения убрана",
+      "summary": "Убирает 1 границу оглушения"
     },
     {
       "id": "KCorpSerum",
       "name": "Ампула Корп. K",
-      "desc": "Turn Start: At less than 4 Count, heal by ({0} * 5)% of Max HP\nAt 4+ Count, the unit dies",
+      "desc": "Начало хода: При счётчике меньше 4, восстанавливает ОЗ в размере ({0} * 5)% от Maкс. ОЗ\nПри счётчике выше 4, этот участник боя умирает",
       "summary": ""
     },
     {
       "id": "Talisman",
       "name": "Оберег",
-      "desc": "On hit, inflict {0} Rupture; When hit, gain {0} Rupture\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count",
-      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+      "desc": "При ударе, накладывает {0} Разрыв; Когда получает удар, получает {0} Разрыв\nКонец хода: При счётчике выше 6, убирает все талисманы и получает фиксированный урон урон в зависимости от счётчика",
+      "summary": "Накладывает Разрыв при атаке и получает Разрыв когда атакует"
     },
     {
       "id": "S2Mirror2ndFloor_Hard",
-      "name": "Mirror of Mirrors Hard - F2",
-      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал (Сложное) - Э2",
+      "desc": "Финальная сила навыков +1\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +1; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "S2Mirror3rdFloor_Hard",
-      "name": "Mirror of Mirrors Hard - F3",
-      "desc": "Skill Final Power +2\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +2; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал (Сложное) - Э3",
+      "desc": "Финальная сила навыков +2\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +2; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "S2Mirror4thFloor_Hard",
-      "name": "Mirror of Mirrors Hard - F4",
-      "desc": "Skill Final Power +3\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +3; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал (Сложное) - Э4",
+      "desc": "Финальная сила навыков +3\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +3; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "S2Mirror5thFloor_Hard",
-      "name": "Mirror of Mirrors Hard - F5",
-      "desc": "Skill Final Power +5\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +5; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал (Сложное) - Э5",
+      "desc": "Финальная сила навыков +5\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +5; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "S2Mirror1stFloor_Hard",
-      "name": "Mirror of Mirrors Hard - F1",
-      "desc": "Skill Final Power +1\nSkill Offense Level +3\nSkill Base Power +1\nSkill Plus Coin Power +2\nSkill Minus Coin Power -2",
-      "summary": "Skill Final Power +1; Skill Offense Level +3; Skill Base Power +1; Skill Plus Coin Power +2; Skill Minus Coin Power -2"
+      "name": "Зеркало зеркал (Сложное) - Э1",
+      "desc": "Финальная сила навыков +1\nУровень атаки +3\nБазовая сила навыков +1\nСила положительных монет +2\nСила отрицательных монет -2",
+      "summary": "Финальная сила навыков +1; Уровень атаки +3; Базовая сила навыков +1; Сила положительных монет +2; Сила отрицательных монет -2"
     },
     {
       "id": "MentalSystemResultIncrease_Typo",
-      "name": "SP Heal Efficiency",
-      "desc": "Amount of SP healed from SP heal conditions"
+      "name": "Показатель восстановления СД",
+      "desc": "Количество СД, восстанавливаемое от условий восстановления СД"
     },
     {
       "id": "MentalSystemResultDecrease_Typo",
-      "name": "SP Loss Efficiency",
-      "desc": "Amount of SP lost from SP loss conditions"
+      "name": "Показатель потери СД",
+      "desc": "Количество СД, теряемое от условий потери СД"
     },
     {
       "id": "DuelDeclaration",
-      "name": "Объявленная Дуэль",
-      "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Effect lifted when the unit that declared duel declares it on a different target. Replaced when another unit declares a duel. "
+      "name": "Объявленная дуэль",
+      "desc": "В столкновении между участником боя, наложившим Объявленную дуэль и участником боя с этим статусом, Наложивший имеет на 1 большую силу столкновения, и получает 1 Спешка на следующий ход после успешной атаки. (4 раза за ход) Эффект пересносится, когда участник боя, объявивший дуэль, объявляет её другому противнику. Заменяется, когда другой участник боя объявляет дуэль."
     },
     {
       "id": "Aggro",
-      "name": "Aggro",
-      "desc": "In focused encounters, slots with higher Aggro values are more likely to be targeted by enemies."
+      "name": "Аггро",
+      "desc": "В целенаправленных боях, слоты с более высоким показателем Аггро чаще всего выбираются как цель противниками."
     },
     {
       "id": "BurstVulnerable",
-      "name": "Rupture Fragility",
-      "desc": "Take -{0} damage from Rupture effects this turn."
+      "name": "Уязвимость к разрыву",
+      "desc": "Получает на {0} больше урона от Разрыв в течение этого хода."
     },
     {
       "id": "EmergencyFeed",
-      "name": "Emergency Nutrient Supply",
-      "desc": "At the end of the turn, if this unit has healed 15% of Max HP or more, the body is restored next turn."
+      "name": "Экстренное питание",
+      "desc": "В конце хода, если этот участник боя восстановил 15% от Макс. ОЗ или больше, тело восстанавливается на следующий ход."
     },
     {
       "id": "Bullet_Crab",
-      "name": "Molted Shell Shot",
-      "desc": "Resource used by certain skills for additional effects."
+      "name": "Плавленный снаряд",
+      "desc": "Ресурс, используемый определенными навыками для дополнительных эффектов."
     },
     {
       "id": "SinkingVulnerable",
-      "name": "Sinking Fragility",
-      "desc": "Take +{0} damage from Sinking effects this turn."
+      "name": "Уязвимость к утопанию",
+      "desc": "Получает на {0} больше урона от Утопание в течение этого хода."
     },
     {
       "id": "BurstProtection",
-      "name": "Rupture Protection",
-      "desc": "Take -{0} damage from Rupture effects this turn."
+      "name": "Защищённость от разрыва",
+      "desc": "Получает на {0} меньше урона от Разрыв в течение этого хода."
     },
     {
       "id": "PseudoLastBoss_KingCrap",
-      "name": "Crab Rage",
-      "desc": "At the start of the turn, apply Attack Power Up to all other allied crabs, and gain 2 Protection if its Shell isn't broken.\n-5 SP to target when using a skill.\nAt 50%- HP, every part gains 2 Attack Power Up and 2 Fragile."
+      "name": "Ярость крабов",
+      "desc": "В начале хода, даёт Повышение силы атаки всем союзным крабам, и получает 2 Защищённости, если Панцирь не сломан.\nНаносит 5 урона СД по целям при атаке.\nПри ОЗ меньше 50%, каждая часть получает 2 Повышение силы атаки и 2 Уязвимость."
     }
   ]
 }
