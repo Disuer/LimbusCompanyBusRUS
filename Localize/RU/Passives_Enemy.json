@@ -12,8 +12,8 @@
     },
     {
       "id": 90003,
-      "name": "Sharp Edge",
-      "desc": "On hit, inflict 1-2 Bleed.\nIf a unit is Marked, attack them first."
+      "name": "Острый край",
+      "desc": "При ударе, накладывает 1-2 Кровотечение.\nВ первую очередь атакует противников с Отметкой."
     },
     {
       "id": 90004,
