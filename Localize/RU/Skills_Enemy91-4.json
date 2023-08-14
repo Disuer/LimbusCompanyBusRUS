@@ -5,20 +5,20 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwah",
+                    "name": "Клац",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -31,16 +31,16 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Shell Tackle!",
+                    "name": "Вооружённая раковина!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count next turn"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв на след. ход"
                                 },
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 1 Slash Fragility next turn"
+                                    "desc": "[OnSucceedAttack] Наносит 1 Уязвимость к режущему урону на след. ход"
                                 }
                             ]
                         }
@@ -53,27 +53,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwaaah!",
+                    "name": "Клаццц!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -86,13 +86,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Foaming",
+                    "name": "Крабовая пена",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         }
@@ -105,8 +105,8 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Hermit Crab",
-                    "desc": "[StartBattle] When attacked while this unit has shield HP, deal 4 Slash damage to the attacker",
+                    "name": "Краб-отшельник",
+                    "desc": "[StartBattle] Когда получает атаку при наличии щита, наносит 4 Режущего урона атаковавшему",
                     "coinlist": [
                         {}
                     ]
@@ -118,20 +118,20 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwah",
+                    "name": "Клац",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -144,16 +144,16 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Shell Tackle!",
+                    "name": "Вооружённая раковина!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count next turn"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв на след. ход"
                                 },
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 1 Pierce Fragility next turn"
+                                    "desc": "[OnSucceedAttack] Наносит 1 Уязвимость к колющему урону на след. ход"
                                 }
                             ]
                         }
@@ -166,27 +166,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwaaah!",
+                    "name": "Клаццц!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -199,13 +199,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Foaming",
+                    "name": "Крабовая пена",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         }
@@ -218,8 +218,8 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Hermit Crab",
-                    "desc": "[StartBattle] When attacked while this unit has shield HP, deal 4 Pierce damage to the attacker",
+                    "name": "Краб-отшельник",
+                    "desc": "[StartBattle] Когда получает атаку при наличии щита, наносит 4 Пронзающего урона атаковавшему",
                     "coinlist": [
                         {}
                     ]
@@ -231,20 +231,20 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwah",
+                    "name": "Клац",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -257,16 +257,16 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Shell Tackle!",
+                    "name": "Вооружённая раковина!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count next turn"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв на след. ход"
                                 },
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 1 Blunt Fragility next turn"
+                                    "desc": "[OnSucceedAttack] Наносит 1 Уязвимость к дробящему урону на след. ход"
                                 }
                             ]
                         }
@@ -279,27 +279,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Gwaaah!",
+                    "name": "Клаццц!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Разрыв"
                                 }
                             ]
                         }
@@ -312,13 +312,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Foaming",
+                    "name": "Крабовая пена",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         }
@@ -331,8 +331,8 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Hermit Crab",
-                    "desc": "[StartBattle] When attacked while this unit has shield HP, deal 4 Blunt damage to the attacker",
+                    "name": "Краб-отшельник",
+                    "desc": "[StartBattle] Когда получает атаку при наличии щита, наносит 4 Дробящего урона атаковавшему",
                     "coinlist": [
                         {}
                     ]
@@ -344,13 +344,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Thwack",
+                    "name": "Наносит 2 Разрыв",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
                                 }
                             ]
                         }
@@ -363,27 +363,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Thwack Thwack Thwack",
+                    "name": "Наносит 2 Разрыв Наносит 2 Разрыв Наносит 2 Разрыв",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         }
@@ -396,20 +396,20 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Foaming",
+                    "name": "Крабовая пена",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         }
@@ -422,13 +422,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Delicious Crab Guts!",
-                    "desc": "[CantIdentify] \nDeal +15% damage per 5 Rupture on target\n[EndSkill] Lose HP by 8% of Max HP",
+                    "name": "Вкусные крабовые кишочки!",
+                    "desc": "[CantIdentify] \nНаносит +15% урона за каждые 5 Разрыв на цели\n[EndSkill] Теряет ОЗ в количестве 8% от макс. ОЗ",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 10 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 10 Разрыв"
                                 }
                             ]
                         }
@@ -441,27 +441,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "GUOH!",
+                    "name": "КЛАЦ-КЛАЦ!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         }
@@ -474,13 +474,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Thwack",
+                    "name": "Цок",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                                    "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
                                 }
                             ]
                         }
@@ -493,27 +493,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Thwack Thwack Thwack",
+                    "name": "Цок цок цок",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +2 счётчика Разрыв"
                                 }
                             ]
                         }
@@ -526,20 +526,20 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Foaming",
+                    "name": "Крабовая пена",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict +5 Rupture Count"
+                                    "desc": "[OnSucceedAttack] Наносит +5 счётчиков Разрыв"
                                 }
                             ]
                         }
@@ -552,13 +552,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Shell Tackle!!!",
+                    "name": "Вооружённая раковина!!!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Inflict 3 Pierce Fragility next turn"
+                                    "desc": "[OnSucceedAttack] Наносит 3 Уязвимость к колющему урону на след. ход"
                                 }
                             ]
                         }
@@ -571,13 +571,13 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "Firing Molted Shell Shot",
-                    "desc": "[CantIdentify]\nDeal +15% damage per 5 Rupture on target",
+                    "name": "Выстрел из старой крабовой раковины",
+                    "desc": "[CantIdentify]\nНаносит +15% урона за каждые 5 Разрыв на цели",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttack] Spend 1 Molted Shell Shot"
+                                    "desc": "[OnSucceedAttack] Тратит 1 Плавленный снаряд"
                                 }
                             ]
                         }
@@ -590,27 +590,27 @@
             "levelList": [
                 {
                     "level": 1,
-                    "name": "GUOH!",
+                    "name": "КЛАЦ-КЛАЦ!",
                     "desc": "",
                     "coinlist": [
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         },
                         {
                             "coindescs": [
                                 {
-                                    "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                                    "desc": "[OnSucceedAttackHead] Наносит 2 Разрыв"
                                 }
                             ]
                         }
