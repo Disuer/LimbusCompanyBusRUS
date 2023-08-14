@@ -53,7 +53,7 @@
     },
     {
       "id": "Burn",
-      "name": "Огонь",
+      "name": "Горение",
       "desc": "В конце хода, получает фиксированный урон за каждую единицу счётчика эффекта, затем снижает количество в 2 раза."
     },
     {
@@ -220,108 +220,108 @@
     },
     {
       "id": "Breath",
-      "name": "Дыхание",
-      "desc": "On hit, gain a Potency-based chance to deal critical damage, reducing the Count by 1 if successful.\nВ конце хода, снижает его счётчик на 1."
+      "name": "Равновесие",
+      "desc": "При попадании, увеличивает шанс критического удара в зависимости от количества эффекта, снижая счётчик на 1 при успешном критическом попадании.\nВ конце хода, снижает его счётчик на 1."
     },
     {
       "id": "BloodPocket",
       "name": "Кровяной мешок",
-      "desc": "Use a powerful attack after the Count reaches a certain amount."
+      "desc": "Использует мощную атаку при определенном счётчике эффекта."
     },
     {
       "id": "WaterPocket",
       "name": "Водяной мешок",
-      "desc": "Heals HP based on the Count."
+      "desc": "Восстанавливает ОЗ в зависимости от количества эффекта"
     },
     {
       "id": "DogThunder",
       "name": "Молния",
-      "desc": "Powers up after the Count reaches a certain amount."
+      "desc": "Усиливается при определенном счётчике эффекта."
     },
     {
       "id": "Run_Panic",
-      "name": "Oppression",
-      "desc": "Cannot act for one turn. When hit, flees battle after the attacker’s skill has finished."
+      "name": "Угнетение",
+      "desc": "Не действует. Когда получает удар, этот участник боя погибает по окончанию навыка."
     },
     {
       "id": "Operation",
       "name": "Операция",
-      "desc": "Die when Count reaches 5.\nReduce Max HP by 20% (per Count).\nDeal 20% (per Count) more damage.\nAt the start of the turn, gain Haste by the effect’s Count."
+      "desc": "Погибает, когда счётчик достигает 5. Уменьшает максимальное количество ОЗ на 20% за каждую единицу счётчика эффекта. Наносит на 20% больше урона за каждую единицу счётчика эффекта. В начале хода получает Спешка в зависимости от количества эффекта."
     },
     {
       "id": "Emergency_Operation",
-      "name": "Makeshift Surgery",
-      "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Count.\nEach turn, increase this effect’s Count by 1.\nDie when Count reaches 5."
+      "name": "Импровизированная операция",
+      "desc": "Увеличивает максимальное количество ОЗ на 25% и силу навыков на 1 за каждую единицу счётчика эффекта. Каждый ход увеличивает счётчик эффекта на 1. Умирает, когдв счётчик эффекта достигает 5."
     },
     {
       "id": "BabayagaTimeLimit",
       "name": "Баба яга близко!",
-      "desc": ""
+      "desc": "Баба Яга приближается. Расчистите путь или встретьте гарантированную смерть."
     },
     {
       "id": "PinkRibbon",
       "name": "Розовые ленточки",
-      "desc": "В конце хода, if at 5+ Potency, remove this effect and apply ‘Desirous’ next turn."
+      "desc": "В конце хода, при количестве больше 5, убирает этот эффект и накладывает ‘Переполнение желанием’ в начале следующего хода."
     },
     {
       "id": "Greedy",
       "name": "Переполнение желанием",
-      "desc": "At the start of the turn, gain 10 Bind.\nAll phys. resistances change to ‘Fatal’.\nAttack Skill Power +2.\nDefense Skill Power -2."
+      "desc": "Получает 2 Уязвимость и 10 Связывание в течение этого хода. Также получает дополнительный слот навыков и меняет поведение."
     },
     {
       "id": "PinkRibbon_Ishmael",
       "name": "Розовые ленточки",
-      "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nВ конце хода, inflict Bind by the effect’s Count, then remove the effect."
+      "desc": "Увеличивает счётчик на 1 каждый раз, когда этот участник боя использует монетку атакующего навыка. В конце хода получает Связывание за каждую единицу счётчика, затем убирает эффект."
     },
     {
       "id": "Muckworm",
       "name": "Личинки",
-      "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1."
+      "desc": "Конец хода: Получает урон Чревоугодием за каждую единицу счётчика, после чего понижает счётчик на 1; счётчик Кровотечение +1."
     },
     {
       "id": "AttackUp",
       "name": "Повышение уровня атаки",
-      "desc": "Offense level increases based on the effect's Potency for one turn."
+      "desc": "Повышает силу атаки в зависимости от количества эффекта в течение одного хода."
     },
     {
       "id": "AttackDown",
       "name": "Понижение уровня атаки",
-      "desc": "Offense level decreases based on the effect's Potency for one turn."
+      "desc": "Понижает силу атаки в зависимости от количества эффекта в течение одного хода."
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
-      "name": "Great Mountain",
-      "desc": "When attacked, inflict +1 Burn Count on the attacker."
+      "name": "Великая гора",
+      "desc": "Когда атакован, накладывает +1 счётчик Горение на противника."
     },
     {
       "id": "SlashResistUp",
-      "name": "Slash Resist Up",
-      "desc": "Increase Slash Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления режущим атакам",
+      "desc": "Увеличивает сопротивление режущим атакам в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "PenetrateResistUp",
-      "name": "Pierce Resist Up",
-      "desc": "Increase Pierce Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления колющим атакам",
+      "desc": "Увеличивает сопротивление колющим атакам в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "HitResistUp",
-      "name": "Blunt Resist Up",
-      "desc": "Increase Blunt Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления дробящим атакам",
+      "desc": "Увеличивает сопротивление дробящим атакам в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "SlashDamageUp",
       "name": "Повышение режущего урона",
-      "desc": "Deal more damage with Slash skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Наносит больше урона от режущих умений в зависимости от количества эффекта в течение одного хода. (Макс. 100%)"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "Повышение пронзающего урона",
-      "desc": "Deal more damage with Pierce skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение колющего урона",
+      "desc": "Наносит больше урона от колющих умений в зависимости от количества эффекта в течение одного хода. (Макс. 100%)"
     },
     {
       "id": "HitDamageUp",
       "name": "Повышение дробящего урона",
-      "desc": "Deal more damage with Blunt skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Наносит больше урона от дробящих умений в зависимости от количества эффекта в течение одного хода. (Макс. 100%)"
     },
     {
       "id": "SlashResistDown",
@@ -330,7 +330,7 @@
     },
     {
       "id": "PenetrateResistDown",
-      "name": "Pierce Resist Dow",
+      "name": "Pierce Resist Down",
       "desc": ""
     },
     {
