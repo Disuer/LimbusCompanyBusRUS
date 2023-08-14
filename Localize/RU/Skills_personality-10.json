@@ -12,7 +12,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Тремор"
                 }
               ]
             },
@@ -20,7 +20,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +1 счётчик Тремор"
                 }
               ]
             }
@@ -29,16 +29,16 @@
         {
           "level": 2,
           "name": "Fierce Assault",
-          "desc": "At 10+ Tremor Count, Coin Power +1",
+          "desc": "При 10+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Тремор"
                 }
               ]
             },
@@ -46,10 +46,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Наносит +1 счётчик Тремор"
                 }
               ]
             }
@@ -58,16 +58,16 @@
         {
           "level": 4,
           "name": "Fierce Assault",
-          "desc": "At 10+ Tremor Count, Coin Power +1",
+          "desc": "При 10+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
                 }
               ]
             },
@@ -75,10 +75,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Получает +2 счётчика Тремор"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчик Тремор"
                 }
               ]
             }
@@ -92,12 +92,12 @@
         {
           "level": 1,
           "name": "Steady...",
-          "desc": "[WhenUse] Gain +2 Tremor Count",
+          "desc": "[WhenUse] Получает +2 счётчика Тремор",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 2 Тремор"
                 }
               ]
             }
@@ -106,12 +106,12 @@
         {
           "level": 2,
           "name": "Steady...",
-          "desc": "[WhenUse] Gain +4 Tremor Count",
+          "desc": "[WhenUse] Получает +4 счётчика Тремор",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 4 Тремор"
                 }
               ]
             }
@@ -120,12 +120,12 @@
         {
           "level": 4,
           "name": "Steady...",
-          "desc": "[WhenUse] Gain +6 Tremor Count",
+          "desc": "[WhenUse] Получает +6 счётчиков Тремор",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] Наносит 6 Тремор"
                 }
               ]
             }
@@ -144,7 +144,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] At 10+ Tremor Count, spend all Tremor Count to inflict target with the same amount of Tremor Count\n[OnSucceedAttack] At less than 10 Tremor Count, gain 6 Tremor and Burst Tremor on self\nDeal Blunt damage equal to Tremor Burst damage"
+                  "desc": "[OnSucceedAttack] При 10+ счётчиках Тремор, переносит их на цель\n[OnSucceedAttack] Если менее 10 счётчиков Тремор, получает 6 Тремор и Провоцирует Тремор на себе\nНаносит дробящий урон равный Провоцировании Тремор"
                 }
               ]
             }
@@ -153,12 +153,12 @@
         {
           "level": 4,
           "name": "Gamble",
-          "desc": "Coin Power +1 for every 10 Tremor Count on self (Max 2)",
+          "desc": "За каждые 10 Тремор на себе, Сила монет +1 (Макс 2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] At 10+ Tremor Count, spend all Tremor Count to inflict target with the same amount of Tremor Count\n[OnSucceedAttack] At less than 10 Tremor Count, gain 10 Tremor and Burst Tremor on self\nDeal Blunt damage equal to Tremor Burst damage"
+                  "desc": "[OnSucceedAttack] При 10+ счётчиках Тремор, переносит их на цель\n[OnSucceedAttack] Если менее 10 счётчиков Тремор, получает 10 Тремор и Провоцирует Тремор на себе\nНаносит дробящий урон равный Провоцировании Тремор"
                 }
               ]
             }
@@ -172,7 +172,7 @@
         {
           "level": 1,
           "name": "Crab Bastards...!",
-          "desc": "[WhenUse] Gain 1 Rupture Protection (3 times per turn)",
+          "desc": "[WhenUse] Получает 1 Защищённость от разрыва (3 раза за ход)",
           "coinlist": [
             {
               "coindescs": [
