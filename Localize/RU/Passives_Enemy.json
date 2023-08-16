@@ -2,243 +2,243 @@
   "dataList": [
     {
       "id": 90001,
-      "name": "Verminous Body",
-      "desc": "At the end of the turn, heal 5 HP."
+      "name": "Паразитирующее тело",
+      "desc": "В конце хода восстанавливает 5 ОЗ."
     },
     {
       "id": 90002,
-      "name": "Nutritive Reinforcements",
-      "desc": "After defeating an enemy, heal 20 HP, and gain 5 Defense Power Up next turn."
+      "name": "Пищевые добавки",
+      "desc": "После убийства противника восстанавливает 20 ОЗ и получает 5 Повышение силы защиты на следующий ход."
     },
     {
       "id": 90003,
-      "name": "Острый край",
-      "desc": "При ударе, накладывает 1-2 Кровотечение.\nВ первую очередь атакует противников со статусом Отмеченный."
+      "name": "Острое лезвие",
+      "desc": "При ударе наносит 1-2 Кровотечение.\nЕсли есть Отмеченный персонаж, атакует сначала его."
     },
     {
       "id": 90004,
-      "name": "Weak Morale",
-      "desc": "Whenever an ally dies, permanently gain 1 Fragile."
+      "name": "Слабый дух",
+      "desc": "Каждый раз, как умирает союзник, навсегда получает 1 Уязвимость."
     },
     {
       "id": 90005,
-      "name": "Retribution",
-      "desc": "When HP drops below 50%, gain 5 Attack Power Up next turn."
+      "name": "Кара",
+      "desc": "Когда ОЗ падают ниже 50%, получает 5 Повышение силы атаки на следующий ход."
     },
     {
       "id": 90006,
-      "name": "Mind Wave",
-      "desc": "On hit, target loses 10 SP."
+      "name": "Волны разума",
+      "desc": "При ударе цель теряет 10 СД."
     },
     {
       "id": 9000101,
-      "name": "Injured Augmentation",
-      "desc": "At the start of the turn, if at less than 50% HP, heal 1 HP."
+      "name": "Повреждённая аугментация",
+      "desc": "В начале хода при менее, чем 50% ОЗ, восстанавливает 1 ОЗ."
     },
     {
       "id": 9000102,
-      "name": "Augmented Body",
-      "desc": "At the start of the turn, if at less than 50% HP, heal 2 HP."
+      "name": "Аугментированное тело",
+      "desc": "В начале хода при менее, чем 50% ОЗ, восстанавливает 2 ОЗ."
     },
     {
       "id": 9000103,
-      "name": "Corroded Augmentation",
-      "desc": "At the start of the turn, if at less than 50% HP, heal 4 HP."
+      "name": "Разъедающая аугментация",
+      "desc": "В начале хода при менее, чем 50% ОЗ, восстанавливает 4 ОЗ."
     },
     {
       "id": 9100301,
-      "name": "Big Boss",
-      "desc": "When this unit is defeated, all its allies lose 45 SP."
+      "name": "Большой босс",
+      "desc": "Когда персонаж убит, все его союзники теряют 45 СД."
     },
     {
       "id": 9100302,
-      "name": "Not Me Boys!",
-      "desc": "This unit loses 15 SP whenever an ally is defeated."
+      "name": "Хэй, ребятня!",
+      "desc": "Теряет 15 СД каждый раз, как умирает союзник."
     },
     {
       "id": 9100401,
       "name": "Hora de Fiesta",
-      "desc": "At the start of the turn, all allies heal 10 SP.\nAt 20+ SP, gain 1 Attack Power Up and 1 Defense Power Up at turn start."
+      "desc": "В начале хода все союзники восстанавливают 10 СД.\nПри 20+ СД получает 1 Повышение силы атаки и 1 Повышение силы защиты в начале хода."
     },
     {
       "id": 9100402,
       "name": "Se Acabó la Fiesta",
-      "desc": "When this unit is defeated, all its allies lose 45 SP."
+      "desc": "Когда персонаж убит, все его союзники теряют 45 СД."
     },
     {
       "id": 9002801,
-      "name": "HP Bullets",
-      "desc": "At the start of the turn, heal 15 HP.\nAt less than 50% HP, heal 15 additional HP."
+      "name": "ОЗ пули",
+      "desc": "В начале хода восстанавливает 15 ОЗ.\nПри менее, чем 50% ОЗ, восстанавливает дополнительные 15 ОЗ."
     },
     {
       "id": 9003201,
-      "name": "Noble be Thy Sacrifice",
-      "desc": "When an ally is defeated, gain 1 Attack Power Up next turn."
+      "name": "Благородной будет жертва твоя",
+      "desc": "Когда убит союзник, получает 1 Повышение силы атаки на следующий ход."
     },
     {
       "id": 9003801,
-      "name": "Joy of Execution",
-      "desc": "After defeating an enemy, gain 2 Damage Up next turn."
+      "name": "Удовольствие от казни",
+      "desc": "После убийства противника получает 2 Повышение урона на следующий ход."
     },
     {
       "id": 9100501,
-      "name": "Hammer of the One Who Grips",
-      "desc": "At the start of the turn, all allies heal 10 SP.\nWhen this unit is defeated, all its allies lose 45 SP."
+      "name": "Молот Той, кто держит",
+      "desc": "В начале хода все союзники восстанавливают 10 СД.\nКогда персонаж убит, все его союзники теряют 45 СД."
     },
     {
       "id": 9100601,
-      "name": "Persistence",
-      "desc": "When HP drops below 50%, remove all negative status effects next turn, and gain 4 Fanatic, 1 Attack Power Up, and 1 Defense Power Up each turn."
+      "name": "Упорство",
+      "desc": "Когда ОЗ падают ниже 50%, убирает все негативные эффекты на следующем ходе и получает 4 Фанатизм, 1 Повышение силы атаки и 1 Повышение силы защиты каждый ход."
     },
     {
       "id": 9100502,
-      "name": "Thou Shalt Hammer",
-      "desc": "If this unit is Fanatic, deal +50% damage."
+      "name": "Должен быть Молотом",
+      "desc": "При наличии Фанатизм наносит +50% урона."
     },
     {
       "id": 9004601,
-      "name": "Mechanical Mentality",
-      "desc": "Sanity is fixed at 0."
+      "name": "Сознание машины",
+      "desc": "СД всегда на 0."
     },
     {
       "id": 9004602,
-      "name": "Solid Exterior",
-      "desc": "Take half as much damage from Bleed and Burn."
+      "name": "Прочный корпус",
+      "desc": "Получает вдвое меньше урона от Кровотечение и Огонь."
     },
     {
       "id": 9004603,
-      "name": "Caution: Unsteady",
-      "desc": "This unit's stagger threshold rises by 50% more from Tremor bursts"
+      "name": "Опасность: Нестабильность",
+      "desc": "Границы выносливости персонажа повышаются от провокации Тремор на 50% больше"
     },
     {
       "id": 9004604,
-      "name": "Caution: Delicate",
-      "desc": "Take +30% damage from Rupture (Rounded down)"
+      "name": "Опасность: Чувствительность",
+      "desc": "Получает +30% урона от Разрыв (округляется в меньшую сторону)"
     },
     {
       "id": 9004901,
-      "name": "Damageable Disuniter",
-      "desc": "After being staggered, inflict 1 less Rupture and Rupture Count"
+      "name": "Нарушение функции повреждения",
+      "desc": "После оглушения наносит на 1 меньше Разрыв и счётчиков Разрыв"
     },
     {
       "id": 9005001,
-      "name": "Damageable Thumper",
-      "desc": "After being staggered, inflict 1 less Tremor and Tremor Count"
+      "name": "Нарушение функции колебания",
+      "desc": "После оглушения наносит на 1 меньше Тремор и счётчиков Тремор"
     },
     {
       "id": 9100701,
-      "name": "Overheating Attack Function",
-      "desc": "When staggering a unit with an attack, gain 3 Damage Up next turn."
+      "name": "Перегревающая функция атаки",
+      "desc": "При оглушении противника с помощью атаки получает 3 Повышение урона на следующий ход."
     },
     {
       "id": 9100702,
-      "name": "Breakable Disuniter",
-      "desc": "After being staggered, inflict 3 less Rupture and Rupture Count"
+      "name": "Потеря функции повреждения",
+      "desc": "После оглушения наносит на 3 меньше Разрыв и счётчиков Разрыв"
     },
     {
       "id": 9100703,
-      "name": "Breakable Thumper",
-      "desc": "After being staggered, inflict 3 less Tremor and Tremor Count"
+      "name": "Потеря функции колебания",
+      "desc": "После оглушения наносит на 3 меньше Тремор и счётчиков Тремор"
     },
     {
       "id": 9100801,
-      "name": "Spanner Up",
-      "desc": "Gain Resonant by the number of heads Coins that successfully hit during a turn. (Max 10)"
+      "name": "Ключ вверх",
+      "desc": "Получает Резонирующий, равный кол-ву атаковавших в течение этого хода орлов. (До 10)"
     },
     {
       "id": 9100802,
-      "name": "Rosespanner Workshop Rep",
-      "desc": "Inflict more Tremor by the number of allies that have died this wave"
+      "name": "Представитель мастерской Ключа и розы",
+      "desc": "Наносит дополнительный Тремор в количестве убитых в текущей волне союзников"
     },
     {
       "id": 9100803,
-      "name": "Guess I'm the Last",
-      "desc": "When alone, gain 1 Resonant and 1 Tremor Sync every turn."
+      "name": "Видимо, остался только я",
+      "desc": "Когда остаётся один на поле боя, получает 2 Резонирующий и 1 Синхронизация тремора каждый ход."
     },
     {
       "id": 9100804,
-      "name": "I've Got No Choice",
-      "desc": "When alone, marks the last unit that attacked this character as a target next turn."
+      "name": "У меня нет выбора",
+      "desc": "Когда остаётся один на поле боя, помечает последнего атаковавшего его противника как цель в следующий ходе."
     },
     {
       "id": 9100901,
-      "name": "Entangling Curse Talisman",
-      "desc": "Gain Entangled Curse Talismans by the number of clashes the unit engaged in during a turn."
+      "name": "Запутывающий оберег проклятия",
+      "desc": "Получает Запутанные талисманы проклятия в кол-ве столкновений, в которых участвовал персонаж в течение хода."
     },
     {
       "id": 9100902,
-      "name": "Strangling Curse Talisman",
-      "desc": "At 10 Entangled Curse Talismans, raise stagger threshold by 10, then remove the status."
+      "name": "Удушающий оберег проклятия",
+      "desc": "При 10 Запутанные талисманы проклятия повышает границы выносливости на 10, затем убирает этот эффект."
     },
     {
       "id": 9100903,
-      "name": "Multiplying Curse Talisman",
-      "desc": "At 30% or less HP, inflict +1 Reattached Curse Talisman"
+      "name": "Больше оберегов проклятия",
+      "desc": "При 30% и меньше ОЗ наносит +1 Наложенный заново талисман проклятия."
     },
     {
       "id": 9100904,
-      "name": "Encroaching Curse Talisman",
-      "desc": "At 30% or less HP, if the target has 5+ Reattached Curse Talisman after an attack is finished, inflict 2 Paralyze next turn."
+      "name": "Разрушающий оберег проклятия",
+      "desc": "При 30% и меньше ОЗ, если у цели есть 5+ Наложенный заново талисман проклятия по окончании атаки, наносит 2 Паралич на следующий ход."
     },
     {
       "id": 9006201,
-      "name": "Floods of Sorrow",
-      "desc": "Tails Coins inflict 2 Sinking"
+      "name": "Поток печали",
+      "desc": "Атаки решкой наносят 2 Утопание"
     },
     {
       "id": 9006202,
-      "name": "Overflowing Sorrow",
-      "desc": "At the end of the turn, lose 5 SP"
+      "name": "Переполняющая печаль",
+      "desc": "В конце хода теряет 5 СД"
     },
     {
       "id": 9006101,
-      "name": "Intoxication",
-      "desc": "At 5 Morale Boost, gain 5 Tipsy."
+      "name": "Интоксикация",
+      "desc": "При 5 Повышение боевого духа получает 5 Пьяный."
     },
     {
       "id": 9006102,
-      "name": "Hangover Cure",
-      "desc": "At 5 Tipsy, uses a defense skill."
+      "name": "Облегчение похмелья",
+      "desc": "При 5 Пьяный использует навык защиты."
     },
     {
       "id": 9006801,
-      "name": "Healing Ampule Injection",
-      "desc": "At the start of the turn, heal 20 HP."
+      "name": "Инъекция исцеляющей ампулы",
+      "desc": "В начале хода восстанавливает 20 ОЗ."
     },
     {
       "id": 9006802,
-      "name": "Emergency Ampule Administration",
-      "desc": "At less than 25% HP, heal up to 40% of Max HP (One-time only)"
+      "name": "Экстренное введение ампулы",
+      "desc": "При менее, чем 25% ОЗ, восстанавливает до 40% от максимальных ОЗ (Только один раз)"
     },
     {
       "id": 9007001,
-      "name": "Golden Time",
-      "desc": "At the end of the turn, if the HP is between 12% and 24%, instantly heal up to 65% of Max HP, and recover from stagger. (One-time only)"
+      "name": "Золотой час",
+      "desc": "В конце хода, если ОЗ между 12% и 24%, сразу восстанавливает до 65% от максимальных ОЗ и выходит из оглушения. (Только один раз)"
     },
     {
       "id": 9007002,
-      "name": "Time Reversion Retroaction",
-      "desc": "After activating Golden Time, gain 3 Fragile at turn end."
+      "name": "Последствия отмотки времени",
+      "desc": "После активации Золотого часа получает 3 Уязвимость в конце хода."
     },
     {
       "id": 9005401,
-      "name": "Terror Device",
-      "desc": "When an ally attacks another ally, deal 3 SP damage"
+      "name": "Устройство террора",
+      "desc": "Когда союзник атакует другого союзника, наносит 3 урона по СД"
     },
     {
       "id": 9006901,
-      "name": "Healing Ampule Injection",
-      "desc": "At the start of the turn, heal 20 HP."
+      "name": "Инъекция исцеляющей ампулы",
+      "desc": "В начале хода восстанавливает 20 ОЗ."
     },
     {
       "id": 9006902,
-      "name": "Emergency Ampule Administration",
-      "desc": "At less than 25% HP, heal up to 40% of Max HP (One-time only)"
+      "name": "Экстренное введение ампулы",
+      "desc": "При менее, чем 25% ОЗ, восстанавливает до 40% от максимальных ОЗ (Только один раз)"
     },
     {
       "id": 9006803,
-      "name": "Emergency Ampule Overdose",
-      "desc": "HP does not drop below 1;\nIf at 60- HP at the start of the turn, enter a powered-up state."
+      "name": "Экстренная передозировка ампулы",
+      "desc": "ОЗ не падают ниже 1;\nПри 60- ОЗ в начале хода входит в усиленный режим."
     }
   ]
 }

@@ -2,33 +2,33 @@
     "dataList": [
         {
             "id": 9007701,
-            "name": "A Crab-eat-crab World",
-            "desc": "At less than 70% HP, targets another ally with the least current HP.\nWhen attacking an ally, heals HP by the damage dealt.\nWhen defeating an ally, heals HP by double the damage dealt."
+            "name": "Мир крабового каннибализма",
+            "desc": "При менее, чем 70% ОЗ, нацеливается на союзнику с наименьшими ОЗ.\nПри атаке союзника восстанавливает ОЗ в количестве нанесённого урона.\nПри убийстве союзника восстанавливает ОЗ в количестве удвоенного нанесённого урона."
         },
         {
             "id": 9007801,
-            "name": "A Crab-eat-crab World",
-            "desc": "At less than 70% HP, targets another ally with the least current HP.\nWhen attacking an ally, heals HP by the damage dealt.\nWhen defeating an ally, heals HP by double the damage dealt."
+            "name": "Мир крабового каннибализма",
+            "desc": "При менее, чем 70% ОЗ, нацеливается на союзнику с наименьшими ОЗ.\nПри атаке союзника восстанавливает ОЗ в количестве нанесённого урона.\nПри убийстве союзника восстанавливает ОЗ в количестве удвоенного нанесённого урона."
         },
         {
             "id": 9007901,
-            "name": "A Crab-eat-crab World",
-            "desc": "At less than 70% HP, targets another ally with the least current HP.\nWhen attacking an ally, heals HP by the damage dealt.\nWhen defeating an ally, heals HP by double the damage dealt."
+            "name": "Мир крабового каннибализма",
+            "desc": "При менее, чем 70% ОЗ, нацеливается на союзнику с наименьшими ОЗ.\nПри атаке союзника восстанавливает ОЗ в количестве нанесённого урона.\nПри убийстве союзника восстанавливает ОЗ в количестве удвоенного нанесённого урона."
         },
         {
             "id": 9008001,
-            "name": "A Crab-eat-crab World",
-            "desc": "At less than 70% HP, targets another ally with the least current HP.\nWhen attacking an ally, heals HP by the damage dealt.\nWhen defeating an ally, heals HP by double the damage dealt."
+            "name": "Мир крабового каннибализма",
+            "desc": "При менее, чем 70% ОЗ, нацеливается на союзнику с наименьшими ОЗ.\nПри атаке союзника восстанавливает ОЗ в количестве нанесённого урона.\nПри убийстве союзника восстанавливает ОЗ в количестве удвоенного нанесённого урона."
         },
         {
             "id": 9008101,
-            "name": "A Crab-eat-crab World",
-            "desc": "At less than 70% HP, targets another ally with the least current HP.\nWhen attacking an ally, heals HP by the damage dealt.\nWhen defeating an ally, heals HP by double the damage dealt."
+            "name": "Мир крабового каннибализма",
+            "desc": "При менее, чем 70% ОЗ, нацеливается на союзнику с наименьшими ОЗ.\nПри атаке союзника восстанавливает ОЗ в количестве нанесённого урона.\nПри убийстве союзника восстанавливает ОЗ в количестве удвоенного нанесённого урона."
         },
         {
             "id": 9008102,
-            "name": "Molted Shell Shot",
-            "desc": "Battle Start: Gain 1 Molted Shell Shot"
+            "name": "Старая крабовая раковина",
+            "desc": "Начало боя: Получает 1 Плавленный снаряд"
         }
     ]
 }
