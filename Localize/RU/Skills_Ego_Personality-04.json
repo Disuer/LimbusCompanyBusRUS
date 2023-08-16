@@ -110,7 +110,7 @@
                   "desc": "[OnSucceedAttack] Наносит 6 Утопание"
                 },
                 {
-                  "desc": "[EndSkill] Даёт всем союзникам +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">Множитель Э.Г.О. ресурсов</color></link></u>., apply 1 Haste next turn"
+                  "desc": "[EndSkill] Даёт всем союзникам +1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">Множитель Э.Г.О. ресурсов</color></link></u>., даёт 1 Спешка на следующий ход"
                 }
               ]
             }
