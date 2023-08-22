@@ -33,7 +33,7 @@
     {
       "id": "Vulnerable",
       "name": "Уязвимость",
-      "desc": "Получает больше урона за каждую единицу эффекта в течение одного хода. (Макс. 10)"
+      "desc": "Получает больше урона за каждую единицу эффекта в течение одного хода. (Макс. 10)",
       "summary": "+{0}0% получаемого урона"
     },
     {
@@ -206,7 +206,7 @@
     {
       "id": "Vibration",
       "name": "Тремор",
-      "desc": "При получении удара, взрывающего Тремор, поднимает порог ошеломления в зависимости от количества эффекта.\nВ конце хода, снижает его счётчик на 1."
+      "desc": "При получении удара, взрывающего Тремор, поднимает границу выносливости в зависимости от количества эффекта.\nВ конце хода, снижает его счётчик на 1."
     },
     {
       "id": "Burst",
@@ -216,12 +216,12 @@
     {
       "id": "Sinking",
       "name": "Утопание",
-      "desc": "При ударе, получвет фиксированный урон СД в зависимости от количества эффекта.\n(Абнормалити получают урон Унынием.)\nЗатем, снижает его счётчик на 1."
+      "desc": "При ударе, получает фиксированный урон СД в зависимости от количества эффекта.\n(Аномалии получают урон Унынием.)\nЗатем, снижает его счётчик на 1."
     },
     {
       "id": "Breath",
       "name": "Равновесие",
-      "desc": "При попадании, увеличивает шанс критического удара в зависимости от количества эффекта, снижая счётчик на 1 при успешном критическом попадании.\nВ конце хода, снижает его счётчик на 1."
+      "desc": "При попадании, есть шанс критического удара в зависимости от количества эффекта, снижая счётчик на 1 при успешном критическом попадании.\nВ конце хода, снижает его счётчик на 1."
     },
     {
       "id": "BloodPocket",
@@ -286,7 +286,7 @@
     {
       "id": "AttackDown",
       "name": "Понижение уровня атаки",
-      "desc": "Понижает силу атаки в зависимости от количества эффекта в течение одного хода."
+      "desc": "Понижает уровень атаки в зависимости от количества эффекта в течение одного хода."
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
@@ -325,263 +325,263 @@
     },
     {
       "id": "SlashResistDown",
-      "name": "Slash Resist Down",
+      "name": "Понижение сопротивления режущим атакам",
       "desc": ""
     },
     {
       "id": "PenetrateResistDown",
-      "name": "Pierce Resist Down",
+      "name": "Понижение сопротивления колющим атакам",
       "desc": ""
     },
     {
       "id": "HitResistDown",
-      "name": "Blunt Resist Down",
+      "name": "Понижение сопротивления дробящим атакам",
       "desc": ""
     },
     {
       "id": "SlashDamageDown",
-      "name": "Slash DMG Down",
-      "desc": "Deal less damage with Slash skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона режущих атак",
+      "desc": "Наносит меньше урона режущими навыками в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "PenetrateDamageDown",
-      "name": "Pierce DMG Down",
-      "desc": "Deal less damage with Pierce skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона колющих атак",
+      "desc": "Наносит меньше урона колющими навыками в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "HitDamageDown",
-      "name": "Blunt DMG Down",
-      "desc": "Deal less damage with Blunt skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона дробящих атак",
+      "desc": "Наносит меньше урона дробящими навыками в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "CrimsonResistDown",
-      "name": "Wrath Resist Down",
+      "name": "Понижение сопротивления к Гневу",
       "desc": ""
     },
     {
       "id": "ScarletResistDown",
-      "name": "Lust Resist Down",
+      "name": "Понижение сопротивления к Похоти",
       "desc": ""
     },
     {
       "id": "AmberResistDown",
-      "name": "Sloth Resist Down",
+      "name": "Понижение сопротивления к Лени",
       "desc": ""
     },
     {
       "id": "ShamrockResistDown",
-      "name": "Gluttony Resist Down",
+      "name": "Понижение сопротивления к Чревоугодию",
       "desc": ""
     },
     {
       "id": "AzureResistDown",
-      "name": "Gloom Resist Down",
+      "name": "Понижение сопротивления к Унынию",
       "desc": ""
     },
     {
       "id": "IndigoResistDown",
-      "name": "Pride Resist Down",
+      "name": "Понижение сопротивления к Гордыне",
       "desc": ""
     },
     {
       "id": "VioletResistDown",
-      "name": "Envy Resist Down",
+      "name": "Понижение сопротивления к Зависти",
       "desc": ""
     },
     {
       "id": "CrimsonResistUp",
-      "name": "Wrath Resist Up",
-      "desc": "Increase Wrath Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Гневу",
+      "desc": "Увеличивает сопротивление навыкам Гнева в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "ScarletResistUp",
-      "name": "Lust Resist Up",
-      "desc": "Increase Lust Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Похоти",
+      "desc": "Увеличивает сопротивление навыкам Похоти в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "AmberResistUp",
-      "name": "Sloth Resist Up",
-      "desc": "Increase Sloth Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Лени",
+      "desc": "Увеличивает сопротивление навыкам Лени в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "ShamrockResistUp",
-      "name": "Gluttony Resist Up",
-      "desc": "Increase Gluttony Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Чревоугодию",
+      "desc": "Увеличивает сопротивление навыкам Чревоугодия в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "AzureResistUp",
-      "name": "Gloom Resist Up",
-      "desc": "Increase Gloom Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Унынию",
+      "desc": "Увеличивает сопротивление навыкам Уныния в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "IndigoResistUp",
-      "name": "Pride Resist Up",
-      "desc": "Increase Pride Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Гордыне",
+      "desc": "Увеличивает сопротивление навыкам Гордыни в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "VioletResistUp",
-      "name": "Envy Resist Up",
-      "desc": "Increase Envy Resistance by a % based on Count.\n(0.1% per Count)"
+      "name": "Повышение сопротивления к Зависти",
+      "desc": "Увеличивает сопротивление навыкам Зависти в процентном соотношении в зависимости от количества эффекта.\n(0.1% за единицу счётчика)"
     },
     {
       "id": "CrimsonDamageDown",
-      "name": "Wrath DMG Down",
-      "desc": "Deal less damage with Wrath skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Гневом",
+      "desc": "Наносит меньше урона навыками Гнева в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ScarletDamageDown",
-      "name": "Lust DMG Down",
-      "desc": "Deal less damage with Lust skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Похотью",
+      "desc": "Наносит меньше урона навыками Похоти в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AmberDamageDown",
-      "name": "Sloth DMG Down",
-      "desc": "Deal less damage with Sloth skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Ленью",
+      "desc": "Наносит меньше урона навыками Лени в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ShamrockDamageDown",
-      "name": "Gluttony DMG Down",
-      "desc": "Deal less damage with Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Чревоугодием",
+      "desc": "Наносит меньше урона навыками Чревоугодия в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AzureDamageDown",
-      "name": "Gloom DMG Down",
-      "desc": "Deal less damage with Gloom skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Унынием",
+      "desc": "Наносит меньше урона навыками Уныния в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "IndigoDamageDown",
-      "name": "Pride DMG Down",
-      "desc": "Deal less damage with Pride skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Гордыней",
+      "desc": "Наносит меньше урона навыками Гордыни в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "VioletDamageDown",
-      "name": "Envy DMG Down",
-      "desc": "Deal less damage with Envy skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Понижение урона Завистью",
+      "desc": "Наносит меньше урона навыками Зависти в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "CrimsonDamageUp",
       "name": "Повышение урона Гневом",
-      "desc": "Deal more damage with Wrath skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Наносит больше урона навыками Гнева в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ScarletDamageUp",
-      "name": "Lust DMG Up",
-      "desc": "Deal more damage with Lust skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение урона Похотью",
+      "desc": "Наносит больше урона навыками Похоти в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AmberDamageUp",
       "name": "Повышение урона Ленью",
-      "desc": "Deal more damage with Sloth skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Наносит больше урона навыками Лени в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ShamrockDamageUp",
-      "name": "Gluttony DMG Up",
-      "desc": "Deal more damage with Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение урона Чревоугодием",
+      "desc": "Наносит больше урона навыками Чревоугодия в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AzureDamageUp",
-      "name": "Gloom DMG Up",
-      "desc": "Deal more damage with Gloom skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение урона Унынием",
+      "desc": "Наносит больше урона навыками Уныния в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "IndigoDamageUp",
-      "name": "Pride DMG Up",
-      "desc": "Deal more damage with Pride skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение урона Гордыней",
+      "desc": "Наносит больше урона навыками Гордыни в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "VioletDamageUp",
-      "name": "Envy DMG Up",
-      "desc": "Deal more damage with Envy skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Повышение урона Завистью",
+      "desc": "Наносит больше урона навыками Зависти в зависимости от количества эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "Curse",
       "name": "Проклятие",
-      "desc": "В конце хода, gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Level Down."
+      "desc": "Конец хода: Получает один из следующих эффектов, затем уменьшает счётчик этого эффекта на 1.\n1 Понижение силы атаки/\n1 Понижение силы защиты/\n2 Понижение уровня атаки/\n2 Понижение уровня защиты."
     },
     {
       "id": "AttackDmgUp_Weak",
-      "name": "Weak-resist DMG Boost",
-      "desc": "Boost the damage of attacks against Weak resistances by a % based on Count.\n(10% per Count)"
+      "name": "Увеличение урона против слабого сопротивления",
+      "desc": "Увеличивает урон против врагов с слабым сопротивлением в процентном соотношении в зависимости от количества эффекта.\n(10% за единицу счётчика)"
     },
     {
       "id": "Bullet",
       "name": "Патрон",
-      "desc": "Spent by certain skills.\nSome attacks cancel if lacking Ammo."
+      "desc": "Тратится определёнными навыками.\nНекоторые атаки отменяются при недостатке патронов."
     },
     {
       "id": "Meursault_Last_Remodeling",
-      "name": "Final Augment",
-      "desc": "At the start of the turn, gain 3 Attack Повышение силы, Defense Повышение силы, and Haste; die after 3 turns."
+      "name": "Последнее улучшение",
+      "desc": "Начало хода: Получает 3 Повышение силы атаки, Повышение силы защиты, и Спешка; умирает через 3 хода."
     },
     {
       "id": "Choice_90103301",
-      "name": "Struggle",
-      "desc": "Speed +1 for this battle.",
-      "summary": "SPD +1"
+      "name": "Борьба",
+      "desc": "Скорость +1 в течение этого боя.",
+      "summary": "Скорость +1"
     },
     {
       "id": "Choice_90103402",
-      "name": "Relief",
-      "desc": "Speed +2 for this battle.",
-      "summary": "SPD +2"
+      "name": "Облегчение",
+      "desc": "Скорость +2 в течение этого боя.",
+      "summary": "Скорость +2"
     },
     {
       "id": "Choice_901001",
-      "name": "Spreading Flame",
-      "desc": "At the start of the combat phase, allies without Wrath Affinity take 5 Wrath damage."
+      "name": "Распространяющийся огонь",
+      "desc": "В начале боевой фазы, союзники без навыков Гнева получают 5 Горение."
     },
     {
       "id": "Choice_901007",
-      "name": "Gentle Sendoff",
-      "desc": "Turn Start: Heal 10 HP and SP.",
-      "summary": "HP & SP +10"
+      "name": "Мягкие проводы",
+      "desc": "Начало хода: Восстанавливает 10 ОЗ и СД.",
+      "summary": "ОЗ & СД +10"
     },
     {
       "id": "Choice_901009",
-      "name": "Photopia",
-      "desc": "Combat Start: Skill Final Power -1.",
-      "summary": "Skill Final Power -1"
+      "name": "Фотопия",
+      "desc": "Начало боевой фазы: Финальная сила навыков -1.",
+      "summary": "Финальная сила навыков -1"
     },
     {
       "id": "Choice_901010",
-      "name": "Emptied",
-      "desc": "At the start of the battle, allies without Lust Affinity are Staggered."
+      "name": "Опустошенный",
+      "desc": "В начале боевой фазы, союзники без навыков Похоти оглушены."
     },
     {
       "id": "Choice_901019",
-      "name": "Contamination",
-      "desc": "Combat Start: Speed -2.",
-      "summary": "SPD -2"
+      "name": "Заражение",
+      "desc": "Начало боевой фазы: Скорость -2.",
+      "summary": "Скорсоть -2"
     },
     {
       "id": "Aggressive",
       "name": "Инстинкты",
-      "desc": "В конце хода, if the Count is at 4+, change to an “aggressive” state."
+      "desc": "В конце хода, если счётчик выше 4, меняет состояние на “агрессивное”."
     },
     {
       "id": "Cromer_Target",
-      "name": "Взгляд Той, что держит",
-      "desc": "Staggered for one turn. Take +100% damage from Kromer."
+      "name": "Взгляд Той, кто держит",
+      "desc": "Оглушён в течение этого хода. Получает на 100% больше урона от Кромер."
     },
     {
       "id": "Poison",
       "name": "Яд",
-      "desc": "В конце хода, take fixed damage by the Count, then halve the Count."
+      "desc": "В конце хода, получает фиксированный урон ОЗ, затем уменьшает счётчик в 2 раза."
     },
     {
       "id": "Desire",
-      "name": "Urge",
-      "desc": "В конце хода, if at 5+ stacks, take 30 SP damage, gain 2 Fragile and 10 Bind, and remove this effect."
+      "name": "Желание",
+      "desc": "В конце хода, при счётчике выше 5, получает 30 урона СД, 2 Уязвимость и 10 Связывание, и убирает этот эффект."
     },
     {
       "id": "Assemble",
       "name": "Фанатизм",
-      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn."
+      "desc": "Финальная сила навыков увеличивается за каждую единицу счётчика против противников с Гвозди в течение этого хода."
     },
     {
       "id": "Nail",
-      "name": "Гвозди",
-      "desc": "В начале хода получает 1 Кровотечение и увеличивает счётчик Кровотечение на счётчик эффекта. В конце хода уменьшает счётчик этого эффекта вдвое (округляется вниз)"
+      "name": "Гвозди Н Корп.",
+      "desc": "В начале хода получает 1 Кровотечение и увеличивает счётчик Кровотечение на счётчик эффекта.\nВ конце хода уменьшает количество эффекта на 1."
     },
     {
       "id": "BeingGolden",
@@ -591,638 +591,638 @@
     {
       "id": "SlashTakeDamageDown",
       "name": "Защищённость от режущего урона",
-      "desc": "Take less damage from Slash skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает меньше урона от режущих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "PenetrateTakeDamageDown",
-      "name": "Pierce Protection",
-      "desc": "Take less damage from Pierce skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от колющего урона",
+      "desc": "Принимает меньше урона от колющих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "HitTakeDamageDown",
-      "name": "Blunt Protection",
-      "desc": "Take less damage from Blunt skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от дробящего урона",
+      "desc": "Принимает меньше урона от дробящих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "CrimsonTakeDamageDown",
-      "name": "Wrath Protection",
-      "desc": "Take less damage from Wrath skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Гнева",
+      "desc": "Принимает меньше урона от навыков Гнева за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ScarletTakeDamageDown",
-      "name": "Lust Protection",
-      "desc": "Take less damage from Lust skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Похоти",
+      "desc": "Принимает меньше урона от навыков Похоти за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AmberTakeDamageDown",
-      "name": "Sloth Protection",
-      "desc": "Take less damage from Sloth skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Лени",
+      "desc": "Принимает меньше урона от навыков Лени за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ShamrockTakeDamageDown",
-      "name": "Gluttony Protection",
-      "desc": "Take less damage from Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Чревоугодия",
+      "desc": "Принимает меньше урона от навыков Чревоугодия за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AzureTakeDamageDown",
-      "name": "Gloom Protection",
-      "desc": "Take less damage from Gloom skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Уныния",
+      "desc": "Принимает меньше урона от навыков Уныния за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "IndigoTakeDamageDown",
-      "name": "Pride Protection",
-      "desc": "Take less damage from Pride skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Гордыни",
+      "desc": "Принимает меньше урона от навыков Гордыни за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "VioletTakeDamageDown",
-      "name": "Envy Protection",
-      "desc": "Take less damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Защищённость от Зависти",
+      "desc": "Принимает меньше урона от навыков Зависти за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "SlashTakeDamageUp",
       "name": "Уязвимость к режущему урону",
-      "desc": "Take more damage from Slash skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от режущих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "PenetrateTakeDamageUp",
-      "name": "Уязвимость к пронзающему урону",
-      "desc": "Take more damage from Pierce skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "Уязвимость к колющему урону",
+      "desc": "Принимает больше урона от колющих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "HitTakeDamageUp",
       "name": "Уязвимость к дробящему урону",
-      "desc": "Take more damage from Blunt skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от дробящих навыков за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "CrimsonTakeDamageUp",
       "name": "Уязвимость к Гневу",
-      "desc": "Take more damage from Wrath skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Гнева за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ScarletTakeDamageUp",
       "name": "Уязвимость к Похоти",
-      "desc": "Take more damage from Lust skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Похоти за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AmberTakeDamageUp",
       "name": "Уязвимость к Лени",
-      "desc": "Take more damage from Sloth skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Лени за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "ShamrockTakeDamageUp",
       "name": "Уязвимость к Чревоугодию",
-      "desc": "Take more damage from Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Чревоугодия за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "AzureTakeDamageUp",
       "name": "Уязвимость к Унынию",
-      "desc": "Take more damage from Gloom skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Уныния за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "IndigoTakeDamageUp",
       "name": "Уязвимость к Гордыне",
-      "desc": "Take more damage from Pride skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Гордыни за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "VioletTakeDamageUp",
       "name": "Уязвимость к Зависти",
-      "desc": "Take more damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Принимает больше урона от навыков Зависти за каждую единицу эффекта в течение одного хода. (Макс. 10)"
     },
     {
       "id": "NailPersonality",
       "name": "Гвозди",
-      "desc": "At the start of the turn, gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nВ конце хода, halve the Count. (Rounded down)"
+      "desc": "В начале хода, получает 1 Кровотечение и увеличивает счётчик Кровотечение на счётчик эффекта.\nВ конце хода: Уменьшает счётчик этого эффекта вдвое (округляется вниз)"
     },
     {
       "id": "AssemblePersonality",
       "name": "Фанатизм",
-      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn."
+      "desc": "Финальная сила навыков увеличивается за каждую единицу счётчика против противников с Гвозди в течение этого хода."
     },
     {
       "id": "MarkOfHeresy",
       "name": "Взор",
-      "desc": "Take +20% damage from Pierce and Blunt skills for one turn.\nThe ally that defeats the marked unit heals 10 SP; if the ally is from N Corp, also apply 1 Fanatic next turn."
+      "desc": "Принимает на 20% больше урона от дробящих и колющих навыков в течение одного хода.\nСоюзник, убивший этого противника, восстанавливает 10 СД; если союзник из Н Корп., также получает 1 Фанатизм на следующий ход."
     },
     {
       "id": "HitResultUp",
-      "name": "Повышение силы дробящего урона",
-      "desc": "Blunt skills gain final Power by the effect’s Count for one turn."
+      "name": "Повышение финальной силы дробящих навыков",
+      "desc": "Повышает финальную силу дробящих навыков за каждую единицу счётчика в течение одного хода."
     },
     {
       "id": "WeaknessAnalysis",
       "name": "Слабость найдена",
-      "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] for one turn."
+      "desc": "Случайное сопротивление типа 'Нейтральное' или 'Сопротивляемость' ослабляется [+0.2 к множителю урона] в течение одного хода."
     },
     {
       "id": "Cycle",
       "name": "Карма",
-      "desc": "Take +1% damage per Count. В конце хода, if at 108+ Count, the unit dies."
+      "desc": "Получает +1% больше урона за единицу счётчика. В конце хода, умирает при счетчике больше 108."
     },
     {
       "id": "Duress",
       "name": "Captivity",
-      "desc": "The affected unit becomes Staggered for 3 turns.\nAt the start of the turn, if Kqe-1j-23 is Staggered, remove this status."
+      "desc": "Находящийся под влиянием грешник оглушается на 3 хода.\nВ начале хода, если Kqe-1j-23 оглушён, убирает этот эффект."
     },
     {
       "id": "VioletResultUp",
-      "name": "Увеличение силы Зависти",
-      "desc": "Envy skills gain final Power by the effect’s Count for one turn."
+      "name": "Повышение финальной силы навыков Зависти",
+      "desc": "Финальная сила навыков Зависти увеличивается за каждую единицу счётчика в течение одного хода."
     },
     {
       "id": "CyclingKarma",
       "name": "Цикличная карма",
-      "desc": "All units transfer their Karma to their targets after a successful attack.\nKarma is not transferred to My Form Empties as long as its allies are alive.",
-      "summary": "Karma transferred on Clash win"
+      "desc": "Все участники боя передают свою Карму своим целям после успешной атаки.\nКарма не передаётся My Form Empties до тех пор, пока его союзники живы.",
+      "summary": "Карма передаётся при ударе"
     },
     {
       "id": "Cromer_Ecstasy",
       "name": "Экстаз",
-      "desc": "All the Maw’s physical resistances change to ‘Fatal’."
+      "desc": "Все физические сопротивления Пасти снижаются до ‘Фатальный’."
     },
     {
       "id": "Cromer_Madness",
       "name": "Чистота",
-      "desc": "All parts gain 3 Bind and 3 Damage Up, and their phys. resistances change to ‘Fatal’."
+      "desc": "Все части получают 3 Связывание и 3 Повышение урона, и их физические сопротивления меняются на ‘Фатальный’."
     },
     {
       "id": "TakeHpHealReduce",
       "name": "Снижение лечения ОЗ",
-      "desc": "Decreases HP healing provided by Passive abilities, Skills, and Coin effects. (Max 5)"
+      "desc": "Восстанавливает меньше ОЗ от пассивных способностей, навыков, и эффектов монет. (Макс. 5)"
     },
     {
       "id": "AttackLevelAdder",
-      "name": "Уровень атаки+",
-      "desc": "Offense Level increases by the effect’s Count for one turn."
+      "name": "Повышение уровня атаки+",
+      "desc": "Уровень атаки повышается за каждую единицу счётчика в течение одного хода."
     },
     {
       "id": "Thirst",
       "name": "Аппетит",
-      "desc": "Increases the healing provided by the Passive [Rustle Up].\nSpent when the Passive activates."
+      "desc": "Повышает восстановления ОЗ от пассивной способности [Быстрое приготовление].\nТратится при активации пассивной способности."
     },
     {
       "id": "GainSinStockAdder",
       "name": "Множитель Э.Г.О. ресурсов",
-      "desc": "Increases the amount of E.G.O resources earned from skills by the effect’s Count for one turn."
+      "desc": "Получает больше Э.Г.О. ресурсов от использования навыков за каждую единицу счётчика в течение одного хода."
     },
     {
       "id": "Enrage",
       "name": "Безумие",
-      "desc": "Gain 3 Attack Повышение силы and 3 Fragile for one turn, and change behavior. Does not gain Aggression when attacked."
+      "desc": "Получает 3 Повышение силы атаки и 3 Уязвимость в течение одного хода, и меняет поведение. Не получает Инстинкты, когда атакован."
     },
     {
       "id": "DimensionRift",
       "name": "Пространственный разлом",
-      "desc": "В конце хода, gain Rupture Count by this effect’s amount. Then, remove this effect."
+      "desc": "В конце хода, получает счётчики Разрыва в зависимости от счётчика эффекта. Затем убирает этот эффект."
     },
     {
       "id": "ShardOfUmbrella",
-      "name": "Umbrella Splinters",
-      "desc": "Gain 5 Rupture per Count at turn end",
-      "summary": "Gain 5 Rupture per Count at turn end"
+      "name": "Обломки зонта",
+      "desc": "Получает 5 Разрыва за каждую единицу счётчика эффекта в конце хода.",
+      "summary": "Получает 5 Разрыва за каждую единицу счётчика эффекта в конце хода."
     },
     {
       "id": "WrappedCurseTag",
-      "name": "Entangled Curse Talisman",
-      "desc": "Deal +3% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +3% damage per Count; At 9+ Count, gain 2 Attack Power Down at turn start"
+      "name": "Запутанные талисманы проклятия",
+      "desc": "Наносит +3% урона за каждую единицу счётчика эффекта\nПри счётчике выше 9, получает 2 Понижение силы атаки в начале хода",
+      "summary": "Наносит +3% урона за каждую единицу счётчика эффекта; При счётчике выше 9, получает 2 Понижение силы атаки в начале хода"
     },
     {
       "id": "ReattachedCurseTag",
-      "name": "Reattached Curse Talisman",
-      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
-      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+      "name": "Наложенный заново талисман проклятия",
+      "desc": "При счётчике больше 9, получает 5 Связывание в конце хода.\nПри счётчике больше 12, получает 5 Понижение силы атаки в конце хода.",
+      "summary": "При счётчике больше 9, получает 5 Связывание в конце хода.\nПри счётчике больше 12, получает 5 Понижение силы атаки в конце хода."
     },
     {
       "id": "ElectricStorage",
-      "name": "Capacitor",
-      "desc": "It seems to be storing electricity in its body.",
-      "summary": "표시용"
+      "name": "Конденсатор",
+      "desc": "Похоже, оно накапливает электричество в своём теле.",
+      "summary": "Готовится к действию"
     },
     {
       "id": "SelfCharge",
-      "name": "Self-charge",
-      "desc": "Electric currents seem to flow around its body.",
-      "summary": "표시용"
+      "name": "Самозаряд",
+      "desc": "Разряды электрического тока протекают по его телу.",
+      "summary": "Особый ресурс"
     },
     {
       "id": "Exalted",
-      "name": "Morale Boost",
-      "desc": "Gain Damage Up by the the effect's Count every turn (Max 5)\nCannot gain the status while Tipsy",
-      "summary": "Gain Damage Up by the effect's Count every turn; Cannot gain the status while Tipsy"
+      "name": "Повышение боевого духа",
+      "desc": "Получает Повышение урона за каждую единицу счётчика каждый ход (Maкс. 5)\nНе может получить этот эффект, пока есть эффект Пьяный",
+      "summary": "Получает Повышение урона за каждую единицу счётчика каждый ход; Не может получить этот эффект, пока есть эффект Пьяный"
     },
     {
       "id": "Tipsiness",
-      "name": "Tipsy",
-      "desc": "Lose Clash Power by the effect's Count (Max 5)",
-      "summary": "Lose Clash Power by the effect's Count"
+      "name": "Пьяный",
+      "desc": "Сила в столкновении понижается за каждую единицу счётчика (Maкс. 5)",
+      "summary": "Сила в столкновении понижается за каждую единицу счётчика"
     },
     {
       "id": "Predation",
-      "name": "Predation",
-      "desc": "It seems to be preparing a powerful move.",
-      "summary": "표시용"
+      "name": "Хищничество",
+      "desc": "Похоже, оно готовится к мощному удару.",
+      "summary": "Подготовка"
     },
     {
       "id": "ATL_EndureCombustion",
-      "name": "Burn Resistance",
-      "desc": "When taking damage from Burn, reduce the damage by 10% per Count (Max 10)",
-      "summary": "When taking damage from Burn, take 10% less damage per Count"
+      "name": "Огнеупорность",
+      "desc": "Когда получает урон от Горение, уменьшает урон на 10% за каждую единицу счётчика эффекта (Maкс. 10)",
+      "summary": "Когда получает урон от Горение, уменьшает урон на 10% за каждую единицу счётчика эффекта"
     },
     {
       "id": "Resonate",
-      "name": "Resonant",
-      "desc": "When bursting Tremor or raising stagger threshold, deal 3 fixed damage per Count and further raise stagger threshold by 3% per Count",
-      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+      "name": "Резонирующий",
+      "desc": "При провоцировании Тремора или поднятия границы выносливости, дополнительно наносит 3 фиксированного урона за каждую единицу счётчика эффекта и поднимает границу выносливости на 3% за каждую единицу счётчика эффекта",
+      "summary": "Провоцирование Тремор и поднятие границы выносливости наносит урон и поднимает больше границу выносливости"
     },
     {
       "id": "VibrationAssimilation",
-      "name": "Tremor Sync",
-      "desc": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have",
-      "summary": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have"
+      "name": "Синхронизация тремора",
+      "desc": "В столкновении, противник имеет на 1 единицу силы столкновения меньше за каждые 5 Тремор в наличии",
+      "summary": "В столкновении, противник имеет на 1 единицу силы столкновения меньше за каждые 5 Тремор в наличии"
     },
     {
       "id": "CollapseAmpoule",
-      "name": "Decay Ampule",
-      "desc": "Take damage by 2% of Max HP per Count",
-      "summary": "Take damage by 2% of Max HP per Count"
+      "name": "Разлагающая ампула",
+      "desc": "Получает урон в размере 2% от Макс. ОЗ за каждую единицу счётчика эффекта",
+      "summary": "Получает урон в размере 2% от Макс. ОЗ за каждую единицу счётчика эффекта"
     },
     {
       "id": "InterlockingTime",
-      "name": "Interlocking Time",
-      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
-      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+      "name": "Блокировка времени",
+      "desc": "Уменьшает финальный урон на 30% и сохраняет его. При счётчике выше 3, получает фиксированный урон в размере 1.5х от сохранённого урона, и получает 3 Связывание на следующий ход.",
+      "summary": "Уменьшает финальный урон на 30% и сохраняет его. При счётчике выше 3, получает фиксированный урон в размере 1.5х от сохранённого урона, и получает 3 Связывание на следующий ход."
     },
     {
       "id": "TimeRental",
-      "name": "Borrowed Time",
-      "desc": "В конце хода, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn",
-      "summary": "В конце хода, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn"
+      "name": "Время, взятое взаймы",
+      "desc": "В конце хода, получает 3 Спешка и 2 Повышение урона; Если счётчик равен 1, получает 4 Связывание и 1 Понижение силы атаки на следующий ход",
+      "summary": "В конце хода, получает 3 Спешка и 2 Повышение урона; Если счётчик равен 1, получает 4 Связывание и 1 Понижение силы атаки на следующий ход"
     },
     {
       "id": "ATL_EndureLaceration",
-      "name": "Bleed Resistance",
-      "desc": "When taking damage from Bleed, reduce the damage by 10% per Count (Max 10)",
-      "summary": "When taking damage from Bleed, take 10% less damage per Count"
+      "name": "Сопротивление кровотечению",
+      "desc": "Когда получает урон от Кровотечение, уменьшает урон на 10% за каждую единицу счётчика эффекта (Макс. 10)",
+      "summary": "Когда получает урон от Кровотечение, получает на 10% меньше урона за каждую единицу счётчика эффекта"
     },
     {
       "id": "Bull_Sadness",
-      "name": "Unresolved Sorrow",
-      "desc": "At the start of the turn, gain Attack Power Down by the Count.\nВ конце хода, if this effect is at 3+ Count, changes to Expanding Sorrow",
+      "name": "Неразрешённая печаль",
+      "desc": "В начале хода, получает Понижение силы атаки в зависимости от счётчика.\nВ конце хода, при счётчике больше 3, заменяется на Расширяющаяся печаль.",
       "summary": ""
     },
     {
       "id": "Bull_BuzzingEmotion",
-      "name": "Wavering Emotions",
-      "desc": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect",
-      "summary": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect"
+      "name": "Колебающиеся эмоции",
+      "desc": "Начало хода: Случайно получает Понижение силы атаки, Паралич, или Связывание в зависимости от счётчика эффекта, затем убирает этот эффект",
+      "summary": "Начало хода: Случайно получает Понижение силы атаки, Паралич, или Связывание в зависимости от счётчика эффекта, затем убирает этот эффект"
     },
     {
       "id": "Scared",
-      "name": "Fear",
-      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
-      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+      "name": "Страх",
+      "desc": "Конец хода: При 20 СД и менее, получает 1 Повышение урона на следующий ход",
+      "summary": "Конец хода: При 20 СД и менее, получает 1 Повышение урона на следующий ход"
     },
     {
       "id": "Stressed",
-      "name": "Stressed",
-      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Повышение силы next turn",
-      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Повышение силы next turn"
+      "name": "В стрессе",
+      "desc": "Конец хода: При 25 СД и менее, получает 1 Повышение силы атаки на следующий ход",
+      "summary": "Конец хода: При 25 СД и менее, получает 1 Повышение силы атаки на следующий ход"
     },
     {
       "id": "Nervous",
-      "name": "Nervous",
-      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
-      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+      "name": "Нервный",
+      "desc": "Конец хода: При 15 СД и менее, получает 3 Повышение уровня атаки на следующий ход",
+      "summary": "Конец хода: При 15 СД и менее, получает 3 Повышение уровня атаки на следующий ход"
     },
     {
       "id": "ATL_Agility",
-      "name": "Faster!",
-      "desc": "Gain 2 Haste",
-      "summary": "표시용"
+      "name": "Быстрее!",
+      "desc": "Получает 2 Спешка",
+      "summary": "Ускорение"
     },
     {
       "id": "ATL_Breath",
-      "name": "Aim True!",
-      "desc": "Gain 3 Poise",
-      "summary": "표시용"
+      "name": "Цельсь!",
+      "desc": "Получает 3 Равновесие",
+      "summary": "Прицел"
     },
     {
       "id": "ATL_Target",
-      "name": "Get 'Em!",
-      "desc": "Simultaneously attacks one unit",
-      "summary": "표시용"
+      "name": "Убей их!",
+      "desc": "Одновременно атакует одного противника",
+      "summary": "Убей"
     },
     {
       "id": "Bull_FadedHeat",
-      "name": "Momentary Cool",
-      "desc": "Core and body lose 50% Max HP"
+      "name": "Мгновенное охлаждение",
+      "desc": "Ядро и тело теряют 50% Макс. ОЗ"
     },
     {
       "id": "Bull_Fever",
-      "name": "Fever",
-      "desc": "Deal +10% damae per Count\nReduced by 1 at turn end",
+      "name": "Жар",
+      "desc": "Наносит +10% урона за каждую единицу счётчика эффекта\nСнижает счётчик на 1 в конце хода",
       "summary": ""
     },
     {
       "id": "Bull_ReinforcedSadness",
-      "name": "Expanding Sorrow",
-      "desc": "Changes behavior.",
-      "summary": "Changes behavior."
+      "name": "Расширяющаяся печаль",
+      "desc": "Меняет поведение.",
+      "summary": "Меняет поведение."
     },
     {
       "id": "Crazy_LowMorale",
       "name": "Безрассудство (Низкий дух)",
-      "desc": "When at low morale for the first time, targets units indiscriminately",
+      "desc": "Когда впервые падает духом, выбирает цель случайно.",
       "undefined": "-"
     },
     {
       "id": "Crazy_Panic",
       "name": "Безрассудство (Срыв)",
-      "desc": "Targets indiscriminately; Clash Power +1, and gain 2 Damage Up",
+      "desc": "Выбирает цель случайно; Сила столкновения +1, и получает 2 Повышение урона.",
       "undefined": "-"
     },
     {
       "id": "Suicide_LowMorale",
       "name": "Суицидальность (Низкий дух)",
-      "desc": "When at low morale for the first time, become unable to act",
+      "desc": "Когда впервые падает духом, перестаёт действовать",
       "undefined": "-"
     },
     {
       "id": "Suicide_Panic",
       "name": "Суицидальность (Срыв)",
-      "desc": "Cannot act for 3 turns. Unit dies at turn start; all its allies lose 10 SP",
+      "desc": "Не может действовать 3 хода. В начале хода персонаж умирает; все союзники при этом теряют 10 СД.",
       "undefined": "-"
     },
     {
       "id": "Prowl_LowMorale",
       "name": "Блуждание (Низкий дух)",
-      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "desc": "Начало хода: Наносит 2 урона по СД союзникам.",
       "undefined": "-"
     },
     {
       "id": "Prowl_Panic",
       "name": "Блуждание (Срыв)",
-      "desc": "Turn End: Deal 5 SP damage to allies. Flees from battle after 3 turns have passed",
+      "desc": "Конец хода: Наносит 5 урона по СД союзникам. Сбегает с поля боя после 3 ходов.",
       "undefined": "-"
     },
     {
       "id": "Blue_LowMorale",
       "name": "Подавленность (Низкий дух)",
-      "desc": "In a clash, if any Coin lands tails, Clash Power -1 for the clash",
+      "desc": "В столкновении, если любая Монета падает решкой, Сила столкновения -1 на столкновение.",
       "undefined": "-"
     },
     {
       "id": "Blue_Panic",
       "name": "Подавленность (Срыв)",
-      "desc": "In a clash, if any Coin lands tails, Clash Power -3 for the clash",
+      "desc": "В столкновении, если любая Монета падает решкой, Сила столкновения -3 на столкновение.",
       "undefined": "-"
     },
     {
       "id": "DongbaekGrow",
-      "name": "Growing",
-      "desc": "В конце хода, add +1 Count, and gain Max HP proportional to the Count. (Max 3)",
-      "summary": "В конце хода, add +1 Count, and gain Max HP proportional to the Count. (Max 3)"
+      "name": "Прорастание",
+      "desc": "В конце хода, добавляет +1 к счётчику, и получает Макс. ОЗ пропорционально счётчику. (Макс. 3)",
+      "summary": "В конце хода, добавляет +1 к счётчику, и получает Макс. ОЗ пропорционально счётчику. (Макс. 3)"
     },
     {
       "id": "DongbaekFlorescence",
-      "name": "Blooming",
-      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "name": "Цветение",
+      "desc": "Конец хода:при счётчике больше 5, получает урон Ленью в размере (Счётчик)% от Макс. ОЗ, и становится Полностью цветущий\nПри счётчике ниже 5, теряет (Счётчик * 5) СД, после чего уменьшает счётчик на 1",
       "summary": ""
     },
     {
       "id": "DongbaekFullBloom",
-      "name": "Fully Bloomed",
-      "desc": "Cannot act\nВ конце хода, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it В конце хода.",
+      "name": "Полностью цветущий",
+      "desc": "Не может действовать\nВ конце хода,теряет 20 СД; если СД достигает -45, полностью восстанавливает СД, затем получает 'Ослепленный разум' на следующий ход.\nЕсли этот эффект не убирается в течение 2 ходов, убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "DongbaekFascination",
-      "name": "Dazzled Mind",
-      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn.\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it В конце хода.",
+      "name": "Ослепленный разум",
+      "desc": "Выбирает союзников целью атаки\nКогда оглушён, убирает этот эффект на следующем ходу\nЕсли этот эффект не убирается в течение 2 ходов, теряет 30 СД и убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "DongbaekShowdown",
-      "name": "Dueling",
-      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "name": "Дуэль",
+      "desc": "Начало хода: Участники боя без этого статуса становятся 'Полностью цветущий'\nЕсли этот эффект наложен на И Сана, Донбаек получает 1 Повышение силы атаки",
       "summary": ""
     },
     {
       "id": "DongbaekScatterPetal",
-      "name": "Scattering Petals",
-      "desc": "Turn End: At 6+ Count, become staggered",
+      "name": "Разбросанные лепестки",
+      "desc": "Конец хода: При счётчике выше 6, оглушается",
       "summary": ""
     },
     {
       "id": "Thorn",
-      "name": "Thorns",
-      "desc": "When hit, return 50% of the damage taken to the attacker",
-      "summary": "Deal 50% of damage taken to attacker"
+      "name": "Шипы",
+      "desc": "Когда получает удар, возвращает 50% полученного урона атаковавшему",
+      "summary": "Возвращает 50% полученного урона атаковавшему"
     },
     {
       "id": "Fragile_Mind_LowMorale",
-      "name": "Perilous Heart",
-      "desc": "Turn Start: Gain 2 Attack Повышение силы and 3 Bind",
-      "summary": "Turn Start: Gain 2 Attack Повышение силы and 3 Bind"
+      "name": "Опасное сердце",
+      "desc": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание.",
+      "summary": "Начало хода: Получает 2 Повышение силы атаки и 3 Связывание."
     },
     {
       "id": "Fragile_Mind_Panic",
-      "name": "Faltering Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "name": "Замирающее сердце",
+      "desc": "При панике становится оглушенным",
+      "summary": "При панике становится оглушенным"
     },
     {
       "id": "ErodingMind",
-      "name": "Corroding Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "name": "Повреждающее сердце",
+      "desc": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание",
+      "summary": "Начало хода: Получает 2 Понижение силы атаки, 2 Уязвимость, и 5 Связывание"
     },
     {
       "id": "CrimsonResultUp",
-      "name": "Повышение силы Гнева",
-      "desc": "Wrath skills gain final Power by the effect’s Count for one turn."
+      "name": "Повышение финальной силы навыков Гнева",
+      "desc": "Финальная сила навыков Гнева увеличивается за каждую единицу счётчика в течение одного хода."
     },
     {
       "id": "EmittedCurrent",
       "name": "Разряд искр",
-      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+      "desc": "Когда получает удар, атакующий получает +1 к счётчику Заряд; когда получает удар навыком Уныния, получает +1 к счётчику Разрыв, затем уменьшает счётчик на 1"
     },
     {
       "id": "DistortedDongrangRadiantVanity",
-      "name": "Radiant Vanity",
-      "desc": "At the start of the turn, Dongrang gains 1 Protection and 1 Attack Power Up."
+      "name": "Сияющее тщеславие",
+      "desc": "Начало хода: Донран получает 1 Защищённость и 1 Повышение силы атаки."
     },
     {
       "id": "DistortedDongrangEmptyMark",
-      "name": "Empty Mark",
-      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+      "name": "Пустая отметка",
+      "desc": "Отмечен Донраном. Получает 2 Связывание каждый ход, и принимает на 50% больше урона от Донрана."
     },
     {
       "id": "DistortedDongrangEarnestAchievement",
-      "name": "Earnest Accomplishment",
-      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs."
+      "name": "Серьезное достижение",
+      "desc": "Если этот участник боя побеждён или его ОЗ снижено до 1, атакующий получает усиления."
     },
     {
       "id": "DistortedDongrangEmptyHonor",
-      "name": "Empty Honor",
-      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn."
+      "name": "Пустая честь",
+      "desc": "Если Донран побеждает этого участника боя, он теряет ОЗ, получает 1 Пустота, и ослаблен на следующий ход."
     },
     {
       "id": "DistortedDongrangMomentaryGlory",
-      "name": "Momentary Glory",
-      "desc": "At 3+ Count, Dongrang becomes more powerful."
+      "name": "Момент славы",
+      "desc": "При счётчике выше 3, Донран становится более сильным."
     },
     {
       "id": "DistortedDongrangEmptiness",
-      "name": "Emptiness",
-      "desc": "At 4+ Count, Dongrang becomes staggered."
+      "name": "Пустота",
+      "desc": "При счётчике выше 4, Донран оглушается."
     },
     {
       "id": "DistortedDongrangFruition",
-      "name": "Borne Fruition",
-      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+      "name": "Рожденный плод",
+      "desc": "Участник боя, победивший этого участника боя, восстанавливает ОЗ, и получает 1 Спешка и 1 Повышение силы атаки на следующий ход"
     },
     {
       "id": "EgoAwakenDongrangRadiantDesire",
-      "name": "Radiant Desire",
-      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection."
+      "name": "Сияющее желание",
+      "desc": "Начало хода: Донран получает 1 Защищённость и 1 Повышение урона."
     },
     {
       "id": "EgoAwakenDongrangSeed",
-      "name": "Seeds",
-      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+      "name": "Семена",
+      "desc": "Конец хода: При счётчике выше 5, получает Утечка питания на 2 хода; при счётчике ниже 5, уменьшает счётчик на 1"
     },
     {
       "id": "EgoAwakenDongrangTree",
-      "name": "Nutrient Drain",
-      "desc": "Turn End: Dongrang heals 10 HP"
+      "name": "Утечка питания",
+      "desc": "Конец хода: Донран восстанавливает 10 ОЗ"
     },
     {
       "id": "EgoAwakenDongrangOverHeal",
-      "name": "Overheal",
-      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+      "name": "Сверхлечение",
+      "desc": "Счётчик повышается, когда Донран восстанавливает ОЗ; при счётчике выше 50, получает урон Чревоугодием в зависимости от счётчика, получает 5 Уязвимости, и убирает эффект."
     },
     {
       "id": "SinkingSurge",
       "name": "Шквал утопания",
-      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+      "desc": "Наносит урон СД (счётчик Утопание * количество Утопание), затем убирает Утопание\nЕсли СД цели -45 или ниже, урон СД переводится в урон ОЗ Унынием\n(Участники боя без СД принимают весь урон как урон ОЗ Унынием)"
     },
     {
       "id": "AmberResultUp",
-      "name": "Повышение силы Лени",
-      "desc": "Sloth skills gain final Power by the effect’s Count for one turn.",
-      "summary": "Sloth Skill Final Power +{0}"
+      "name": "Повышение финальной силы навыков Лени",
+      "desc": "Финальная сила навыков Лени увеличивается за каждую единицу счётчика в течение одного хода.",
+      "summary": "Финальная сила навыков Лени +{0}"
     },
     {
       "id": "Blue",
-      "name": "Tears",
-      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+      "name": "Слёзы",
+      "desc": "Конец хода: Теряет 5 СД\nМонеты, выпавшие решкой, накладывают 2 Утопание"
     },
     {
       "id": "EgoAwakenDongrangTreeDisplay",
-      "name": "Nutrient Drain",
-      "desc": "Turn End: Dongrang heals 10 HP"
+      "name": "Утечка питания",
+      "desc": "Конец хода: Донран восстанавливает 10 ОЗ"
     },
     {
       "id": "DongbaekFullBloomDisplay",
-      "name": "Fully Bloomed",
-      "desc": "Cannot act\nВ конце хода, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it В конце хода.",
+      "name": "Полностью цветущий",
+      "desc": "Не может действовать\nВ конце хода,теряет 20 СД; если СД достигает -45, полностью восстанавливает СД, затем получает 'Ослепленный разум' на следующий ход.\nЕсли этот эффект не убирается в течение 2 ходов, убирает его в конце хода.",
       "summary": ""
     },
     {
       "id": "TakeHpHealIncrease",
-      "name": "HP Healing Boost",
-      "desc": "Increases HP healing provided by Passive abilities, Skills, and Coin effects. (Max 5)"
+      "name": "Усиление восстановления ОЗ",
+      "desc": "Восстанавливает больше ОЗ от пассивных способностей, навыков и эффектов монет. (Макс. 5)"
     },
     {
       "id": "SkillPowerUp",
-      "name": "Base Power Up",
-      "desc": "Raise the Base Power of Skills by the effect's Count."
+      "name": "Повышение базовой силы навыков",
+      "desc": "Базовая сила навыков увеличивается в зависимости от счётчика."
     },
     {
       "id": "MaxHpMultiplier",
-      "name": "Max HP Up",
-      "desc": "Raise the Max HP by 10% per Count."
+      "name": "Повышение Мaкс. ОЗ",
+      "desc": "Увеличивает Maкс. ОЗ на 10% за каждую единицу счётчика."
     },
     {
       "id": "KCorpSerum",
       "name": "Ампула Корп. K",
-      "desc": "Turn Start: At less than 4 Count, heal by (Count * 5)% of Max HP\nAt 4+ Count, the unit dies",
+      "desc": "Начало хода: При счётчике меньше 4, восстанавливает ОЗ в размере (Счётчик * 5)% от Maкс. ОЗ\nПри счётчике выше 4, этот участник боя умирает",
       "summary": ""
     },
     {
       "id": "Talisman",
       "name": "Оберег",
-      "desc": "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
-      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+      "desc": "При ударе, накладывает Разрыв в зависимости от счётчика; Когда получает удар, получает Разрыв в зависимости от счётчика.\nКонец хода: При счётчике выше 6, убирает все обереги и получает фиксированный урон урон в зависимости от счётчика.",
+      "summary": "Накладывает Разрыв при атаке и получает Разрыв когда атакуют"
     },
     {
       "id": "Choice_90104001",
-      "name": "Understanding",
-      "desc": "At the start of the battle, gain 2 E.G.O resources for every Affinity.",
-      "summary": "Gain +2 E.G.O resource for all Affinities"
+      "name": "Понимание",
+      "desc": "В начале боя, даёт 2 Э.Г.О. ресурса каждого типа.",
+      "summary": "Даёт 2 Э.Г.О. ресурса каждого типа."
     },
     {
       "id": "Choice_9010400101",
-      "name": "Determined",
-      "desc": "All Ally Units gain +2 Skill Final Power for this battle",
-      "summary": "Skill Final Power +2"
+      "name": "Решительность",
+      "desc": "Все союзники получают +2 финальной силы навыков в течение этого боя",
+      "summary": "Финальная сила навыков +2"
     },
     {
       "id": "Choice_90104002",
-      "name": "Longing",
-      "desc": "All Ally Units gain +1 Skill Power for this battle",
-      "summary": "Skill Power +1"
+      "name": "Тоска",
+      "desc": "Все союзники получают +1 силу навыков в течение этого боя",
+      "summary": "Сила навыков +1"
     },
     {
       "id": "MentalSystemResultIncrease_Typo",
-      "name": "SP Heal Efficiency",
-      "desc": "Amount of SP healed from SP heal conditions"
+      "name": "Показатель восстановления СД",
+      "desc": "Количество СД, восстанавливаемое от условий восстановления СД"
     },
     {
       "id": "MentalSystemResultDecrease_Typo",
-      "name": "SP Loss Efficiency",
-      "desc": "Amount of SP lost from SP loss conditions"
+      "name": "Показатель потери СД",
+      "desc": "Количество СД, теряемое от условий потери СД"
     },
     {
       "id": "DuelDeclaration",
       "name": "Объявленная Дуэль",
-      "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Expires if the declarer inflicts this status on another target. Replaced when another unit declares a duel."
+      "desc": "В столкновении между участником боя, наложившим Объявленную дуэль и участником боя с этим статусом, наложивший имеет на 1 большую силу столкновения, и получает 1 Спешка на следующий ход после успешной атаки. (4 раза за ход) Эффект уходит, когда участник боя, объявивший дуэль, объявляет её другому противнику. Заменяется, когда другой участник боя объявляет дуэль."
     },
     {
       "id": "Aggro",
-      "name": "Aggro",
-      "desc": "In focused encounters, slots with higher Aggro values are more likely to be targeted by enemies."
+      "name": "Аггро",
+      "desc": "В целенаправленных боях, слоты с более высоким показателем Аггро чаще всего выбираются как цель противниками."
     },
     {
       "id": "BurstVulnerable",
-      "name": "Rupture Fragility",
-      "desc": "Take +1 damage per Count from Rupture effects for one turn."
+      "name": "Уязвимость к разрыву",
+      "desc": "Получает на 1 больше урона от Разрыв в течение одного хода."
     },
     {
       "id": "EmergencyFeed",
-      "name": "Emergency Nutrient Supply",
-      "desc": "В конце хода, if this unit has healed 15% of Max HP or more, the body is restored next turn."
+      "name": "Экстренное питание",
+      "desc": "В конце хода, если этот участник боя восстановил 15% от Макс. ОЗ или больше, тело восстанавливается на следующий ход."
     },
     {
       "id": "Bullet_Crab",
-      "name": "Molted Shell Shot",
-      "desc": "Resource used by certain skills for additional effects."
+      "name": "Плавленный снаряд",
+      "desc": "Ресурс, используемый определенными навыками для дополнительных эффектов."
     },
     {
       "id": "SinkingVulnerable",
-      "name": "Sinking Fragility",
-      "desc": "Take +1 damage per Count from Sinking effects for one turn."
+      "name": "Уязвимость к утопанию",
+      "desc": "Получает на 1 больше урона от Утопание в течение одного хода."
     },
     {
       "id": "BurstProtection",
-      "name": "Rupture Protection",
-      "desc": "Take -1 damage per Count from Rupture effects for one turn."
+      "name": "Защищённость от разрыва",
+      "desc": "Получает на 1 меньше урона от Разрыв в течение одного хода."
     },
     {
       "id": "PseudoLastBoss_KingCrap",
-      "name": "Crab Rage",
-      "desc": "At the start of the turn, apply Attack Power Up to all other allied crabs, and gain 2 Protection if its Shell isn't broken.\n-5 SP to target when using a skill.\nAt 50%- HP, every part gains 2 Attack Power Up and 2 Fragile."
+      "name": "Ярость крабов",
+      "desc": "В начале хода, даёт Повышение силы атаки всем союзным крабам, и получает 2 Защищённости, если Панцирь не сломан.\nНаносит 5 урона СД по целям при атаке.\nПри ОЗ меньше 50%, каждая часть получает 2 Повышение силы атаки и 2 Уязвимость."
     }
   ]
 }
