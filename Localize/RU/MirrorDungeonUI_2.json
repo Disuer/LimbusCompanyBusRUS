@@ -6,59 +6,59 @@
     },
     {
       "id": "ego_gift_list",
-      "content": "E.G.O Gifts Owned"
+      "content": "Ваши Э.Г.О. Дары"
     },
     {
       "id": "normal_difficulty",
-      "content": "Normal"
+      "content": "Обычное"
     },
     {
       "id": "hard_difficulty",
-      "content": "Hard"
+      "content": "Усложнённое"
     },
     {
       "id": "start_buffs",
-      "content": "Starter Buffs"
+      "content": "Стартовые усиления"
     },
     {
       "id": "enter_normal_difficulty",
-      "content": "Enter Normal Dungeon"
+      "content": "<size=35>Войти в Обычное Подземелье</size>"
     },
     {
       "id": "enter_hard_difficulty",
-      "content": "Enter Hard Dungeon"
+      "content": "<size=35>Войти в Усложнённое Подземелье</size>"
     },
     {
       "id": "list_of_applied_effects",
-      "content": "Active Effects"
+      "content": "Активные эффекты"
     },
     {
       "id": "activation_complete",
-      "content": "Activated"
+      "content": "<size=60>Активно</size>"
     },
     {
       "id": "lack_of_points",
-      "content": "Not enough Starlight."
+      "content": "Недостаточно Звёздного света."
     },
     {
       "id": "require_to_activate_former_buffs",
-      "content": "You must activate the previous stage's buff first."
+      "content": "Сперва вы должны активировать предыдущее усиление."
     },
     {
       "id": "weekly_bonus_reward",
-      "content": "Weekly Bonuses"
+      "content": "Недельные бонусы"
     },
     {
       "id": "hard_dungeon_reward",
-      "content": "Hard Rewards"
+      "content": "Вознаграждение"
     },
     {
       "id": "dungeon_shop_return_title",
-      "content": "Don't purchase."
+      "content": "Не покупать."
     },
     {
       "id": "dungeon_shop_return_desc",
-      "content": "Move to Shop"
+      "content": "В магазин"
     },
     {
       "id": "dungeon_shop_heal_title_one",
@@ -66,7 +66,7 @@
     },
     {
       "id": "dungeon_shop_heal_desc_one_hp_perc_mp_int",
-      "content": "The selected Sinner heals {0}% HP and {1} SP"
+      "content": "Выбранный грешник восстанавливает {0}% ОЗ и {1} СД"
     },
     {
       "id": "dungeon_shop_heal_title_all",
@@ -74,31 +74,31 @@
     },
     {
       "id": "dungeon_shop_heal_desc_all_hp_perc_mp_int",
-      "content": "All Sinners heal {0}% HP and {1} SP"
+      "content": "Все грешники восстанавливают {0}% ОЗ и {1} СД"
     },
     {
       "id": "dungeon_shop_purchase_title",
-      "content": "Purchase."
+      "content": "Купить."
     },
     {
       "id": "dungeon_shop_change_formation_title",
-      "content": "Pick up a mirror shard amid the crumbs."
+      "content": "Поднять осколок зеркала среди обломков."
     },
     {
       "id": "dungeon_shop_change_formation_desc",
-      "content": "Add a new Identity or E.G.O to the current team"
+      "content": "Дополнить команду новой идентичностью или Э.Г.О."
     },
     {
       "id": "dungeon_shop_heal_character",
-      "content": "Heal Sinner"
+      "content": "Вылечить грешника"
     },
     {
       "id": "dungeon_shop_change_formation",
-      "content": "Team"
+      "content": "Команда"
     },
     {
       "id": "dungeon_shop_upgrade_personality",
-      "content": "Replace {0}'s Skill"
+      "content": "Заменить умение {0}"
     },
     {
       "id": "dungeon_shop_upgrade_personality_0_title",
@@ -114,15 +114,15 @@
     },
     {
       "id": "dungeon_shop_upgrade_personality_desc",
-      "content": "Change one of the Identity's [skills {2} - {0}] to a [skill {3} - {1}]"
+      "content": "Заменить [{2} - {0} умение] на [{3} - {1} умение] у идентичности."
     },
     {
       "id": "dungeon_shop_out",
-      "content": "Leave"
+      "content": "Уйти"
     },
     {
       "id": "mirrordungeon_2_hard_open_at",
-      "content": "Clear Mirror of Mirrors on Normal to unlock"
+      "content": "Зачистите Обычное Зеркало Зеркал"
     },
     {
       "id": "mirrordungeon_with_number",
@@ -130,11 +130,11 @@
     },
     {
       "id": "mirrordungeon_select_buffs_title",
-      "content": "Select Event Effect"
+      "content": "Выбрать эффект события"
     },
     {
       "id": "acquire_additional_rewards",
-      "content": "Receive additional rewards"
+      "content": "Взять доп. награды"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_chance_desc",
@@ -146,15 +146,15 @@
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_chance_desc",
-      "content": "Claim the rewards?"
+      "content": "Забрать награды?"
     },
     {
       "id": "mirror_dungeon_start_buffs_chip_name",
-      "content": "Starlight"
+      "content": "<size=35>Звёздный свет</size>"
     },
     {
       "id": "mirror_dungeon_exit_without_acquire_rewards",
-      "content": "End expedition without claiming rewards?"
+      "content": "Закончить экспедицию без наград?"
     },
     {
       "id": "mirror_dungeon_buffs_title_1",
@@ -246,19 +246,19 @@
     },
     {
       "id": "mirrordungeon_resting_heal_title",
-      "content": "Take a rest."
+      "content": "Отдохнуть."
     },
     {
       "id": "mirrordungeon_resting_heal_desc",
-      "content": "Sinners heal HP"
+      "content": "Грешники восстанавливают ОЗ"
     },
     {
       "id": "mirrordungeon_resting_heal_desc_1",
-      "content": "The selected Sinner heals {0}% HP"
+      "content": "Выбранный грешник восстанавливает {0}% ОЗ"
     },
     {
       "id": "mirrordungeon_resting_heal_desc_2",
-      "content": "All Sinners heal {0}% HP"
+      "content": "Все грешники восстанавливают {0}% ОЗ"
     },
     {
       "id": "mirrordungeon_resting_change_formation_title",
@@ -266,15 +266,15 @@
     },
     {
       "id": "mirrordungeon_resting_change_formation_desc",
-      "content": "Add a new Identity or E.G.O to the current team"
+      "content": "Дополнить команду новой идентичностью или Э.Г.О."
     },
     {
       "id": "hard_difficulty_en",
-      "content": "Hard"
+      "content": "Усложнённое"
     },
     {
       "id": "mirrordungeon_2_normal_open_at",
-      "content": "Clear Main Story 4-54 and Mirror of the Beginning to unlock"
+      "content": "Нужно зачистить 4-54 и Зеркало Начала"
     },
     {
       "id": "mirrordungeon_2_shop_stageinfo_title",
@@ -298,19 +298,19 @@
     },
     {
       "id": "dungeon_resting_change_formation_desc",
-      "content": "Add a new Identity or E.G.O to the current team"
+      "content": "Дополнить команду новой идентичностью или Э.Г.О."
     },
     {
       "id": "dungeon_resting_heal_title_one",
-      "content": "Place the most tired Sinner in the chair."
+      "content": "Усадите самого изнурённого грешника на стул."
     },
     {
       "id": "dungeon_resting_heal_title_all",
-      "content": "All Sinners take a seat to rest."
+      "content": "Все грешники садятся на отдых."
     },
     {
       "id": "ego_gift_info",
-      "content": "E.G.O Gift Info"
+      "content": "Инфо о Э.Г.О. Дарах"
     },
     {
       "id": "mirrordungeon_shop_gift_entrance",
@@ -322,7 +322,7 @@
     },
     {
       "id": "mirrordungeon_reenter",
-      "content": "Anything else to buy?"
+      "content": "Что-нибудь ещё?"
     },
     {
       "id": "mirrordungeon_shop_heal_one_who",
@@ -350,51 +350,51 @@
     },
     {
       "id": "mirrordungeon_shop_heal_one_who_right",
-      "content": "Choose the Sinner that looks tired."
+      "content": "Выбрать истощенного грешника."
     },
     {
       "id": "mirrordungeon_shop_upgrade_start_left",
-      "content": "Could infinite possibilities really reside within this dispenser?"
+      "content": "Действительно ли существуют бесконечные возможности в этом автомате?"
     },
     {
       "id": "dungeon_encounter_guide_mirror_shop",
-      "content": "Shop"
+      "content": "Магазин"
     },
     {
       "id": "dungeon_encounter_guide_mirror_select_event",
-      "content": "Rest Stop"
+      "content": "Привал"
     },
     {
       "id": "dungeon_explore_floor",
-      "content": "Exploring Floor {0}"
+      "content": "Исследуем {0} Этаж"
     },
     {
       "id": "lack_of_point_for_shop",
-      "content": "Not Enough Cost"
+      "content": "Недостаточно Стоимости"
     },
     {
       "id": "mirrordungeon_select_less_character_at_start",
-      "content": "You've deployed fewer Sinners than your max for the team.\nAre you sure you want to proceed?"
+      "content": "Вы можете взять больше грешников.\nВы уверены что хотите продолжить?"
     },
     {
       "id": "list_of_applied_effects_is_empty",
-      "content": "No effects active."
+      "content": "Нет активных эффектов."
     },
     {
       "id": "give_up_rewards",
-      "content": "Give Up Rewards"
+      "content": "Отказаться"
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_button",
-      "content": "To Window"
+      "content": "К Окну"
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_desc",
-      "content": "Would you like to move to the Window?\nThe expedition rewards popup will reappear when you return to the Mirror Dungeons menu."
+      "content": "Хотите перейти к Окну?\nОкошко наград экспедиции вновь появится как только вы вернетесь сюда."
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_button_lobby",
-      "content": "To List"
+      "content": "К Списку"
     },
     {
       "id": "mirrordungeon_resting_heal_one_who",
@@ -402,43 +402,43 @@
     },
     {
       "id": "mirrordungeon_resting_heal_one_who_right",
-      "content": "Choose the Sinner that looks tired."
+      "content": "Выбрать истощенного грешника."
     },
     {
       "id": "mirror_dungeon_change_formation_release_character",
-      "content": "Cancel All Selected"
+      "content": "Отменить выбранное"
     },
     {
       "id": "mirrordungeon_exit_shop",
-      "content": "Leave the shop?"
+      "content": "Покинуть магазин?"
     },
     {
       "id": "mirrordungeon_exit_resting",
-      "content": "Leave the rest stop?"
+      "content": "Покинуть привал?"
     },
     {
       "id": "mirrordungeon_change_formation_confirm_less_participants",
-      "content": "You have selections remaining.\nAre you sure you want to finish the setup?"
+      "content": "У вас всё ещё есть очки выбора.\nВы уверены со своим выбором?"
     },
     {
       "id": "mirrordungeon_change_formation_confirm_exact_participants",
-      "content": "Spend the Cost to deploy the selected Identities and E.G.O?"
+      "content": "Потратить Стоимость на выбранные Э.Г.О. и идентичности?"
     },
     {
       "id": "mirror_dungeon_clear_battle_reward_label",
-      "content": "Clear Rewards"
+      "content": "Взять награды"
     },
     {
       "id": "mirror_dungeon_start_change_formation_but_button",
-      "content": "Buy"
+      "content": "<size=45>Купить</size>"
     },
     {
       "id": "mirror_dungeon_give_up_ego_gift",
-      "content": "Refuse Gift"
+      "content": "Отказаться от Дара"
     },
     {
       "id": "mirror_dungeon_give_up_ego_gift_ask",
-      "content": "Continue without choosing an E.G.O Gift?"
+      "content": "Продолжить без выбора Э.Г.О. Дара?"
     },
     {
       "id": "mirror_dungeon_challenge_mode_description",
@@ -454,59 +454,59 @@
     },
     {
       "id": "mirror_dungeon_hard_require_condition_title",
-      "content": "Recommendations"
+      "content": "Рекомендации"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_level",
-      "content": "- Identity Levels 35"
+      "content": "- Идентичности 35 уровня"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_ego_gacksung",
-      "content": "- E.G.O Threadspin Tier 3"
+      "content": "- Э.Г.О. 3 уровня связки"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_personality_gacksung",
-      "content": "- Identity Uptie Tier 3"
+      "content": "- Идентичности 3 уровня связи"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_start_buf",
-      "content": "- All Starter Buffs Active"
+      "content": "- Активны все стартовые усиления"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_using_chance_desc",
-      "content": "Consume all of your remaining <color=#a16a3b>Weekly Bonuses</color> and <color=#ff0000>Hard Difficulty Reward count</color> to claim the rewards?"
+      "content": "Потратить все оставшиеся <color=#a16a3b>Недельные бонусы</color> и <color=#ff0000>Вознаграждение</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_not_using_chance_desc",
-      "content": "You have remaining <color=#a16a3b>Weekly Bonuses</color>.\n\nConsume only the <color=#ff0000>Hard Difficulty Reward counts</color> to unlock the rewards?"
+      "content": "У вас всё ещё есть <color=#a16a3b>Недельные бонусы</color>.\n\nИспользовать только <color=#ff0000>Вознаграждение</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_no_chance_desc",
-      "content": "Spend <color=#ff0000>Hard Difficulty Rewards count</color> to unlock the rewards?"
+      "content": "Использовать <color=#ff0000>Вознаграждениеt</color> для получения наград"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_using_chance_desc",
-      "content": "You have remaining <color=#ff0000>Hard Difficulty Reward counts</color>.\n\nConsume only the <color=#a16a3b>Weekly Bonuses</color> to unlock the rewards?"
+      "content": "У вас всё ещё есть <color=#ff0000>Вознаграждение</color>.\n\nИспользовать только <color=#a16a3b>Недельные бонусы</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_not_using_chance_desc",
-      "content": "You have remaining <color=#a16a3b>Weekly Bonuses</color> and <color=#ff0000>Hard Difficulty Reward counts</color>.\n\nUnlock the rewards without spending them?"
+      "content": "У вас всё ещё есть <color=#a16a3b>Недельные бонусы</color> и <color=#ff0000>Вознаграждение</color>.\n\nЗабрать награды без бонусов?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_no_chance_desc",
-      "content": "You have remaining <color=#ff0000>Hard Difficulty Reward counts</color>.\n\nUnlock the rewards without spending them?"
+      "content": "У вас всё ещё есть <color=#ff0000>Вознаграждениеs</color>.\n\nЗабрать награды без бонусов?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_using_chance_desc",
-      "content": "Spend <color=#a16a3b>Weekly Bonuses</color> to unlock the rewards?"
+      "content": "Использовать <color=#a16a3b>Недельные бонусы</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_not_using_chance_desc",
-      "content": "You have remaining <color=#a16a3b>Weekly Bonuses</color>.\n\nUnlock the rewards without spending them?"
+      "content": "У вас всё ещё есть <color=#a16a3bНедельные бонусы</color>.\n\nЗабрать награды без бонусов?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_no_chance_desc",
-      "content": "Claim the rewards?"
+      "content": "Забрать награды?"
     },
     {
       "id": "mirrordungeon_hard_no_reward_desc",

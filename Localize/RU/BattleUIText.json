@@ -559,6 +559,18 @@
     {
       "id": "targetSlotWeight",
       "content": "Слоты АТК"
+    },
+    {
+      "id": "EGO_ErodeProbability",
+      "content": "Корродировать"
+    },
+    {
+      "id": "EGOSelectUI_resources_lack",
+      "content": "You lack sufficient resources.\nPlease check the symbols."
+    },
+    {
+      "id": "EGOSelectUI_DetailInfo",
+      "content": "Детали"
     }
   ]
 }

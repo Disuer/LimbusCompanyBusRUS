@@ -147,6 +147,22 @@
     {
       "id": "speed_hack_warning",
       "content": "Было замечено использование запрещенных сторонних программ."
+    },
+    {
+      "id": "serverstate_verify_ban_startdate",
+      "content": "Дата"
+    },
+    {
+      "id": "serverstate_verify_ban_reason",
+      "content": "Описание"
+    },
+    {
+      "id": "serverstate_verify_ban_reason_refund",
+      "content": "Злоупотребление системой возврата средств"
+    },
+    {
+      "id": "serverstate_verify_ban_reason_cheat",
+      "content": "Аномальна игровая активность"
     }
   ]
 }
