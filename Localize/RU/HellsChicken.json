@@ -70,19 +70,19 @@
     },
     {
       "id": "hells_chicken_dungeon_select_recent",
-      "content": "Preset"
+      "content": "Пресет"
     },
     {
       "id": "hells_chicken_dungeon_ask_recent_personality",
-      "content": "Load the saved Identities and E.G.O from the preset?"
+      "content": "Загрузить сохранённые идентичности и Э.Г.О. с пресета?"
     },
     {
       "id": "hells_chicken_dungeon_no_recent_personality",
-      "content": "No saved presets available."
+      "content": "Нет сохранённых пресетов."
     },
     {
       "id": "hells_chicken_dungeon_desc_recent_personality",
-      "content": "※ The list of Identities and E.G.O you used is automatically saved in the preset, which can be loaded upon reentry."
+      "content": "※ Список используемых идентичностей и Э.Г.О. автоматически сохраняются в пресете, который можно загрузить при повторном входе."
     },
     {
       "id": "giving_up_hells_chicken_dungeon_title",

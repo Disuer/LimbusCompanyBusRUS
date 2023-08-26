@@ -5,7 +5,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Ready to Crush",
+          "name": "Готова сокрушать",
           "desc": "",
           "coinlist": [
             {
@@ -26,7 +26,7 @@
         },
         {
           "level": 2,
-          "name": "Ready to Crush",
+          "name": "Готова сокрушать",
           "desc": "[WhenUse] Получает +3 счётчика Тремор",
           "coinlist": [
             {
@@ -47,7 +47,7 @@
         },
         {
           "level": 4,
-          "name": "Ready to Crush",
+          "name": "Готова сокрушать",
           "desc": "[WhenUse] Получает +3 счётчика Тремор",
           "coinlist": [
             {
@@ -73,7 +73,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Explosive Blast",
+          "name": "Энергетический взрыв",
           "desc": "",
           "coinlist": [
             {
@@ -97,7 +97,7 @@
         },
         {
           "level": 2,
-          "name": "Explosive Blast",
+          "name": "Энергетический взрыв",
           "desc": "При 5+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {
@@ -124,7 +124,7 @@
         },
         {
           "level": 4,
-          "name": "Explosive Blast",
+          "name": "Энергетический взрыв",
           "desc": "При 5+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {
@@ -156,7 +156,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Risky Judgement",
+          "name": "Рискованный суд",
           "desc": "При 5+ счётчиках Тремор, Сила монет +1\nЕсли на цели 6+ Утопание, наносит +20% урона",
           "coinlist": [
             {
@@ -190,7 +190,7 @@
         },
         {
           "level": 4,
-          "name": "Risky Judgement",
+          "name": "Рискованныый суд",
           "desc": "За каждые 5 Тремор на себе, Сила монет +1 (Макс 2)\nЕсли на цели 6+ Утопание, наносит +40% урона",
           "coinlist": [
             {
@@ -229,7 +229,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Nimble Steps",
+          "name": "Ловкие шаги",
           "desc": "[WhenUse] Получает 2 Защищённость от разрыва (6 раз за ход)",
           "coinlist": [
             {

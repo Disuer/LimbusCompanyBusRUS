@@ -5,7 +5,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Fierce Assault",
+          "name": "Яростный штурм",
           "desc": "",
           "coinlist": [
             {},
@@ -28,7 +28,7 @@
         },
         {
           "level": 2,
-          "name": "Fierce Assault",
+          "name": "Яростный штурм",
           "desc": "При 10+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {},
@@ -57,7 +57,7 @@
         },
         {
           "level": 4,
-          "name": "Fierce Assault",
+          "name": "Яростный штурм",
           "desc": "При 10+ счётчиках Тремор, Сила монет +1",
           "coinlist": [
             {},
@@ -91,7 +91,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Steady...",
+          "name": "Спокойно...",
           "desc": "[WhenUse] Получает +2 счётчика Тремор",
           "coinlist": [
             {
@@ -105,7 +105,7 @@
         },
         {
           "level": 2,
-          "name": "Steady...",
+          "name": "Спокойно...",
           "desc": "[WhenUse] Получает +4 счётчика Тремор",
           "coinlist": [
             {
@@ -119,7 +119,7 @@
         },
         {
           "level": 4,
-          "name": "Steady...",
+          "name": "Спокойно...",
           "desc": "[WhenUse] Получает +6 счётчиков Тремор",
           "coinlist": [
             {
@@ -138,7 +138,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Gamble",
+          "name": "Азарт",
           "desc": "",
           "coinlist": [
             {
@@ -152,7 +152,7 @@
         },
         {
           "level": 4,
-          "name": "Gamble",
+          "name": "Азарт",
           "desc": "За каждые 10 Тремор на себе, Сила монет +1 (Макс 2)",
           "coinlist": [
             {
@@ -171,7 +171,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Crab Bastards...!",
+          "name": "Грёбанные крабы...!",
           "desc": "[WhenUse] Получает 1 Защищённость от разрыва (3 раза за ход)",
           "coinlist": [
             {
