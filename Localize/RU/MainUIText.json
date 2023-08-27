@@ -114,7 +114,7 @@
     },
     {
       "id": "mainui_common_state",
-      "content": "Current"
+      "content": "Выбран"
     },
     {
       "id": "mainui_common_sort",
@@ -526,7 +526,7 @@
     },
     {
       "id": "mainui_buy",
-      "content": "<size=45>Подтвердить</size>"
+      "content": "Подтвердить"
     },
     {
       "id": "mainui_use",
@@ -706,7 +706,7 @@
     },
     {
       "id": "mainui_progress_of_spend",
-      "content": "Spend {0} to proceed with {1}?"
+      "content": "Потратить {0} для получения {1}?"
     },
     {
       "id": "game_setting",
@@ -810,7 +810,7 @@
     },
     {
       "id": "mainui_open_after_clear",
-      "content": "Clear Ch. {0} to Unlock"
+      "content": "Откроется после прохождения {0} главы"
     },
     {
       "id": "mainui_organization_sharp",
@@ -826,7 +826,7 @@
     },
     {
       "id": "mainui_unlock_condition_by_personality_awaken_level",
-      "content": "<size=25>Разблокируется на {0} уровне Связи</size>"
+      "content": "Разблокируется на {0} уровне Связи"
     },
     {
       "id": "skill_growth_value",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "Individual_appearance_probability",
-      "content": "Игдивидуальный шанс"
+      "content": "Индивидуальный шанс"
     },
     {
       "id": "notice_sold_out",
@@ -1438,27 +1438,27 @@
     },
     {
       "id": "cannot_enter",
-      "content": "Доступ закрыт"
+      "content": "Вход воспрещён"
     },
     {
       "id": "lack_of_item_amount",
-      "content": "Not enough {0}"
+      "content": "Недостаточно {0}"
     },
     {
       "id": "required_count",
-      "content": "Required"
+      "content": "Необходимо"
     },
     {
       "id": "on_event_reward_grace_period",
-      "content": "Период получения наград"
+      "content": "Время получения наград"
     },
     {
       "id": "user_level_maximum_notice",
-      "content": "Достигнут Максимальный уровень."
+      "content": "Вы достигли максимального уровня Менеджера!"
     },
     {
       "id": "user_level_limit_increase_notice",
-      "content": "※ Максимальный уровень Менеджера может быть повышен в будущих обновлениях."
+      "content": "※ Максимальный уровень Менеджера может быть повышен в следующих обновлениях."
     }
   ]
 }

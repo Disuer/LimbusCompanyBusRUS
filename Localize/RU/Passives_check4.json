@@ -2,63 +2,78 @@
   "dataList": [
     {
       "id": 1010311,
-      "name": "Poised",
-      "desc": "On clash win, gain +1 Poise Count.\nCoin Power +1 for every 5 Poise Count. (Max 3)"
+      "name": "Прохлада",
+      "desc": "При победе в столкновении получает +1 счётчик Равновесие.\nСила монет +1 за каждые 5 счётчиков Равновесие (Макс. 3)"
     },
     {
       "id": 1020211,
-      "name": "Self-charging",
-      "desc": "Gain +1 Charge Count after an attack.\nA random ally gains +1 Charge Count after an attack."
+      "name": "Самоподзарядка",
+      "desc": "Получает +1 счётчик Заряд после атаки.\n Случайный союзник получает +1 счётчик Заряд после атаки."
     },
     {
       "id": 1050311,
-      "name": "Enduring Spirit",
-      "desc": "When attacked, gain +1 Charge Count. (Up to 6 times)\nAfter losing a clash, gain +1 Charge Count. (Up 6 times, counted independently of hits taken)"
+      "name": "Стойкий дух",
+      "desc": "При получении удара получает +1 счётчик Заряд (До 6 раз)\nПосле проигрыша в столкновении, получает +1 счётчик Заряд (До 6 раз, подсчитывается независимо от полученных ударов)"
     },
     {
       "id": 1070411,
-      "name": "Bugger…",
-      "desc": "When an ally is defeated, lose 10 SP and gain 1 Blunt Power Up next turn.\nIf 4 or more surviving units in the team, including this unit, are from N Corp, Coin Power +1."
+      "name": "Ублюдок…",
+      "desc": "Когда союзник убит, теряет 10 СД и получает 1 Повышение финальной силы дробящих навыков на след. ход.\nЕсли 4 и больше живых участников боя из Н Корп., Сила монет +1"
     },
     {
       "id": 1100211,
-      "name": "Slayer",
-      "desc": "The last Coin on the last skill in the chain deals +20% damage.\nWhenever an ally other than this unit gains Poise Count, this unit gains +1 Poise Count at a 50% chance."
+      "name": "Истребитель",
+      "desc": "Последняя монетка последнего в цепи навыка наносит на 20% больше урона.\nКаждый раз когда союзник получает счётчик Равновесие, этот грешник также получает +1 счётчик Дыхание с вероятностью 50%."
     },
     {
       "id": 1020411,
-      "name": "Whistles",
-      "desc": "At the start of the combat phase, heal 2 allies with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 2 Fanatic."
+      "name": "Свист",
+      "desc": "В начале боевой фазы восстанавливает 15 СД двум союзникам с наименьшей СД.\nЕсли союзник из Н Корп., также даёт ему 2 Фанатизм."
     },
     {
       "id": 1020431,
-      "name": "Whispers",
-      "desc": "At the start of the combat phase, heal 1 ally with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 2 Fanatic."
+      "name": "Шёпот",
+      "desc": "В начале боевой фазы, восстанавливает 15 СД союзнику с наименьшей СД.\nЕсли союзник из Н Корп., также даёт ему 2 Фанатизм."
     },
     {
       "id": 1100511,
-      "name": "Mad Flame",
-      "desc": "Heal 50% less SP from winning a clash or defeating an enemy.\nIf 5 or more surviving units, including this unit, are from N Corp, they deal +10% damage."
+      "name": "Пламя безумия",
+      "desc": "Восстанавливает на 50% меньше СД при победе в столкновении или убийстве противника.\nЕсли 5 и больше живых участников боя из Н Корп., они наносят +10% урона."
     },
     {
       "id": 1070311,
-      "name": "Raring to Graze",
-      "desc": "Gain (Wrath Reson.) Charge Count next turn.\nAt 5+ Charge Count, gain 1 Haste and 1 Attack Power Up.\nAlways Activate: At the start of the stage, gain +3 Ammo."
+      "name": "Рвение пастись",
+      "desc": "Получает (Резонанс Гнева) Заряд на след. ход.\nПри 5+ счётчиках Заряд получает 1 Спешка и Повышение силы атаки.\nВсегда активно: получает +3 Патрон в начале боя."
     },
     {
       "id": 1050611,
-      "name": "Activate rrR-#4 Suit Pressurization",
-      "desc": "At the end of the turn, gain +2 Max Speed per 5 Charge Count next turn. (Max 6)\nAt the start of the turn, if at 5+ Charge, gain 3 Aggro to this unit's rightmost slot."
+      "name": "Активация rrR-№4 герметизации костюма",
+      "desc": "В конце хода, за каждые 5 счётчиков Заряд Макс. Скорость +2 на след. ход (Макс. 6)\nВ начале хода, при 5+ счётчиках Заряд, самый правый слот навыка получает 3 Аггро."
     },
     {
       "id": 1080511,
-      "name": "Filling Fluid",
-      "desc": "If this unit fails to deal HP damage using attack skills in a turn, gain a shield equal to 10% of Max HP next turn. (Max 30)"
+      "name": "Жидкостное насыщение",
+      "desc": "Если не носит урон атакими в течение хода, на след. ход получает щит, равный 10% от Макс. ОЗ (Макс. 30)"
     },
     {
       "id": 1080211,
-      "name": "Brainwave Focus",
-      "desc": "At the start of the combat phase, gain (Gloom Reson. / 3) Attack Power Up.\nIf this unit fails to deal damage this turn, lose 15 SP at the end of the turn."
+      "name": "Сосредоточение мозговых волн",
+      "desc": "В начале боевой фазы получает (Резонанс Уныния / 3) Повышение силы атаки на след. ход.\nЕсли не наносит урона в течении хода, то теряет 15 СД в конце хода."
+    },
+    {
+      "id": 1040511,
+      "name": "Острие пространственного демона",
+      "desc": "При убийстве противника даёт +3 счётчика Заряд (3 раза за ход)"
+    },
+    {
+      "id": 1040531,
+      "name": "Острие пространственного преломления - Тип: Клинок Mk7",
+      "desc": "Если союзник с наименьшим Макс. ОЗ убивает противника, получает +3 счётчика Заряд (1 раз за ход)"
+    },
+    {
+      "id": 1060611,
+      "name": "Мастерство зачистки",
+      "desc": "В начале боевой фазы при 5+ счётчиках Заряд, получает 2 Спешка на след. ход <style=\"highlight\">При 10+ счётчиках Заряд, получает доп. 1 Спешка.</style>"
     }
   ]
 }

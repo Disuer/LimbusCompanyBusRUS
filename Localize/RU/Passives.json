@@ -2,718 +2,738 @@
   "dataList": [
     {
       "id": 1010101,
-      "name": "Information Relay",
-      "desc": "Apply 1 Damage Up to 2 allies placed after this unit on the Dashboard."
+      "name": "Передача информации",
+      "desc": "Даёт 1 Повышение урона двум союзникам, находящимся за этим персонажем на приборной панели."
     },
     {
       "id": 1010201,
-      "name": "Acute Studies",
-      "desc": "In a clash, the opponent has -2 Clash Power."
+      "name": "Проницательное исследование",
+      "desc": "В столкновении противник теряет 2 Силы столкновения."
     },
     {
       "id": 1010301,
-      "name": "Poised",
-      "desc": "On clash win, gain +1 Poise Count."
+      "name": "Прохлада",
+      "desc": "При победе в столкновении получает +1 счётчик Равновесие."
     },
     {
       "id": 1020101,
-      "name": "Analytic Eye",
-      "desc": "Deal +10% damage to units with negative status effects."
+      "name": "Аналитический взгляд",
+      "desc": "Наносит +10% урона персонажам с негативными эффектами."
     },
     {
       "id": 1020201,
-      "name": "Self-charging",
-      "desc": "Gain +1 Charge Count after an attack."
+      "name": "Самоподзарядка",
+      "desc": "Получает +1 счётчик Заряд после атаки."
     },
     {
       "id": 1020301,
-      "name": "Resolution",
-      "desc": "At the start of the turn, if at 4+ Poise Count, gain 2 Haste."
+      "name": "Решение",
+      "desc": "В начале хода при 4+ счётчиках Равновесие получает 2 Спешка."
     },
     {
       "id": 1030101,
-      "name": "Righteous Retribution",
-      "desc": "Skills deal +10% damage in a won clash."
+      "name": "Праведное воздаяние",
+      "desc": "Навыки наносят на 10% больше урона при победе в столкновении."
     },
     {
       "id": 1030201,
-      "name": "Quick Recharge",
-      "desc": "At the start of the combat phase, gain Charge Count by (Gloom Reson. / 3)."
+      "name": "Быстрая перезарядка",
+      "desc": "В начале боевой фазы получает счётчик Заряд, равный (Резонанс Уныния / 3)"
     },
     {
       "id": 1030301,
-      "name": "Prepared Mind",
-      "desc": "Gain Haste by (Wrath Reson. / 3) next turn."
+      "name": "Разум наготове",
+      "desc": "Получает Спешка, равную (Резонанс Гнева / 3) на след. ход."
     },
     {
       "id": 1040101,
-      "name": "Indiscriminate Art",
-      "desc": "Deal and take +25% damage."
+      "name": "Непонятное искусство",
+      "desc": "Наносит и получает на 25% больше урона."
     },
     {
       "id": 1040201,
-      "name": "C. I. H.",
-      "desc": "Deal +10% Slash damage this turn."
+      "name": "Р. Н. Д.",
+      "desc": "Наносит на 10% больше режущего урона в течение этого хода."
     },
     {
       "id": 1040301,
       "name": "Kokuundō",
-      "desc": "Deal +10% damage to targets with Bleed."
+      "desc": "Наносит на 10% больше урона целям с Кровотечение."
     },
     {
       "id": 1050101,
-      "name": "Staunchness",
-      "desc": "At less than 50% HP, gain 1 Protection at the start of the combat phase."
+      "name": "Выдержка",
+      "desc": "При менее, чем 50% ОЗ, получает 1 Защищённость в начале боевой фазы."
     },
     {
       "id": 1050201,
-      "name": "Great Mountain",
-      "desc": "When attacked, inflict 1 Burn on a random enemy.\n(Up to 4 times)"
+      "name": "Великая гора",
+      "desc": "При получении удара наносит 1 Горение на случайного противника.\n(До 4 раз)"
     },
     {
       "id": 1050301,
-      "name": "Enduring Spirit",
-      "desc": "When attacked, gain +1 Charge Count.\n(Up to 6 times)"
+      "name": "Стойкий дух",
+      "desc": "При получении удара получает +1 счётчик Заряд.\n(До 6 раз)"
     },
     {
       "id": 1060101,
-      "name": "Entertainment",
-      "desc": "Heal 6 SP next turn."
+      "name": "Развлечение",
+      "desc": "Восстанавливает 6 СД на след. ходу."
     },
     {
       "id": 1060201,
       "name": "Hēiyúndào",
-      "desc": "The last Coin on the last skill in the chain inflicts 3 Bleed."
+      "desc": "Последняя монетка последнего в цепи навыка наносит 3 Кровотечение."
     },
     {
       "id": 1060301,
-      "name": "Gaiety",
-      "desc": "Heal (2x Gluttony Reson.) SP next turn."
+      "name": "Веселье",
+      "desc": "Восстанавливает (2х Резонанс Чревоугодия) СД на след. ходу."
     },
     {
       "id": 1070101,
-      "name": "Ressentiment",
-      "desc": "Deal +10% damage to targets with higher Max HP."
+      "name": "Ненависть",
+      "desc": "Наносит на 10% больше урона целям с наибольшим Макс. ОЗ."
     },
     {
       "id": 1070201,
-      "name": "Respiration",
-      "desc": "After taking damage from attacks this turn, deal +10% damage."
+      "name": "Вдох, выдох",
+      "desc": "После получения урона от атак в течение этого хода, наносит на 10% больше урона."
     },
     {
       "id": 1070301,
-      "name": "Raring to Graze",
-      "desc": "Gain (Wrath Reson.) Charge Count next turn.\nAt 5+ Charge Count, gain 1 Haste and Attack Power Up."
+      "name": "Рвение пастись",
+      "desc": "Получает (Резонанс Гнева) Заряд на след. ход.\nПри 5+ счётчиках Заряд получает 1 Спешка и Повышение силы атаки."
     },
     {
       "id": 1080101,
-      "name": "Last-ditch Struggle",
-      "desc": "At less than 25% HP, gain +1 clash Power in a clash."
+      "name": "Последняя попытка бороться",
+      "desc": "При менее, чем 25% ОЗ, получает +1 Силу в столкновении."
     },
     {
       "id": 1080201,
-      "name": "Brainwave Focus",
-      "desc": "At the start of the combat phase, lose 15 SP.\nGain (Gloom Res / 3) Attack Power Up next turn."
+      "name": "Сосредоточение мозговых волн",
+      "desc": "В начале боевой фазы теряет 15 СД.\nПолучает (Резонанс Уныния / 3) Повышение силы атаки на след. ход."
     },
     {
       "id": 1080301,
-      "name": "Walking the Line of Death",
-      "desc": "At less than 50% HP, gain 1 additional Poise from skills."
+      "name": "На волоске от смерти",
+      "desc": "При менее, чем 50% ОЗ, получает 1 доп. Равновесие от навыков."
     },
     {
       "id": 1080401,
-      "name": "Eye for Weakness",
-      "desc": "Attacks inflict 1 Tremor in a won clash."
+      "name": "Взор на слабость",
+      "desc": "Атаки наносят 1 Тремор при победе в столкновении."
     },
     {
       "id": 1090101,
-      "name": "Split Evil",
-      "desc": "On hit, inflict 1 Bleed at a 50% chance."
+      "name": "Разрубить зло",
+      "desc": "При ударе наносит 1 Кровотечение с вероятностью 50%."
     },
     {
       "id": 1090201,
-      "name": "Dark Cloud Blade",
-      "desc": "At 5+ Poise, counter skills use Skill 3."
+      "name": "Клинок тёмного облака",
+      "desc": "При 5+ Равновесие, навыки контратаки используют Навык 3."
     },
     {
       "id": 1090301,
-      "name": "Breach Defense",
-      "desc": "Deal +10% damage to enemies that used defense skills this turn."
+      "name": "Пролом обороны",
+      "desc": "Наносит на 10% больше урона противникам, которые использовали навыки защиты в течение этого хода."
     },
     {
       "id": 1100101,
-      "name": "Pluckiness",
-      "desc": "When an ally is defeated, gain 1 Attack Power Up next turn."
+      "name": "Решительность",
+      "desc": "Когда союзник убит, получает 1 Повышение силы атаки на след. ход."
     },
     {
       "id": 1100201,
-      "name": "Slayer",
-      "desc": "The last Coin on the last skill in the chain deals +20% damage."
+      "name": "Истребитель",
+      "desc": "Последняя монетка последнего в цепи навыка наносит на 20% больше урона."
     },
     {
       "id": 1100301,
-      "name": "Your Shield",
-      "desc": "At the start of the combat phase, apply 2 Defense Power Up and 1 Protection to allies adjacent to this unit on the Dashboard."
+      "name": "Ваш щит",
+      "desc": "В начале боевой фазы даёт 2 Повышение силы защиты и 1 Защищённость союзникам, находящимся рядом с данным персонажем на приборной панели."
     },
     {
       "id": 1100401,
       "name": "Júbilo Hedonista",
-      "desc": "After a successful evade, lower Stagger Threshold by the evade skill’s Power at a (5x Gloom Reson.)% chance."
+      "desc": "После успешного уворота уменьшает границы выносливости на Cилу навыка уворота с вероятностью (5 х Резонанс Уныния)%."
     },
     {
       "id": 1110101,
-      "name": "Executor",
-      "desc": "If target’s SP is below 0, deal +10% damage."
+      "name": "Исполнитель",
+      "desc": "Наносит на 10% больше урона, если СД цели ниже 0."
     },
     {
       "id": 1110201,
-      "name": "Levelheaded",
-      "desc": "Deal +20% damage to targets below 25% HP."
+      "name": "Уравновешенность",
+      "desc": "Наносит на 20% больше урона противникам, чьи ОЗ менее 25%."
     },
     {
       "id": 1110301,
-      "name": "Morale Boost",
-      "desc": "Next turn, apply 2 Haste to self and allies who are adjacent to this unit on the Dashboard this turn."
+      "name": "Подъём силы духа",
+      "desc": "На след. ход даёт 2 Спешка себе и союзникам, находящимся рядом с данным персонажем на приборной панели."
     },
     {
       "id": 1120101,
-      "name": "Forced Survival",
-      "desc": "Heal 5 HP at the start of the combat phase."
+      "name": "Вынужденное выживание",
+      "desc": "Восстанавливает 5 ОЗ в начале боевой фазы."
     },
     {
       "id": 1120201,
-      "name": "Ignition",
-      "desc": "The 3rd and subsequent Coins of a skill inflict 1 Burn on hit."
+      "name": "Возгорание",
+      "desc": "3-я и последующие монетки навыков наносят 1 Горение при ударе."
     },
     {
       "id": 1120301,
-      "name": "Emergency Rations",
-      "desc": "At less than 25% HP, heal by 5% of Max HP after winning a clash."
+      "name": "Аварийные пайки",
+      "desc": "При менее 25% ОЗ, восстанавливает 5% от Макс. ОЗ при победе в столкновении."
     },
     {
       "id": 1010121,
-      "name": "Information Neutralization",
-      "desc": "At the end of the turn, Heal 10 SP for 1 ally with the least SP if they lost SP."
+      "name": "Нейтрализация информации",
+      "desc": "В конце хода восстанавливает 10 СД одному союзнику с наименьшей СД, если он терял СД во время хода."
     },
     {
       "id": 1010221,
-      "name": "Observational Eye",
-      "desc": "1 ally with the highest Max HP gains +1 clash Power in a clash."
+      "name": "Анализирующий взгляд",
+      "desc": "1 союзник с наибольшими Макс. ОЗ получает +1 Силу в столкновении."
     },
     {
       "id": 1010321,
-      "name": "Bestow",
-      "desc": "1 ally with the most SP gains +1 Poise Count from skills."
+      "name": "Посвящение",
+      "desc": "1 союзник с наибольшей СД получает +1 Равновесие от навыков."
     },
     {
       "id": 1020121,
-      "name": "Keen Observation",
-      "desc": "1 ally with the highest Max HP inflicts 2 Offense Level Down with attacks at a 25% chance."
+      "name": "Пристальное наблюдение",
+      "desc": "1 союзник с наибольшими Макс. ОЗ наносит 2 Понижение уровня атаки с помощью атак с вероятностью 25%."
     },
     {
       "id": 1020221,
-      "name": "Radio Comms",
-      "desc": "1 ally with the lowest Max HP gains +1 Charge Count."
+      "name": "Радиосвязь",
+      "desc": "1 союзник с наименьшими Макс. ОЗ получает +1 счётчик Заряд."
     },
     {
       "id": 1020321,
-      "name": "Backing",
-      "desc": "1 ally with the lowest Max HP gains +2 defense skill final Power."
+      "name": "Поддержка",
+      "desc": "1 союзник с наименьшими Макс. ОЗ получает +2 Повышение силы защиты."
     },
     {
       "id": 1030121,
-      "name": "Support",
-      "desc": "1 ally with the most SP deals +10% Pierce damage."
+      "name": "Поддержка",
+      "desc": "1 союзник с наибольшей СД наносит на 10% больше колющего урона."
     },
     {
       "id": 1030221,
-      "name": "Broken Spirit",
-      "desc": "1 ally with the highest Speed gains +1 final Power for their first skill."
+      "name": "Сломленный дух",
+      "desc": "1 союзник с наибольшей Скоростью получает +1 к Финальной силе его первого навыка."
     },
     {
       "id": 1030321,
-      "name": "Divide in Two",
-      "desc": "1 ally with the highest Speed deals +10% Slash damage."
+      "name": "Пополам",
+      "desc": "1 союзник с наибольшей Скоростью наносит на 10% больше режущего урона."
     },
     {
       "id": 1040121,
-      "name": "Hustle",
-      "desc": "1 ally with the lowest Max HP deals and takes +20% damage."
+      "name": "Активное творение",
+      "desc": "1 союзник с наименьшими Макс. ОЗ наносит и получает на 20% больше урона."
     },
     {
       "id": 1040221,
-      "name": "Ice Breaker",
-      "desc": "1 ally with the lowest Max HP inflicts +1 Rupture."
+      "name": "Ледокол",
+      "desc": "1 союзник с наименьшими Макс. ОЗ наносит +1 Разрыв."
     },
     {
       "id": 1040321,
-      "name": "Muscle in Charge",
-      "desc": "1 ally with the highest Speed inflicts +1 Bleed."
+      "name": "Главная сила",
+      "desc": "1 союзник с наибольшей Скоростью наносит +1 Кровотечение."
     },
     {
       "id": 1050121,
-      "name": "Backup",
-      "desc": "1 ally with the highest Max HP takes -10% damage from attack skills."
+      "name": "Подпорка",
+      "desc": "1 союзник с наибольшими Макс. ОЗ получает на 10% меньше урона от атак."
     },
     {
       "id": 1050221,
-      "name": "Friction Point",
-      "desc": "1 ally with the lowest Speed inflicts +1 Burn."
+      "name": "Точка разногласия",
+      "desc": "1 союзник с наименьшей Скоростью наносит +1 Горение."
     },
     {
       "id": 1050321,
-      "name": "Taciturn",
-      "desc": "1 ally with the lowest Speed inflicts +1 Rupture."
+      "name": "Немногословие",
+      "desc": "1 союзник с наименьшей Скоростью наносит +1 Разрыв."
     },
     {
       "id": 1060121,
-      "name": "Frivolous Jokes",
-      "desc": "At the start of the combat phase, the ally with the least SP heals 6 SP."
+      "name": "Глупые шуточки",
+      "desc": "В начале боевой фазы, союзник с наименьшей СД восстанавливает 6 СД."
     },
     {
       "id": 1060221,
-      "name": "Syndicate Payback",
-      "desc": "1 ally with the highest Speed inflicts +1 Bleed."
+      "name": "Расплата синдиката",
+      "desc": "1 союзник с наибольшей Скоростью наносит +1 Кровотечение."
     },
     {
       "id": 1060321,
-      "name": "Gambit",
-      "desc": "1 ally with the most SP deals +20% damage with Heads Coins."
+      "name": "Уловка",
+      "desc": "1 союзник с наибольшей СД наносит на 20% больше урона монетками орла."
     },
     {
       "id": 1070121,
-      "name": "Spite-driven",
-      "desc": "1 ally with the lowest Max HP deals +10% Blunt damage."
+      "name": "Движимый злобой",
+      "desc": "1 союзник с наименьшими Макс. ОЗ наносит на 10% больше дробящего урона."
     },
     {
       "id": 1070221,
-      "name": "Self-neglect",
-      "desc": "1 ally with the least HP deals and takes +20% damage."
+      "name": "Самопренебрежение",
+      "desc": "1 союзник с наименьшими ОЗ наносит и получает на 20% больше урона."
     },
     {
       "id": 1070321,
-      "name": "Doggedness",
-      "desc": "1 ally with the highest Speed deals +10% Pierce damage."
+      "name": "Упорство",
+      "desc": "1 союзник с наибольшей Скоростью наносит на 10% больше колющего урона."
     },
     {
       "id": 1080121,
-      "name": "Determination to Survive",
-      "desc": "1 ally with the least HP and less than 50% of Max HP gains +1 Clash Power in a clash."
+      "name": "Решимость выживать",
+      "desc": "1 союзник с наименьшими ОЗ и при менее, чем 50% от Макс. ОЗ, получает +1 Силу в столкновении."
     },
     {
       "id": 1080221,
-      "name": "Tenacity",
-      "desc": "1 ally with the least SP deals +10% Blunt damage."
+      "name": "Стойкость",
+      "desc": "1 союзник с наименьшей СД наносит на 10% больше дробящего урона."
     },
     {
       "id": 1080321,
-      "name": "Strife",
-      "desc": "1 ally with the least HP gains +2 counter skill final Power."
+      "name": "Борьба",
+      "desc": "1 союзник с наименьшими ОЗ получает +2 к Финальной силе контратак."
     },
     {
       "id": 1080421,
-      "name": "By the Manual",
-      "desc": "1 ally with the lowest Speed gains +2 guard skill final Power."
+      "name": "Согласно руководству",
+      "desc": "1 союзник с наименьшей Скоростью получает +2 к Финальной силе навыков защиты."
     },
     {
       "id": 1090121,
-      "name": "Gambler",
-      "desc": "1 ally with the most HP deals +20% damage with Heads Coins."
+      "name": "Азартный игрок",
+      "desc": "1 союзник с наибольшими ОЗ наносит на 20% больше урона монетками орла."
     },
     {
       "id": 1090221,
-      "name": "Dark Cloud Swordsmanship",
-      "desc": "1 ally with the lowest Speed deals +10% Slash damage."
+      "name": "Техника меча тёмного облака",
+      "desc": "1 союзник с наименьшей Скоростью наносит на 10% больше режущего урона."
     },
     {
       "id": 1090321,
-      "name": "Breaching",
-      "desc": "1 ally with the most HP deals +20% damage to enemies that used defense skills this turn."
+      "name": "Есть пробитие",
+      "desc": "1 союзник с наибольшими ОЗ наносит на 20% больше урона противникам, которые использовали навыки защиты в течение этого хода."
     },
     {
       "id": 1100121,
-      "name": "Grudge",
-      "desc": "1 ally with the least SP gains 1 Attack Power Up the turn after an ally is defeated."
+      "name": "Злость",
+      "desc": "1 союзник с наименьшей СД получает 1 Повышение силы атаки на след. ход после того, как был убит союзник."
     },
     {
       "id": 1100221,
-      "name": "Bloodied Hands",
-      "desc": "1 ally with the lowest Speed gains +1 final Power for their last skill."
+      "name": "Окровавленные руки",
+      "desc": "1 союзник с наименьшей Скоростью получает +1 к Финальной силе его последнего навыка."
     },
     {
       "id": 1100321,
-      "name": "Stubbornness",
-      "desc": "1 ally with the least HP takes -10% damage."
+      "name": "Упорная выносливость",
+      "desc": "1 союзник с наименьшими ОЗ получает на 10% меньше урона."
     },
     {
       "id": 1100421,
       "name": "Jugar con Enemigos",
-      "desc": "1 ally with the most SP deals +10% damage to enemies with lower SP."
+      "desc": "1 союзник с наибольшей СД наносит на 10% больше урона противникам с меньшей СД."
     },
     {
       "id": 1110121,
-      "name": "Military Mindset",
-      "desc": "1 ally with the most HP deals +30% damage to enemies below 0 SP."
+      "name": "Армейское мышление",
+      "desc": "1 союзник с наибольшими ОЗ наносит на 30% больше урона противникам, у которых СД ниже 0."
     },
     {
       "id": 1110221,
-      "name": "Double Tap",
-      "desc": "1 ally with the most SP deals +30% damage to enemies below 25% HP."
+      "name": "Двойное касание",
+      "desc": "1 союзник с наибольшей СД наносит на 30% больше урона противникам, чьи ОЗ менее 25%."
     },
     {
       "id": 1110321,
-      "name": "Valor",
-      "desc": "1 ally with the most HP randomly gains 1 Attack Power Up, 1 Defense Power Up, or 1 Protection at the start of the combat phase."
+      "name": "Отвага",
+      "desc": "1 союзник с наибольшими ОЗ случайно получает 1 Повышение силы атаки, 1 Повышение силы защиты или Защищённость в начале боевой фазы."
     },
     {
       "id": 1120121,
-      "name": "Gene Code G-0",
-      "desc": "At the start of the combat phase, the ally with the least HP heals 5 HP."
+      "name": "Генетический год G-0",
+      "desc": "В начале боевой фазы союзник с наименьшими ОЗ восстанавливает 5 ОЗ."
     },
     {
       "id": 1120221,
-      "name": "Rushing Heart",
-      "desc": "1 ally with the lowest Speed deals +30% damage with their 3rd and subsequent Coins."
+      "name": "Стремящееся сердце",
+      "desc": "1 союзник с наименьшей Скоростью наносит на 30% больше урона 3-ей и последующими монетками."
     },
     {
       "id": 1120321,
-      "name": "Gene Code G-3",
-      "desc": "The ally with the least HP heals 5 HP after winning a clash."
+      "name": "Генетический код G-3",
+      "desc": "Союзник с наименьшими ОЗ восстанавливает 5 ОЗ после победы в столкновении."
     },
     {
       "id": 1000101,
-      "name": "Wrath",
-      "desc": "Deal +1 damage with attacks after every successful hit this turn."
+      "name": "Гнев",
+      "desc": "Наносит +1 урон с помощью атак после каждого успешного удара в течение этого хода."
     },
     {
       "id": 1000121,
-      "name": "Wrath",
-      "desc": "Give a random ally the following effect: Deal +1 damage with attacks after every successful hit this turn."
+      "name": "Гнев",
+      "desc": "Даёт случайному союзнику следующий эффект: Наносит +1 урон с помощью атак после каждого успешного удара в течение этого хода."
     },
     {
       "id": 1000201,
-      "name": "Lust",
-      "desc": "When hit by an attack this turn, heal 3 HP at a 50% chance."
+      "name": "Похоть",
+      "desc": "При получении удара восстанавливает 3 ОЗ с вероятностью 50%."
     },
     {
       "id": 1000221,
-      "name": "Lust",
-      "desc": "Give a random ally the following effect: When hit by an attack this turn, heal 3 HP at a 50% chance."
+      "name": "Похоть",
+      "desc": "Даёт случайному союзнику следующий эффект: При получении удара восстанавливает 3 ОЗ с вероятностью 50%."
     },
     {
       "id": 1000301,
-      "name": "Sloth",
-      "desc": "Take 1 less damage this turn."
+      "name": "Лень",
+      "desc": "Получает на 1 меньше урона в течение этого хода."
     },
     {
       "id": 1000321,
-      "name": "Sloth",
-      "desc": "Give a random ally the following effect: Take 1 less damage this turn."
+      "name": "Лень",
+      "desc": "Даёт случайному союзнику следующий эффект: Получает на 1 меньше урона в течение этого хода."
     },
     {
       "id": 1000401,
-      "name": "Gluttony",
-      "desc": "Heal 5 HP at the start of the combat phase."
+      "name": "Чревоугодие",
+      "desc": "Восстанавливает 5 ОЗ в начале боевой фазы."
     },
     {
       "id": 1000421,
-      "name": "Gluttony",
-      "desc": "Give a random ally the following effect: Heal 5 HP at the start of the combat phase."
+      "name": "Чревоугодие",
+      "desc": "Даёт случайному союзнику следующий эффект: Восстанавливает 5 ОЗ в начале боевой фазы."
     },
     {
       "id": 1000501,
-      "name": "Gloom",
-      "desc": "Heal 5 SP at the start of the combat phase."
+      "name": "Уныние",
+      "desc": "Восстанавливает 5 СД в начале боевой фазы."
     },
     {
       "id": 1000521,
-      "name": "Gloom",
-      "desc": "Give a random ally the following effect: Heal 5 SP at the start of the combat phase."
+      "name": "Уныние",
+      "desc": "Даёт случайному союзнику следующий эффект: Восстанавливает 5 СД в начале боевой фазы."
     },
     {
       "id": 1000601,
-      "name": "Pride",
-      "desc": "Deal +2 damage after winning a clash."
+      "name": "Гордыня",
+      "desc": "Наносит на 2 больше урона после победы в столкновении."
     },
     {
       "id": 1000621,
-      "name": "Pride",
-      "desc": "Give a random ally the following effect: Deal +2 damage after winning a clash."
+      "name": "Гордыня",
+      "desc": "Даёт случайному союзнику следующий эффект: Наносит на 2 больше урона после победы в столкновении."
     },
     {
       "id": 1000701,
-      "name": "Envy",
-      "desc": "When hit by an attack this turn, deal 1 damage to the attacker at a 25% chance."
+      "name": "Зависть",
+      "desc": "При получении удара наносит 1 урон атаковавшему с вероятностью 25%."
     },
     {
       "id": 1000721,
-      "name": "Envy",
-      "desc": "Give a random ally the following effect: When hit by an attack this turn, deal 1 damage to the attacker at a 25% chance."
+      "name": "Зависть",
+      "desc": "Даёт случайному союзнику следующий эффект: При получении удара наносит 1 урон атаковавшему с вероятностью 25%."
     },
     {
       "id": 1050401,
-      "name": "Obsessive Hammer",
-      "desc": "When below 50% HP, remove 1 negative status effect and gain 1 Fanatic, 1 Attack Power Up, and 3 Protection at the start of the combat phase."
+      "name": "Одержимый молот",
+      "desc": "При менее 50% ОЗ убирает 1 негативный эффект и даёт 1 Фанатизм, 1 Повышение силы атаки и 3 Защищённость в начале боевой фазы."
     },
     {
       "id": 1090401,
-      "name": "Joy of Execution",
-      "desc": "After an enemy is defeated, gain 1 Haste and 1 Damage Up next turn.\nIf this unit defeated an enemy, also gain 1 Fanatic. (Once per turn.)"
+      "name": "Наслаждение казнью",
+      "desc": "При убийстве противника получает 1 Спешка и 1 Повышение урона на след. ход.\nЕсли сам персонаж победил противника, получает 1 Фанатизм (1 раз за ход)"
     },
     {
       "id": 1050421,
-      "name": "Highest Honor",
-      "desc": "Apply 1 Attack Power Up and 1 Protection to the ally with the least HP below 50%.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "name": "Высшая честь",
+      "desc": "Даёт 1 Повышение силы атаки и 1 Защищённость союзнику с наименьшими ОЗ ниже 50%.\nЕсли союзник из Н Корп., также даёт ему Фанатизм."
     },
     {
       "id": 1090421,
-      "name": "Rising Faith",
-      "desc": "After an enemy is defeated, apply 1 Haste and 1 Damage Up to the ally with the most SP. (Once per turn.)"
+      "name": "Растущая вера",
+      "desc": "При убийстве противника даёт 1 Спешка и 1 Повышение урона союзнику с наибольшей СД (1 раз за ход)"
     },
     {
       "id": 1020401,
-      "name": "Whistles",
-      "desc": "At the start of the combat phase, heal 2 allies with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "name": "Свист",
+      "desc": "В начале боевой фазы восстанавливает 15 СД двум союзникам с наименьшей СД.\nЕсли союзник из Н Корп., также даёт ему 1 Фанатизм."
     },
     {
       "id": 1020421,
-      "name": "Whispers",
-      "desc": "At the start of the combat phase, heal 1 ally with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "name": "Шёпот",
+      "desc": "В начале боевой фазы, восстанавливает 15 СД союзнику с наименьшей СД.\nЕсли союзник из Н Корп., также даёт ему 1 Фанатизм."
     },
     {
       "id": 1070401,
-      "name": "Bugger…",
-      "desc": "When an ally is defeated, lose 10 SP and gain 1 Blunt Power Up next turn."
+      "name": "Ублюдок…",
+      "desc": "Когда союзник убит, теряет 10 СД и получает 1 Повышение финальной силы дробящих навыков на след. ход."
     },
     {
       "id": 1070421,
-      "name": "Cantillation",
-      "desc": "1 ally with the highest Speed inflicts +1 Nails."
+      "name": "Речитатив:",
+      "desc": "1 союзник с наибольшей Скоростью наносит +1 Гвозди."
     },
     {
       "id": 1110401,
-      "name": "Grasping Vulnerabilities",
-      "desc": "When attacking a target with a damage type the target is “Weak” or “Fatal” to, deal +10% damage."
+      "name": "Найдена уязвимость",
+      "desc": "Когда атакует тем типом урона, к которому цель “Слаба” или “Фатальна”, наносит на 10% больше урона."
     },
     {
       "id": 1110421,
-      "name": "Relay Intelligence",
-      "desc": "1 ally with the highest Speed deals +10% damage when attacking a target with a damage type the target is “Weak” or “Fatal” to."
+      "name": "Передача развед. данных",
+      "desc": "1 союзник с наибольшей Скоростью наносит на 10% больше урона, когда атакует тем типом урона, к которому цель “Слаба” или “Фатальна”."
     },
     {
       "id": 1060401,
-      "name": "Flaring Up~",
-      "desc": "At 30+ SP, inflict +1 Burn Count with the effects of attack skills/coins."
+      "name": "С огоньком~",
+      "desc": "При 30+ СД наносит +1 счётчик Горение с помощью эффектов от навыков/монеток атаки."
     },
     {
       "id": 1060421,
-      "name": "Isn’t It Warm?",
-      "desc": "1 ally with the most SP inflicts +1 Burn Count with the effects of their attack skills/coins."
+      "name": "Кажется, тут жарковато",
+      "desc": "1 союзник с наибольшей СД наносит +1 счётчик Горение с помощью эффектов от навыков/монеток атаки."
     },
     {
       "id": 1040401,
-      "name": "Rustle Up",
-      "desc": "After defeating an enemy, heal the ally with the least HP for 15 HP. (Once per turn.)\nIf this unit has an Appetite, spend it to boost the healing based on its Count."
+      "name": "Сварганить",
+      "desc": "После убийства противника восстанавливает ОЗ союзнику с наименьшими ОЗ на 15 (1 раз за ход)\nЕсли у персонажа есть Аппетит, тратит его для повышения восстановления ОЗ на кол-во счётчиков данного эффекта."
     },
     {
       "id": 1040421,
-      "name": "Artistic Flavor",
-      "desc": "When an enemy is defeated, the ally with the least HP heals 15 HP. (Once per turn.)"
+      "name": "Артистический вкус",
+      "desc": "При убийстве противника союзник с наименьшими ОЗ восстанавливает 15 ОЗ (1 раз за ход)"
     },
     {
       "id": 1120401,
-      "name": "Packed Pies",
-      "desc": "Heal 8 HP at the start of the combat phase."
+      "name": "Упакованные пироги",
+      "desc": "Восстанавливает 8 ОЗ в начале боевой фазы."
     },
     {
       "id": 1120421,
-      "name": "Culinary Aid",
-      "desc": "At the start of the combat phase, the ally with the least HP heals 5 HP.\nBoost the healing of R.B. Chef de Cuisine Ryōshū’s Passive ‘Rustle Up’ by 5."
+      "name": "Кулинарная помощь",
+      "desc": "В начале боевой фазы союзник с наименьшими ОЗ восстанавливает 5 ОЗ.\nПовышает восстановление ОЗ на 5 в Пассивном умении ‘Сварганить’ у БуР Шеф-повара Рёшу."
     },
     {
       "id": 1100501,
-      "name": "Mad Flame",
-      "desc": "Heal 50% less SP from winning a clash or defeating an enemy."
+      "name": "Пламя безумия",
+      "desc": "Восстанавливает на 50% меньше СД при победе в столкновении или убийстве противника."
     },
     {
       "id": 1100521,
-      "name": "Cornering",
-      "desc": "1 ally with the least SP deals +10% Blunt damage.\nIf said ally is below 0 SP, further boost their Blunt damage the lower their SP is. (Max 10%)"
+      "name": "Загнать в тупик",
+      "desc": "1 союзник с наименьшей СД наносит на 10% больше дробящего урона.\nЕсли у данного союзника СД ниже 0, наносит настолько больше дробящего урона, насколько ниже его СД (Макс. 10%)"
     },
     {
       "id": 1030401,
-      "name": "Thou Shalt Hammer!",
-      "desc": "If the target has Nails, inflict +1 Tremor Count.\nIf this unit is Fanatic, inflict +1 Nails."
+      "name": "Должна быть молотом!",
+      "desc": "Если у цели есть Гвозди, наносит +1 счётчик Тремор.\nЕсли у персонажа есть Фанатизм, наносит +1 Гвозди."
     },
     {
       "id": 1030421,
-      "name": "Hammer of Zealotry",
-      "desc": "1 Fanatic ally with the least SP deals +10% damage."
+      "name": "Молот фанатизма",
+      "desc": "1 союзник с Фанатизм и наименьшей СД наносит на 10% больше урона."
     },
     {
       "id": 1090501,
-      "name": "Here’s to Getting Off Early~",
-      "desc": "When bursting Tremor, spend 3 Charge Count to increase the Stagger Threshold raise by +40%.\nAfter bursting Tremor, gain 1 Haste and 1 Blunt DMG Up next turn."
+      "name": "За то, что закончили пораньше~",
+      "desc": "При провокации Тремор тратит 3 счётчика Заряд для повышения границ выносливости противника на 40%.\nПосле провокации Тремор получает 1 Спешка и 1 Повышение дробящего урона на след. ход."
     },
     {
       "id": 1090521,
-      "name": "Resonant Spanner",
-      "desc": "When 1 ally with the lowest Speed bursts Tremor, increase the Stagger Threshold raise by +20%."
+      "name": "Резонирующий ключ",
+      "desc": "Когда 1 союзник с наименьшей Скоростью провоцирует Тремор, повышает границы выносливости противника на 20%."
     },
     {
       "id": 1050501,
-      "name": "Chronic Fatigue",
-      "desc": "In a clash, the opponent has -1 Clash Power if they have 5+ Tremor.\nWhen recovering from Stagger, heal 5% of Max HP."
+      "name": "Хроническая усталость",
+      "desc": "В столкновении противник теряет 1 Силу столкновения, если у него есть 5+ Тремор.\nПосле выхода из Оглушения восстанавливает 5% от Макс. ОЗ."
     },
     {
       "id": 1050521,
-      "name": "Leave by Suggestion",
-      "desc": "1 ally with the highest Speed lowers the Clash Power of opponents with Tremor by 1."
+      "name": "Отпуск по совету",
+      "desc": "1 союзник с наибольшей Скоростью уменьшает на 1 Силу столкновения противников с Тремор."
     },
     {
       "id": 1070501,
-      "name": "Rain of Tears",
-      "desc": "At the start of the combat phase, spend 1 Sinking Count and lose SP by the current amount of Sinking.\nBefore being hit by an attack, gain Protection equal to this unit's Sinking. (Up to 5 Protection can be gained per turn)\nWhen hit, gain 1 Blunt DMG Up next turn. (3 per turn)"
+      "name": "Дождь из слёз",
+      "desc": "В начале боевой фазы тратит 1 счётчик Утопание и теряет СД в кол-ве счётчиков Утопание.\nПеред получением удара получает Защищённость, равную Утопание на персонаже (До 5 Защищённость за ход)\nПри ударе получает 1 Повышение дробящего урона на след. ход (3 за ход)"
     },
     {
       "id": 1070521,
-      "name": "Ragged Umbrella",
-      "desc": "1 ally with the least SP loses 10 SP when hit by an attack and gains 1 Blunt DMG Up next turn. (Once per turn)"
+      "name": "Потрёпанный зонт",
+      "desc": "1 союзник с наименьшей СД теряет 10 СД при ударе и получает 1 Повышение дробящего урона на след. ход (1 раз за ход)"
     },
     {
       "id": 1120501,
-      "name": "Sawblade Fired Up",
-      "desc": "Inflict +1 Rupture to targets with Tremor"
+      "name": "Пила наготове",
+      "desc": "Наносит +1 Разрыв целям с Тремор"
     },
     {
       "id": 1120521,
-      "name": "Sawblade Maintenance",
-      "desc": "1 ally with the lowest Speed inflicts +1 Rupture to targets with Tremor"
+      "name": "Починка пилы",
+      "desc": "1 союзник с наименьшей Скоростью наносит +1 Разрыв целям с Тремор"
     },
     {
       "id": 1010401,
-      "name": "Full Bloom",
-      "desc": "When attacking 2 or more targets at once, deal +30% damage."
+      "name": "Полное цветение",
+      "desc": "Когда атакует 2 и более цели за раз, наносит на 30% больше урона."
     },
     {
       "id": 1010421,
-      "name": "Pungent Spring Breeze",
-      "desc": "1 ally with the least SP deals +10% damage when attacking 2 or more targets at once."
+      "name": "Пряный весенний воздух",
+      "desc": "1 союзник с наименьшей СД наносит на 10% больше урона, если атакует 2 и более цели за раз."
     },
     {
       "id": 1080501,
-      "name": "Filling Fluid",
-      "desc": "If this unit fails to deal HP damage using attack skills in a turn, gain a shield equal to 5% of Max HP next turn. (Max 30)"
+      "name": "Жидкостное насыщение",
+      "desc": "Если не носит урон атакими в течение хода, на след. ход получает щит, равный 5% от Макс. ОЗ (Макс. 30)"
     },
     {
       "id": 1080521,
-      "name": "Corrosive Slime",
-      "desc": "When 1 ally with the highest Speed bursts Tremor, they inflict 2 Rupture."
+      "name": "Коррозийная слизь",
+      "desc": "Когда 1 союзник с наивысшей Скоростью провоцирует Тремор, также наносит 2 Разрыв."
     },
     {
       "id": 1060501,
-      "name": "Regeneration Ampule Activation",
-      "desc": "When hit, if at less than 20% HP, heal by 90% of Max HP and gain 1 K Corp Ampule.\nAfter this activates, gain 1 Fragile every turn for the rest of the battle. (Once per battle)"
+      "name": "Активация восстанавливающей ампулы",
+      "desc": "При получении удара и при менее, чем 20% ОЗ, восстанавливает 90% от Макс. ОЗ и получает 1 Ампула К Корп.\nПосле активации этого эффекта получает 1 Уязвимость каждый ход на всю оставшуюся битву (Единожды за битву)"
     },
     {
       "id": 1060521,
-      "name": "HIgh-grade Ampule",
-      "desc": "At the start of the next turn, give 2 K Corp Ampule to the ally with the lowest HP percentage."
+      "name": "Высококачественная ампула",
+      "desc": "В начале след. хода даёт 2 Ампула К Корп. союзнику с наименьшими ОЗ."
     },
     {
       "id": 1100601,
-      "name": "Unfixing Talismans",
-      "desc": "On hit, if the target had Rupture, gain 1 Talisman."
+      "name": "Не снимающиеся обереги",
+      "desc": "При ударе, если у цели есть Разрыв, получает 1 Оберег."
     },
     {
       "id": 1100621,
-      "name": "Wishing Talisman",
-      "desc": "At the start of the combat phase, give (Highest Reson. * 2) Talisman to the ally with the most HP."
+      "name": "Оберег желаний",
+      "desc": "В начале боевой фазы, даёт (Наибольший резонанс * 2) Оберег союзнику с наибольшими ОЗ."
     },
     {
       "id": 1080601,
-      "name": "Intense Blaze",
-      "desc": "Deal +10% Blunt damage for every 3 Burn Count on target. (Max 30%)"
+      "name": "Ярое пламя",
+      "desc": "Наносит на 10% больше дробящего урона за каждые 3 счётчика Горение на цели (Макс. 30%)"
     },
     {
       "id": 1080621,
-      "name": "Intense Blaze",
-      "desc": "1 ally with the lowest Speed deals +5% Blunt damage for every 3 Burn Count on target. (Max 15%)"
+      "name": "Ярое пламя",
+      "desc": "1 союзник с наименьшей Скоростью наносит на 5% больше дробящего урона за каждые 3 счётчика Горение на цели (Макс. 15%)"
     },
     {
       "id": 1050601,
-      "name": "Activate rrR-#4 Suit Pressurization",
-      "desc": "At the end of the turn, Max Speed +2 (Capped at 6) per 5 Charge Count next turn."
+      "name": "Активация rrR-№4 герметизации костюма",
+      "desc": "В конце хода, за каждые 5 счётчиков Заряд Макс. Скорость +2 на след. ход (Макс. 6)"
     },
     {
       "id": 1050621,
-      "name": "Maneuver Training",
-      "desc": "At the end of the turn, 1 ally with the highest Charge Count gains Max Speed +1 (Capped at 3) per 5 Charge Count next turn."
+      "name": "Тренировка манёвренности",
+      "desc": "В конце хода, 1 союзник с наибольшими счётчиками Заряд получает +1 к Макс. Скорости за каждые 5 счётчиков Заряд на след. ход (Макс. 3)"
     },
     {
       "id": 1090601,
-      "name": "Defensive Breathing",
-      "desc": "At the start of the combat phase, gain 2 Shield per 1 Poise Count. (Max 20)"
+      "name": "Передышка в обороне",
+      "desc": "В начале боевой фазы получает 2 Защищённость за каждый счётчик Равновесие (Макс. 20)"
     },
     {
       "id": 1090621,
-      "name": "Designated Protection",
-      "desc": "At the start of the combat phase, 1 ally with the lowest HP percentage gains 1 Shield per 1 Poise Count next turn. (Max 10)"
+      "name": "Назначенная защита",
+      "desc": "В начале боевой фазы 1 союзник с наименьшими ОЗ получает 1 Защищённость за каждый счётчик Равновесие на след. ход (Макс. 10)"
     },
     {
       "id": 1030501,
-      "name": "A Noble Duel",
-      "desc": "If Speed of all allies is higher than Speed of all enemies, this unit deals more damage based on the Speed difference between it and the slowest enemy. (+6% per 1 point of difference, Max 30%)"
+      "name": "Благородная дуэль",
+      "desc": "Если Скорость всех союзников выше, чем Скорость всех противников, то этот персонаж наносит больше урона, основываясь на разнице Скорости всех союзников и Скорости самого медленного противника (6% за 1 единицу разницы, макс. 30%)"
     },
     {
       "id": 1030521,
-      "name": "Dueling Request",
-      "desc": "If Speed of all allies is higher than Speed of all enemies, the fastest ally deals more damage based on the Speed difference between it and the slowest enemy. (+3% per 1 point of difference, Max 15%)"
+      "name": "Бросить перчатку",
+      "desc": "Если Скорость всех союзников выше, чем Скорость всех противников, то союзник с самой высокой Скоростью наносит больше урона, основываясь на разнице Скорости всех союзников и Скорости самого медленного противника (3% за 1 единицу разницы, макс. 15%)"
     },
     {
       "id": 1080701,
-      "name": "Crushin' Crabs",
-      "desc": "On hit against a target with Tremor, inflict +1 Sinking Count"
+      "name": "Давка крабов",
+      "desc": "При ударе по цели с Тремор наносит +1 счётчик Утопание"
     },
     {
       "id": 1080721,
-      "name": "Crab Driver",
-      "desc": "When an ally with the lowest Max HP hits with Heads Coins, they inflict +1 Sinking Count when inflicting Tremor Count on their target with Coin effects."
+      "name": "Крабовый наездник",
+      "desc": "Когда союзник с наименьшими Макс. ОЗ наносит удар с помощью монеток орла, он также наносит +1 счётчик Утопание при наложении счётчиков Тремор эффектами этих монеток."
     },
     {
       "id": 1100701,
-      "name": "Unstable Power Output",
-      "desc": "On hit with Heads Coins at 10+ Tremor Count on self, Inflict +1 Tremor and Tremor Count with Coin effects."
+      "name": "Нестабильная выходная мощность",
+      "desc": "При ударе орлом при 10+ счётчиках Тремор на себе наносит +1 Тремор и счётчик Тремор с помощью эффектов монетки."
     },
     {
       "id": 1100721,
-      "name": "Modified Power Output",
-      "desc": "1 ally with the most Max HP inflicts +1 Tremor with the effects of their attack skills/coins."
+      "name": "Доработанная выходная мощность",
+      "desc": "1 союзник с наибольшими Макс. ОЗ наносит на 1 больше Тремор с помощью эффектов навыков/монеток атаки."
     },
     {
       "id": 1120601,
-      "name": "Combat Shield",
-      "desc": "If targeted by 2 or more attacks at the start of the combat phase, gain 2 Defense Level Up.\nIf at 50% or less HP at the start of the combat phase, gain 3 Defense Level Up."
+      "name": "Боевой щит",
+      "desc": "Если является целью 2 и более атак в начале боевой фазы, получает 2 Повышение уровня защиты.\nПри 50% и меньше ОЗ в начале боевой фазы получает 3 Повышение уровня защиты."
     },
     {
       "id": 1120621,
-      "name": "Your Shield",
-      "desc": "If 1 ally with the highest Max HP is targeted by 2 or more attacks, gain 3 Defense Level Up"
+      "name": "Ваш щит",
+      "desc": "Если 1 союзник с наибольшими Макс. ОЗ является целью 2 и более атак, он получает 3 Повышение уровня защиты"
     },
     {
       "id": 1020501,
-      "name": "Territory Protection",
-      "desc": "At the start of the combat phase, apply 2 Defense Level Up to the 2 allies adjacent to this unit on the Dashboard."
+      "name": "Охрана территории",
+      "desc": "В начале боевой фазы даёт 2 Повышение уровня защиты двум союзникам, находящимся рядом с этим персонажем на приборной панели."
     },
     {
       "id": 1020511,
-      "name": "Territory Protection",
-      "desc": "At the start of the combat phase, apply 2 Defense Level Up to the 2 allies adjacent to this unit on the Dashboard.\nIf the allies' HP is below 50%, apply an additional 2 Defense Level Up"
+      "name": "Охрана территории",
+      "desc": "В начале боевой фазы даёт 2 Повышение уровня защиты двум союзникам, находящимся рядом с этим персонажем на приборной панели.\nЕсли ОЗ союзников ниже 50%, даёт им доп. 2 Повышение уровня защиты"
     },
     {
       "id": 1020521,
-      "name": "Protection Request Received",
-      "desc": "At the start of the combat phase, apply 2 Defense Level Up to the ally with the lowest HP percentage\nIf target's HP is below 50%, apply an additional 2 Defense Level Up"
+      "name": "Запрос об охране получен",
+      "desc": "В начале боевой фазы даёт 2 Повышение уровня защиты союзнику с наименьшим процентом ОЗ\nЕсли ОЗ цели ниже 50%, даёт доп. 2 Повышение уровня защиты"
+    },
+    {
+      "id": 1040501,
+      "name": "Острие пространственного демона",
+      "desc": "При убийстве противника даёт +2 счётчика Заряд (3 раза за ход)"
+    },
+    {
+      "id": 1040521,
+      "name": "Острие пространственного преломления - Тип: Клинок Mk7",
+      "desc": "Если союзник с наименьшим Макс. ОЗ убивает противника, получает +2 счётчика Заряд (1 раз за ход)"
+    },
+    {
+      "id": 1060601,
+      "name": "Мастерство зачистки",
+      "desc": "В начале боевой фазы при 5+ счётчиках Заряд, получает 2 Спешка на след. ход"
+    },
+    {
+      "id": 1060621,
+      "name": "Руководство по уборке поезда",
+      "desc": "В начале боевой фазы при 5+ счётчиках Заряд, союзник с наименьшей Скоростью получает 2 Спешка на след. ход"
     }
   ]
 }
