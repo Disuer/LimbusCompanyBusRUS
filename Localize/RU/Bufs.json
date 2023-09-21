@@ -1530,6 +1530,116 @@
       "name": "Повышение силы Режущей атаки",
       "desc": "Конечная сила Режущего навыка +{0} в течение этого хода.",
       "summary": "Конечная сила Режущего навыка +{0}"
+    },
+    {
+      "id": "RailBuffForLine2_A_ENEMY",
+      "name": "Круг"
+    },
+    {
+      "id": "RailBuffForLine2_B_ENEMY",
+      "name": "Адаптация"
+    },
+    {
+      "id": "RailBuffForLine2_C_ENEMY",
+      "name": "Ужесточение"
+    },
+    {
+      "id": "RailBuffForLine2_D_ENEMY",
+      "name": "Ускорение"
+    },
+    {
+      "id": "RailBuffForLine2_E_ENEMY",
+      "name": "Высасывание"
+    },
+    {
+      "id": "RailBuffForLine2_F_ENEMY",
+      "name": "Жажда"
+    },
+    {
+      "id": "RailBuffForLine2_A_ALLY",
+      "name": "Усиление режущего\nурона"
+    },
+    {
+      "id": "RailBuffForLine2_B_ALLY",
+      "name": "Усиление пронзающего урона"
+    },
+    {
+      "id": "RailBuffForLine2_C_ALLY",
+      "name": "Усиление дробящего урона"
+    },
+    {
+      "id": "RailBuffForLine2_D_ALLY",
+      "name": "Усиление Гнева"
+    },
+    {
+      "id": "RailBuffForLine2_E_ALLY",
+      "name": "Усиление Похоти"
+    },
+    {
+      "id": "RailBuffForLine2_F_ALLY",
+      "name": "Усиление Лени"
+    },
+    {
+      "id": "RailBuffForLine2_G_ALLY",
+      "name": "Усиление Чревоугодия"
+    },
+    {
+      "id": "RailBuffForLine2_H_ALLY",
+      "name": "Усиление Уныния"
+    },
+    {
+      "id": "RailBuffForLine2_I_ALLY",
+      "name": "Усиление Гордыни"
+    },
+    {
+      "id": "RailBuffForLine2_J_ALLY",
+      "name": "Усиление Зависти"
+    },
+    {
+      "id": "RailBuffForLine2_K_ALLY",
+      "name": "Вылечить всех"
+    },
+    {
+      "id": "RailBuffForLine2_L_ALLY",
+      "name": "Вылечить одного"
+    },
+    {
+      "id": "Discard",
+      "name": "Сброс",
+      "desc": "- На этапе сцепления удаляет выбранные навыки с приборной панели, если они соответствуют условиям (Навыки Защиты и ЭГО не в счёт. Не удаляет выбранный навык из перечня навыков.)\n- При сбросе навыки не активируют эффекты навыка или эффекты монетки, а также не дают ЭГО ресурсы."
+    },
+    {
+      "id": "RailBuffForLine2_M_ALLY",
+      "name": "Усиление Огня"
+    },
+    {
+      "id": "RailBuffForLine2_N_ALLY",
+      "name": "Усиление Кровотечения"
+    },
+    {
+      "id": "RailBuffForLine2_O_ALLY",
+      "name": "Усиление Тремора"
+    },
+    {
+      "id": "RailBuffForLine2_P_ALLY",
+      "name": "Усиление Разрыва"
+    },
+    {
+      "id": "RailBuffForLine2_Q_ALLY",
+      "name": "Усиление Утопания"
+    },
+    {
+      "id": "RailBuffForLine2_R_ALLY",
+      "name": "Усиление Дыхания"
+    },
+    {
+      "id": "RailBuffForLine2_S_ALLY",
+      "name": "Усиление Заряда"
+    },
+    {
+      "id": "KnowledgeExplored",
+      "name": "Откровение",
+      "desc": "Отображает ранг последнего сброшенного персонажем с этим эффектом навыка\n(Цифра по умолчанию: 1)"
     }
   ]
 }

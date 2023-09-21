@@ -1,0 +1,16 @@
+{
+  "dataList": [
+    {
+      "id": "HealHpMaxForSelected",
+      "content": "Полностью восстанавливает выбранную идентичность"
+    },
+    {
+      "id": "HealHpPercentageForAll",
+      "content": "Все идентичности восстанавливают {0}% ОЗ"
+    },
+    {
+      "id": "ResurrectForSelected",
+      "content": "Вернуть иденитчность с полными ОЗ"
+    }
+  ]
+}
