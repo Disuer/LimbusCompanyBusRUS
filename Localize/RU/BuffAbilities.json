@@ -1,0 +1,84 @@
+{
+  "dataList": [
+    {
+      "id": "AtkDamageMultiplier",
+      "desc": "{0}% наносимого урона",
+      "variation": "Умения типа \"{0}\" наносят {1}% урона"
+    },
+    {
+      "id": "AtkAndTakeAtkDamageMultiplier",
+      "desc": "{0}% наносимого и получаемого урона",
+      "variation": "{1}% наносимого и получаемого урона умениями типа \"{0}\""
+    },
+    {
+      "id": "GiveBuffOnSucceedAttack",
+      "desc": "При ударе даёт {0} {1}"
+    },
+    {
+      "id": "MaxHpMultiplierRail",
+      "desc": "{0}% максимальных ОЗ"
+    },
+    {
+      "id": "SlotWeightAdder",
+      "desc": "{0} кол-во целей"
+    },
+    {
+      "id": "AtkAdder",
+      "desc": "Уровень атаки {0}"
+    },
+    {
+      "id": "DefAdder",
+      "desc": "Уровень защиты {0}"
+    },
+    {
+      "id": "AtkAdderIfNotDamagedPrevTurn",
+      "desc": "Уровень атаки {0} если аномалия не получила урон в предыдущий ход\n(Урон по щиту ≠ урон по ОЗ)"
+    },
+    {
+      "id": "MaxSpeedAdderAsStack",
+      "desc": "Максимальная скорость {0}"
+    },
+    {
+      "id": "MaxSpeedAdder",
+      "desc": "Максимальная скорость {0}"
+    },
+    {
+      "id": "MinSpeedAdder",
+      "desc": "Минимальная скорость {0}"
+    },
+    {
+      "id": "TakeHpHealMultiplier",
+      "desc": "Восстанавливает {0}% ОЗ эффектами умений"
+    },
+    {
+      "id": "RecoverSelfHpOnSucceedAttackByDmg",
+      "desc": "Восстанавливает {0}% от нанесённого урона"
+    },
+    {
+      "id": "RailEnemyBuffF",
+      "desc": "{0} требуемое количество ЭГО ресурсов для ЭГО умений грешников"
+    },
+    {
+      "id": "MaxHpMultiplier",
+      "desc": "{0}% максимальных ОЗ"
+    },
+    {
+      "id": "AtkAndDefAdder",
+      "desc": "Уровень атаки и защиты {0}"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllAlly",
+      "desc": "В начале хода все союзники получают {1} {0} и +{2} счётчика {0}",
+      "variation": "В начале хода все союзники получают {1} {0}.",
+      "variation2": "В начале хода все союзники получают +{1} счётчика {0}"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllAllyExtra",
+      "desc": "В начале хода все союзники получают {1} {0}, а те, у кого уже есть {0}, получают дополнительно +{2} счётчик(а)"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllEnemyExtra",
+      "desc": "В начале хода все противники получают {1} {0}, а те, у кого уже есть {0}, получают дополнительно +{2} счётчик(а)"
+    }
+  ]
+}

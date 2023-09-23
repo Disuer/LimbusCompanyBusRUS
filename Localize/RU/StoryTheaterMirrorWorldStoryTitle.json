@@ -50,11 +50,11 @@
     },
     {
       "id": "MirrorWorld_Story_Title_P10702",
-      "content": "5-ая Южная секция Си: Хон Лу"
+      "content": "5-ая Южная секция Си: История Хитклиффа"
     },
     {
       "id": "MirrorWorld_Story_Title_P10703",
-      "content": "Кролик 4-ой Стаи Корп. R: Хон Лу"
+      "content": "Кролик 4-ой Стаи Корп. R: История Хитклиффа"
     },
     {
       "id": "MirrorWorld_Story_Title_P10802",
@@ -118,7 +118,7 @@
     },
     {
       "id": "MirrorWorld_Story_Title_P10704",
-      "content": "Малый молот Корп. N: Хон Лу"
+      "content": "Малый молот Корп. N: История Хитклиффа"
     },
     {
       "id": "MirrorWorld_Story_Title_P11104",
@@ -154,7 +154,7 @@
     },
     {
       "id": "MirrorWorld_Story_Title_P10705",
-      "content": "Э.Г.О. Лоботомии, Слепой дождь: История Хитклиффа"
+      "content": "ЭГО Лоботомии, Слепой дождь: История Хитклиффа"
     },
     {
       "id": "MirrorWorld_Story_Title_P11205",
@@ -162,11 +162,11 @@
     },
     {
       "id": "MirrorWorld_Story_Title_P10104",
-      "content": "Расцвётшее Э.Г.О. Линдера: История И Сана"
+      "content": "Расцветшее ЭГО, Линдера: История И Сана"
     },
     {
       "id": "MirrorWorld_Story_Title_P10805",
-      "content": "Э.Г.О. Лоботомии, Брызги, История Измаил"
+      "content": "ЭГО Лоботомии, Брызги: История Измаил"
     },
     {
       "id": "MirrorWorld_Story_Title_P10605",
@@ -174,7 +174,7 @@
     },
     {
       "id": "MirrorWorld_Story_Title_P11006",
-      "content": "Э.Г.О. Лоботомии, Алый Лист: История Синклера"
+      "content": "ЭГО Лоботомии, Алый Лист: История Синклера"
     },
     {
       "id": "MirrorWorld_Story_Title_P10806",
@@ -215,6 +215,26 @@
     {
       "id": "MirrorWorld_Story_Title_P10606",
       "content": "Агент зачистки 2-го уровня Корп. W: История Хон Лу"
+    },
+    {
+      "id": "MirrorWorld_Story_Title_P10206",
+      "content": "4-ая Южная секция ассоциации Севен: История Фауст"
+    },
+    {
+      "id": "MirrorWorld_Story_Title_P10706",
+      "content": "4-ая Южная секция ассоциации Севен: История Хитклиффа"
+    },
+    {
+      "id": "MirrorWorld_Story_Title_P10105",
+      "content": "Корректировщик офиса Коренного: История И Сана"
+    },
+    {
+      "id": "MirrorWorld_Story_Title_P11105",
+      "content": "Корректировщица офиса Коренного: История Отис"
+    },
+    {
+      "id": "MirrorWorld_Story_Title_P10907",
+      "content": "4-ая Южная секция ассоциации Дьечи: История Роди"
     }
   ]
 }
