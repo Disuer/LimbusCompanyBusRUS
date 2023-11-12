@@ -1,15 +1,14 @@
 ﻿using HarmonyLib;
-using Il2Cpp;
-using Il2CppLocalSave;
-using Il2CppMainUI;
-using Il2CppMainUI.NoticeUI;
-using Il2CppServer;
-using Il2CppSimpleJSON;
 using Il2CppSystem.Collections.Generic;
-using Il2CppTMPro;
+using LocalSave;
+using MainUI;
+using MainUI.NoticeUI;
+using Server;
+using SimpleJSON;
 using System;
 using System.IO;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -71,7 +70,6 @@ namespace LimbusLocalizeRUS
                 sprite.hideFlags |= HideFlags.HideAndDontSave;
                 ReadmeSprites[fileNameWithoutExtension] = sprite;
             }
-
         }
         public static void InitReadmeList()
         {
@@ -92,9 +90,7 @@ namespace LimbusLocalizeRUS
             UpdateNoticeRedDot();
         }
         public static void UpdateNoticeRedDot()
-        {
-            _redDot_Notice.gameObject.SetActive(IsValidRedDot());
-        }
+           => _redDot_Notice?.gameObject.SetActive(IsValidRedDot());
         public static bool IsValidRedDot()
         {
             int i = 0;
@@ -109,7 +105,7 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
-        #region Анноунсы
+        #region 公告相关
         [HarmonyPatch(typeof(UserLocalNoticeRedDotModel), nameof(UserLocalNoticeRedDotModel.InitNoticeList))]
         [HarmonyPrefix]
         private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)

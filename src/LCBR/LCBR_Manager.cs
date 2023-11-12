@@ -1,12 +1,11 @@
 ﻿using HarmonyLib;
-using Il2Cpp;
 using Il2CppInterop.Runtime.Injection;
-using Il2CppMainUI;
-using Il2CppMainUI.Gacha;
-using Il2CppTMPro;
+using MainUI;
+using MainUI.Gacha;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
