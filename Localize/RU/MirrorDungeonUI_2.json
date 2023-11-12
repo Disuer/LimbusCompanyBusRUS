@@ -2,11 +2,11 @@
   "dataList": [
     {
       "id": "mirrordungeon_product_list",
-      "content": "Каталог товаров"
+      "content": "Каталог"
     },
     {
       "id": "ego_gift_list",
-      "content": "Ваши Э.Г.О. Дары"
+      "content": "ЭГО Дары на руках"
     },
     {
       "id": "normal_difficulty",
@@ -14,7 +14,7 @@
     },
     {
       "id": "hard_difficulty",
-      "content": "Усложнённое"
+      "content": "Сложное"
     },
     {
       "id": "start_buffs",
@@ -22,11 +22,11 @@
     },
     {
       "id": "enter_normal_difficulty",
-      "content": "<size=35>Войти в Обычное Подземелье</size>"
+      "content": "Войти в обычное подземелье"
     },
     {
       "id": "enter_hard_difficulty",
-      "content": "<size=35>Войти в Усложнённое Подземелье</size>"
+      "content": "Войти в усложнённое подземелье"
     },
     {
       "id": "list_of_applied_effects",
@@ -34,59 +34,59 @@
     },
     {
       "id": "activation_complete",
-      "content": "<size=60>Активно</size>"
+      "content": "Активировано"
     },
     {
       "id": "lack_of_points",
-      "content": "Недостаточно Звёздного света."
+      "content": "Недостаточно Света звёзд"
     },
     {
       "id": "require_to_activate_former_buffs",
-      "content": "Сперва вы должны активировать предыдущее усиление."
+      "content": "Необходимо активировать предыдущее усиление."
     },
     {
       "id": "weekly_bonus_reward",
-      "content": "Недельные бонусы"
+      "content": "Недельный бонус"
     },
     {
       "id": "hard_dungeon_reward",
-      "content": "Вознаграждение"
+      "content": "Награды за усложнённый режим"
     },
     {
       "id": "dungeon_shop_return_title",
-      "content": "Не покупать."
+      "content": "Назад."
     },
     {
       "id": "dungeon_shop_return_desc",
-      "content": "В магазин"
+      "content": "Перейти в магазин"
     },
     {
       "id": "dungeon_shop_heal_title_one",
-      "content": "Выбрать дорогой тоник."
+      "content": "Я куплю дорогой тоник."
     },
     {
       "id": "dungeon_shop_heal_desc_one_hp_perc_mp_int",
-      "content": "Выбранный грешник восстанавливает {0}% ОЗ и {1} СД"
+      "content": "Выбранный грешник восстановит {0}% ОЗ и {1} СД"
     },
     {
       "id": "dungeon_shop_heal_title_all",
-      "content": "Выбрать энергетики."
+      "content": "Я куплю энергетики на всю команду."
     },
     {
       "id": "dungeon_shop_heal_desc_all_hp_perc_mp_int",
-      "content": "Все грешники восстанавливают {0}% ОЗ и {1} СД"
+      "content": "Все грешники восстановят {0}% ОЗ и {1} СД"
     },
     {
       "id": "dungeon_shop_purchase_title",
-      "content": "Купить."
+      "content": "Покупка."
     },
     {
       "id": "dungeon_shop_change_formation_title",
-      "content": "Поднять осколок зеркала среди крупиц."
+      "content": "Среди хлама, я подберу осколок зеркала."
     },
     {
       "id": "dungeon_shop_change_formation_desc",
-      "content": "Дополнить команду новой идентичностью или Э.Г.О."
+      "content": "Получение нового грешника или ЭГО в свою команду"
     },
     {
       "id": "dungeon_shop_heal_character",
@@ -98,23 +98,23 @@
     },
     {
       "id": "dungeon_shop_upgrade_personality",
-      "content": "Заменить умение {0}"
+      "content": "Изменение навыка для {0}"
     },
     {
       "id": "dungeon_shop_upgrade_personality_0_title",
-      "content": "Заплатить разумную цену."
+      "content": "Я скромно заплачу."
     },
     {
       "id": "dungeon_shop_upgrade_personality_1_title",
-      "content": "Заплатить большую сумму."
+      "content": "Можно скинуться и подороже."
     },
     {
       "id": "dungeon_shop_upgrade_personality_2_title",
-      "content": "Заплатить чудовищную цену."
+      "content": "Мне никаких денег не жалко."
     },
     {
       "id": "dungeon_shop_upgrade_personality_desc",
-      "content": "Заменить [{2} умение - {0}] на [{3} умение - {1}]."
+      "content": "Заменить [навык {2} - {0}] Идентичности на [{3} - {1}]"
     },
     {
       "id": "dungeon_shop_out",
@@ -122,43 +122,43 @@
     },
     {
       "id": "mirrordungeon_2_hard_open_at",
-      "content": "Зачистите Обычное Зеркало Зеркал"
+      "content": "Для открытия необходимо пройти Зеркало зеркал на обычной сложности"
     },
     {
       "id": "mirrordungeon_with_number",
-      "content": "Зеркальное Подземелье {0}"
+      "content": "Зеракальное подземелье №{0}"
     },
     {
       "id": "mirrordungeon_select_buffs_title",
-      "content": "Выбрать эффект события"
+      "content": "Выбрать стартовые усиления"
     },
     {
       "id": "acquire_additional_rewards",
-      "content": "Взять доп. награды"
+      "content": "Получить дополнительные награды"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_chance_desc",
-      "content": " Вы действительно хотите забрать дополнительные награды, используя один из Недельных бонусов?"
+      "content": "Желаете ли вы получить дополнительные награды, использовав [Недельный бонус] ?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_chance_desc",
-      "content": "У вас всё ещё есть Недельные бонусы. Вы действительно хотите забрать награды не используя бонусов?"
+      "content": "Вы не использовали [Недельный бонус]. Уверены, что желаете получить награды без него?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_chance_desc",
-      "content": "Забрать награды?"
+      "content": "Получить награду?"
     },
     {
       "id": "mirror_dungeon_start_buffs_chip_name",
-      "content": "<size=35>Звёздный свет</size>"
+      "content": "Свет звёзд"
     },
     {
       "id": "mirror_dungeon_exit_without_acquire_rewards",
-      "content": "Закончить экспедицию без наград?"
+      "content": "Завершить экспедицию, не получив награду?"
     },
     {
       "id": "mirror_dungeon_buffs_title_1",
-      "content": "На шажок больше"
+      "content": "Ещё полшажочка"
     },
     {
       "id": "mirror_dungeon_buffs_title_2",
@@ -166,35 +166,35 @@
     },
     {
       "id": "mirror_dungeon_buffs_title_3",
-      "content": "Поиск слабостей"
+      "content": "Обнаружение слабостей"
     },
     {
       "id": "mirror_dungeon_buffs_title_4",
-      "content": "Покажи мне свою мотивацию!"
+      "content": "Жажда идти вперёд"
     },
     {
       "id": "mirror_dungeon_buffs_title_5",
-      "content": "Эксплуатация слабостей"
+      "content": "Фокус на слабостях"
     },
     {
       "id": "mirror_dungeon_buffs_title_6",
-      "content": "Физическая тренировка"
+      "content": "Физическая подготовка"
     },
     {
       "id": "mirror_dungeon_buffs_title_7",
-      "content": "Проблеск откровения"
+      "content": "Капля отчаяния"
     },
     {
       "id": "mirror_dungeon_buffs_title_8",
-      "content": "Интенсивная тренировка"
+      "content": "Интенсивная подготовка"
     },
     {
       "id": "mirror_dungeon_buffs_title_9",
-      "content": "Аутогенный релакс"
+      "content": "Автогенез"
     },
     {
       "id": "mirror_dungeon_buffs_title_10",
-      "content": "Сплетенные возможности"
+      "content": "Слияние возможностей"
     },
     {
       "id": "mirror_dungeon_buffs_title_11",
@@ -202,19 +202,19 @@
     },
     {
       "id": "mirror_dungeon_buffs_title_12",
-      "content": "На шаг дальше"
+      "content": "Ещё один шаг"
     },
     {
       "id": "mirror_dungeon_buffs_title_13",
-      "content": "Счастливый случай"
+      "content": "Случайное обретение"
     },
     {
       "id": "mirror_dungeon_buffs_title_14",
-      "content": "Особый карман"
+      "content": "Заметный карман"
     },
     {
       "id": "mirror_dungeon_buffs_title_15",
-      "content": "Надежная защита"
+      "content": "Как за каменной стеной"
     },
     {
       "id": "mirror_dungeon_buffs_title_16",
@@ -222,31 +222,31 @@
     },
     {
       "id": "mirror_dungeon_buffs_title_17",
-      "content": "Скоростной"
+      "content": "Резвость"
     },
     {
       "id": "mirror_dungeon_buffs_title_18",
-      "content": "Минимальный урон"
+      "content": "Ускользание от атаки"
     },
     {
       "id": "mirror_dungeon_buffs_title_19",
-      "content": "Непоколебимая воля"
+      "content": "Сильный дух"
     },
     {
       "id": "mirrordungeon_unable_to_purchase_buffs_when_running_dungeon",
-      "content": "Вы не можете покупать стартовые усиления во время экспедиции."
+      "content": "Вы не можете приобрести стартовые усиления, пока проходит экспедиция."
     },
     {
       "id": "mirrordungeon_resting_open",
-      "content": "Устраивайтесь поудобнее!\n\nЕсли вам нужна встреча, положите её на стол.\n\n- Владелец круглосуточного магазина исследует лабиринт в поисках автомата"
+      "content": "Отдохните как следует!\n\nЕсли желаете попытать счастья на встречу с кем-то, положите это на столик.\n\n- Хозяин супермаркета, ушёл на поиски автомата в этом лабиринте"
     },
     {
       "id": "mirrordungeon_shop_open",
-      "content": "Шум автомата постепенно заменяет тишину.\n\nОно знает, что мы хотим.\n\nМы тоже знаем, чего оно хочет."
+      "content": "Жужжание автомата наполняет воздух.\n\nОн знает, что нам нужно.\n\nКак и мы знаем, что нужно ему."
     },
     {
       "id": "mirrordungeon_resting_heal_title",
-      "content": "Отдохнуть."
+      "content": "Мы немного отдохнём."
     },
     {
       "id": "mirrordungeon_resting_heal_desc",
@@ -254,107 +254,107 @@
     },
     {
       "id": "mirrordungeon_resting_heal_desc_1",
-      "content": "Выбранный грешник восстанавливает {0}% ОЗ"
+      "content": "Выбранный грешник восстановит {0}% ОЗ"
     },
     {
       "id": "mirrordungeon_resting_heal_desc_2",
-      "content": "Все грешники восстанавливают {0}% ОЗ"
+      "content": "Все грешники восстановят {0}% ОЗ"
     },
     {
       "id": "mirrordungeon_resting_change_formation_title",
-      "content": "Положить крупицы на стол."
+      "content": "Положить фрагмент на стол."
     },
     {
       "id": "mirrordungeon_resting_change_formation_desc",
-      "content": "Дополнить команду новой идентичностью или Э.Г.О."
+      "content": "Взять в команду новую идентичность или ЭГО"
     },
     {
       "id": "hard_difficulty_en",
-      "content": "Усложнённое"
+      "content": "Сложный"
     },
     {
       "id": "mirrordungeon_2_normal_open_at",
-      "content": "Нужно зачистить 4-54 и Зеркало Начала"
+      "content": "Для открытия пройдите 4-54 и Зеркало начала"
     },
     {
       "id": "mirrordungeon_2_shop_stageinfo_title",
-      "content": "Тяжелый грохот автомата"
+      "content": "Глухой жужжащий шум"
     },
     {
       "id": "mirrordungeon_2_shop_stageinfo_desc",
-      "content": "В этой жуткой глуши слышен лишь грохот автомата.\n\nРазносится голос: 'Отдайте ваши крупицы, и взамен вы получите что-нибудь да полезное.'\n\nВы не можете устоять перед таинственным объектом."
+      "content": "Посреди коридоров, пустота которых вызывает мурашки, стоит автомат, и шум его наполняет это место.\n\nВнезапно, раздаётся голос: \"Дайте фрагменты света, и взамен получите то, что поможет вам в предстоящем пути.\"\n\nЭта загадочная штуковина привлекает меня."
     },
     {
       "id": "mirrordungeon_2_resting_stageinfo_title",
-      "content": "Густая тишина"
+      "content": "Гробовая тишина"
     },
     {
       "id": "mirrordungeon_2_resting_stageinfo_desc",
-      "content": "Либо терпеть боль в одиночестве,\nлибо разделить её с кем-то."
+      "content": "Вы можете забыть о боли в этой тишине,\nили найти того, с кем разделить эту боль."
     },
     {
       "id": "dungeon_resting_change_formation_title",
-      "content": "Поднять осколок зеркала среди крупиц."
+      "content": "Среди хлама, я подберу осколок зеркала."
     },
     {
       "id": "dungeon_resting_change_formation_desc",
-      "content": "Дополнить команду новой идентичностью или Э.Г.О."
+      "content": "Взять в команду новую идентичность или ЭГО"
     },
     {
       "id": "dungeon_resting_heal_title_one",
-      "content": "Усадите самого изнурённого грешника на стул."
+      "content": "Я усажу самого утомлённого грешника на стул."
     },
     {
       "id": "dungeon_resting_heal_title_all",
-      "content": "Все грешники сели на отдых."
+      "content": "Все грешники должны передохнуть."
     },
     {
       "id": "ego_gift_info",
-      "content": "Инфо о Э.Г.О. Дарах"
+      "content": "Информация об ЭГО Дарах"
     },
     {
       "id": "mirrordungeon_shop_gift_entrance",
-      "content": "Странные и загадочные вещи привлекают ваше внимание."
+      "content": "Меня привлекли странные, необычные штуковины."
     },
     {
       "id": "mirrordungeon_shop_gift_purchase",
-      "content": "Вы услышали как что-то упало с лязгом."
+      "content": "Что-то со стуком упало в устройство выдачи."
     },
     {
       "id": "mirrordungeon_reenter",
-      "content": "Что-нибудь ещё?"
+      "content": "Желаете приобрести что-нибудь ещё?"
     },
     {
       "id": "mirrordungeon_shop_heal_one_who",
-      "content": "К сожалению, остался лишь один восстанавливающий напиток.\nКто должен выпить?"
+      "content": "К несчастью, в автомате осталась только одна бутыль дорогостоящего восстанавливающего тоника.\nКто же выпьет его?"
     },
     {
       "id": "mirrordungeon_shop_heal_one_answer",
-      "content": "Видимо, цена была оправданной.\nВыпив тоник, от грешника вновь чувствовалось бодрость."
+      "content": "Похоже, тоник стоит своей цены.\nВыпивший его грешник словно засиял, избавившись от накопившейся усталости."
     },
     {
       "id": "mirrordungeon_shop_heal_all_answer",
-      "content": "Вы купили энергетики всем грешникам.\nВкусив подслащенную воду, усталость постепенно уходит с лиц грешников."
+      "content": "Всё же, я купил энергетики для каждого из грешников.\nПосле пробы кисло-сладкого напитка, грешники будто немного оживились."
     },
     {
       "id": "mirrordungeon_resting_heal_one_answer",
-      "content": "Грешник прилёг на некоторое время.\nКогда я снова увидел их в конце перерыва, казалось, что грешник, к счастью, восстановил свои силы."
+      "content": "Я позволил одному из грешников немного вздремнуть.\nВзглянув на дремавшего в конце передышки, я увидел человека, вновь полного сил."
     },
     {
       "id": "mirrordungeon_resting_heal_all_answer",
-      "content": "Все еле-еле тесновато уселись,\nНо всё же каждый опробовал блаженный отдых."
+      "content": "Хотя всей команде было немного тесно,\nмы насладились долгожданным привалом."
     },
     {
       "id": "mirrordungeon_shop_heal_one_after",
-      "content": "Все еле-еле тесновато уселись,\nНо всё же каждый опробовал блаженный отдых."
+      "content": "Хотя всей команде было немного тесно,\nмы насладились долгожданным привалом."
     },
     {
       "id": "mirrordungeon_shop_heal_one_who_right",
-      "content": "Выбрать истощенного грешника."
+      "content": "Я выберу самого утомлённого грешника"
     },
     {
       "id": "mirrordungeon_shop_upgrade_start_left",
-      "content": "Действительно ли существуют бесконечные возможности в этом автомате?"
+      "content": "Неужели бесчисленное множество возможностей взаправду сокрыты в этом автомате?"
     },
     {
       "id": "dungeon_encounter_guide_mirror_shop",
@@ -362,19 +362,19 @@
     },
     {
       "id": "dungeon_encounter_guide_mirror_select_event",
-      "content": "Привал"
+      "content": "Отдых"
     },
     {
       "id": "dungeon_explore_floor",
-      "content": "Исследуем {0} Этаж"
+      "content": "Экспедиция на {0}-м этаже"
     },
     {
       "id": "lack_of_point_for_shop",
-      "content": "Недостаточно Стоимости"
+      "content": "Недостаточно стоимости"
     },
     {
       "id": "mirrordungeon_select_less_character_at_start",
-      "content": "Вы можете взять больше грешников.\nВы уверены что хотите продолжить?"
+      "content": "Вы выбрали меньше грешников, чем можно взять.\nУверены, что желаете продолжить?"
     },
     {
       "id": "list_of_applied_effects_is_empty",
@@ -382,31 +382,31 @@
     },
     {
       "id": "give_up_rewards",
-      "content": "Отказаться"
+      "content": "Сдаться"
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_button",
-      "content": "К Окну"
+      "content": "К окну"
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_desc",
-      "content": "Желаете перейти к Окну?\nОкошко наград экспедиции вновь появится как только вы вернетесь сюда."
+      "content": "Желаете перейти к окну?\nВы сможете забрать награды за экспедицию в следующий раз, когда вернётесь к Зеркальным подземельям."
     },
     {
       "id": "mirror_dungeon_rewards_back_to_lobby_button_lobby",
-      "content": "К списку"
+      "content": "Вернуться"
     },
     {
       "id": "mirrordungeon_resting_heal_one_who",
-      "content": "Здесь не так уж и много места.\nКто должен передохнуть?"
+      "content": "Здесь не так уж и много места.\nКому же выдастся возможность отдохнуть?"
     },
     {
       "id": "mirrordungeon_resting_heal_one_who_right",
-      "content": "Выбрать истощенного грешника."
+      "content": "Я выберу самого утомлённого грешника."
     },
     {
       "id": "mirror_dungeon_change_formation_release_character",
-      "content": "Отменить выбранное"
+      "content": "Отменить выбор"
     },
     {
       "id": "mirrordungeon_exit_shop",
@@ -414,23 +414,23 @@
     },
     {
       "id": "mirrordungeon_exit_resting",
-      "content": "Покинуть привал?"
+      "content": "Завершить передышку?"
     },
     {
       "id": "mirrordungeon_change_formation_confirm_less_participants",
-      "content": "У вас всё ещё есть очки выбора.\nВы уверены со своим выбором?"
+      "content": "У вас ещё есть место.\nВы точно собрали всю команду?"
     },
     {
       "id": "mirrordungeon_change_formation_confirm_exact_participants",
-      "content": "Потратить Стоимость на выбранные Э.Г.О. и идентичности?"
+      "content": "Потратить стоимость на получение выбранных идентичностей и ЭГО?"
     },
     {
       "id": "mirror_dungeon_clear_battle_reward_label",
-      "content": "Взять награды"
+      "content": "Награда за прохождение"
     },
     {
       "id": "mirror_dungeon_start_change_formation_but_button",
-      "content": "<size=45>Купить</size>"
+      "content": "Взять"
     },
     {
       "id": "mirror_dungeon_give_up_ego_gift",
@@ -438,79 +438,79 @@
     },
     {
       "id": "mirror_dungeon_give_up_ego_gift_ask",
-      "content": "Продолжить без выбора Э.Г.О. Дара?"
+      "content": "Продолжить, оставив ЭГО Дары позади?"
     },
     {
       "id": "mirror_dungeon_challenge_mode_description",
-      "content": "Пока активен режим испытаний, команда будет сформирована случайно.\nКоманду нельзя как-либо изменять пока вы не соберете награды за экспедицию.\nВы можете забирать больше наград в режиме испытаний."
+      "content": "Пока активирован режим Испытания, команда будет собрана случайным образом.\nПока вы не получите награду с этой командой, она не изменится.\nПроходя подзмелье в режиме Испытания, вы получите больше наград."
     },
     {
       "id": "mirror_dungeon_challenge_mode_ask",
-      "content": "Активировать режим испытаний?"
+      "content": "Активировать режим Испытания?"
     },
     {
       "id": "mirror_dungeon_challenge_mode",
-      "content": "Режим испытаний"
+      "content": "Испытание"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_title",
-      "content": "Рекомендации"
+      "content": "Рекоммендации"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_level",
-      "content": "- Идентичности 35 уровня"
+      "content": "- 35 уровень идентичностей"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_ego_gacksung",
-      "content": "- Э.Г.О. 3 уровня связки"
+      "content": "- 3 уровень Связки ЭГО"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_personality_gacksung",
-      "content": "- Идентичности 3 уровня связи"
+      "content": "- 3 уровень Связи идентичностей"
     },
     {
       "id": "mirror_dungeon_hard_require_condition_start_buf",
-      "content": "- Активны все стартовые усиления"
+      "content": "- Активация всех стартовых усилений"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_using_chance_desc",
-      "content": "Потратить все оставшиеся <color=#a16a3b>Недельные бонусы</color> и <color=#ff0000>Вознаграждение</color> для получения наград?"
+      "content": "Использовать все <color=#a16a3b>недельные бонусы</color> и <color=#ff0000>бонус к награде Усложнённого режима</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_not_using_chance_desc",
-      "content": "У вас всё ещё есть <color=#a16a3b>Недельные бонусы</color>.\n\nИспользовать только <color=#ff0000>Вознаграждение</color> для получения наград?"
+      "content": "У вас остались <color=#a16a3b>недельные бонусы</color>.\n\nИспользовать только <color=#ff0000>бонус к награде Усложнённого режима</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_using_hard_no_chance_desc",
-      "content": "Использовать <color=#ff0000>Вознаграждениеt</color> для получения наград"
+      "content": "Потратить <color=#ff0000>бонус к награде Усложнённого режима</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_using_chance_desc",
-      "content": "У вас всё ещё есть <color=#ff0000>Вознаграждение</color>.\n\nИспользовать только <color=#a16a3b>Недельные бонусы</color> для получения наград?"
+      "content": "У вас остался <color=#ff0000>бонус к награде Усложнённого режима</color>.\n\nИспользовать только <color=#a16a3b>недельные бонусы</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_not_using_chance_desc",
-      "content": "У вас всё ещё есть <color=#a16a3b>Недельные бонусы</color> и <color=#ff0000>Вознаграждение</color>.\n\nЗабрать награды без бонусов?"
+      "content": "У вас остались <color=#a16a3b>недельные бонусы</color> и <color=#ff0000>бонус к награде Усложнённого режима</color>.\n\nСобрать награды без них?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_not_using_hard_chance_no_chance_desc",
-      "content": "У вас всё ещё есть <color=#ff0000>Вознаграждениеs</color>.\n\nЗабрать награды без бонусов?"
+      "content": "У вас остался <color=#ff0000>бонус к награде Усложнённого режима</color>.\n\nСобрать награды без него?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_using_chance_desc",
-      "content": "Использовать <color=#a16a3b>Недельные бонусы</color> для получения наград?"
+      "content": "Потратить <color=#a16a3b>недельные бонусы</color> для получения наград?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_not_using_chance_desc",
-      "content": "У вас всё ещё есть <color=#a16a3bНедельные бонусы</color>.\n\nЗабрать награды без бонусов?"
+      "content": "У вас остались <color=#a16a3b>недельные бонусы</color>.\n\nПолучить награды без их использования?"
     },
     {
       "id": "mirrordungeon_acquire_rewards_no_hard_chance_no_chance_desc",
-      "content": "Забрать награды?"
+      "content": "Собрать все награды?"
     },
     {
       "id": "mirrordungeon_hard_no_reward_desc",
-      "content": "<color=#ff0000>Награды за этот контент уже собраны.</color>"
+      "content": "<color=#ff0000>Награда за прохождение усложнённого режима уже была получена.</color>"
     }
   ]
 }

@@ -2,75 +2,75 @@
   "dataList": [
     {
       "id": 800101,
-      "name": "An Apple’s Twilight",
-      "desc": "When the Fruit is destroyed, all parts are inflicted with 2 Fragile.\nThe Fruit regenerates after 1 turn.",
-      "summary": "When the Fruit is destroyed, apply 2 Fragile to all parts"
+      "name": "Яблочный сумрак",
+      "desc": "Когда уничтожен Фрукт, все части получают 2 Уязвимость.\nФрукт восстанавливается спустя 1 ход.",
+      "summary": "Когда уничтожен Фрукт, все части получают 2 <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">Уязвимости</link></u></color>"
     },
     {
       "id": 800102,
-      "name": "NOT FOR DISPLAY1",
-      "desc": "After the head regenerates once, bringing the head’s HP to 50% initiates a choice prompt."
+      "name": "НЕ ДЛЯ ПОКАЗА1",
+      "desc": "После регенерации головы до 50% ОЗ появляется подсказка выбора."
     },
     {
       "id": 800103,
-      "name": "NOT FOR DISPLAY2",
-      "desc": "At the start of Turn 3, a choice prompt where you can remove the Green Stem effect is initiated."
+      "name": "НЕ ДЛЯ ПОКАЗА2",
+      "desc": "В начале 3-го хода появляется подсказка выбора, с помощью которой вы можете убрать эффект Зелёного стебля."
     },
     {
       "id": 800104,
-      "name": "Entangling Roots",
-      "desc": "At the start of the turn, inflict 1 Bind on all enemies.\nThis lasts until the Roots have been broken.",
-      "summary": "Inflict 1 Bind on all enemies until Roots are broken"
+      "name": "Опутывающие корни",
+      "desc": "В начале хода наносит 1 Связывание всем противникам.\nДлится до тех пор, пока Корни не будут разрушены.",
+      "summary": "Наносит 1 Связывание всем противникам, пока Корни не будут разрушены"
     },
     {
       "id": 800105,
-      "name": "One Sole Root",
-      "desc": "The Roots gain 2 Attack Power Up for each intact Arm."
+      "name": "Один единственный корень",
+      "desc": "Корни получают 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color> за каждую целую Руку."
     },
     {
       "id": 800201,
-      "name": "Let the Blood Festival Flow",
-      "desc": "The battle proceeds to the next phase after all the Clay Dolls are defeated."
+      "name": "Фестиваль крови начинается",
+      "desc": "Битва переходит в следующую фазу после уничтожения всех Глиняных кукол."
     },
     {
       "id": 800202,
-      "name": "DON'T LET THE KIDS READ THIS",
-      "desc": "At the start of turn 2 in phase 2, choice prompt 1 is initiated."
+      "name": "НЕ ДЛЯ ПУБЛИКАЦИИ",
+      "desc": "В начале хода 2 фазы 2 появляется подсказка выбора 1."
     },
     {
       "id": 800203,
-      "name": "Let the Fire Festival Ignite",
-      "desc": "If both Arms are destroyed or the main body’s HP is brought to 70%, the battle proceeds to the next phase."
+      "name": "Пусть разгорится огненный фестиваль",
+      "desc": "Если уничтожены обе Руки или ОЗ главного тела достигает 70%, битва переходит в следующую фазу."
     },
     {
       "id": 800204,
-      "name": "Frenzy",
-      "desc": "During Phase 3\nAt the start of the turn, inflict 3 Burn on all enemies."
+      "name": "Ярый пыл",
+      "desc": "В течение фазы 3\nВ начале хода наносит 3 <sprite name=\"Combustion\"><color=#e30000><u><link=\"Combustion\">Огня</link></u></color> всем противникам."
     },
     {
       "id": 800205,
-      "name": "NOT FOR DISPLAY",
-      "desc": "When HP is brought to 60%, choice prompt 2 is initiated."
+      "name": "НЕ ДЛЯ ПОКАЗА",
+      "desc": "Когда ОЗ достигает 60%, появляется подсказка выбора 2."
     },
     {
       "id": 800206,
-      "name": "Let the Star Festival Fall",
-      "desc": "When HP is brought to 25%, the battle proceeds to the next phase."
+      "name": "Пусть падёт звёздный фестиваль",
+      "desc": "Когда ОЗ достигает 25%, битва переходит в следующую фазу."
     },
     {
       "id": 800207,
-      "name": "NOT FOR DISPLAY",
-      "desc": "At the start of turn 2 in phase 4, choice prompt 3 is initiated."
+      "name": "НЕ ДЛЯ ПОКАЗА",
+      "desc": "В начале хода 2 фазы 4 появляется подсказка выбора 3."
     },
     {
       "id": 800301,
-      "name": "Idolatry",
-      "desc": "Does not die at 0 HP; instead, remains on the stage as an immobile and untargetable unit.\nSuppressed when the Doomsday Calendar is suppressed."
+      "name": "Идолопоклонство",
+      "desc": "Не умирает при 0 ОЗ; вместо этого остаётся на поле боя как недействующий и не нацеливаемый персонаж.\nЯвляется побеждённым при победе над Календарём судного дня."
     },
     {
       "id": 800801,
-      "name": "Cracked Gold",
-      "desc": "Heals HP every turn based on the amount of Golden Sheen."
+      "name": "Треснувшее золото",
+      "desc": "Восстанавливает ОЗ каждый ход на кол-во Золотой блеск."
     },
     {
       "id": 800901,
@@ -79,348 +79,348 @@
     },
     {
       "id": 800902,
-      "name": "Frail Core",
-      "desc": "When the Head is destroyed, all parts are inflicted with Immobilize next turn.\nThe Head regenerates after 1 turn."
+      "name": "Хрупкая сердцевина",
+      "desc": "Когда уничтожена Голова, все части получают Обездвиживание на следующий ход.\nГолова регенерирует спустя 1 ход."
     },
     {
       "id": 800903,
-      "name": "Rotting Apple",
-      "desc": "After the body is destroyed, all parts are inflicted with 2 Attack Power Down every turn."
+      "name": "Гнилое яблоко",
+      "desc": "Когда уничтожено тело, все части получают 2 Понижение силы атаки каждый ход."
     },
     {
       "id": 800904,
-      "name": "NOT FOR DISPLAY",
-      "desc": "NOT FOR DISPLAY"
+      "name": "НЕ ДЛЯ ПОКАЗА",
+      "desc": "НЕ ДЛЯ ПОКАЗА"
     },
     {
       "id": 801001,
-      "name": "Upgrade Factory at Work",
-      "desc": "When this unit is defeated, it revives the next turn and gains 1 Surgery."
+      "name": "Работа улучшенного завода",
+      "desc": "При смерти этот персонаж восстанавливается на следующем ходу и получает 1 Операция."
     },
     {
       "id": 801002,
-      "name": "You Must Become Strong",
-      "desc": "At the start of the turn, gain 1 Protection."
+      "name": "Ты должен стать сильным",
+      "desc": "В начале хода получает 1 Защищённость."
     },
     {
       "id": 801201,
-      "name": "You Must Become Strong",
-      "desc": "At the start of the turn, gain 2 Protection."
+      "name": "Ты должен стать сильным",
+      "desc": "В начале хода получает 2 <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Защищённости</link></u></color>."
     },
     {
       "id": 801301,
-      "name": "Wavering Desires",
-      "desc": "While Desirous, the unit gains 2 Fragile and 10 Bind, gains 1 skill slot, and changes behavior."
+      "name": "Колеблющиеся желания",
+      "desc": "При наличии Желание, персонаж получает 2 <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">Уязвимости</link></u></color> и 10 Связывание, а также 1 ячейку навыка, затем меняет поведение."
     },
     {
       "id": 801302,
-      "name": "Ensnaring Desires",
-      "desc": "The unit becomes Desirous every time it loses 30% of its HP."
+      "name": "Манящие желания",
+      "desc": "У персонажа появляется Желание каждый раз, как он теряет 30% от его ОЗ."
     },
     {
       "id": 801904,
-      "name": "Shuddering Terror",
-      "desc": "Gain 1 Protection for every ally that died this wave. (Max 5.)"
+      "name": "Трепещущий страх",
+      "desc": "Получает 1 Защищённость за каждого умершего в этой волне союзника. (макс. 5.)"
     },
     {
       "id": 802401,
-      "name": "Pulsating Arms",
-      "desc": "At the start of the turn, gain Attack Power Up and Protection by the Count of Instincts."
+      "name": "Пульсирующие руки",
+      "desc": "В начале хода получает Повышение силы атаки и Защищённость, равные счётчику Инстинкты."
     },
     {
       "id": 802402,
-      "name": "Damaged Arms",
-      "desc": "Lose 1 Instincts whenever the unit takes damage from attacks."
+      "name": "Повреждённые руки",
+      "desc": "Теряет 1 Инстинкты каждый раз, как получает урон от атак."
     },
     {
       "id": 802403,
-      "name": "Regenerating Shell",
-      "desc": "At the end of the turn, if the unit didn’t take any damage from attacks during the turn, heal 5% HP and gain 1 Instincts."
+      "name": "Восстанавливающаяся оболочка",
+      "desc": "В конце хода, если персонаж не получал урона от атак в течение хода, он восстанавливает 5% ОЗ и получает 1 Инстинкты."
     },
     {
       "id": 802404,
-      "name": "Frantic Eyes",
-      "desc": "Behavior depends on the Count of Instincts.\nUses aggressive skills at +4 Instincts, and becomes defensive at 3 or less."
+      "name": "Безумные глаза",
+      "desc": "Поведение зависит от счётчика Инстинкты.\nИспользует агрессивные навыки при 4+ Инстинкты и становится в защиту при 3-х и меньше."
     },
     {
       "id": 802501,
-      "name": "Amplified Aggression",
-      "desc": "When hit by an attack, gain 1 Instincts.\nIf the unit has +4 Instincts at the end of the turn, enter a state of Frenzy."
+      "name": "Возросшая агрессия",
+      "desc": "При получении удара от атаки получает 1 Инстинкты.\nЕсли у персонажа 4+ Инстинкты в конце хода, входит в состояние Неистовства."
     },
     {
       "id": 802502,
-      "name": "Frenzy",
-      "desc": "In the Frenzy state, the unit gains 3 Attack Power Up and 3 Fragile, changes behavior, and does not gain Instincts from being attacked."
+      "name": "Неистовство",
+      "desc": "В состоянии Неистовства персонаж получает 3 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color> и 3 Уязвимость, меняет поведение и не получает Инстинкты при получении удара."
     },
     {
       "id": 802503,
-      "name": "Shimmering Rage",
-      "desc": "At less than 50% HP, enters Frenzy every turn."
+      "name": "Изливающаяся ярость",
+      "desc": "При менее, чем 50% ОЗ, входит в состояние Неистовства каждый ход."
     },
     {
       "id": 802701,
-      "name": "Amplified Aggression",
-      "desc": "When hit by an attack, gain 1 Instincts.\nIf the unit has +4 Instincts at the end of the turn, enter a state of Frenzy."
+      "name": "Возросшая агрессия",
+      "desc": "При получении удара от атаки получает 1 Инстинкты.\nЕсли у персонажа 4+ Инстинкты в конце хода, входит в состояние Неистовства."
     },
     {
       "id": 802702,
-      "name": "Frenzy",
-      "desc": "In the Frenzy state, the unit gains 3 Attack Power Up and 3 Fragile, changes behavior, and does not gain Instincts from being attacked."
+      "name": "Неистовство",
+      "desc": "В состоянии Неистовства персонаж получает 3 Повышения силы атаки и 3 Уязвимость, меняет поведение и не получает Инстинкты при получении удара."
     },
     {
       "id": 802801,
-      "name": "Rotting Skin",
-      "desc": "At the start of the turn, if at less than 50% HP, inflict 3 Poison when attacked."
+      "name": "Гниющая кожа",
+      "desc": "В начале хода при менее, чем 50% ОЗ, наносит 3 Яда при получении удара."
     },
     {
       "id": 802802,
-      "name": "Molt",
-      "desc": "After this part is broken, if the other arm is not broken at the end of the following turn, this part regenerates with the same HP as it."
+      "name": "Снятие шкуры",
+      "desc": "После поломки этой части, если другая рука не будет сломана в конце следующего хода, эта часть восстановится с теми же ОЗ, что и у другой руки."
     },
     {
       "id": 802803,
-      "name": "Pained Writhing",
-      "desc": "When both arms are broken, the unit gains 5 Fragile and inflicts 10 Poison on all enemies every turn."
+      "name": "Мучения от боли",
+      "desc": "Когда обе руки сломаны, получает 5 <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">Уязвимости</link></u></color> и наносит 10 Яда всем противникам каждый ход."
     },
     {
       "id": 802804,
-      "name": "Wriggling Instincts",
-      "desc": "Behavior depends on the Count of Instincts.\nUses aggressive skills at +4 Instincts, and becomes defensive at 0."
+      "name": "Извивающиеся инстинкты",
+      "desc": "Поведение зависит от счётчика Инстинкты.\nИспользует агрессивные навыки при 4+ Инстинкты и становится в защиту при 0."
     },
     {
       "id": 803302,
-      "name": "Severed Arm",
-      "desc": "When the arm is broken, the unit gains 5 Fragile every turn."
+      "name": "Оторванная рука",
+      "desc": "Когда сломана рука, получает 5 Уязвимость каждый ход."
     },
     {
       "id": 802901,
-      "name": "Fearsome Whistles",
-      "desc": "If you have collected less than 3 of A Sign, Sinclair is inflicted with 1 Bind and Paralyze every turn."
+      "name": "Жуткий свист",
+      "desc": "Если вы собрали менее 3-х частей Печать, Синклер получает 1 Связывание и Паралич каждый ход."
     },
     {
       "id": 802902,
-      "name": "Courage to Triumph Fear",
-      "desc": "If you have collected 3 or more of A Sign, Sinclair gains 1 Attack Power Up and 2 Protection every turn."
+      "name": "Мужество победить страх",
+      "desc": "Если вы собрали 3 и более части Печать, Синклер получает 1 Повышение силы атаки и 2 <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Защищённости</link></u></color> каждый ход."
     },
     {
       "id": 802903,
-      "name": "You Must Accept the Pain!",
-      "desc": "At the start of the turn, if the unbroken part has Bleed or Burn, heal 15% of Max HP and gain 3 Attack Power Up.\nThe healing and status effects gained are decreased based on the number of A Sign, down to 0."
+      "name": "Ты должен принять свою боль!",
+      "desc": "В начале хода, если у несломанной части есть Кровотечение или Огонь, восстанавливает 15% от макс. ОЗ и получает 3 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color>.\nИсцеляющие и статусные эффекты уменьшаются в зависимости от кол-ва частей Печати, вплоть до 0."
     },
     {
       "id": 802904,
-      "name": "Bliss of Execution",
-      "desc": "After defeating an enemy, gain 2 Haste and 5 Damage Up next turn."
+      "name": "Наслаждение казнью",
+      "desc": "После убийства противника получает 2 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешки</link></u></color> и 5 Повышение урона на следующий ход."
     },
     {
       "id": 803001,
-      "name": "Overflowing Ecstasy",
-      "desc": "Starting with Turn 3, becomes Ecstatic every 2 turns."
+      "name": "Переполняющий экстаз",
+      "desc": "Начиная с хода 3 получает Экстаз каждые 2 хода."
     },
     {
       "id": 803002,
-      "name": "Blooming Purity",
-      "desc": "If Kromer’s main body is brought to 50% HP, she gains Purity for the remaining turns."
+      "name": "Процветающее очищение",
+      "desc": "Если главное тело Кромер достигает 50% ОЗ, она получает Очищение на оставшиеся ходы."
     },
     {
       "id": 803003,
-      "name": "Flawless Flesh",
-      "desc": "When the arm is broken, the part is inflicted with 2 Attack Power Down."
+      "name": "Совершенная плоть",
+      "desc": "Когда сломана рука, часть получает 2 Понижение силы атаки."
     },
     {
       "id": 803101,
-      "name": "Blood Sac",
-      "desc": "Wrath Resistance increases.\nGloom Resistance decreases."
+      "name": "Кровяной мешок",
+      "desc": "Повышается сопротивления к Гневу.\nПонижается сопротивления к Унынию."
     },
     {
       "id": 803102,
-      "name": "Fluid Sac",
-      "desc": "While the Fluid Sac status is active, the Core heals (20 * Fluid Sac Count) HP."
+      "name": "Водяной мешок",
+      "desc": "Пока активен этот эффект, Ядро восстанавливает (20 * счётчик Водяной мешок) ОЗ."
     },
     {
       "id": 803103,
-      "name": "Boiling Blood",
-      "desc": "If the body is broken while Blood Sac is active, all enemies take 20 fixed damage."
+      "name": "Кипящая кровь",
+      "desc": "Если сломано тело при наличии Кровяной мешок, все противники получают 20 фикс. урона."
     },
     {
       "id": 803201,
-      "name": "Lightning Rod",
-      "desc": "When the Telephone Pole is hit, inflict 2 Shock on the attacker this turn.\nAt 5+ Lightning, all Parts will inflict 3 Shock on the attacker, starting next turn.\n(Lasts until Lightning reaches 0.)\nWhen hit by a Sloth attack, the amount of Shock inflicted is halved. (Rounded up.)"
+      "name": "Молниеотвод",
+      "desc": "Когда Телестолб получает удар, наносит 2 Ток атаковавшему на этот ход.\nПри 5+ Молния все Части будут наносить 3 Ток атаковавшему, начиная со следующего хода.\n(Длится до тех пор, пока кол-во Молния не достигнет 0.)\nПри получении удара от атаки Лености кол-во наносимого Ток уменьшается вдвое. (округляется в меньшую сторону.)"
     },
     {
       "id": 803202,
-      "name": "Lightning",
-      "desc": "While the telephone pole isn’t broken, gain 1 Lightning after an attack.\nWhenever the telephone pole is hit by an attack, lose 1 Lightning."
+      "name": "Молния",
+      "desc": "Пока Телестолб не сломан, получает 1 Молния после атаки.\nКаждый раз, как Телестолб получает удар, теряет 1 Молния."
     },
     {
       "id": 803203,
-      "name": "Breaking Pieces",
-      "desc": "When the telephone pole is Staggered or Broken, lose all Lightning.\nAll attacks of Alleyway Watchdog will then be canceled for the turn."
+      "name": "Сломанные фрагменты",
+      "desc": "Когда Телестолб оглушён или сломан, теряет все Молния.\nВсе атаки Уличного сторожевого пса будут отменены на ход."
     },
     {
       "id": 803401,
-      "name": "Bongy Chicken Struts",
-      "desc": "At the end of the turn, deal 3 SP damage to a random enemy."
+      "name": "Куриные Боньи ножки",
+      "desc": "В конце хода наносит 3 урона по СД случайному противнику."
     },
     {
       "id": 803701,
-      "name": "Bongy Chicken Beefs Up",
-      "desc": "At the end of the turn, apply 2 Damage Up and 2 Protection to all allies next turn."
+      "name": "Усиление курочки Бони",
+      "desc": "В конце хода даёт 2 <sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">Повышения урона</link></u></color> и 2 <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Защищённости</link></u></color> всем союзникам на следующий ход."
     },
     {
       "id": 803901,
-      "name": "Vigorous Volaille",
-      "desc": "At the end of the turn, heal 5 HP for each Raw Chicken in battle."
+      "name": "Счастливый цыплёнок",
+      "desc": "В конце хода восстанавливает 5 ОЗ за каждого Сырого цыплёнка на поле боя."
     },
     {
       "id": 803902,
-      "name": "Gloomy Gallus",
-      "desc": "At the end of the turn, deal 5 SP damage to all enemies for each Raw Chicken in battle."
+      "name": "Грустная курочка",
+      "desc": "В конце хода наносит 5 урона по СД всем противникам за каждого Сырого цыплёнка на поле боя."
     },
     {
       "id": 803903,
-      "name": "Fragile Fowl",
-      "desc": "When a Part breaks, gain 1 Fragile every turn for each Raw Chicken that died before the Part was broken."
+      "name": "Ранимая наседка",
+      "desc": "Когда часть ломается, каждый ход получает 1 Уязвимость за каждого Сырого цыплёнка, который умер перед поломкой части."
     },
     {
       "id": 803904,
-      "name": "Powerful Poussin",
-      "desc": "If the Part isn’t broken, gain 1 Damage Up for each living Raw Chicken."
+      "name": "Мощная курятина",
+      "desc": "Если часть не сломана, получает 1 Повышение урона за каждого живого Сырого цыплёнка."
     },
     {
       "id": 804101,
-      "name": "Expanding Sorrow",
-      "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow, generates a head next turn and changes behavior."
+      "name": "Растущая печаль",
+      "desc": "В конце хода, если у персонажа 3+ Нерешённая печаль, генерирует голову на следующий ход и меняет поведение."
     },
     {
       "id": 804102,
-      "name": "Inconsolable Sorrow",
-      "desc": "At the end of the turn, if the unit has 3+ Unresolved Sorrow and the head is broken, becomes staggered next turn."
+      "name": "Безутешная печаль",
+      "desc": "В конце хода, если у персонажа 3+ Нерешённая печаль и голова сломана, становится оглушён на следующий ход."
     },
     {
       "id": 804103,
-      "name": "Taken by the Horns",
-      "desc": "When the head is staggered, all parts become staggered next turn."
+      "name": "Взять за рога",
+      "desc": "Когда голова оглушена, все части становятся оглушёнными на следующий ход."
     },
     {
       "id": 804104,
-      "name": "Downed by the Horns",
-      "desc": "When the head is broken, all parts become staggered next turn. Afterwards, all parts have 3 Attack Power Down for the duration of the battle."
+      "name": "Полностью взять за рога",
+      "desc": "Когда голова сломана, все части становятся оглушёнными на следующий ход. После этого все части получают 3 <sprite name=\"Reduction\"><color=#e30000><u><link=\"Reduction\">Понижения силы атаки</link></u></color> на оставшуюся битву."
     },
     {
       "id": 804501,
-      "name": "Living Nerves",
-      "desc": "Upon death, all skills are cancelled for the turn.\nGains Self-charge by the current amount."
+      "name": "Живой нерв",
+      "desc": "При смерти все навыки на этот ход отменяются.\nПолучает Подзаряд, равный текущему кол-ву."
     },
     {
       "id": 804502,
-      "name": "Motioning Nerves",
-      "desc": "After dying, attack skills spend 1 Self-charge.\nAttacks enemies until Self-charge runs out."
+      "name": "Подвижный нерв",
+      "desc": "После смерти навыки атаки тратят 1 Подзаряд.\nАтакует противников, пока не закончится Подзаряд."
     },
     {
       "id": 804503,
-      "name": "Undying Persistence",
-      "desc": "Every 5 turns, gains a shield equal to the head's HP."
+      "name": "Повышенная живучесть",
+      "desc": "Каждые 5 ходов получает щит, равный ОЗ головы."
     },
     {
       "id": 804504,
-      "name": "Terminated Persistence",
-      "desc": "After using 'Coil Up', if the shield is exhausted, spend Self-charge.\nAll parts become staggered next turn."
+      "name": "Закончившаяся живучесть",
+      "desc": "После использования 'Свернуться', если закончился щит, тратит Подзаряд.\nВсе части становятся оглушёнными на следующий ход."
     },
     {
       "id": 804601,
-      "name": "Broken Umbrella",
-      "desc": "After the back is broken, gain 3 Fragile every turn. Inflict +2 Rupture."
+      "name": "Сломанный зонт",
+      "desc": "Когда сломана спина, получает 3 Уязвимость каждый ход. Наносит +2 <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Разрыва</link></u></color>."
     },
     {
       "id": 804602,
-      "name": "Ragged Umbrella",
-      "desc": "After the head umbrella is broken, gain 5 Offense Level Down every turn. Inflict +2 Sinking."
+      "name": "Порванный зонт",
+      "desc": "Когда главный зонт сломан, получает 5 Понижение уровня атаки каждый ход. Наносит +2 <sprite name=\"Sinking\"><color=#e30000><u><link=\"Sinking\">Утопания</link></u></color>."
     },
     {
       "id": 804603,
-      "name": "Last Struggle",
-      "desc": "At 15% HP, the unit's Speed is fixed at 1, and gains 1 Attack Power Down.\nNewly spawned Old Umbrellas have 30% more HP. Uses 'Cries Seeking Something' every turn."
+      "name": "Последняя борьба",
+      "desc": "При 15% ОЗ скорость персонажа фиксирована на 1, также он получает 1 Понижение силы атаки.\nОЗ новых призванных Старых зонтов на 30% больше. Использует 'Плач в поисках чего-то' каждый ход."
     },
     {
       "id": 804701,
-      "name": "Spreading Ember",
-      "desc": "At the end of the turn, if this unit has Burn, inflict the same amount to all units with Entangled Curse Talisman next turn"
+      "name": "Тлеющий уголёк",
+      "desc": "В конце хода, если у этого персонажа есть Огонь, наносит то же самое кол-во всем персонажам с Приклеенный оберег проклятия на следующий ход"
     },
     {
       "id": 804702,
-      "name": "Broken Means",
-      "desc": "When the arm is broken, it deals -20% damage"
+      "name": "Разбитая возможность",
+      "desc": "Когда сломана рука, наносит -20% урона"
     },
     {
       "id": 804801,
-      "name": "Booze Makes You Hicc!",
-      "desc": "After using 'I'll Have This!' on enemies with 5+ Tipsy and successfully landing the attack, become staggered."
+      "name": "Пьяная икота!",
+      "desc": "Становится оглушённым после использования 'Возьму-ка это!' на противников с 5+ Опьянение и успешной атаки."
     },
     {
       "id": 804802,
-      "name": "Stimulating Smell, Isn't It?",
-      "desc": "A mysterious smell from within boosts the spirit.\nA random Sinner gains 5 Morale Boost at the start of the wave."
+      "name": "Бодрящий запах, не так ли?",
+      "desc": "Таинственный запах изнутри, поднимает настроение.\nСлучайный Грешник получает 5 Повышение морали в начале волны."
     },
     {
       "id": 805201,
-      "name": "Old and Abandoned",
-      "desc": "When this unit is defeated, the Sinner that defeated it gains 2 Haste next turn.\nAll parts of Drifting Fox are inflicted with 2 Bind and 1 Umbrella Splinters."
+      "name": "Заброшенный старый зонт",
+      "desc": "Когда этот персонаж убит, убивший его Грешник получает 2 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешки</link></u></color> на следующий ход.\nВсе части Бродячего лиса получают 2 Связывание и 1 Остатки зонта."
     },
     {
       "id": 804301,
-      "name": "Perilous Mind",
-      "desc": "At the end of each turn, lose 10 SP."
+      "name": "Рискующий рассудок",
+      "desc": "В конце каждого хода теряет 10 СД."
     },
     {
       "id": 804302,
-      "name": "Perilous Heart",
-      "desc": "While in low morale, gain 2 Attack Power Up and 3 Bind."
+      "name": "Рискующий разум",
+      "desc": "Будучи в слабом духе, получает 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color> и 3 <sprite name=\"Binding\"><color=#e30000><u><link=\"Binding\">Связывания</link></u></color>."
     },
     {
       "id": 804303,
-      "name": "Faltering Heart",
-      "desc": "In panic, become staggered."
+      "name": "Пошатнувшийся разум",
+      "desc": "В панике становится оглушён."
     },
     {
       "id": 804304,
-      "name": "Determination",
-      "desc": "When recovering from panic, fully heal SP, and gain 2 Haste and 2 Attack Power Up."
+      "name": "Решимость",
+      "desc": "При выходе из паники полностью восстанавливает СД и получает 2 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешки</link></u></color> и 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color>."
     },
     {
       "id": 804305,
-      "name": "Lobotomy E.G.O",
-      "desc": "Starts the battle with 1200 shield HP"
+      "name": "ЭГО Лоботомии",
+      "desc": "Начинает битву с щитом, равным 1200 ОЗ"
     },
     {
       "id": 805301,
-      "name": "Walled Heart",
-      "desc": "Whenever this unit is broken, Dongbaek is inflicted with +5 Sinking Count, and all Sinners lose 2 Sinking Count; all Sinners gain 1 Protection and 2 Attack Power Up next turn."
+      "name": "Ограждённое сердце",
+      "desc": "Каждый раз, когда этот персонаж сломан, Донбэк получает +5 счётчиков <sprite name=\"Sinking\"><color=#e30000><u><link=\"Sinking\">Утопания</link></u></color>, а все Грешники теряют 2 счётчика <sprite name=\"Sinking\"><color=#e30000><u><link=\"Sinking\">Утопания</link></u></color>; все Грешники получают 2 <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Защищённости</link></u></color> и 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color> на следующий ход."
     },
     {
       "id": 804401,
-      "name": "Into Full Bloom",
-      "desc": "At the start of Turn 5, spawn 4 Soon-to-bloom Flowers with 3 Growing"
+      "name": "В полном расцвете",
+      "desc": "В начале хода 5 призывает 4 Цветущих цветка с 3 Рост"
     },
     {
       "id": 804402,
-      "name": "Flowering Mind",
-      "desc": "When HP drops to 50%, proceeds to the next phase. HP does not go below 50% until the phase changes."
+      "name": "Цветущий разум",
+      "desc": "Когда ОЗ достигает 50%, входит в следующую фазу. ОЗ не падают ниже 50% до смены фазы."
     },
     {
       "id": 804403,
-      "name": "Dueling",
-      "desc": "When HP falls below 50%, uses a special skill to target 1 unit, then becomes immune to Stagger and Panic for the next 2 turns.\nIf Yi Sang has 'Dueling', Dongbaek gains 1 Attack Power Up.\nIf Yi Sang wins the duel, all allies gain 3 Damage Up next turn.\nIf Dongbaek wins the duel, Dongbaek fully heals SP."
+      "name": "Дуэль",
+      "desc": "Когда ОЗ падают ниже 50%, использует специальный навык и нацеливается на 1 персонажа, затем получает иммунитет против оглушения и паники на следующие 2 хода.\nЕсли 'Дуэль' у И Сана, Донбэк получает 1 Повышение силы атаки.\nЕсли И Сан побеждает в дуэли, все союзники получают 3 <sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">Повышения урона</link></u></color> на следующий ход.\nЕсли Донбэк побеждает в дуэли, она полностью восстанавливает СД."
     },
     {
       "id": 804404,
-      "name": "Cost of Blooming",
-      "desc": "If 'Magnificent Spring Breeze' loses in a clash, lose 10 SP"
+      "name": "Цена цветения",
+      "desc": "Если 'Приятный весенний воздух' проигрывает в столкновении, теряет 10 СД"
     },
     {
       "id": 805401,
-      "name": "Growing Flower",
-      "desc": "Spawns with 1 Growing"
+      "name": "Растущий цветок",
+      "desc": "Появляется с 1 Рост"
     },
     {
       "id": 804901,
@@ -434,98 +434,98 @@
     },
     {
       "id": 804903,
-      "name": "Self Destruction",
-      "desc": "All skills target indiscriminately. With each skill used, this unit loses 2% of Max HP."
+      "name": "Саморазрушение",
+      "desc": "Все навыки нацеливаются бесконтрольно. При каждом использованном навыке персонаж теряет 2% от макс. ОЗ."
     },
     {
       "id": 804904,
-      "name": "Self Salvation",
-      "desc": "HP healing effects heal twice as much."
+      "name": "Самосохранение",
+      "desc": "Эффекты, восстанавливающие ОЗ, восстанавливают в два раза больше."
     },
     {
       "id": 805601,
-      "name": "Radiant Vanity",
-      "desc": "While this unit is present, Dongrang gains 1 Protection and 1 Attack Power Up at the start of each turn."
+      "name": "Лучезарное тщеславие",
+      "desc": "Пока этот персонаж на поле боя, Донран получает 1 Защищённость и 1 Повышение силы атаки в начале каждого хода."
     },
     {
       "id": 805602,
-      "name": "Earnest Accomplishment",
-      "desc": "While this unit has Earnest Accomplishment, the following effects apply:\n- Can only be defeated with Dongrang's attacks.\n- If a Sinner drops this unit's HP to 1, the Sinner heals HP, and this unit gains Empty Honor.\n- If Dongrang defeats this unit, Dongrang heals HP and powers up next turn."
+      "name": "Великое достижение",
+      "desc": "Пока у этого персонажа есть Великое достижение, этот эффект даёт:\n- Может быть уничтожен только атаками Донрана.\n- Если Грешник опускает ОЗ этого персонажа до 1, Грешник восстанавливает ОЗ, а этот персонаж получает Пустая честь.\n- Если Донран убивает этого персонажа, Донран восстанавливает ОЗ и становится сильнее на следующий ход."
     },
     {
       "id": 805603,
-      "name": "Empty Honor",
-      "desc": "While this unit has Empty Honor, the following effects apply:\n- Can only be defeated with Dongrang's attacks.\n- If Dongrang defeats this unit, Dongrang loses HP, gains 1 Emptiness, and is weakened next turn"
+      "name": "Пустая честь",
+      "desc": "Пока у этого персонажа есть Пустая честь, этот эффект даёт:\n- Может быть уничтожен только атаками Донрана.\n- Если Донран убивает этого персонажа, Донран теряет ОЗ, получает 1 Пустота и становится слабее на следующий ход"
     },
     {
       "id": 805701,
-      "name": "Borne Fruition",
-      "desc": "The unit that defeated this unit heals by 5% of Max HP, and gains 1 Haste and 1 Attack Power Up next turn"
+      "name": "Плодородие",
+      "desc": "Убивший этого персонажа восстанавливает 5% от макс. ОЗ и получает 1 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешку</link></u></color> и 1 Повышение силы атаки на следующий ход"
     },
     {
       "id": 805001,
-      "name": "Toward the Ideal",
-      "desc": "When the HP is brought to 85% and 50% of Max HP, respectively, spawns 2 Trees of Desires and changes behavior."
+      "name": "Навстречу к идеалу",
+      "desc": "Когда ОЗ достигают 85% и 50% от макс. ОЗ соответственно, призывает 2 Древа желаний и меняет поведение."
     },
     {
       "id": 806001,
-      "name": "Radiant Desire",
-      "desc": "While this unit is present, Dongrang gains 1 Damage Up and 1 Protection at the start of each turn."
+      "name": "Светлое желание",
+      "desc": "Пока этот персонаж на поле боя, Донран получает 1 Повышение урона и 1 Защищённость в начале каждого хода."
     },
     {
       "id": 805004,
-      "name": "Price of Neglect",
-      "desc": "If 'Time of Harvest' loses in a clash, lose 5 SP"
+      "name": "Цена забвения",
+      "desc": "Если 'Пора собирать урожай' проигрывает в столкновении, теряет 5 СД"
     },
     {
       "id": 805005,
-      "name": "Bitter Smile",
-      "desc": "When in panic, gain 2 Protection and reset SP to 0 at the start of the next turn."
+      "name": "Горькая улыбка",
+      "desc": "В панике получает 2 <sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">Защищённости</link></u></color> и сбрасывает СД до 0 в начале следующего хода."
     },
     {
       "id": 805006,
-      "name": "Inefficient Judgement",
-      "desc": "When recovering from stagger, gain 1 Attack Power Up."
+      "name": "Невыгодное решение",
+      "desc": "При выходе из оглушения получает 1 Повышение силы атаки."
     },
     {
       "id": 805007,
-      "name": "Exhausting Endeavor",
-      "desc": "After using the skill Please Be My Nutrient 3 times, become staggered next turn."
+      "name": "Изматывающее стремление",
+      "desc": "После использования навыка Будь моим удобрением 3 раза, становится оглушён на следующий ход."
     },
     {
       "id": 805002,
-      "name": "Toward the Ideal",
-      "desc": "When the HP is brought to 85% of Max HP, spawns 2 Trees of Desires and changes behavior."
+      "name": "Навстречу к идеалу",
+      "desc": "Когда ОЗ достигают 85% от макс. ОЗ, призывает 2 Древа желаний и меняет поведение."
     },
     {
       "id": 805003,
-      "name": "Toward the Ideal",
-      "desc": "When the HP is brought to 50% of Max HP, spawns 2 Trees of Desires and changes behavior."
+      "name": "Навстречу к идеалу",
+      "desc": "Когда ОЗ достигают 50% от макс. ОЗ, призывает 2 Древа желаний и меняет поведение."
     },
     {
       "id": 805901,
-      "name": "Manufactured Respite",
-      "desc": "If the giant clover is present, this unit heals 30 HP at the end of the turn."
+      "name": "Перерыв",
+      "desc": "Если на поле боя присутствует Гигантский клевер, этот персонаж восстанавливает 30 ОЗ в конце хода."
     },
     {
       "id": 805902,
-      "name": "Lost Means",
-      "desc": "When the arm is broken, the unit gains 2 Attack Power Down every turn."
+      "name": "Потерянное средство",
+      "desc": "Когда сломана рука, персонаж получает 2 Понижение силы атаки каждый ход."
     },
     {
       "id": 805903,
-      "name": "Damaged Shade",
-      "desc": "When the leaf is broken, the unit gains 4 Defense Level Down and 1 Fragile every turn."
+      "name": "Неполная тень",
+      "desc": "Когда сломан лист, персонаж получает 4 Понижение уровня защиты и 1 Уязвимость каждый ход."
     },
     {
       "id": 806201,
-      "name": "Contaminating Leaf",
-      "desc": "At the start of the turn, give 1 HP Healing Boost and 1 Attack Power Up to Fairy-Long-Legs."
+      "name": "Загрязняющий лист",
+      "desc": "В начале хода даёт 1 Повышение восстановления ОЗ и 1 Повышение силы атаки Фее-длинноножке."
     },
     {
       "id": 80620101,
-      "name": "Contaminating Leaf",
-      "desc": "At the start of the turn, give 1 HP Healing Boost and 1 Attack Power Up to Fairy-Long-Legs."
+      "name": "Загрязняющий лист",
+      "desc": "В начале хода даёт 1 Повышение восстановления ОЗ и 1 Повышение силы атаки Фее-длинноножке."
     }
   ]
 }

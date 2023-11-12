@@ -6,11 +6,11 @@
     },
     {
       "id": "popup_message_ego_seat_lack",
-      "content": "Нельзя использовать это Э.Г.О. Проверьте свободное место."
+      "content": "Нельзя использовать это ЭГО Проверьте свободное место."
     },
     {
       "id": "popup_message_ego_resources_lack",
-      "content": "Нельзя использовать это Э.Г.О. Проверьте, есть ли ресурсы."
+      "content": "Нельзя использовать это ЭГО Проверьте, есть ли ресурсы."
     },
     {
       "id": "option_title",
@@ -70,15 +70,15 @@
     },
     {
       "id": "battle_log_use_ego",
-      "content": "{0} использует Э.Г.О. \"{1}\"!!"
+      "content": "{0} использует ЭГО \"{1}\"!!"
     },
     {
       "id": "battle_log_use_ego_corrosion",
-      "content": "Э.Г.О. \"{0}\" {1} поддалось коррозии!!"
+      "content": "ЭГО \"{0}\" {1} поддалось коррозии!!"
     },
     {
       "id": "battle_log_personality_corrosion",
-      "content": "Менталка{0} летит в таррары!!"
+      "content": "Менталка {0} летит в тартарары!!"
     },
     {
       "id": "battle_log_low_morale",
@@ -222,7 +222,7 @@
     },
     {
       "id": "info_button_ego",
-      "content": "Э.Г.О."
+      "content": "ЭГО"
     },
     {
       "id": "dungeon_encounter_start",
@@ -270,11 +270,11 @@
     },
     {
       "id": "get_ego_gift",
-      "content": "Получен Э.Г.О. Дар"
+      "content": "Получен ЭГО Дар"
     },
     {
       "id": "get_ego_gift_desc",
-      "content": "Получен Э.Г.О. Дар!"
+      "content": "Получен ЭГО Дар!"
     },
     {
       "id": "selection",
@@ -358,7 +358,7 @@
     },
     {
       "id": "areaatk_attack",
-      "content": "AoE умение"
+      "content": "AoE навык"
     },
     {
       "id": "enter_battle",
@@ -378,7 +378,7 @@
     },
     {
       "id": "skillinfo_coinabilitytitle",
-      "content": "<size=38>Эффект умения</size>"
+      "content": "<size=38>Эффект навыка</size>"
     },
     {
       "id": "dungeon_save_desc",
@@ -398,11 +398,11 @@
     },
     {
       "id": "battle_increase_mp",
-      "content": "Повышение здравомыслия"
+      "content": "Повышение Силы духа"
     },
     {
       "id": "battle_decrease_mp",
-      "content": "Понижение здравомыслия"
+      "content": "Понижение Силы духа"
     },
     {
       "id": "dungeon_encounter_type_start",
@@ -434,7 +434,7 @@
     },
     {
       "id": "battle_mp",
-      "content": "СД"
+      "content": "<size=32>Сила духа</size>"
     },
     {
       "id": "abnormality_part_hp",
@@ -462,7 +462,7 @@
     },
     {
       "id": "ego_erosion",
-      "content": "Коррозия Э.Г.О."
+      "content": "Коррозия ЭГО"
     },
     {
       "id": "continuous_turn",
@@ -530,11 +530,11 @@
     },
     {
       "id": "cantIdentify",
-      "content": "<color=#ff0000>[Неконтроллируемое]</color>"
+      "content": "<color=#ff0000>[Неуправляемый]</color>"
     },
     {
       "id": "popup_message_ego_irrevocable",
-      "content": "Э.Г.О., приготовленное на предыдущих ходах, нельзя отменить."
+      "content": "ЭГО, приготовленное на предыдущих ходах, нельзя отменить."
     },
     {
       "id": "stock",
@@ -558,19 +558,23 @@
     },
     {
       "id": "targetSlotWeight",
-      "content": "Слоты АТК"
+      "content": "Кол-во целей"
     },
     {
       "id": "EGO_ErodeProbability",
-      "content": "Корродировать"
+      "content": "<size=17>Шанс коррозии</size>"
     },
     {
       "id": "EGOSelectUI_resources_lack",
-      "content": "You lack sufficient resources.\nPlease check the symbols."
+      "content": "Недостаточно ресурсов.\nПроверьте иконки ещё раз."
     },
     {
       "id": "EGOSelectUI_DetailInfo",
       "content": "Детали"
+    },
+    {
+      "id": "ab_guidebook_view",
+      "content": "Просмотреть записи"
     }
   ]
 }

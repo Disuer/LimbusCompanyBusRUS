@@ -125,7 +125,7 @@
     {
       "id": 1016,
       "name": "Прибор срочного оперирования",
-      "desc": "Во время битвы, после летальной атаки ОЗ союзника не падает ниже 1;\nПолностью восстанавливает здоровье и даёт 3 Операция\nВ конце битвы союзник умирает.(Э.Г.О. Дар используется лишь один раз и затем расходуется)",
+      "desc": "Во время битвы, после летальной атаки ОЗ союзника не падает ниже 1;\nПолностью восстанавливает здоровье и даёт 3 Операция\nВ конце битвы союзник умирает.(ЭГО Дар используется лишь один раз и затем расходуется)",
       "simpleDesc" : [
         {
           "abilityID": 1016,
@@ -140,7 +140,7 @@
     {
       "id": 1018,
       "name": "Извивающаяся лента",
-      "desc": "Если союзник побеждает в побединке, используя атаку с грехом Похоти, наносит 1 Связывание и 1 Слабость",
+      "desc": "Если союзник побеждает в побединке, используя атаку с грехом Похоти, наносит 1 Связывание и 1 Уязвимость",
       "simpleDesc" : [
         {
           "abilityID": 1018,
@@ -148,7 +148,7 @@
         },
         {
           "abilityID": 10181,
-          "simpleDesc": "Наносит 1 Слабость"
+          "simpleDesc": "Наносит 1 Уязвимость"
         }     
       ]
     },
@@ -221,11 +221,11 @@
     {
       "id": 1034,
       "name": "Кроваво-красная грива",
-      "desc": "Активиуется только для грешников с грехом Похоти\nЕсли грешник не получил урон в предыдущий ход, он получает 2 Спешка и 2 Повышение уровня защиты\nЕсли грешник получил урон в предыдущий ход, он получает 2  Связывания и 2 Повышение уровня атаки",
+      "desc": "Активиуется только для грешников с грехом Похоти\nЕсли грешник не получил урон в предыдущий ход, он получает 2 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешки</link></u></color> и 2 Повышение уровня защиты\nЕсли грешник получил урон в предыдущий ход, он получает 2  Связывания и 2 Повышение уровня атаки",
       "simpleDesc" : [
         {
           "abilityID": 1034,
-          "simpleDesc": "Даёт 2 Спешка и 2 Повышение уровня защиты"
+          "simpleDesc": "Даёт 2 <sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">Спешки</link></u></color> и 2 Повышение уровня защиты"
         },
         {
           "abilityID": 10341,
@@ -268,7 +268,7 @@
     },
     {
       "id": 1040,
-      "name": "Сверкающий череп",
+      "name": "Светркающий череп",
       "desc": "При получении более 10 урона, восстанавливает 5-15 ОЗ",
       "simpleDesc" : [
         {
@@ -280,11 +280,11 @@
     {
       "id": 1041,
       "name": "Окровавленная рука",
-      "desc": "В начале хода даёт 2 Повышение силы атаки союзникам с 25% ОЗ и менее",
+      "desc": "В начале хода даёт 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color> союзникам с 25% ОЗ и менее",
       "simpleDesc" : [
         {
           "abilityID": 1041,
-          "simpleDesc": "Даёт 2 Повышение силы атаки"
+          "simpleDesc": "Даёт 2 <sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">Повышения силы атаки</link></u></color>"
         }     
       ]
     },
@@ -324,7 +324,7 @@
     {
       "id": 1046,
       "name": "Зелёная кожа",
-      "desc": "Во время битвы, после летальной атаки ОЗ союзника не падает ниже 1;\nВосстанавливает 50% здоровья\n(Э.Г.О. Дар используется лишь один раз и затем расходуется)",
+      "desc": "Во время битвы, после летальной атаки ОЗ союзника не падает ниже 1;\nВосстанавливает 50% здоровья\n(ЭГО Дар используется лишь один раз и затем расходуется)",
       "simpleDesc": [
         {
           "abilityID": 1046,
@@ -346,7 +346,7 @@
     {
       "id": 1049,
       "name": "Молот",
-      "desc": "При нанесении Тремор умениями, с 50% шансом нанесёт ещё 1",
+      "desc": "При нанесении Тремор навыками, с 50% шансом нанесёт ещё 1",
       "simpleDesc" : [
         {
           "abilityID": 1049,
@@ -357,7 +357,7 @@
     {
       "id": 1050,
       "name": "Гвоздь",
-      "desc": "При нанесении Кровотечение умениями, с 50% шансом нанесёт ещё 1",
+      "desc": "При нанесении Кровотечение навыками, с 50% шансом нанесёт ещё 1",
       "simpleDesc": [
         {
           "abilityID": 1050,
@@ -368,7 +368,7 @@
     {
       "id": 1051,
       "name": "Писания Гвоздя и молота",
-      "desc": "При использовании умения Гордыни, союзник теряет 5 СД, но повышает урон на 5%",
+      "desc": "При использовании навыка Гордыни, союзник теряет 5 СД, но повышает урон на 5%",
       "simpleDesc" : [
         {
           "abilityID": 1051,
@@ -383,7 +383,7 @@
     {
       "id": 1052,
       "name": "Горячая сочная ножка",
-      "desc": "При нанесении Огонь умениями, наносит ещё 5 счётчиков Огонь",
+      "desc": "При нанесении Огонь навыками, наносит ещё 5 счётчиков Огонь",
       "simpleDesc" : [
         {
           "abilityID": 1052,
@@ -394,7 +394,7 @@
     {
       "id": 1053,
       "name": "Сухая-пресухая грудка",
-      "desc": "При нанесении Разрыв умениями, наносит ещё 5 счётчиков Разрыв",
+      "desc": "При нанесении Разрыв навыками, наносит ещё 5 счётчиков Разрыв",
       "simpleDesc": [
         {
           "abilityID": 1053,
@@ -432,194 +432,6 @@
         {
           "abilityID": 1056,
           "simpleDesc": ""
-        }
-      ]
-    },
-    {
-      "id": 2001,
-      "name": "Small Ampule",
-      "desc": "At the start of the turn, allies under 40% HP heal 100% of Max HP. (Once per floor)",
-      "simpleDesc": [
-        {
-          "abilityID": 2001,
-          "simpleDesc": "Conditional full heal"
-        }
-      ]
-    },
-    {
-      "id": 2002,
-      "name": "Piece of Crumbled Egg",
-      "desc": "On the first turn of each encounter, gain 2 E.G.O resources of a random affinity in possession",
-      "simpleDesc": [
-        {
-          "abilityID": 2002,
-          "simpleDesc": "Gain 2 E.G.O resources for a random affinity owned"
-        }
-      ]
-    },
-    {
-      "id": 2003,
-      "name": "Cold Illusion",
-      "desc": "Gluttony skills deal +10% damage",
-      "simpleDesc": [
-        {
-          "abilityID": 2003,
-          "simpleDesc": "Gluttony skill damage +10%"
-        }
-      ]
-    },
-    {
-      "id": 2004,
-      "name": "Sharp Illusion",
-      "desc": "Pride skills deal +10% damage",
-      "simpleDesc": [
-        {
-          "abilityID": 2004,
-          "simpleDesc": "Pride skill damage +10%"
-        }
-      ]
-    },
-    {
-      "id": 2005,
-      "name": "Fragrant Illusion",
-      "desc": "Sloth skills deal +10% damage",
-      "simpleDesc": [
-        {
-          "abilityID": 2005,
-          "simpleDesc": "Sloth skill damage +10%"
-        }
-      ]
-    },
-    {
-      "id": 2006,
-      "name": "Trace of Stars",
-      "desc": "When below 0 SP, Gloom and Sloth skills have +1 Final Power",
-      "simpleDesc": [
-        {
-          "abilityID": 2006,
-          "simpleDesc": "Gloom and Sloth skill Final Power +1 when SP is below 0"
-        }
-      ]
-    },
-    {
-      "id": 2007,
-      "name": "Pungent Bud",
-      "desc": "When inflicting Sinking with skill effects, apply 1 more Sinking with a 50% chance",
-      "simpleDesc": [
-        {
-          "abilityID": 2007,
-          "simpleDesc": "When inflicting Sinking with skill effects, apply 1 more Sinking with a 50% chance"
-        }
-      ]
-    },
-    {
-      "id": 2008,
-      "name": "Hot Tears",
-      "desc": "Take -10% Wrath-affinity damage\nWhen hit, gain 1 Attack Power Up next turn (Once per turn per Sinner)",
-      "simpleDesc": [
-        {
-          "abilityID": 2009,
-          "simpleDesc": "Wrath damage taken -20%"
-        },
-        {
-          "abilityID": 200901,
-          "simpleDesc": "When hit, gain 1 Attack Power Up next turn"
-        }
-      ]
-    },
-    {
-      "id": 2009,
-      "name": "Cooled Tear",
-      "desc": "When attacked, gain 1 Protection next turn (Once per turn per Sinner)",
-      "simpleDesc": [
-        {
-          "abilityID": 2009,
-          "simpleDesc": "When hit, gain 1 Protection next turn"
-        }
-      ]
-    },
-    {
-      "id": 2010,
-      "name": "Memories of Fragments",
-      "desc": "In a clash, Pride and Envy skills have +1 Clash Power",
-      "simpleDesc": [
-        {
-          "abilityID": 2010,
-          "simpleDesc": "Pride and Envy skill Clash Power +1 in a clash"
-        }
-      ]
-    },
-    {
-      "id": 2011,
-      "name": "Piece of a Torn Spring",
-      "desc": "Take -10% Pride-affinity damage\n\n<i>\"I would feel a desire to scatter into the winds in lush blue, sensing the sway of seeds plunging into my scrawling mind.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2011,
-          "simpleDesc": "Pride damage taken -10%"
-        }
-      ]
-    },
-    {
-      "id": 2012,
-      "name": "Piece of a Torn Summer",
-      "desc": "Take -10% Gluttony-affinity damage\n\n<i>\"I saw no meaning in attempting to fathom the caprices of the weather. I would simply wait for things to calm, looking out for the day's arrival.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2012,
-          "simpleDesc": "Take -10% Gluttony-affinity damage\n\n<i>\"Alas, I was careless in my assumption that I could simply observe slantwise as it comes to pass until it has seeped... Realization comes too late.\"</i>"
-        }
-      ]
-    },
-    {
-      "id": 2013,
-      "name": "Piece of a Torn Autumn",
-      "desc": "Take -10% Gloom-affinity damage\n\n<i>\"Alas, I was careless in my assumption that I could simply observe slantwise as it comes to pass until it has seeped... Realization comes too late.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2013,
-          "simpleDesc": "Gloom damage taken -10%"
-        }
-      ]
-    },
-    {
-      "id": 2014,
-      "name": "Piece of a Torn Winter",
-      "desc": "Take -10% Sloth-affinity damage\n\n<i>\"The explosion of the League of Nine shattered everything there was, and everything came to a halt for me as well.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2014,
-          "simpleDesc": "Sloth damage taken -10%"
-        }
-      ]
-    },
-    {
-      "id": 2015,
-      "name": "Piece of a Broken Bond",
-      "desc": "Yi Sang's skills gain +2 Final Power\nWhen an ally dies, remaining allies gain 1 Haste and 1 Attack Power Up next turn (Once per turn)\n\n<i>\"Taking a backward glance at our trails... all of us have been suffering great losses.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2015,
-          "simpleDesc": "Yi Sang's Skill Final Power +2"
-        },
-        {
-          "abilityID": 201501,
-          "simpleDesc": "When an ally dies, remaining allies gain 1 Haste and 1 Attack Power Up next turn (Once per turn)"
-        }
-      ]
-    },
-    {
-      "id": 2016,
-      "name": "Piece of Reversing Memories",
-      "desc": "Yi Sang's level rises to 35.\nYi Sang's Uptie and Threadspin Tiers rise to Tier 3.\n\n<i>\"We were neither highfliers nor greedy vultures; we were merely children who loved technology.\"</i>",
-      "simpleDesc": [
-        {
-          "abilityID": 2016,
-          "simpleDesc": "Yi Sang's level rises to 35."
-        },
-        {
-          "abilityID": 201601,
-          "simpleDesc": "Yi Sang's Uptie and Threadspin Tiers rise to Tier 3"
         }
       ]
     }

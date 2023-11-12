@@ -94,7 +94,7 @@
     },
     {
       "id": "ask_to_use_paid_lunacy_to_level_up_pass",
-      "content": "Желаете использовать {0} платного Безумства для повышения уровня?"
+      "content": "Желаете потратить {0} платного Безумства для повышения уровня?"
     },
     {
       "id": "battlepass_purchase_level_up",

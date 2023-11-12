@@ -10,27 +10,27 @@
     },
     {
       "id": "mainui_reinforce_support_passive",
-      "content": "Поддерживающая пассивка [{0}] усилена"
+      "content": "Пассивка Поддержки [{0}] улучшена"
     },
     {
       "id": "mainui_reinforce_battle_passive",
-      "content": "Боевая пассивка [{0}] усилена"
+      "content": "Боевая пассивка [{0}] улучшена"
     },
     {
       "id": "mainui_battle_passsive_reinforce",
-      "content": "Боевая пассивка усилена"
+      "content": "Боевая пассивка улучшена"
     },
     {
       "id": "mainui_support_passsive_reinforce",
-      "content": "Поддерживающая пассивка усилена"
+      "content": "Пассивка Подддержки улучшена"
     },
     {
       "id": "mainui_target_num_label",
-      "content": "Слоты АТК"
+      "content": "Кол-во целей"
     },
     {
       "id": "mainui_awaken_requirement_label",
-      "content": "Нужно ресурсов"
+      "content": "Необходимо"
     }
   ]
 }

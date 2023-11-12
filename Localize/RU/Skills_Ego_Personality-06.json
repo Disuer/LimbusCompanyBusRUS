@@ -6,16 +6,16 @@
         {
           "level": 1,
           "name": "Газировка",
-          "abName": "Wellcheers",
+          "abName": "\"Wellcheers\"",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 10 ОЗ"
+                  "desc": "[EndSkillHead] Восстанавливает 10 ОЗ 2 союзникам с наименьшим процентом ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Восстанавливает 10 СД 2 союзникам с наименьшим СД"
+                  "desc": "[EndSkillTail] Восстанавливает 10 СД 2 союзникам с наименьшей СД"
                 }
               ]
             }
@@ -24,19 +24,19 @@
         {
           "level": 3,
           "name": "Газировка",
-          "abName": "Wellcheers",
+          "abName": "\"Wellcheers\"",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 12 ОЗ"
+                  "desc": "[EndSkillHead] Восстанавливает 12 ОЗ 2 союзникам с наименьшим процентом ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Восстанавливает 12 СД 2 союзникам с наименьшим СД"
+                  "desc": "[EndSkillTail] Восстанавливает 12 СД 2 союзникам с наименьшей СД"
                 },
                 {
-                  "desc": "[CriticalEndSkill] Лечит на 6 ОЗ союзника с наименьшим процентом здоровья; Восстаналивает 6 СД союзнику с наименьшим его запасом"
+                  "desc": "[CriticalEndSkill] Восстанавливает 6 ОЗ союзнику с наименьшим процентом ОЗ; Восстанавливает 6 СД союзнику с наименьшей СД"
                 }
               ]
             }
@@ -45,19 +45,19 @@
         {
           "level": 4,
           "name": "Газировка",
-          "abName": "Wellcheers",
+          "abName": "\"Wellcheers\"",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkillHead] Лечит 2 союзников с наименьшим процентом здоровья на 15 ОЗ"
+                  "desc": "[EndSkillHead] Восстанавливает 15 ОЗ 2 союзникам с наименьшим процентом ОЗ"
                 },
                 {
-                  "desc": "[EndSkillTail] Восстанавливает 15 СД 2 союзникам с наименьшим СД"
+                  "desc": "[EndSkillTail] Восстанавливает 15 СД 2 союзникам с наименьшей СД"
                 },
                 {
-                  "desc": "[CriticalEndSkill] Лечит на 8 ОЗ союзника с наименьшим процентом здоровья; Восстаналивает 8 СД союзнику с наименьшим его запасом"
+                  "desc": "[CriticalEndSkill] Восстанавливает 8 ОЗ союзнику с наименьшим процентом ОЗ; Восстанавливает 8 СД союзнику с наименьшей СД"
                 }
               ]
             }
@@ -71,8 +71,8 @@
         {
           "level": 1,
           "name": "Газировка",
-          "abName": "Wellcheers",
-          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
+          "abName": "\"Wellcheers\"",
+          "desc": "[CantIdentify] Выбирает целью персонажа с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
@@ -80,7 +80,7 @@
                   "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 3 Тремор"
+                  "desc": "[OnSucceedAttack] Наносит 3 <sprite name=\"Vibration\"><color=#e30000><u><link=\"Vibration\">Тремора</link></u></color>"
                 }
               ]
             }
@@ -89,8 +89,8 @@
         {
           "level": 3,
           "name": "Газировка",
-          "abName": "Wellcheers",
-          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
+          "abName": "\"Wellcheers\"",
+          "desc": "[CantIdentify] Выбирает целью персонажа с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
@@ -98,7 +98,7 @@
                   "desc": "[OnSucceedAttackHead] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 4 Тремор"
+                  "desc": "[OnSucceedAttack] Наносит 4 <sprite name=\"Vibration\"><color=#e30000><u><link=\"Vibration\">Тремора</link></u></color>"
                 }
               ]
             }
@@ -107,8 +107,8 @@
         {
           "level": 4,
           "name": "Газировка",
-          "abName": "Wellcheers",
-          "desc": "[CantIdentify] Выбирает цели с наименьшими ОЗ",
+          "abName": "\"Wellcheers\"",
+          "desc": "[CantIdentify] Выбирает целью персонажа с наименьшими ОЗ",
           "coinlist": [
             {
               "coindescs": [
@@ -116,7 +116,7 @@
                   "desc": "[OnSucceedAttack] Наносит 1 Связывание на следующий ход"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Наносит 5 Тремор"
+                  "desc": "[OnSucceedAttack] Наносит 5 <sprite name=\"Vibration\"><color=#e30000><u><link=\"Vibration\">Тремора</link></u></color>"
                 }
               ]
             }

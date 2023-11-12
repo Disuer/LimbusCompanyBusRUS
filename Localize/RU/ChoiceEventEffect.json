@@ -14,7 +14,7 @@
     },
     {
       "id": "GetEgogift",
-      "content": "<color=#ebcaa2>Вы получаете случайный Э.Г.О. Дар!</color>"
+      "content": "<color=#ebcaa2>Вы получаете случайный ЭГО Дар!</color>"
     },
     {
       "id": "GetCharacter",
@@ -66,11 +66,11 @@
     },
     {
       "id": "LoseHpOnly",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#e30000>{amount} ОЗ</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряют</color> <color=#e30000>{amount} ОЗ</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "LoseMpOnly",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#fe4b48>{amount} СД</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряют</color> <color=#fe4b48>{amount} СД</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "RecoverHpMpSameAmount",
@@ -82,11 +82,11 @@
     },
     {
       "id": "LoseHpMpSameAmount",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>СД</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряют</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>СД</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "LoseHpMpDifferentAmount",
-      "content": "<color=#ebcaa2>{targets} {conditions}теряет</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>{amount} СД</color><color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>{targets} {conditions}теряют</color> <color=#e30000>{amount} ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>{amount} СД</color><color=#ebcaa2>!</color>"
     },
     {
       "id": "GetConfirmedEgogift",
@@ -122,7 +122,7 @@
     },
     {
       "id": "Choice_901009",
-      "content": "<color=#e30000>Финальная сила умения -1</color> <color=#ebcaa2>в начале битвы.</color>"
+      "content": "<color=#e30000>Финальная сила навыка -1</color> <color=#ebcaa2>в начале битвы.</color>"
     },
     {
       "id": "Choice_901010",
@@ -150,11 +150,11 @@
     },
     {
       "id": "Choice_90100201",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#e30000>25 ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>15 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#e30000>25 ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>15 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90100502",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#e30000>15 ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>12 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#e30000>15 ОЗ</color> <color=#ebcaa2>и</color> <color=#fe4b48>12 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101001",
@@ -162,23 +162,23 @@
     },
     {
       "id": "Choice_90101101",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#fe4b48>15 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#fe4b48>15 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101701",
-      "content": "<color=#ebcaa2>Грешник, прошедший проверку, теряет</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, прошедший проверку, теряют</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101702",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#fe4b48>25 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#fe4b48>25 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101801",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#fe4b48>12 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#fe4b48>12 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101901",
-      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряет</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Грешник, проваливший проверку, теряют</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90102001",
@@ -218,15 +218,15 @@
     },
     {
       "id": "Choice_901014",
-      "content": "<color=#ebcaa2>Идентичности без</color> <color=#e48801>греха Лени</color> <color=#ebcaa2>теряют</color> <color=#fe4b48>20 ОЗ</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Идентичности без</color> <color=#e48801>греха Лености</color> <color=#ebcaa2>теряют</color> <color=#fe4b48>20 ОЗ</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101401",
-      "content": "<color=#ebcaa2>Идентичности без</color> <color=#e48801>греха Лени</color> <color=#ebcaa2>теряют</color> <color=#fe4b48>15 ОЗ</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Идентичности без</color> <color=#e48801>греха Лености</color> <color=#ebcaa2>теряют</color> <color=#fe4b48>15 ОЗ</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_90101601",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#61822b>грехом Чревоугодия</color> </color=#ebcaa2>восстанавливают</color> <color=#80c9ff>СД.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#61822b>грехом Чревоугодия</color> </color=#ebcaa2>восстанавливают</color> <color=#80c9ff>СД</color><color=#ebcaa2>.</color>"
     },
     {
       "id": "Choice_901018",
@@ -242,11 +242,11 @@
     },
     {
       "id": "Choice_90102301",
-      "content": "<color=#ebcaa2>Случайная идентичность с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>теряет</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
+      "content": "<color=#ebcaa2>Случайная идентичность с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>теряют</color> <color=#fe4b48>10 СД</color> <color=#ebcaa2>!</color>"
     },
     {
       "id": "Choice_901024",
-      "content": "<color=#ebcaa2>Идентичность с самой низкой СД, имеющая</color> <color=#306471>грех Уныния</color> </color=#ebcaa2>fully восстанавливает</color> <color=#fe4b48>HP.</color>"
+      "content": "<color=#ebcaa2>Идентичность с самой низкой СД, имеющая</color> <color=#306471>грех Уныния</color> </color=#ebcaa2>fully восстанавливает</color> <color=#fe4b48>HP</color><color=#ebcaa2>.</color>"
     },
     {
       "id": "Choice_901025",
@@ -254,7 +254,7 @@
     },
     {
       "id": "Choice_90102501",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>20 ОЗ.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#306471>грехом Уныния</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>20 ОЗ</color><color=#ebcaa2>.</color>"
     },
     {
       "id": "Choice_901026",
@@ -262,7 +262,7 @@
     },
     {
       "id": "Choice_90102601",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>10 ОЗ<.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>10 ОЗ</color><color=#ebcaa2>.</color>"
     },
     {
       "id": "Choice_901027",
@@ -278,7 +278,7 @@
     },
     {
       "id": "Choice_90102801",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ.</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#185188>грехом Гордыни</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ</color><color=#ebcaa2>.</color>"
     },
     {
       "id": "Choice_901032",
@@ -294,31 +294,7 @@
     },
     {
       "id": "Choice_90103501",
-      "content": "<color=#ebcaa2>Идентичности с</color> <color=#7d4e94>грехом Зависти</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ.</color>"
-    },
-    {
-      "id": "Choice_1040301",
-      "content": "<color=#ebcaa2>The chosen Sinner</color> <color=#ebcaa2>has</color> <color=#e30000>10 Rupture</color> <color=#ebcaa2>for 1 turn in the next battle.</color>"
-    },
-    {
-      "id": "MirrorDungeonAcquireCost",
-      "content": "<color=#ebcaa2>Cost {amount} gained</color>"
-    },
-    {
-      "id": "MirrorDungeonLossCost",
-      "content": "<color=#ebcaa2>Cost {amount} lost</color>"
-    },
-    {
-      "id": "Choice_90104001",
-      "content": "<color=#ebcaa2>Start the next battle with</color> <color=#f8c200>+2 E.G.O resources</color> <color=#ebcaa2>of all affinities</color>"
-    },
-    {
-      "id": "Choice_9010400101",
-      "content": "<color=#ebcaa2>All allies have</color> <color=#f8c200>+2 Skill Final Power</color> <color=#ebcaa2>for the next battle</color>"
-    },
-    {
-      "id": "Choice_90104002",
-      "content": "<color=#ebcaa2>All allies have</color> <color=#f8c200>+1 Skill Power</color> <color=#ebcaa2>for the next battle</color>"
+      "content": "<color=#ebcaa2>Идентичности с</color> <color=#7d4e94>грехом Зависти</color> <color=#ebcaa2>восстанавливают</color> <color=#fe4b48>15 ОЗ</color><color=#ebcaa2>.</color>"
     }
   ]
 }
