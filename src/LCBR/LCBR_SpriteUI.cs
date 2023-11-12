@@ -1,5 +1,6 @@
-﻿using HarmonyLib;
-using Il2CppBattleUI;
+﻿using BattleUI;
+using HarmonyLib;
+using UnityEngine;
 
 namespace LimbusLocalizeRUS
 {

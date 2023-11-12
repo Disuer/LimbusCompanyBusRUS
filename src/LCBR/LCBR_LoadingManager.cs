@@ -1,6 +1,5 @@
-﻿using HarmonyLib;
-using Il2Cpp;
-using Il2CppTMPro;
+﻿using BepInEx.Configuration;
+using HarmonyLib;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
