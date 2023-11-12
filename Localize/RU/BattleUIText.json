@@ -150,7 +150,7 @@
     },
     {
       "id": "immunity_information",
-      "content": "Сопротивления"
+      "content": "<size=27>Сопротивления</size>"
     },
     {
       "id": "awaken_ego_skill",

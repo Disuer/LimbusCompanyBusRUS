@@ -831,6 +831,21 @@
       "id": 1020721,
       "name": "Работа на подавление",
       "desc": "В столкновении, цель самого медленного союзника получает -1 к силе в столкновении, если у неё 3+ типов негативных эффектов."
+    },
+    {
+      "id": 1010601,
+      "name": "Пустая мысль",
+      "desc": "- В конце хода, получает 1 <color=#f8c200><u><link=\"Agility\">Спешку</link></u></color> за каждые 5 счётчиков <sprite name=\"Charge\"><color=#f8c200><u><link=\"Charge\">Заряда</link></u></color> на себе на следующий ход. (До 2)\n- Если умение потратило 3 на счётчике <sprite name=\"Charge\"><color=#f8c200><u><link=\"Charge\">Заряда</link></u></color>, союзник с самым наименьшим процентом ОЗ получает 3 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Зарядных барьера</color></link></u>."
+    },
+    {
+      "id": 1010611,
+      "name": "Пустая мысль",
+      "desc": "- В конце хода, получает 1 <color=#f8c200><u><link=\"Agility\">Спешку</link></u></color> за каждые 5 счётчиков <sprite name=\"Charge\"><color=#f8c200><u><link=\"Charge\">Заряда</link></u></color> на себе на следующий ход. (До 3)\n- Если умение потратило 3 на счётчике <sprite name=\"Charge\"><color=#f8c200><u><link=\"Charge\">Заряда</link></u></color>, союзник с самым наименьшим процентом ОЗ получает 3 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Зарядных барьера</color></link></u>."
+    },
+    {
+      "id": 1010621,
+      "name": "Демонстрация зачистки",
+      "desc": "Союзник с наибольшим счётчиком <sprite name=\"Charge\"><color=#f8c200><u><link=\"Charge\">Заряда</link></u></color> наносит больше урона по противникам с <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Разрывами</link></u></color> в зависимости от <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Разрывов</link></u></color> на цели (+1.5% за каждый Разрыв. До +15% урона)"
     }
   ]
 }

@@ -2,11 +2,11 @@
   "dataList": [
     {
       "id": "move_to_inventory",
-      "content": "В инвентарь"
+      "content": "<cspace=3>В инвентарь</cspace>"
     },
     {
       "id": "progress_personality_gacksung",
-      "content": "Связать"
+      "content": "<cspace=3>Связать</cspace>"
     },
     {
       "id": "mainui_reinforce_support_passive",
