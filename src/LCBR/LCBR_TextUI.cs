@@ -5,6 +5,7 @@ using MainUI;
 using MainUI.VendingMachine;
 using TMPro;
 using UnityEngine;
+using static UI.Utility.InfoModels;
 
 namespace LimbusLocalizeRUS
 {
@@ -14,38 +15,35 @@ namespace LimbusLocalizeRUS
         [HarmonyPostfix]
         private static void NetworkingUI_Init(NetworkingUI __instance)
         {
-            Transform transform = __instance.transform.Find("connecting_background/tmp_connecting");
-            if (transform != null)
+            Transform connection = __instance.transform.Find("connecting_background/tmp_connecting");
+            if (connection != null)
             {
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).text = "ПОДКЛЮЧЕНИЕ";
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[0].material;
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).fontSize = 77f;
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).text = "ПОДКЛЮЧЕНИЕ";
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[0].material;
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).fontSize = 77f;
             }
         }
         [HarmonyPatch(typeof(VendingMachineUIPanel), "Initialize")]
         [HarmonyPostfix]
         private static void VendingMachineUIPanel_Init(VendingMachineUIPanel __instance)
         {
-            Transform transform = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeEGO/Tmp_EGO");
-            if (transform != null)
+            Transform ego_dispence = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeEGO/Tmp_EGO");
+            if (ego_dispence != null)
             {
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+                ego_dispence.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
             }
         }
         [HarmonyPatch(typeof(FormationSwitchablePersonalityUIPanel), "Initialize")]
         [HarmonyPostfix]
         private static void FormationSwitchablePersonalityUIPanel_Init(FormationSwitchablePersonalityUIPanel __instance)
         {
-            Transform transform = __instance.transform.Find("[Script]RightPanel/[Script]FormationEgoList/[Text]Ego_Label");
-            Transform transform2 = __instance.transform.Find("[Script]ListTabRoot/[Layout]Tabs/[Toggle]Ego/[Text]E.G.O");
-            if (transform != null)
+            Transform ego_mainui_1 = __instance.transform.Find("[Script]RightPanel/[Script]FormationEgoList/[Text]Ego_Label");
+            Transform ego_mainui_2 = __instance.transform.Find("[Script]ListTabRoot/[Layout]Tabs/[Toggle]Ego/[Text]E.G.O");
+            if (ego_mainui_1 != null)
             {
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
-            }
-            if (transform2 != null)
-            {
-                transform2.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+                ego_mainui_1.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+                ego_mainui_2.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
             }
         }
         [HarmonyPatch(typeof(FormationUIPanel), nameof(FormationUIPanel.Initialize))]
@@ -53,21 +51,17 @@ namespace LimbusLocalizeRUS
         private static void FormationUIPanel_Init(FormationUIPanel __instance)
         {
             //MAIN UI HOVER EGO TEXT
-            Transform transform = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]EGO/[Text]EGO");
-            if (transform != null)
+            Transform ego = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]EGO/[Text]EGO");
+            Transform ego_hover = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]EGO/[Text]EGO/[Text]EGO_Highlight");
+            if (ego != null)
             {
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+                ego.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+                ego.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+                ego.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+                ego_hover.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+                ego_hover.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+                ego_hover.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
             }
-            Transform transform1 = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]EGO/[Text]EGO/[Text]EGO_Highlight");
-            if (transform1 != null)
-            {
-                transform1.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
-                transform1.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
-                transform1.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
-            }
-
 
             //SINNERS DEF SLOTS
             Transform yisang_def = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/[Layout]Personalities/PersonalityFormationSlot_Yisang/[Rect]AdditionalInfo/PersonalitySlotSkillInfoItemList/PersonalitySlotSkillInfoItem (GUARD)/Text (TMP)");
@@ -126,12 +120,30 @@ namespace LimbusLocalizeRUS
         [HarmonyPostfix]
         private static void UnitInformationController_Init(UnitInformationController __instance)
         {
-            Transform transform = __instance.transform.Find("[Script]UnitInformationController_Renewal/[Script]PersonalityAndEgoNameTag/[Text]Season");
-            if (transform != null)
+            Transform season = __instance.transform.Find("[Script]UnitInformationController_Renewal/[Script]PersonalityAndEgoNameTag/[Text]Season");
+            Transform max_level = __instance.transform.Find("[Script]UnitInformationController_Renewal/[Rect]UnitStatusContent/[Button]PersonaliyLevelUpButton/[Text]MAXContent");
+            Transform max_thread = __instance.transform.Find("[Script]UnitInformationController_Renewal/[Rect]UnitStatusContent/[Button]GacksungLevelUpButton/[Text]MAXContent");
+            if (season != null)
             {
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
-                transform.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
+                season.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
+                season.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
             }
+            if (max_level != null)
+            {
+                max_level.GetComponentInChildren<TextMeshProUGUI>(true).text = "MAKC.";
+                //max_level.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
+                //max_level.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
+                max_thread.GetComponentInChildren<TextMeshProUGUI>(true).text = "MAKC.";
+                //max_thread.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
+                //max_thread.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
+            }
+        }
+        [HarmonyPatch(typeof(UnitInfoPersonalityNameTag), nameof(UnitInfoPersonalityNameTag.SetSeasonTagUI))]
+        [HarmonyPostfix]
+        private static void UnitInfoPersonalityNameTag_Init(UnitInfoPersonalityNameTag __instance)
+        {
+            string text = __instance._seasonTagUI.tmp_season.text.Replace("SEASON", "СЕЗОН");
+            __instance._seasonTagUI.tmp_season.text = text.Replace("WALPURGISNACHT", "ВАЛЬПУРГИЕВА НОЧЬ");
         }
     }
 }
