@@ -1,11 +1,10 @@
-﻿using BepInEx.Configuration;
+﻿using SimpleJSON;
+using BepInEx.Configuration;
 using Il2CppSystem.Threading;
-using SimpleJSON;
 using System;
 using System.IO;
-using System.Net;
 using System.Net.Http;
-using System.IO.Compression;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -13,72 +12,67 @@ namespace LimbusLocalizeRUS
 {
     public static class LCBR_UpdateChecker
     {
-        public static ConfigEntry<bool> AutoUpdate = LCB_LCBRMod.LCBR_Settings.Bind("LCBR Settings", "AutoUpdate", true, "Автоматически проверять и загружать обновления ( true | false )");
-        public static ConfigEntry<URI> UpdateURI = LCB_LCBRMod.LCBR_Settings.Bind("LCBR Settings", "UpdateURI", URI.GitHub, "URI, используемый для автоматических обновлений (GitHub: Default )");
+        public static ConfigEntry<bool> AutoUpdate = LCB_LCBRMod.LCBR_Settings.Bind("LCBR Settings", "AutoUpdate", false, "");
         public static void StartAutoUpdate()
         {
-                LCB_LCBRMod.LogWarning("Xmmm... ||poBepka update-ov...");
+            if (AutoUpdate.Value)
+            {
+                LCB_LCBRMod.LogWarning("Check Mod Update");
                 Action ModUpdate = CheckModUpdate;
                 new Thread(ModUpdate).Start();
+            }
         }
         static void CheckModUpdate()
         {
-            string release_uri = "https://api.github.com/repos/Crescent-Corporation/LimbusCompanyBusRUS/releases/latest";
-            UnityWebRequest www = UnityWebRequest.Get(release_uri);
+            UnityWebRequest www = UnityWebRequest.Get("");
             www.timeout = 4;
             www.SendWebRequest();
             while (!www.isDone)
                 Thread.Sleep(100);
-            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
-            string latestReleaseTag = latest["tag_name"].Value;
-            string updatelog = "LimbusCompanyRUS";
-            Updatelog += updatelog + ".zip ";
-            string download_uri = $"https://github.com/Crescent-Corporation/LimbusCompanyBusRUS/releases/download/{latestReleaseTag}/{updatelog}.zip";
-            var dirs = download_uri.Split('/');
-            string filename = LCB_LCBRMod.GamePath + "/BepInEx/plugins/LCBR/" + dirs[^1];
-            string localizefolder = LCB_LCBRMod.GamePath + "/BepInEx/plugins/LCBR/Localize";
-            string biedllfilename = LCB_LCBRMod.GamePath + "/BepInEx/plugins/LCBR/LimbusCompanyBusRUS_BIE.dll";
-            string dllfilename = LCB_LCBRMod.GamePath + "/BepInEx/plugins/LCBR/LimbusCompanyBusRUS.dll";
-            if (File.Exists(dllfilename))
-                File.Delete(filename);
-                File.Delete(dllfilename);
-            if (www.result != UnityWebRequest.Result.Success){
-                LCB_LCBRMod.LogWarning("Не удаётся полключиться к GitHub!" + www.error);
-            }else{
+            if (www.result != UnityWebRequest.Result.Success)
+                LCB_LCBRMod.LogWarning("Can't access GitHub!!!" + www.error);
+            else
+            {
+                JSONArray releases = JSONNode.Parse(www.downloadHandler.text).AsArray;
+                string latestReleaseTag = releases[0]["tag_name"].Value;
+                string latest2ReleaseTag = releases.m_List.Count > 1 ? releases[1]["tag_name"].Value : string.Empty;
                 if (Version.Parse(LCB_LCBRMod.VERSION) < Version.Parse(latestReleaseTag.Remove(0, 1)))
                 {
+                    string updatelog = (latest2ReleaseTag == "v" + LCB_LCBRMod.VERSION ? "" : "") + latestReleaseTag;
+                    Updatelog += updatelog + ".7z ";
+                    string download = "" + latestReleaseTag + "/" + updatelog + ".7z";
+                    var dirs = download.Split('/');
+                    string filename = LCB_LCBRMod.GamePath + "/" + dirs[^1];
                     if (!File.Exists(filename))
-                    {
-                        DownloadFileAsync(download_uri, filename);
-                    }
+                        DownloadFileAsync(download, filename).GetAwaiter().GetResult();
                     UpdateCall = UpdateDel;
                 }
+                LCB_LCBRMod.LogWarning("Check Cyrillic Font Asset Update");
+                Action FontAssetUpdate = CheckCyrillicFontAssetUpdate;
+                new Thread(FontAssetUpdate).Start();
             }
-            if (File.Exists(biedllfilename) && File.Exists(filename)){
-                Directory.Delete(localizefolder, true);
-                Application.Quit();
-                File.Move(biedllfilename, dllfilename);
-                ExtractArchive(filename, LCB_LCBRMod.GamePath + "/BepInEx/plugins/LCBR/");
-            }
-
         }
-        public static void ExtractArchive(string archivePath, string extractPath)
+        static void CheckCyrillicFontAssetUpdate()
         {
-            try
+            UnityWebRequest www = UnityWebRequest.Get("");
+            string FilePath = LCB_LCBRMod.ModPath + "/tmpcyrillicfonts";
+            var LastWriteTime = File.Exists(FilePath) ? int.Parse(new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd")) : 0;
+            www.SendWebRequest();
+            while (!www.isDone)
+                Thread.Sleep(100);
+            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
+            int latestReleaseTag = int.Parse(latest["tag_name"].Value);
+            if (LastWriteTime < latestReleaseTag)
             {
-                if (File.Exists(archivePath))
-                {
-                    ZipFile.ExtractToDirectory(archivePath, extractPath);
-                    LCB_LCBRMod.LogWarning("Archive is successfully unzipped.");
-                }
-                else
-                {
-                    LCB_LCBRMod.LogWarning("Archive is not founded: " + archivePath);
-                }
-            }
-            catch (Exception ex)
-            {
-                LCB_LCBRMod.LogWarning("Error while unzipping: " + ex.Message);
+                string updatelog = "tmpcyrillicfonts_" + latestReleaseTag;
+
+                Updatelog += updatelog + ".7z ";
+                string download = "" + latestReleaseTag + "/" + updatelog + ".7z";
+                var dirs = download.Split('/');
+                string filename = LCB_LCBRMod.GamePath + "/" + dirs[^1];
+                if (!File.Exists(filename))
+                    DownloadFileAsync(download, filename).GetAwaiter().GetResult();
+                UpdateCall = UpdateDel;
             }
         }
         static void UpdateDel()
@@ -86,24 +80,14 @@ namespace LimbusLocalizeRUS
             LCB_LCBRMod.OpenGamePath();
             Application.Quit();
         }
-        static void DownloadFileAsync(string uri, string filePath)
+        static async Task DownloadFileAsync(string url, string filePath)
         {
-            try
-            {
-                LCB_LCBRMod.LogWarning("Download " + uri + " to " + filePath);
-                using HttpClient client = new();
-                using HttpResponseMessage response = client.GetAsync(uri).GetAwaiter().GetResult();
-                using HttpContent content = response.Content;
-                using FileStream fileStream = new(filePath, FileMode.Create);
-                content.CopyToAsync(fileStream).GetAwaiter().GetResult();
-            }
-            catch (Exception ex)
-            {
-                if (ex is HttpRequestException httpException && httpException.StatusCode == HttpStatusCode.NotFound)
-                    LCB_LCBRMod.LogWarning($"{uri} 404 NotFound,No Resource");
-                else
-                    LCB_LCBRMod.LogWarning($"{uri} Error!!!" + ex.ToString());
-            }
+            LCB_LCBRMod.LogWarning("Download " + url + " To " + filePath);
+            using HttpClient client = new();
+            using HttpResponseMessage response = await client.GetAsync(url);
+            using HttpContent content = response.Content;
+            using FileStream fileStream = new(filePath, FileMode.Create);
+            await content.CopyToAsync(fileStream);
         }
         public static void CheckReadmeUpdate()
         {
@@ -130,10 +114,5 @@ namespace LimbusLocalizeRUS
         }
         public static string Updatelog;
         public static Action UpdateCall;
-        public enum URI
-        {
-            GitHub,
-            Mirror_OneDrive
-        }
     }
 }

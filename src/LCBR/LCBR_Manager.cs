@@ -1,11 +1,11 @@
 ﻿using HarmonyLib;
-using Il2CppInterop.Runtime.Injection;
 using MainUI;
 using MainUI.Gacha;
+using TMPro;
+using Il2CppInterop.Runtime.Injection;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using TMPro;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
@@ -24,7 +24,7 @@ namespace LimbusLocalizeRUS
         }
         public static LCBR_Manager Instance;
         public LCBR_Manager(IntPtr ptr) : base(ptr) { }
-
+        void OnApplicationQuit() => LCB_LCBRMod.CopyLog();
         public static void OpenGlobalPopup(string description, string title = null, string close = "Закрыть", string confirm = "ОК", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
@@ -117,9 +117,8 @@ namespace LimbusLocalizeRUS
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
-        {
-            return __instance._parent.EffectChainCamera;
-        }
+            => __instance._parent.EffectChainCamera;
+
 
         [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
         [HarmonyPrefix]

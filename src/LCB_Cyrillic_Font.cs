@@ -7,7 +7,6 @@ using System;
 using System.IO;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UtilityUI;
 
 namespace LimbusLocalizeRUS
@@ -112,9 +111,6 @@ namespace LimbusLocalizeRUS
             string fontname = __instance.m_fontAsset.name;
             if (GetCyrillicFonts(fontname, out TMP_FontAsset font))
             {
-                /*
-                Debug.Log("Material Name : " + __instance.fontMaterial.name);
-                Debug.Log("Test : " + __instance.text);*/
                 if (__instance.fontMaterial.name.Contains("Mikodacs SDF UnderLine") || __instance.fontMaterial.name.Contains("KOTRA_BOLD SDF Underline"))
                 {
                     if (__instance.fontMaterial.IsKeywordEnabled("UNDERLAY_ON"))
@@ -147,6 +143,7 @@ namespace LimbusLocalizeRUS
                         CloneMat = UnityEngine.Object.Instantiate(__instance.m_fontAsset.material);
                     }
                     value = CloneMat;
+                    Material pre = premat[__instance];
                     Color f1 = Color.black;
 
                     CloneMat.shader = Shader.Find("TextMeshPro/Distance Field");
@@ -157,6 +154,7 @@ namespace LimbusLocalizeRUS
                     CloneMat.SetFloat("_UnderlaySoftness", 0);
                     CloneMat.EnableKeyword("UNDERLAY_ON");
 
+                    __instance.m_fontAsset.normalSpacingOffset = 5;
                     __instance.m_fontAsset.material.shader = Shader.Find("TextMeshPro/Distance Field");
                     __instance.m_fontAsset.material.SetColor("_UnderlayColor", f1);
                     __instance.m_fontAsset.material.SetFloat("_UnderlayOffsetX", 0);
@@ -166,9 +164,7 @@ namespace LimbusLocalizeRUS
             }
         }
         public static Material CloneMat;
-        public static Text textComponent;
-        public static float characterSpacing = 10f;
-[HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
         [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {

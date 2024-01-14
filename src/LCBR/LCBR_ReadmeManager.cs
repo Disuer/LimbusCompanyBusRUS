@@ -23,7 +23,9 @@ namespace LimbusLocalizeRUS
         static LCBR_ReadmeManager()
         {
             InitReadmeList();
+            InitReadmeButton();
             InitReadmeSprites();
+            InitReadmeEventSprites();
         }
         public static void UIInitialize()
         {
@@ -54,11 +56,29 @@ namespace LimbusLocalizeRUS
             NoticeUIInstance.EventTapClickEvent();
             NoticeUIInstance.btn_eventNotice.Cast<UISelectedButton>().SetSelected(true);
         }
+        public static void InitReadmeButton()
+        {
+            ReadmeButton = new Dictionary<string, Sprite>();
+            {
+                foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LCBRMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
+                {
+                    Texture2D texture2D = new(2, 2);
+                    ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
+                    Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
+                    string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
+                    texture2D.name = fileNameWithoutExtension;
+                    sprite.name = fileNameWithoutExtension;
+                    UObject.DontDestroyOnLoad(sprite);
+                    sprite.hideFlags |= HideFlags.HideAndDontSave;
+                    ReadmeButton[fileNameWithoutExtension] = sprite;
+                }
+            }
+        }
         public static void InitReadmeSprites()
         {
             ReadmeSprites = new Dictionary<string, Sprite>();
 
-            foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LCBRMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
+            foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LCBRMod.ModPath + "/Localize/Readme/Sprites").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
@@ -70,6 +90,24 @@ namespace LimbusLocalizeRUS
                 sprite.hideFlags |= HideFlags.HideAndDontSave;
                 ReadmeSprites[fileNameWithoutExtension] = sprite;
             }
+
+        }
+        public static void InitReadmeEventSprites()
+        {
+            ReadmeEventSprites = new Dictionary<string, Sprite>();
+
+            foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LCBRMod.ModPath + "/Localize/Readme/Sprites/Event").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
+            {
+                Texture2D texture2D = new(2, 2);
+                ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
+                Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
+                texture2D.name = fileNameWithoutExtension;
+                sprite.name = fileNameWithoutExtension;
+                UObject.DontDestroyOnLoad(sprite);
+                sprite.hideFlags |= HideFlags.HideAndDontSave;
+                ReadmeEventSprites[fileNameWithoutExtension] = sprite;
+            }
         }
         public static void InitReadmeList()
         {
@@ -80,7 +118,9 @@ namespace LimbusLocalizeRUS
             }
         }
         public static List<Notice> ReadmeList = new();
+        public static Dictionary<string, Sprite> ReadmeButton = new();
         public static Dictionary<string, Sprite> ReadmeSprites = new();
+        public static Dictionary<string, Sprite> ReadmeEventSprites = new();
         public static System.Collections.Generic.Dictionary<string, Action> ReadmeActions = new();
 
         public static void Close()
@@ -90,7 +130,7 @@ namespace LimbusLocalizeRUS
             UpdateNoticeRedDot();
         }
         public static void UpdateNoticeRedDot()
-           => _redDot_Notice?.gameObject.SetActive(IsValidRedDot());
+            => _redDot_Notice?.gameObject.SetActive(IsValidRedDot());
         public static bool IsValidRedDot()
         {
             int i = 0;
@@ -105,7 +145,7 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
-        #region 公告相关
+        #region Анноунсы
         [HarmonyPatch(typeof(UserLocalNoticeRedDotModel), nameof(UserLocalNoticeRedDotModel.InitNoticeList))]
         [HarmonyPrefix]
         private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
@@ -151,8 +191,8 @@ namespace LimbusLocalizeRUS
             UIButtonInstance.transform.SetSiblingIndex(1);
             var spriteSetting = new ButtonSprites()
             {
-                _enabled = ReadmeSprites["Readme_Zero_Button"],
-                _hover = ReadmeSprites["Readme_Zero_Button"]
+                _enabled = ReadmeButton["Readme_Crescent_Button"],
+                _hover = ReadmeButton["Readme_Crescent_Button"]
             };
             UIButtonInstance.spriteSetting = spriteSetting;
             var transform = __instance.button_notice.transform.parent;
@@ -170,7 +210,7 @@ namespace LimbusLocalizeRUS
         {
             if (formatValue.StartsWith("Readme_"))
             {
-                Sprite image = ReadmeSprites[formatValue];
+                Sprite image = ReadmeButton[formatValue];
                 __instance.gameObject.SetActive(true);
                 __instance.SetImage(image);
                 return false;

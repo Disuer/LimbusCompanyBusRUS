@@ -1,9 +1,9 @@
-﻿using BepInEx.Configuration;
-using HarmonyLib;
+﻿using HarmonyLib;
 using LocalSave;
 using MainUI;
-using System;
+using BepInEx.Configuration;
 using TMPro;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +11,14 @@ namespace LimbusLocalizeRUS
 {
     public static class LCBR_Russian_Settings
     {
-        public static ConfigEntry<bool> IsUseRussian = LCB_LCBRMod.LCBR_Settings.Bind("LCBR Settings", "IsUseRussian", true, "Use true or I will kill ya ( true | false )");
-        static bool _isusechinese;
-        static Toggle Chinese_Setting;
+        public static ConfigEntry<bool> IsUseRussian = LCB_LCBRMod.LCBR_Settings.Bind("LCBR Settings", "IsUseRussian", true, "Use true, false is optional");
+        static bool _isuserussian;
+        static Toggle Russian_Settings;
         [HarmonyPatch(typeof(SettingsPanelGame), nameof(SettingsPanelGame.InitLanguage))]
         [HarmonyPrefix]
         private static bool InitLanguage(SettingsPanelGame __instance, LocalGameOptionData option)
         {
-            if (!Chinese_Setting)
+            if (!Russian_Settings)
             {
                 Toggle original = __instance._languageToggles[0];
                 Transform parent = original.transform.parent;
@@ -27,7 +27,7 @@ namespace LimbusLocalizeRUS
                 rutmp.font = LCB_Cyrillic_Font.GetCyrillicFonts(4);
                 rutmp.fontMaterial = LCB_Cyrillic_Font.GetCyrillicFonts(4).material;
                 rutmp.text = "<size=40>Русский</size>";
-                Chinese_Setting = _languageToggle;
+                Russian_Settings = _languageToggle;
                 parent.localPosition = new Vector3(parent.localPosition.x - 306f, parent.localPosition.y, parent.localPosition.z);
                 while (__instance._languageToggles.Count > 3)
                     __instance._languageToggles.RemoveAt(__instance._languageToggles.Count - 1);
@@ -46,8 +46,8 @@ namespace LimbusLocalizeRUS
                 tg.SetIsOnWithoutNotify(false);
             }
             LOCALIZE_LANGUAGE language = option.GetLanguage();
-            if (_isusechinese = IsUseRussian.Value)
-                Chinese_Setting.SetIsOnWithoutNotify(true);
+            if (_isuserussian = IsUseRussian.Value)
+                Russian_Settings.SetIsOnWithoutNotify(true);
             else if (language == LOCALIZE_LANGUAGE.KR)
                 __instance._languageToggles[0].SetIsOnWithoutNotify(true);
             else if (language == LOCALIZE_LANGUAGE.EN)
@@ -59,15 +59,15 @@ namespace LimbusLocalizeRUS
         }
         [HarmonyPatch(typeof(SettingsPanelGame), nameof(SettingsPanelGame.ApplySetting))]
         [HarmonyPostfix]
-        private static void ApplySetting() => IsUseRussian.Value = _isusechinese;
+        private static void ApplySetting() => IsUseRussian.Value = _isuserussian;
         private static void OnClickLanguageToggleEx(this SettingsPanelGame __instance, int tgIdx)
         {
             if (tgIdx == 3)
             {
-                _isusechinese = true;
+                _isuserussian = true;
                 return;
             }
-            _isusechinese = false;
+            _isuserussian = false;
             if (tgIdx == 0)
                 __instance._lang = LOCALIZE_LANGUAGE.KR;
             else if (tgIdx == 1)
