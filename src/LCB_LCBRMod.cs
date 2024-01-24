@@ -6,6 +6,8 @@ using System;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
+using System.Diagnostics.Tracing;
+using BepInEx.Logging;
 
 namespace LimbusLocalizeRUS
 {
@@ -18,9 +20,10 @@ namespace LimbusLocalizeRUS
         public const string GUID = "Com.BrightNKnightey.LocalizeLimbusCompanyRUS";
         public const string NAME = "LimbusCompanyBusRUS";
         public const string VERSION = "0.2.0";
-        public const string AUTHOR = "Base: Bright\nRUS version: Knightey, abcdcode";
+        public const string AUTHOR = "Base: Bright\n\t\t\t      RUS version: Knightey, abcdcode, Disaer";
         public const string LCBRLink = "https://github.com/Crescent-Corporation/LimbusCompanyBusRUS";
         public static Action<string, Action> LogFatalError { get; set; }
+        public static Action<string> LogInfo { get; set; }
         public static Action<string> LogError { get; set; }
         public static Action<string> LogWarning { get; set; }
         public static void OpenLCBRURL() => Application.OpenURL(LCBRLink);
@@ -28,6 +31,7 @@ namespace LimbusLocalizeRUS
         public override void Load()
         {
             LCBR_Settings = Config;
+            LogInfo = (string log) => { Log.LogInfo(log); Debug.Log(log); };
             LogError = (string log) => { Log.LogError(log); Debug.LogError(log); };
             LogWarning = (string log) => { Log.LogWarning(log); Debug.LogWarning(log); };
             LogFatalError = (string log, Action action) => { LCBR_Manager.FatalErrorlog += log + "\n"; LogError(log); LCBR_Manager.FatalErrorAction = action; LCBR_Manager.CheckModActions(); };
@@ -52,6 +56,19 @@ namespace LimbusLocalizeRUS
                 harmony.PatchAll(typeof(LCBR_Russian_Settings));
                 if (!LCB_Cyrillic_Font.AddCyrillicFont(ModPath + "/tmpcyrillicfonts"))
                     LogFatalError("You have forgotten to install Font Update Mod. Please, reread README on Github.", OpenLCBRURL);
+                LogInfo(AUTHOR);
+                LogInfo("Fonts: ");
+                for (int i = 0; i < LCB_Cyrillic_Font.tmpcyrillicfonts.Count; i++)
+                {
+                    LogInfo(LCB_Cyrillic_Font.GetCyrillicFonts(i).name + " " + i);
+                }
+                LogInfo("-------------------------\n");
+                LogInfo("Materials: ");
+                for(int i = 0; i < LCB_Cyrillic_Font.tmpcyrillicmats.Count; i++)
+                {
+                    LogInfo(LCB_Cyrillic_Font.GetCyrillicMats(i).name + " " + i);
+                }
+                LogInfo("-------------------------\n");
             }
             catch (Exception e)
             {
