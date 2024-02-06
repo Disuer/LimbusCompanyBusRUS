@@ -59,6 +59,19 @@ namespace LimbusLocalizeRUS
         }
         #endregion
 
+        #region Vending Machine
+        [HarmonyPatch(typeof(VendingMachineUIPanel), nameof(VendingMachineUIPanel.Initialize))]
+        [HarmonyPostfix]
+        private static void VendingMachineUIPanel_Init(VendingMachineUIPanel __instance)
+        {
+            Transform soldOut = __instance.transform.Find("GoodsStoreAreaMaster/GoodsStorePanelGroup/BackPanel/Main/SoldOut");
+            if (soldOut != null)
+            {
+                soldOut.GetComponentInChildren<Image>(true).sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_SoldOut"];
+            }
+        }
+        #endregion
+
         #region Formation UI
         [HarmonyPatch(typeof(FormationPersonalityUI), nameof(FormationPersonalityUI.SetData))]
         [HarmonyPostfix]
@@ -76,11 +89,22 @@ namespace LimbusLocalizeRUS
         }
         #endregion
 
+        #region Dungeon Formation UI
+        [HarmonyPatch(typeof(FormationPersonalityUI), nameof(FormationPersonalityUI.SetData))]
+        [HarmonyPostfix]
+        private static void Support_Init(FormationPersonalityUI __instance)
+        {
+            __instance.img_isParticipaged.sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_InParty"];
+            __instance.img_support.sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_SupportTag"];
+        }
+        #endregion
+
         #region Support Formation UI
         [HarmonyPatch(typeof(FormationSwitchablePersonalityUIPanel), nameof(FormationSwitchablePersonalityUIPanel.SetDataOpen))]
         [HarmonyPostfix]
-        private static void Support_Init(FormationSwitchablePersonalityUIPanel __instance)
+        private static void Support_Init (FormationSwitchablePersonalityUIPanel __instance)
         {
+            // SUPPORT TAG
             Transform support_tag = __instance.transform.Find("[Script]RightPanel/[Script]FormationEgoList/[Image]SupportTag");
             if (support_tag != null)
                 support_tag.GetComponentInChildren<Image>(true).sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_SupportTag"];
@@ -93,7 +117,7 @@ namespace LimbusLocalizeRUS
         private static void EgoGiftCategorySetUIToggleButton_Init(EgoGiftCategorySetUIToggleButton __instance)
         {
             __instance.img_bonus.sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_StarlightBonus"];
-            }
+        }
         [HarmonyPatch(typeof(AbnormalityStatUI), nameof(AbnormalityStatUI.SetAbnormalityGuideUIActive))]
         [HarmonyPostfix]
         private static void BottomStat_Init(AbnormalityStatUI __instance)
@@ -149,6 +173,21 @@ namespace LimbusLocalizeRUS
                 turn.GetComponentInChildren<Image>(true).overrideSprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Turn"];
             }
         }
+        //[HarmonyPatch(typeof(BattleSkillViewUIOverClock), nameof(BattleSkillViewUIOverClock.SetActiveOverClock))]
+        //[HarmonyPostfix]
+        //private static void OverClock_Init(BattleSkillViewUIOverClock __instance)
+        //{
+        //    Transform overclock_stable = __instance.transform.Find("[Canvas]Canvas/[Script]SkillViewCanvas/OverClock/OverClockImg");
+        //    if (overclock_stable != null)
+        //    {
+        //        overclock_stable.GetComponentInChildren<Image>(true).sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //        overclock_stable.GetComponentInChildren<Image>(true).m_Sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //        overclock_stable.GetComponentInChildren<Image>(true).overrideSprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //        __instance._image_OverClock.sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //        __instance._image_OverClock.m_Sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //        __instance._image_OverClock.overrideSprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock"];
+        //    }
+        //}
         #endregion
 
         #region Skip Button

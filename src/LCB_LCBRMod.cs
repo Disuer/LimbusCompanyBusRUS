@@ -1,13 +1,13 @@
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
+using Il2CppSystem.Runtime.Remoting.Messaging;
+using LimbusCompanyBusRUS;
 using StorySystem;
 using System;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
-using System.Diagnostics.Tracing;
-using BepInEx.Logging;
 
 namespace LimbusLocalizeRUS
 {
@@ -19,8 +19,8 @@ namespace LimbusLocalizeRUS
         public static string GamePath;
         public const string GUID = "Com.BrightNKnightey.LocalizeLimbusCompanyRUS";
         public const string NAME = "LimbusCompanyBusRUS";
-        public const string VERSION = "0.2.0";
-        public const string AUTHOR = "Base: Bright\n\t\t\t      RUS version: Knightey, abcdcode, Disaer";
+        public const string VERSION = "0.2.1";
+        public const string AUTHOR = "Base: Bright\nRUS version: Knightey, abcdcode, Disaer";
         public const string LCBRLink = "https://github.com/Crescent-Corporation/LimbusCompanyBusRUS";
         public static Action<string, Action> LogFatalError { get; set; }
         public static Action<string> LogInfo { get; set; }
@@ -49,8 +49,10 @@ namespace LimbusLocalizeRUS
                     harmony.PatchAll(typeof(LCBR_LoadingManager));
                     harmony.PatchAll(typeof(LCBR_SpriteUI));
                     harmony.PatchAll(typeof(LCBR_TextUI));
+                    harmony.PatchAll(typeof(LCBR_CreditsUI));
                     harmony.PatchAll(typeof(LCBR_EventUI));
                     harmony.PatchAll(typeof(LCBR_SeasonUI));
+                    harmony.PatchAll(typeof(LCBR_TemporaryTextures));
                 }
                 harmony.PatchAll(typeof(LCBR_Manager));
                 harmony.PatchAll(typeof(LCBR_Russian_Settings));
@@ -64,7 +66,7 @@ namespace LimbusLocalizeRUS
                 }
                 LogInfo("-------------------------\n");
                 LogInfo("Materials: ");
-                for(int i = 0; i < LCB_Cyrillic_Font.tmpcyrillicmats.Count; i++)
+                for (int i = 0; i < LCB_Cyrillic_Font.tmpcyrillicmats.Count; i++)
                 {
                     LogInfo(LCB_Cyrillic_Font.GetCyrillicMats(i).name + " " + i);
                 }

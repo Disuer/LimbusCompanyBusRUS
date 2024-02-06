@@ -30,13 +30,10 @@ using static Dungeon.Map.MapSpawnManager;
 using static BattleUI.Abnormality.AbnormalityPartSkills;
 using BattleUI.Operation;
 using Dungeon.Map.UI;
+using BattleUI.BattleUnit;
 using System.Collections.Generic;
-using UtilityUI;
-using static System.Net.Mime.MediaTypeNames;
-using UnityEngine.PlayerLoop;
-using System;
 using System.Text.RegularExpressions;
-using Il2CppSystem;
+using static LimbusCompanyBusRUS.LCBR_TemporaryTextures;
 
 namespace LimbusLocalizeRUS
 {
@@ -58,8 +55,8 @@ namespace LimbusLocalizeRUS
             if (connection != null)
             {
                 connection.GetComponentInChildren<TextMeshProUGUI>(true).text = "ПОДКЛЮЧЕНИЕ";
-                connection.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
-                connection.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                connection.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[0].material;
                 connection.GetComponentInChildren<TextMeshProUGUI>(true).fontSize = 77f;
             }
         }
@@ -105,26 +102,43 @@ namespace LimbusLocalizeRUS
         [HarmonyPostfix]
         private static void StageUIPresenter_Init(StageUIPresenter __instance)
         {
+            Color velvet_red = new Color(1.0f, 0.339f, 0.339f, 0.2f);
+            Color reddish = new Color(0.686f, 0.003f, 0.003f, 1.0f);
             Transform district4 = __instance.transform.Find("[Rect]Active/[Script]PartAndChapterSelectionUIPanel/[Rect]Active/[Rect]Right/[Rect]Pivot/[Rect]StoryMap/[Mask]StoryMap/[Rect]ZoomPivot/[Image]MapBG/[Script]D_4/[Rect]TextData/[Tmpro]Area");
             Transform district10 = __instance.transform.Find("[Rect]Active/[Script]PartAndChapterSelectionUIPanel/[Rect]Active/[Rect]Right/[Rect]Pivot/[Rect]StoryMap/[Mask]StoryMap/[Rect]ZoomPivot/[Image]MapBG/[Script]J_10/[Rect]TextData/[Tmpro]Area");
             Transform district11 = __instance.transform.Find("[Rect]Active/[Script]PartAndChapterSelectionUIPanel/[Rect]Active/[Rect]Right/[Rect]Pivot/[Rect]StoryMap/[Mask]StoryMap/[Rect]ZoomPivot/[Image]MapBG/[Script]K_11/[Rect]TextData/[Tmpro]Area");
             Transform district21 = __instance.transform.Find("[Rect]Active/[Script]PartAndChapterSelectionUIPanel/[Rect]Active/[Rect]Right/[Rect]Pivot/[Rect]StoryMap/[Mask]StoryMap/[Rect]ZoomPivot/[Image]MapBG/[Script]U_21/[Rect]TextData/[Tmpro]Area");
-            List<Transform> transforms = new List<Transform> {district10, district11, district21, district4 };
             if (district4 != null)
             {
                 district4.GetComponentInChildren<TextMeshProUGUI>(true).text = "4-й район";
-                district10.GetComponentInChildren<TextMeshProUGUI>(true).text = "10-й район";
-                district11.GetComponentInChildren<TextMeshProUGUI>(true).text = "11-й район";
-                district21.GetComponentInChildren<TextMeshProUGUI>(true).text = "21-й район";
+                district4.GetComponentInChildren<TextMeshProUGUI>(true).color = reddish;
+                district4.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                district4.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+                district4.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial.SetColor("_GlowColor", velvet_red);
             }
-            foreach (Transform t in transforms)
+            if (district10 != null)
             {
-                if (t != null)
-                {
-                    t.GetComponentInChildren<TextMeshProUGUI>(true).color = Color.red;
-                    t.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.GetCyrillicFonts(0);
-                    t.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
-                }
+                district10.GetComponentInChildren<TextMeshProUGUI>(true).text = "10-й район";
+                district10.GetComponentInChildren<TextMeshProUGUI>(true).color = reddish;
+                district10.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                district10.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+                district10.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial.SetColor("_GlowColor", velvet_red);
+            }
+            if (district11 != null)
+            {
+                district11.GetComponentInChildren<TextMeshProUGUI>(true).text = "11-й район";
+                district11.GetComponentInChildren<TextMeshProUGUI>(true).color = reddish;
+                district11.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                district11.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+                district11.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial.SetColor("_GlowColor", velvet_red);
+            }
+            if (district21 != null)
+            {
+                district21.GetComponentInChildren<TextMeshProUGUI>(true).text = "21-й район";
+                district21.GetComponentInChildren<TextMeshProUGUI>(true).color = reddish;
+                district21.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+                district21.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+                district21.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial.SetColor("_GlowColor", velvet_red);
             }
         }
         [HarmonyPatch(typeof(StageInfoUI), nameof(StageInfoUI.SetDataOpen))]
@@ -146,6 +160,126 @@ namespace LimbusLocalizeRUS
             __instance.tmp_pageForBebaskai.text = __instance.tmp_pageForBebaskai.text.Replace("MINI", "МИНИ");
             __instance.tmp_pageForBebaskai.font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
             __instance.tmp_pageForBebaskai.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+        }
+        private static string getTimerD(int days)
+        {
+            int lastDigit = days % 10;
+            int lastTwoDigits = days % 100;
+
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 19)
+            {
+                return "дней";
+            }
+            else if (lastDigit == 1)
+            {
+                return "день";
+            }
+            else if (lastDigit >= 2 && lastDigit <= 4)
+            {
+                return "дня";
+            }
+            else
+            {
+                return "дней";
+            }
+        }
+
+        private static string getTimerH(int hours)
+        {
+            int lastDigit = hours % 10;
+            int lastTwoDigits = hours % 100;
+
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 19)
+            {
+                return "часов";
+            }
+            else if (lastDigit == 1)
+            {
+                return "час";
+            }
+            else if (lastDigit >= 2 && lastDigit <= 4)
+            {
+                return "часа";
+            }
+            else
+            {
+                return "часов";
+            }
+        }
+
+        private static string getTimerM(int minutes)
+        { 
+            int lastDigit = minutes % 10;
+            int lastTwoDigits = minutes % 100;
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 19)
+            {
+                return "минут";
+            }
+            else if (lastDigit == 1)
+            {
+                return "минута";
+            }
+            else if (lastDigit >= 2 && lastTwoDigits <= 4)
+            {
+                return "минуты";
+            }
+            else 
+            {
+                return "минут";
+            }
+        }
+        [HarmonyPatch(typeof(EventTimerUI), nameof(EventTimerUI.UpdateRemainEventTime))]
+        [HarmonyPostfix]
+        private static void EventTimerUI_Init(EventTimerUI __instance)
+        {
+            __instance.tmp_remainingTime.name = "EVENT!";
+            string pattern = @"(\d+ дней)(\d+ часов)";
+            Match match = Regex.Match(__instance.tmp_remainingTime.text, pattern);
+            if (match.Success)
+            {
+                int days = int.Parse(match.Groups[1].Value.Split(' ')[0]);
+                int hours = int.Parse(match.Groups[2].Value.Split(' ')[0]);
+                string dayWord = getTimerD(days);
+                string hourWord = getTimerH(hours);
+                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, pattern, days + " " + dayWord + " " + hours + " " + hourWord);
+            }
+            string lastPattern = @"(\d+ часов)(\d+ минут)";
+            Match lastMatch = Regex.Match(__instance.tmp_remainingTime.text, lastPattern);
+            if (lastMatch.Success)
+            {
+                int hours = int.Parse(lastMatch.Groups[1].Value.Split(' ')[0]);
+                int minutes = int.Parse(lastMatch.Groups[2].Value.Split(' ')[0]);
+                string hourWord = getTimerH(hours);
+                string minuteWord = getTimerM(minutes);
+                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, lastPattern, hours + " " + hourWord + " " + minutes + " " + minuteWord);
+            }
+            __instance.tmp_remainingTime.name = "EVENT!";
+            string dayPattern = @"(\d+ дней)";
+            Match dayMatch = Regex.Match(__instance.tmp_remainingTime.text, dayPattern);
+            if (dayMatch.Success)
+            {
+                int days = int.Parse(dayMatch.Groups[1].Value.Split(' ')[0]);
+                string dayWord = getTimerD(days);
+                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, dayPattern, days + " " + dayWord);
+            }
+            __instance.tmp_remainingTime.name = "EVENT!";
+            string hourPattern = @"(\d+ часов)";
+            Match hourMatch = Regex.Match(__instance.tmp_remainingTime.text, hourPattern);
+            if (hourMatch.Success)
+            {
+                int hours = int.Parse(hourMatch.Groups[1].Value.Split(' ')[0]);
+                string hourWord = getTimerH(hours);
+                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, hourPattern, hours + " " + hourWord);
+            }
+            __instance.tmp_remainingTime.name = "EVENT!";
+            string minutePattern = @"(\d+ минут)";
+            Match minuteMatch = Regex.Match(__instance.tmp_remainingTime.text, minutePattern);
+            if (minuteMatch.Success)
+            {
+                int minutes = int.Parse(minuteMatch.Groups[1].Value.Split(' ')[0]);
+                string minuteWord = getTimerH(minutes);
+                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, minutePattern, minutes + " " + minuteWord);
+            }
         }
         #endregion
 
@@ -174,6 +308,7 @@ namespace LimbusLocalizeRUS
             label.GetComponentInChildren<TextMeshProUGUI>().font = LCB_Cyrillic_Font.tmpcyrillicfonts[2];
             label.GetComponentInChildren<TextMeshProUGUI>().fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[2].material;
         }
+
         [HarmonyPatch(typeof(ThreadDungeonSelectStageButton), nameof(ThreadDungeonSelectStageButton.SetData))]
         [HarmonyPostfix]
         private static void ThreadDungeonSelectStageButton_Init(ThreadDungeonSelectStageButton __instance)
@@ -222,6 +357,21 @@ namespace LimbusLocalizeRUS
         #endregion
 
         #region Vending Machine
+        [HarmonyPatch(typeof(VendingMachineUIPanel), "Initialize")]
+        [HarmonyPostfix]
+        private static void VendingMachineUIPanel_Init(VendingMachineUIPanel __instance)
+        {
+            Transform comment = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeAnnouncer/Tmp_Announcer");
+            Transform ego_dispence = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeEGO/Tmp_EGO");
+            if (ego_dispence != null)
+            {
+                ego_dispence.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
+            }
+            if (comment != null)
+            {
+                comment.GetComponentInChildren<TextMeshProUGUI>(true).text = "<cspace=-1px>Комментатор</cspace>";
+            }
+        }
         #endregion
 
         #region Formation UI
@@ -284,24 +434,37 @@ namespace LimbusLocalizeRUS
                 guard.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
             }
         }
-        [HarmonyPatch(typeof(FormationUIPanel), nameof(FormationUIPanel.InitializeBase))]
+        [HarmonyPatch(typeof(PersonalityDetailButton), nameof(PersonalityDetailButton.SetUIMode))]
         [HarmonyPostfix]
-        private static void FormationSecondChance_Init(FormationUIPanel __instance)
+        private static void FormationSecondChance_Init(PersonalityDetailButton __instance)
         {
-
-            Transform skill = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]Skill/[Text]Skill");
-            Transform skill_hover = __instance.transform.Find("[Rect]MainPanel/[Rect]Contents/[Rect]Personalities/PersonalityDetail/[Button]Main/[Rect]Select/[Button]Skill/[Text]Skill/[Text]Skill_Highlight");
-            if (skill != null)
-            {
-                skill.GetComponentInChildren<TextMeshProUGUI>(true).text = "Атаки";
-                skill_hover.GetComponentInChildren<TextMeshProUGUI>(true).text = "Атаки";
-            }
+            __instance._egoText._text.font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance._egoText._text.m_fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance._egoText._text.m_currentFontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance._egoText._text.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+            __instance.tmp_egoHighlight.font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance.tmp_egoHighlight.m_fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance.tmp_egoHighlight.m_currentFontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
+            __instance.tmp_egoHighlight.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+            __instance._skillText._text.fontStyle = FontStyles.Normal | FontStyles.SmallCaps;
+            __instance.tmp_skillHighlight.fontStyle = FontStyles.Normal | FontStyles.SmallCaps;
+            __instance._skillText._text.text = "Атаки";
+            __instance.tmp_skillHighlight.text = "Атаки";
         }
         [HarmonyPatch(typeof(FormationUIDeckToggle), nameof(FormationUIDeckToggle.SetText))]
         [HarmonyPostfix]
         private static void FormationUIDeckToggle_Init(FormationUIDeckToggle __instance)
         {
             __instance.tmp_title.text = __instance.tmp_title.text.Replace("#", "№");
+        }
+        [HarmonyPatch(typeof(FormationPersonalityUI), nameof(FormationPersonalityUI.SetData))]
+        [HarmonyPostfix]
+        private static void FormationLabel_Init(FormationPersonalityUI __instance)
+        {
+            __instance._forceParticipation.tmp_label.font = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+            __instance._forceParticipation.tmp_label.m_fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+            __instance._forceParticipation.tmp_label.m_currentFontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+            __instance._forceParticipation.tmp_label.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[0].material;
         }
         #endregion
 
@@ -546,27 +709,37 @@ namespace LimbusLocalizeRUS
         {
             string text = __instance._seasonTagUI.tmp_season.text.Replace("SEASON", "СЕЗОН");
             __instance._seasonTagUI.tmp_season.text = text.Replace("WALPURGISNACHT", "<cspace=-1px>ВАЛЬПУРГИЕВА НОЧЬ</cspace>");
-            __instance._seasonTagUI.tmp_season.font = LCB_Cyrillic_Font.GetCyrillicFonts(0);
-            __instance._seasonTagUI.tmp_season.fontMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+            __instance._seasonTagUI.tmp_season.font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
+            __instance._seasonTagUI.tmp_season.m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(2);
         }
         [HarmonyPatch(typeof(UnitInformationSeasonTagUI), nameof(UnitInformationSeasonTagUI.SetSeasonData))]
         [HarmonyPostfix]
         private static void UnitInformationSeasonTagUI_Init(UnitInformationSeasonTagUI __instance)
         {
             string text = __instance.tmp_season.text.Replace("SEASON", "СЕЗОН");
-            __instance.tmp_season.text = text.Replace("WALPURGISNACHT -", "<cspace=-6px>ВАЛЬПУРГИЕВА НОЧЬ -</cspace>");
-            __instance.tmp_season.font = LCB_Cyrillic_Font.GetCyrillicFonts(0);
-            __instance.tmp_season.fontMaterial = LCB_Cyrillic_Font.GetCyrillicMats(0);
+            __instance.tmp_season.text = text.Replace("WALPURGISNACHT -", "<cspace=-4px>ВАЛЬПУРГИЕВА НОЧЬ -</cspace>");
+            __instance.tmp_season.text = __instance.tmp_season.text.Replace("I", "<cspace=-4px>I</cspace>");
+            __instance.tmp_season.font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
+            __instance.tmp_season.m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(2);
+            float seasonSize = __instance.tmp_season.fontSize;
+            switch (seasonSize)
+            {
+                case 65f:
+                {
+                    __instance.tmp_season.fontSize = 60f;
+                    break;
+                }
+            }
         }
         #endregion
 
         #region BattlePass
-        public static void bebaspass(List<Transform> transforms)
+        public static void BebasForPass(List<Transform> transforms)
         {
             foreach (Transform t in transforms)
             {
                 t.GetComponentInChildren<TextMeshProUGUI>(true).m_fontAsset = LCB_Cyrillic_Font.GetCyrillicFonts(0);
-                t.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(1);
+                t.GetComponentInChildren<TextMeshProUGUI>(true).m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(2);
             }
         }
         [HarmonyPatch(typeof(BattlePassUIPopup), nameof(BattlePassUIPopup.localizeHelper.Initialize))]
@@ -581,8 +754,101 @@ namespace LimbusLocalizeRUS
             Transform package_popUp = __instance.transform.Find("BattlePassPurchaseLimbusOrPackagePopup/PanelGroup/PopupBase/Container/[Rect]Contents/[Button]PurchasePackage/[Text]Title");
             limbus_pass.GetComponentInChildren<TextMeshProUGUI>(true).text = "<cspace=-2px>ЛИМБУС ПАСС</cspace>";
             limbus_pass_bought.GetComponentInChildren<TextMeshProUGUI>(true).text = "<cspace=-2px>ЛИМБУС ПАСС</cspace>";
-            List<Transform> transforms = new List<Transform> { limbus_pass, limbus_pass_bought, battle_pass, battle_pass_bought, package, package_popUp, __instance.tmp_be_in_use.transform, __instance.limbusPassPopup.tmp_description.transform};
-            bebaspass(transforms);
+            List<Transform> transforms = new List<Transform> { limbus_pass, limbus_pass_bought, battle_pass, battle_pass_bought, package, package_popUp, __instance.tmp_be_in_use.transform, __instance.limbusPassPopup.tmp_description.transform };
+            BebasForPass(transforms);
+
+
+            string date = __instance.tmp_remainDate.text;
+            __instance.tmp_remainDate.name = "BEFORE PASS EXPIRY";
+            string pattern = @"(Осталось) (\d+ дней) (\d+ часов)";
+            Match match = Regex.Match(__instance.tmp_remainDate.text, pattern);
+            if (match.Success)
+            {
+                int days = int.Parse(match.Groups[2].Value.Split(' ')[0]);
+                int hours = int.Parse(match.Groups[3].Value.Split(' ')[0]);
+                string dayWord = getTimerD(days);
+                string hourWord = getTimerH(hours);
+                string leftWord = match.Groups[1].Value;
+                if (dayWord.EndsWith("день"))
+                {
+                    leftWord = "Остался";
+                }
+                else
+                {
+                    leftWord = "Осталось";
+                }
+                __instance.tmp_remainDate.text = Regex.Replace(__instance.tmp_remainDate.text, pattern, leftWord + "\n" + days + " " + dayWord + " " + hours + " " + hourWord);
+            }
+            string lastPattern = @"(Осталось) (\d+ часов) (\d+ минут)";
+            Match lastMatch = Regex.Match(__instance.tmp_remainDate.text, lastPattern);
+            if (lastMatch.Success)
+            {
+                int hours = int.Parse(lastMatch.Groups[2].Value.Split(' ')[0]);
+                int minutes = int.Parse(lastMatch.Groups[3].Value.Split(' ')[0]);
+                string hourWord = getTimerH(hours);
+                string minuteWord = getTimerM(minutes);
+                string leftWord = match.Groups[1].Value;
+                if (hourWord.EndsWith("час"))
+                {
+                    leftWord = "Остался";
+                }
+                else
+                {
+                    leftWord = "Осталось";
+                }
+                __instance.tmp_remainDate.text = Regex.Replace(__instance.tmp_remainDate.text, lastPattern, leftWord + "\n" + hours + " " + hourWord + " " + minutes + " " + minuteWord);
+            }
+            string dayPattern = @"(Осталось) (\d+ дней)";
+            Match dayMatch = Regex.Match(__instance.tmp_remainDate.text, dayPattern);
+            if (dayMatch.Success)
+            {
+                int days = int.Parse(dayMatch.Groups[2].Value.Split(' ')[0]);
+                string dayWord = getTimerD(days);
+                string leftWord = match.Groups[1].Value;
+                if (dayWord.EndsWith("день"))
+                {
+                    leftWord = "Остался";
+                }
+                else
+                {
+                    leftWord = "Осталось";
+                }
+                __instance.tmp_remainDate.text = Regex.Replace(__instance.tmp_remainDate.text, dayPattern, leftWord + "\n" + days + " " + dayWord);
+            }
+            string hourPattern = @"(Осталось) (\d+ часов)";
+            Match hourMatch = Regex.Match(__instance.tmp_remainDate.text, hourPattern);
+            if (hourMatch.Success)
+            {
+                int hours = int.Parse(hourMatch.Groups[2].Value.Split(' ')[0]);
+                string hourWord = getTimerH(hours);
+                string leftWord = match.Groups[1].Value;
+                if (hourWord.EndsWith("час"))
+                {
+                    leftWord = "Остался";
+                }
+                else
+                {
+                    leftWord = "Осталось";
+                }
+                __instance.tmp_remainDate.text = Regex.Replace(__instance.tmp_remainDate.text, hourPattern, leftWord + "\n" + hours + " " + hourWord);
+            }
+            string minutePattern = @"(Осталось) (\d+ минут)";
+            Match minuteMatch = Regex.Match(__instance.tmp_remainDate.text, minutePattern);
+            if (minuteMatch.Success)
+            {
+                int minutes = int.Parse(minuteMatch.Groups[2].Value.Split(' ')[0]);
+                string minuteWord = getTimerM(minutes);
+                string leftWord = match.Groups[1].Value;
+                if (minuteWord.EndsWith("минута"))
+                {
+                    leftWord = "Осталась";
+                }
+                else
+                {
+                    leftWord = "Осталось";
+                }
+                __instance.tmp_remainDate.text = Regex.Replace(__instance.tmp_remainDate.text, minutePattern, leftWord + "\n" + minutes + " " + minuteWord);
+            }
         }
         [HarmonyPatch(typeof(BattlePassPurchasedModal), nameof(BattlePassPurchasedModal.SetCurrentSeasonOpen))]
         [HarmonyPostfix]
@@ -637,191 +903,6 @@ namespace LimbusLocalizeRUS
                 episode.GetComponentInChildren<TextMeshProUGUI>(true).font = LCB_Cyrillic_Font.tmpcyrillicfonts[1];
                 episode.GetComponentInChildren<TextMeshProUGUI>(true).fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[1].material;
             }
-        }
-        [HarmonyPatch(typeof(BattleSkillViewUIOverClock), nameof(BattleSkillViewUIOverClock.SetActiveOverClock))]
-        [HarmonyPostfix]
-        private static void BattleSkillViewUIOverClock_Init(BattleSkillViewUIOverClock __instance)
-        {
-            GameObject over_s = GameObject.Find("[Script]BattleUIRoot/[Script]BattleSkillViewUIController/[Canvas]Canvas/[Script]SkillViewCanvas/OverClock");
-            GameObject over_i = GameObject.Find("[Script]BattleUIRoot/[Script]BattleSkillViewUIController/[Canvas]Canvas/[Script]SkillViewCanvas/OverClock/OverClockImg");
-            if (over_s != null)
-            {
-                if (over_s.GetComponentInChildren<BattleSkillViewUIOverClock>(true)._curString == "Stable")
-                {
-                    over_i.GetComponentInChildren<UnityEngine.UI.Image>(true).m_OverrideSprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_Overclock_Legacy_2"];
-                    over_i.GetComponentInChildren<UnityEngine.UI.Image>(true).name = "STABLESHIT";
-                }
-            }
-        }
-        public static void getBurnTS(List<Transform> transforms)
-        {
-            foreach (Transform t in transforms)
-            {
-                getBurnT(t);
-            }
-        }
-        public static void getBurnT(Transform t)
-        {
-            Color yellowg = new Color(1.0f, 0.306f, 0, 0.502f);
-            t.GetComponentInChildren<TextMeshProUGUI>().m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(6);
-            t.GetComponentInChildren<TextMeshProUGUI>().fontMaterial.EnableKeyword("GLOW_ON");
-            t.GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetColor("_GlowColor", yellowg);
-            t.GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetFloat("_GlowInner", (float)0.6);
-            t.GetComponentInChildren<TextMeshProUGUI>().fontMaterial.SetFloat("_GlowPower", 3);
-            t.GetComponentInChildren<TextMeshProUGUI>().characterSpacing = 3;
-        }
-        [HarmonyPatch(typeof(ChapterSelectionUIPanel), nameof(ChapterSelectionUIPanel.SetDataOpen))]
-        [HarmonyPostfix]
-        private static void ChapterSelectionUIPanel_Init(ChapterSelectionUIPanel __instance)
-        {
-            List<Transform> transforms = new List<Transform>
-            {
-                __instance._rewardDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance"),
-                __instance._rewardDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance/[Text]Entrance (1)"),
-                __instance._mirrorDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance"),
-                __instance._mirrorDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance/[Text]Entrance (1)"),
-                __instance._railwayDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance"),
-                __instance._railwayDungeonBanner.transform.Find("[Rect]Items/[Text]Entrance/[Text]Entrance (1)")
-            };
-            getBurnTS(transforms);
-        }
-        [HarmonyPatch(typeof(RailwayDungeonUIPanel), nameof(RailwayDungeonUIPanel.SetDataOpen))]
-        [HarmonyPostfix]
-        private static void RailwayDungeonUIPanel_Init(RailwayDungeonUIPanel __instance)
-        {
-            List<Transform> transforms = new List<Transform>
-            {
-                __instance._upperUI.transform.Find("[Text]Title_Highlight"),
-                __instance._upperUI.transform.Find("[Text]Title_Highlight/[Text]Title_Highlight")
-            };
-            getBurnTS(transforms);
-        }
-        [HarmonyPatch(typeof(GetNewCardTimelineScriptBase), nameof(GetNewCardTimelineScriptBase.Init))]
-        [HarmonyPostfix]
-        private static void GetNewCardTimelineScriptBase_Init(GetNewCardTimelineScriptBase __instance)
-        {
-            Transform subtitle = __instance._subtitle.transform.Find("TextRect/TextLayout/[LocalizeText]Subtitle");
-            subtitle.GetComponentInChildren<TextMeshProUGUI>().m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(10);
-        }
-        [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.StartDialog))]
-        [HarmonyPostfix]
-        private static void MainLobbyUIPanel_Init(MainLobbyUIPanel __instance)
-        {
-            __instance.tmpro_dialog.name = "DIALOG";
-            __instance.tmpro_dialog.m_sharedMaterial = LCB_Cyrillic_Font.GetCyrillicMats(10);
-            __instance.tmpro_dialog.fontMaterial.EnableKeyword("GLOW_ON");
-            __instance.tmpro_dialog.fontMaterial.SetFloat("_GlowInner", (float)0.6);
-            __instance.tmpro_dialog.fontMaterial.SetFloat("_GlowOuter", (float)0.6);
-            __instance.tmpro_dialog.fontMaterial.SetFloat("_GlowPower", 3);
-        }
-        [HarmonyPatch(typeof(VendingMachineUIPanel), "Initialize")]
-        [HarmonyPostfix]
-        private static void VendingMachineUIPanel_Init(VendingMachineUIPanel __instance)
-        {
-            Transform comment = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeAnnouncer/Tmp_Announcer");
-            Transform ego_dispence = __instance.transform.Find("GoodsStoreAreaMaster/PageButtonArea/BackPanel/Btn_TypeEGO/Tmp_EGO");
-            if (ego_dispence != null)
-            {
-                ego_dispence.GetComponentInChildren<TextMeshProUGUI>(true).text = "ЭГО";
-            }
-            if (comment != null)
-            {
-                comment.GetComponentInChildren<TextMeshProUGUI>(true).text = "<cspace=-1px>Комментатор</cspace>";
-            }
-            __instance._soldOut.GetComponentInChildren<UnityEngine.UI.Image>(true).sprite = LCBR_ReadmeManager.ReadmeSprites["LCBR_SoldOut"];
-
-        }
-        private static string getTimerD(int days)
-        {
-            int lastDigit = days % 10;
-            int lastTwoDigits = days % 100;
-
-            if (lastTwoDigits >= 11 && lastTwoDigits <= 19)
-            {
-                return "дней";
-            }
-            else if (lastDigit == 1)
-            {
-                return "день";
-            }
-            else if (lastDigit >= 2 && lastDigit <= 4)
-            {
-                return "дня";
-            }
-            else
-            {
-                return "дней";
-            }
-        }
-
-        private static string getTimerH(int hours)
-        {
-            int lastDigit = hours % 10;
-            int lastTwoDigits = hours % 100;
-
-            if (lastTwoDigits >= 11 && lastTwoDigits <= 19)
-            {
-                return "часов";
-            }
-            else if (lastDigit == 1)
-            {
-                return "час";
-            }
-            else if (lastDigit >= 2 && lastDigit <= 4)
-            {
-                return "часа";
-            }
-            else
-            {
-                return "часов";
-            }
-        }
-
-        [HarmonyPatch(typeof(EventTimerUI), nameof(EventTimerUI.UpdateRemainEventTime))]
-        [HarmonyPostfix]
-        private static void EventTimerUI_Init(EventTimerUI __instance)
-        {
-            __instance.tmp_remainingTime.name = "EVENT!";
-            string pattern = @"(\d+ дней)(\d+ часов)";
-            Match match = Regex.Match(__instance.tmp_remainingTime.text, pattern);
-            if (match.Success)
-            {
-                int days = int.Parse(match.Groups[1].Value.Split(' ')[0]);
-                int hours = int.Parse(match.Groups[2].Value.Split(' ')[0]);
-                string dayWord = getTimerD(days);
-                string hourWord = getTimerH(hours);
-                __instance.tmp_remainingTime.text = Regex.Replace(__instance.tmp_remainingTime.text, pattern, days + " " + dayWord + " " + hours + " " + hourWord);
-            }
-        }
-        [HarmonyPatch(typeof(BattlePassUIPopup), nameof(BattlePassUIPopup.SetLevelText))]
-        [HarmonyPostfix]
-        private static void BattlePassUIPopup_Init(BattlePassUIPopup __instance)
-        {
-            __instance.tmp_remainDate.GetComponentInChildren<TextMeshProUGUI>().text = "PIZDEC";
-            __instance.tmp_remainDate.GetComponentInChildren<TextMeshProUGUI>().name = "PIZDEC";
-            GameObject aahh = GameObject.Find("[Canvas]RatioMainUI/[Rect]PopupRoot/[UIPopup]BattlePassUIPopup(Clone)/[Rect]LimitTime/[Text]RemainTime");
-
-            aahh.GetComponentInChildren<TextMeshProUGUI>().name = "";
-            aahh.GetComponentInChildren<TextMeshProUGUI>().text = "";
-            //[Canvas]RatioMainUI/[Rect]PopupRoot/[UIPopup]BattlePassUIPopup(Clone)/[Rect]LimitTime/[Text]RemainTime
-            /*
-            string text = __instance.tmp_remainDate.text; // Ваше исходное значение
-
-            string[] parts = text.Split(new string[] { " " }, System.StringSplitOptions.RemoveEmptyEntries);
-
-            for (int i = 0; i < parts.Length; i++)
-            {
-                if (parts[i] == "дней" && int.Parse(parts[i - 1]) == 1)
-                {
-                    parts[i] = "день";
-                }
-                else if (parts[i] == "часов" && int.Parse(parts[i - 1]) == 1)
-                {
-                    parts[i] = "час";
-                }
-            }
-            __instance.tmp_remainDate.text = string.Join(" ", parts); // Обновленное значение
-            */
         }
         #endregion
     }

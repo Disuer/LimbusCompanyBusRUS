@@ -3878,14 +3878,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\trash\\limbus_trash\\LocalizeLimbusCompany-master\\src\\LimbusCompanyBusRUS.csproj",
+      "projectUniqueName": "D:\\trash\\limbus_trash\\BIELocalizeLimbusCompany-master\\src\\LimbusCompanyBusRUS.csproj",
       "projectName": "LimbusCompanyBusRUS_BIE",
-      "projectPath": "D:\\trash\\limbus_trash\\LocalizeLimbusCompany-master\\src\\LimbusCompanyBusRUS.csproj",
+      "projectPath": "D:\\trash\\limbus_trash\\BIELocalizeLimbusCompany-master\\src\\LimbusCompanyBusRUS.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\trash\\limbus_trash\\LocalizeLimbusCompany-master\\src\\obj\\",
+      "outputPath": "D:\\trash\\limbus_trash\\BIELocalizeLimbusCompany-master\\src\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "D:\\trash\\limbus_trash\\LocalizeLimbusCompany-master\\src\\NuGet.Config",
+        "D:\\trash\\limbus_trash\\BIELocalizeLimbusCompany-master\\src\\NuGet.Config",
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -56,7 +56,7 @@ namespace LimbusLocalizeRUS
         {
             UnityWebRequest www = UnityWebRequest.Get("");
             string FilePath = LCB_LCBRMod.ModPath + "/tmpcyrillicfonts";
-            var LastWriteTime = File.Exists(FilePath) ? int.Parse(new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd")) : 0;
+            var LastWriteTime = File.Exists(FilePath) ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(FilePath).LastWriteTime, TimeZoneInfo.FindSystemTimeZoneById("Moscow Standard Time")).ToString("ddMMyy")) : 0;
             www.SendWebRequest();
             while (!www.isDone)
                 Thread.Sleep(100);

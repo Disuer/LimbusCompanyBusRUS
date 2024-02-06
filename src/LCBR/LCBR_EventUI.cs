@@ -89,10 +89,10 @@ namespace LimbusLocalizeRUS
             if (miracleLogo != null)
                 miracleLogo.GetComponentInChildren<Image>(true).sprite = LCBR_ReadmeManager.ReadmeEventSprites["LCBR_Miracle20_Logo"];
         }
-
+        
         [HarmonyPatch(typeof(MiracleEventRewardUIPanel), nameof(MiracleEventRewardUIPanel.InitDateText))]
         [HarmonyPostfix]
-        private static void MiracleRewardDate_Init(MiracleEventRewardUIPanel __instance)
+        private static void MiracleRewardDate_Init (MiracleEventRewardUIPanel __instance)
         {
             Transform miracleDate = __instance.transform.Find("EventDescriptionPanel/tmp_eventPeriod");
 
@@ -116,7 +116,7 @@ namespace LimbusLocalizeRUS
         #region Valpurgis Nacht 2
         [HarmonyPatch(typeof(DawnOfGreenEventRewardBanner), nameof(DawnOfGreenEventRewardBanner.Init))]
         [HarmonyPostfix]
-        private static void RewardBanner_Init(DawnOfGreenEventRewardBanner __instance)
+        private static void RewardBanner_Init (DawnOfGreenEventRewardBanner __instance)
         {
             GameObject secondValpurgisMission = GameObject.Find("[Canvas]RatioMainUI/[Rect]PresenterRoot/[UIPresenter]StageUIPresenter(Clone)/[Rect]Active/[Script]PartAndChapterSelectionUIPanel/[Rect]Active/[Rect]Left/[Script]StageLeftBanners/[Script]StageEventBanner_Multiple_DawnOfGreen(Clone)/[Button]SecondBanner");
             if (secondValpurgisMission != null)
