@@ -137,6 +137,8 @@ namespace LimbusLocalizeRUS
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
         {
+            LCB_LCBRMod.LogInfo("name: " + __instance.name);
+            LCB_LCBRMod.LogInfo("text: " + __instance.text);
             if (IsCyrillicFont(__instance.m_fontAsset)) return false;
             string fontname = __instance.m_fontAsset.name;
             if (GetCyrillicFonts(fontname, out TMP_FontAsset font))
@@ -227,6 +229,7 @@ namespace LimbusLocalizeRUS
         [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
+
             FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
             if (fontInformation == null)
                 return false;
