@@ -1,8 +1,8 @@
 # This fork assumes the basis of Bright's mods.
 
 # Installation
-### 0. Download and install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.413-windows-x64-installer)
-### 1. Install the framework mod
+### 1. Download and install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.413-windows-x64-installer)
+### 2. Install the framework mod
    - Download [BepInEx](https://github.com/LocalizeLimbusCompany/BepInEx_For_LLC/releases/tag/v6.0.1-LLC);
    - Drag the contents of the archive to the game folder
 ### 3. Let the framework load the files for the plugins to work and wait for the main screen to load and only then close the game
