@@ -12,8 +12,9 @@
 ### 5. Install my mod
    - Download [dll](../../releases), then drag it to ../Limbus Company/BIE/plugins/..
    - ![This is how should look your plugin folder with installed dll](/src/secondscreen.png?raw=true)
-   - (i dont know how to draw with mouse)
+     (i dont know how to draw with mouse)
    - LAUNCH, MANAGER ESQUIRE!!!!!
+     (after first launch, it downloads my json file from this repo to properly work. if you hesitate about safety - download any dll ripper or reader and observer each line of this code.. or just look at my /src folder where I hold my code)
 
 ### THIS MOD IS ONLY CLIENT-SIDE (means that all modifications from this dll will be visible only to you)
 ## Nicknames:
@@ -30,6 +31,7 @@
 - Add as many brackets, as you want
 - Key "true_id" - there should be any limbus id
 - Key "custom_name" - freely write here what you want (no, because there are limitations from above)
+  Examples: "HeathcliffsWife" - allowed, "F@ck." - not allowed
 
 ## Contacts?
 - Discord: disaer
