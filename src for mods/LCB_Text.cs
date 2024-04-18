@@ -95,18 +95,13 @@ namespace LimbusMods
         [HarmonyPostfix]
         private static void UserInfoCard_Init(UserInfoCard __instance)
         {
+            GameObject bannerlist = __instance.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
+            bannerlist.active = false;
             var friend = fruends.FirstOrDefault(f => f.true_id == __instance.tmp_publicIdAlphabet.text);
             if (friend != null)
             {
                 __instance.tmp_publicIdAlphabet.text = friend.custom_name;
             }
-        }
-        [HarmonyPatch(typeof(UserInfoCard), nameof(UserInfoCard.SetData))]
-        [HarmonyPostfix]
-        private static void UserInfoCard_SetData(UserInfoCard __instance)
-        {
-            GameObject bannerlist = __instance.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
         }
         [HarmonyPatch(typeof(UserInfoFriednsSlot), nameof(UserInfoFriednsSlot.SetData))]
         [HarmonyPostfix]
@@ -149,16 +144,24 @@ namespace LimbusMods
                 __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
             }
         }
-
         [HarmonyPatch(typeof(UserInfoFriendsInfoPopup), nameof(UserInfoFriendsInfoPopup.OpenManagerUI))]
         [HarmonyPostfix]
         private static void UserInfoFriendsInfoPopup_Open(UserInfoFriendsInfoPopup __instance)
         {
+            GameObject bannerlist = __instance._friendsManager._friendCard.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
+            bannerlist.active = false;
             var friend = fruends.FirstOrDefault(f => f.true_id == __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text);
             if (friend != null)
             {
                 __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
             }
+        }
+        [HarmonyPatch(typeof(UserInfoFriendsAddSendPopup), nameof(UserInfoFriendsAddSendPopup.SetData))]
+        [HarmonyPostfix]
+        private static void UserInfoFriendsAddSendPopup_Open(UserInfoFriendsAddSendPopup __instance)
+        {
+            GameObject bannerlist = __instance._friendsSlot._friendCard.tmp_level.transform.parent.Find("[Rect]BannerList").gameObject;
+            bannerlist.active = false;
         }
     }
 }
