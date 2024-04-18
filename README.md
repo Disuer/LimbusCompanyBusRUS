@@ -13,12 +13,16 @@
    - Download [dll](../../releases), then drag it to ../Limbus Company/BIE/plugins/..
    - ![This is how should look your plugin folder with installed dll](/src/secondscreen.png?raw=true)
    - (i dont know how to draw with mouse)
+   - LAUNCH, MANAGER ESQUIRE!!!!!
 
-     
+### THIS MOD IS ONLY CLIENT-SIDE (means that all modifications from this dll will be visible only to you)
 ## Nickname limitations:
 - Max 15 characters
 - Special symbols or space are not allowed
 - forgor about the rest..
+
+## No banners:
+- Disables banners on your profile and friends list
 
 ## Contacts?
 - Discord: disaer
