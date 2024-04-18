@@ -1,6 +1,4 @@
-# Данный форк берёт за основу перевод от Найти
+# This fork assumes the basis of Bright's mods.
 
-## Я всё равно ничего не понял(-а), что мне делать? 
-   - [Молитесь]().
-# Дополнительные ссылки
-- [Группа перевода](https://vk.com/limbus_company_ru)
+## Links?
+- Discord: disaer
