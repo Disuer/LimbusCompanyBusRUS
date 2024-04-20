@@ -18,7 +18,7 @@
 
 ### THIS MOD IS ONLY CLIENT-SIDE (means that all modifications from this dll will be visible only to you)
 ## Nicknames:
-- Max 15 characters
+- Max 13 characters
 - Special symbols or space are not allowed
 - You can't enter in global search "custom_name" to find someone, it still accepts only limbus id
 - forgor about the rest..
@@ -32,6 +32,8 @@
 - Key "true_id" - there should be any limbus id
 - Key "custom_name" - freely write here what you want (no, because there are limitations from above)
   Examples: "HeathcliffsWife" - allowed, "F@ck." - not allowed
+- Save your changes
+  (changes apply after restart)
 
 ## Contacts?
 - Discord: disaer
