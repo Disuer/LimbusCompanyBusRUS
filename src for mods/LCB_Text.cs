@@ -79,9 +79,9 @@ namespace LimbusMods
         {
             foreach (var friend in fruends)
             {
-                if (friend.custom_name.Count<char>() > 15 || HasSpecialChars(friend.custom_name))
+                if (friend.custom_name.Count<char>() > 13 || HasSpecialChars(friend.custom_name))
                 {
-                    LCB_ConfMod.LogError("Correct your userid.json file. One of your «custom-name» contains more than 15 characters or forbidden symbols.");
+                    LCB_ConfMod.LogError("Correct your userid.json file. One of your 'custom-name' keys contains more than 13 characters or forbidden symbols.");
                     friend.custom_name = friend.true_id;
                     return;
                 }
@@ -95,26 +95,52 @@ namespace LimbusMods
         [HarmonyPostfix]
         private static void UserInfoCard_Init(UserInfoCard __instance)
         {
-            GameObject bannerlist = __instance.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
-            var friend = fruends.FirstOrDefault(f => f.true_id == __instance.tmp_publicIdAlphabet.text);
-            if (friend != null)
-            {
-                __instance.tmp_publicIdAlphabet.text = friend.custom_name;
-            }
+            BannerList(__instance.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject);
+            __instance.tmp_publicIdAlphabet.text = lookingfor(__instance.tmp_publicIdAlphabet.text);
         }
         [HarmonyPatch(typeof(UserInfoFriednsSlot), nameof(UserInfoFriednsSlot.SetData))]
         [HarmonyPostfix]
         private static void UserInfoFriednsSlot_Init(UserInfoFriednsSlot __instance)
         {
-            GameObject bannerlist = __instance._friendCard.tmp_level.transform.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
-            var friend = fruends.FirstOrDefault(f => f.true_id == __instance._friendCard.tmp_publicIdAlphabet.text);
+            BannerList(__instance._friendCard.tmp_level.transform.parent.Find("[Rect]BannerList").gameObject);
+            __instance._friendCard.tmp_publicIdAlphabet.text = lookingfor(__instance._friendCard.tmp_publicIdAlphabet.text);
+            __instance._friendCard.tmp_publicIdAlphabet.fontSizeMax = 30;
+        }
+        [HarmonyPatch(typeof(UserInfoFriendsInfoPopup), nameof(UserInfoFriendsInfoPopup.SetData))]
+        [HarmonyPostfix]
+        private static void UserInfoFriendsInfoPopup_Init(UserInfoFriendsInfoPopup __instance)
+        {
+            BannerList(__instance._friendsManager._friendCard.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject);
+            __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = lookingfor(__instance._friendsManager._friendCard.tmp_publicIdAlphabet.text);
+        }
+        [HarmonyPatch(typeof(UserInfoFriendsInfoPopup), nameof(UserInfoFriendsInfoPopup.OpenManagerUI))]
+        [HarmonyPostfix]
+        private static void UserInfoFriendsInfoPopup_Open(UserInfoFriendsInfoPopup __instance)
+        {
+            __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = lookingfor(__instance._friendsManager._friendCard.tmp_publicIdAlphabet.text);
+        }
+        [HarmonyPatch(typeof(UserInfoFriendsAddSendPopup), nameof(UserInfoFriendsAddSendPopup.SetData))]
+        [HarmonyPostfix]
+        private static void UserInfoFriendsAddSendPopup_Open(UserInfoFriendsAddSendPopup __instance)
+        {
+            BannerList(__instance._friendsSlot._friendCard.tmp_level.transform.parent.Find("[Rect]BannerList").gameObject);
+            __instance._friendsSlot._friendCard.tmp_publicIdAlphabet.text = lookingfor(__instance._friendsSlot._friendCard.tmp_publicIdAlphabet.text);
+        }
+        private static void BannerList(GameObject wawa)
+        {
+            wawa.active = false;
+        }
+        private static string lookingfor(string search)
+        {
+            var friend = fruends.FirstOrDefault(f => f.true_id == search);
             if (friend != null)
             {
-                __instance._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
+                return friend.custom_name;
             }
+            return search;
         }
+        /*
+         * Forgot the functionality of this part..
         [HarmonyPatch(typeof(UserInfoFriednsSlot), nameof(UserInfoFriednsSlot.SetLoginDay))]
         [HarmonyPostfix]
         private static void UserInfoFriednsSlot1_Init(UserInfoFriednsSlot __instance)
@@ -123,45 +149,9 @@ namespace LimbusMods
             if (friend != null)
             {
                 __instance._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
-                if(__instance._friendCard.tmp_publicIdAlphabet.fontSize == 40 && __instance._friendCard.tmp_publicIdAlphabet.text.Count<char>() > 10)
-                {
-                    __instance._friendCard.tmp_publicIdAlphabet.fontSizeMax = 35;
-                }else if (__instance._friendCard.tmp_publicIdAlphabet.text.Count<char>() <= 10)
-                {
-                    __instance._friendCard.tmp_publicIdAlphabet.fontSizeMax = 40;
-                }
             }
+            __instance._friendCard.tmp_publicIdAlphabet.text = "6th";
         }
-        [HarmonyPatch(typeof(UserInfoFriendsInfoPopup), nameof(UserInfoFriendsInfoPopup.SetData))]
-        [HarmonyPostfix]
-        private static void UserInfoFriendsInfoPopup_Init(UserInfoFriendsInfoPopup __instance)
-        {
-            GameObject bannerlist = __instance._friendsManager._friendCard.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
-            var friend = fruends.FirstOrDefault(f => f.true_id == __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text);
-            if (friend != null)
-            {
-                __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
-            }
-        }
-        [HarmonyPatch(typeof(UserInfoFriendsInfoPopup), nameof(UserInfoFriendsInfoPopup.OpenManagerUI))]
-        [HarmonyPostfix]
-        private static void UserInfoFriendsInfoPopup_Open(UserInfoFriendsInfoPopup __instance)
-        {
-            GameObject bannerlist = __instance._friendsManager._friendCard.tmp_level.transform.parent.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
-            var friend = fruends.FirstOrDefault(f => f.true_id == __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text);
-            if (friend != null)
-            {
-                __instance._friendsManager._friendCard.tmp_publicIdAlphabet.text = friend.custom_name;
-            }
-        }
-        [HarmonyPatch(typeof(UserInfoFriendsAddSendPopup), nameof(UserInfoFriendsAddSendPopup.SetData))]
-        [HarmonyPostfix]
-        private static void UserInfoFriendsAddSendPopup_Open(UserInfoFriendsAddSendPopup __instance)
-        {
-            GameObject bannerlist = __instance._friendsSlot._friendCard.tmp_level.transform.parent.Find("[Rect]BannerList").gameObject;
-            bannerlist.active = false;
-        }
+        */
     }
 }
