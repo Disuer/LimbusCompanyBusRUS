@@ -150,7 +150,7 @@
     },
     {
       "id": "immunity_information",
-      "content": "Сопротивления"
+      "content": "<size=27>Сопротивления</size>"
     },
     {
       "id": "awaken_ego_skill",
@@ -378,7 +378,7 @@
     },
     {
       "id": "skillinfo_coinabilitytitle",
-      "content": "<size=38>Эффект умения</size>"
+      "content": "<size=38>Эффект навыка</size>"
     },
     {
       "id": "dungeon_save_desc",
@@ -571,6 +571,10 @@
     {
       "id": "EGOSelectUI_DetailInfo",
       "content": "Детали"
+    },
+    {
+      "id": "ab_guidebook_view",
+      "content": "Просмотреть записи"
     }
   ]
 }

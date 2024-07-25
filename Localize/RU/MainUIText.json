@@ -62,11 +62,11 @@
     },
     {
       "id": "mainui_stageinfo_resistinfo",
-      "content": "Сопротивления"
+      "content": "<size=27>Сопротивления</size>"
     },
     {
       "id": "mainui_stageinfo_enterbutton",
-      "content": "Начать"
+      "content": "<cspace=2>Начать</cspace>"
     },
     {
       "id": "mainui_stageinfo_dungeonclear",
@@ -142,7 +142,7 @@
     },
     {
       "id": "mainui_ok",
-      "content": "ОК"
+      "content": "<cspace=3>ОК</cspace>"
     },
     {
       "id": "mainui_battleresult_victory",
@@ -166,7 +166,7 @@
     },
     {
       "id": "mainui_cancel",
-      "content": "Отмена"
+      "content": "<cspace=3>Отмена</cspace>"
     },
     {
       "id": "mainui_select",
@@ -186,7 +186,7 @@
     },
     {
       "id": "mainui_main_enkephalin_Box",
-      "content": "Ячейка Энкефалина"
+      "content": "Ячейка\nЭнкефалина"
     },
     {
       "id": "mainui_main_own_count",
@@ -406,11 +406,11 @@
     },
     {
       "id": "mainui_analysis",
-      "content": "Связка"
+      "content": "<cspace=3>Связка</cspace>"
     },
     {
       "id": "mainui_abnormality_analysis",
-      "content": "Связка"
+      "content": "<cspace=3>Связка</cspace>"
     },
     {
       "id": "mainui_receive",
@@ -430,7 +430,7 @@
     },
     {
       "id": "mainui_synchronization",
-      "content": "Связать"
+      "content": "<cspace=3>Связать</cspace>"
     },
     {
       "id": "mainui_personality_synchronization_level",
@@ -570,7 +570,7 @@
     },
     {
       "id": "mainui_move_to_twine_store",
-      "content": "Обмен звеньев"
+      "content": "<cspace=3>Обмен звеньев</cspace>"
     },
     {
       "id": "mainui_move_to_twine_store_question",
@@ -726,7 +726,7 @@
     },
     {
       "id": "tolerance",
-      "content": "Сопротивления"
+      "content": "<size=27>Сопротивления</size>"
     },
     {
       "id": "outstanding_staff",
@@ -970,11 +970,11 @@
     },
     {
       "id": "active_skill_reinforcement",
-      "content": "Улучшаются умения"
+      "content": "Улучшаются навыки"
     },
     {
       "id": "progress_ego_gacksung",
-      "content": "Связать"
+      "content": "<cspace=3>Связать</cspace>"
     },
     {
       "id": "skill_with_index",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": "battle_skip",
-      "content": "Пропустить"
+      "content": "<cspace=2>Пропустить</cspace>"
     },
     {
       "id": "ask_battle_skip",
@@ -1357,6 +1357,14 @@
       "content": "{1} Исанов [Идеальностей] из баннера извлечения \"{0}\" конвертированы в Звенья."
     },
     {
+      "id": "notice_of_pity_point_progress_or_not",
+      "content": "Потратить 200 Исанов [Идеальностей] на этот обмен??"
+    },
+    {
+      "id": "notice_of_pity_point_progress_or_not_already_have",
+      "content": "У вас уже есть эта идентичность. Обменять 200 Исанов [Идеальностей] на 50 эгосколков этого грешника?"
+    },
+    {
       "id": "open_date_description_month_day_time_zone",
       "content": "Разблокируется после {1}/{0} (Обновление на {2})"
     },
@@ -1462,7 +1470,7 @@
     },
     {
       "id": "level_up",
-      "content": "Повышение уровня"
+      "content": "<size=28><cspace=1><align=center>Повышение\nуровня</align=center></cspace></size>"
     },
     {
       "id": "summary",
@@ -1479,6 +1487,46 @@
     {
       "id": "erosion",
       "content": "Коррозия"
+    },
+    {
+      "id": "formation_panel_detail",
+      "content": "Вкратце"
+    },
+    {
+      "id": "ego_cost",
+      "content": "Ресурсы для ЭГО"
+    },
+    {
+      "id": "enable_count_for_battle",
+      "content": "Лимит участников"
+    },
+    {
+      "id": "select_for_formation",
+      "content": "Выбрать участников"
+    },
+    {
+      "id": "edit_for_formation",
+      "content": "Изменить\nгрешника"
+    },
+    {
+      "id": "full_participated",
+      "content": "Максимальное кол-во участников"
+    },
+    {
+      "id": "select_for_delete_participation",
+      "content": "Отменить выбор"
+    },
+    {
+      "id": "clear_reward",
+      "content": "Забрать награду"
+    },
+    {
+      "id": "event_information",
+      "content": "Детали ивента"
+    },
+    {
+      "id": "notice_not_on_sales_period",
+      "content": "※ Невозможно купить на данный момент."
     }
   ]
 }

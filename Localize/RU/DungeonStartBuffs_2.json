@@ -1,0 +1,80 @@
+{
+  "dataList": [
+    {
+      "id": "ADDITIONAL_COST_START",
+      "description": "Стартовая Стоимость +{0}"
+    },
+    {
+      "id": "ADDITIONAL_COST_AFTER_WIN_BATTLE",
+      "description": "Получаете на {0} больше Стоимости после победы в бою"
+    },
+    {
+      "id": "EGO_RESOURCE",
+      "description": "Э.Г.О. ресурсы для каждого типа Греха +{0}"
+    },
+    {
+      "id": "EGO_RESOURCE_FORMATION",
+      "description": "Э.Г.О. ресурсы стартовых идентичностей +{0}"
+    },
+    {
+      "id": "HP_RECOVER_RATE_AFTER_WIN_BATTLE",
+      "description": "Восстанавливает {0}% от Макс. ОЗ после победы в бою"
+    },
+    {
+      "id": "MP_RECOVER_NUMBER_AFTER_EVENT_ENCOUNTER",
+      "description": "Восстанавливает {0} СД после столкновения с событием"
+    },
+    {
+      "id": "AttackLevelAdder",
+      "description": "Уровень атаки +{0}"
+    },
+    {
+      "id": "AttackLevelMultiply",
+      "description": "Уровень атаки +{0}%"
+    },
+    {
+      "id": "DefenseLevelAdder",
+      "description": "Уровень защиты +{0}"
+    },
+    {
+      "id": "DefenseLevelMultiply",
+      "description": "Уровень защиты +{0}%"
+    },
+    {
+      "id": "MaxHpAdder",
+      "description": "Макс. ОЗ +{0}"
+    },
+    {
+      "id": "MaxHpMultiply",
+      "description": "Макс. ОЗ +{0}%"
+    },
+    {
+      "id": "MaxSpeedUpAdder",
+      "description": "Макс. Скорость +{0}"
+    },
+    {
+      "id": "AttackDamageAdder",
+      "description": "Наносимый урон +{0}"
+    },
+    {
+      "id": "AttackDamageMultiply",
+      "description": "Наносимый урон +{0}%"
+    },
+    {
+      "id": "TakeAttackDamageReducer",
+      "description": "Получаемый урон -{0}"
+    },
+    {
+      "id": "TakeAttackDamageMultipliedReducer",
+      "description": "Получаемый урон -{0}%"
+    },
+    {
+      "id": "StickCoinHeadAndTailToMaxPer",
+      "description": "Каждые {0} хода, все монеты на всех навыках каждого союзника падают на одну и ту же сторону в зависимости от типа монеты"
+    },
+    {
+      "id": "RemoveBreakSection",
+      "description": "Первая граница выносливости убрана"
+    }
+  ]
+}

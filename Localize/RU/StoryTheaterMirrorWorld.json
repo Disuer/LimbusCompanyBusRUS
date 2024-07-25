@@ -67,6 +67,18 @@
     {
       "id": "MirrorWorld_Name_17",
       "content": "Мир офиса Коренного"
+    },
+    {
+      "id": "MirrorWorld_Name_18",
+      "content": "Мир Южной секции ассоциации Дьечи"
+    },
+    {
+      "id": "MirrorWorld_Name_19",
+      "content": "<size=40>Мир основного\n филиала корпорации \n\"Лоботомия\" - 1</size>"
+    },
+    {
+      "id": "MirrorWorld_Name_20",
+      "content": "Мир бывших гостей Библиотеки - 1"
     }
   ]
 }
