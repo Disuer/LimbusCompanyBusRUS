@@ -9,8 +9,8 @@
 ### 4. Prepare the game folder
    - On this step everything should work..
 ### 5. Install my mod
-   - Download [dll](../../releases), then drag it to ../Limbus Company/BIE/plugins/..
-   - ![This is how should look your plugin folder with installed dll](/src/zwei.png?raw=true)
+   - Download [zip](../../releases), then drag it to ../Limbus Company/BIE/plugins/..
+   - ![This is how should look your plugin folder with installed mod](/src/zwei.png?raw=true)
      
 ## Contacts?
 - Discord: disaer
