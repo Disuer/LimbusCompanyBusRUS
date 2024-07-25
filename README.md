@@ -11,7 +11,17 @@
 ### 5. Install my mod
    - Download [zip](../../releases), then drag it to ../Limbus Company/BIE/plugins/..
    - ![This is how should look your plugin folder with installed mod](/src/zwei.png?raw=true)
-     
+
+
+# How to Delete mod
+### 1. Close the game
+### 2. Delete the LCBVoice folder from previous steps
+### 3. Go to C:\Users\{YourName}\AppData\LocalLow\ProjectMoon\LimbusCompany\Assets\Sound\FMODBuilds
+  - Delete what we have here: ORIGINAL.bank or ZWEI_GREG.bank (both if something went wrong with mod)
+### 4. Profit
+  - Launch the game and DO nothing (may require you to download official voiceline files)
+
+
 ## Contacts?
 - Discord: disaer
   (I dont know how badly I messed up about performance.. feel free to dm me)
