@@ -1,115 +1,110 @@
-<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<OutputType>Library</OutputType>
-		<PlatformTarget>x64</PlatformTarget>
-		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
-		<DebugSymbols>true</DebugSymbols>
-		<RootNamespace>LimbusCompanyBusRUS</RootNamespace>
-		<LangVersion>10.0</LangVersion>
-		<Configurations>ML_Cpp_net6_interop</Configurations>
-		<IsPublishable>True</IsPublishable>
-		<Platforms>x64</Platforms>
-		<TargetFramework>net6.0-windows</TargetFramework>
-		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-	</PropertyGroup>
-	<!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
-	<!-- ML IL2CPP Interop net6 -->
-	<PropertyGroup Condition="'$(Configuration)'=='ML_Cpp_net6_interop'">
-		<TargetFramework>net6</TargetFramework>
-		<OutputPath>..\Release</OutputPath>
-		<AssemblyName>LimbusCompanyBusRUS</AssemblyName>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML_Cpp_net6_interop|x64'">
-		<NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
-		<DebugType>none</DebugType>
-		<Optimize>True</Optimize>
-	</PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>10.0</LangVersion>
+    <IsPublishable>True</IsPublishable>
+    <TargetFramework>net6</TargetFramework>
+    <Platforms>x64</Platforms>
+    <Configurations>BIE</Configurations>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+    <OutputPath>..\Release</OutputPath>
+    <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+  
+  <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
+  <ItemGroup>
+    <None Remove="Directory.Build.props" />
+    <None Remove="nuget.config" />
+  </ItemGroup>
+  <!-- BepinEx -->
+  <PropertyGroup Condition="'$(Configuration)'=='BIE'">
+    <DefineConstants>BIE</DefineConstants>
+    <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
+  </PropertyGroup>
 
-	<!-- ~~~~~ NUGET ~~~~~ -->
-	<ItemGroup>
-		<PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
-		<PackageReference Include="Samboy063.Tomlet" Version="3.1.3" />
-		<PackageReference Include="Il2CppInterop.Common" Version="1.0.0" />
-		<PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Reference Include="Assembly-CSharp">
-	    <HintPath>..\lib\interop\Assembly-CSharp.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Il2CppFacepunch.Steamworks.Win64">
-	    <HintPath>..\lib\interop\Il2CppFacepunch.Steamworks.Win64.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Il2Cppmscorlib">
-	    <HintPath>..\lib\interop\Il2Cppmscorlib.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Il2CppSystem">
-	    <HintPath>..\lib\interop\Il2CppSystem.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Il2CppSystem.Core">
-	    <HintPath>..\lib\interop\Il2CppSystem.Core.dll</HintPath>
-	  </Reference>
-	  <Reference Include="mcs">
-	    <HintPath>..\lib\net6\mcs.dll</HintPath>
-	  </Reference>
-	  <Reference Include="MelonLoader">
-	    <HintPath>..\lib\net6\MelonLoader.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Unity.TextMeshPro">
-	    <HintPath>..\lib\interop\Unity.TextMeshPro.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine">
-	    <HintPath>..\lib\interop\UnityEngine.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.AssetBundleModule">
-	    <HintPath>..\lib\interop\UnityEngine.AssetBundleModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.AudioModule">
-	    <HintPath>..\lib\interop\UnityEngine.AudioModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.CoreModule">
-	    <HintPath>..\lib\interop\UnityEngine.CoreModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.ImageConversionModule">
-	    <HintPath>..\lib\interop\UnityEngine.ImageConversionModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.IMGUIModule">
-	    <HintPath>..\lib\interop\UnityEngine.IMGUIModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.JSONSerializeModule">
-	    <HintPath>..\lib\interop\UnityEngine.JSONSerializeModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.PhysicsModule">
-	    <HintPath>..\lib\interop\UnityEngine.PhysicsModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.TextRenderingModule">
-	    <HintPath>..\lib\interop\UnityEngine.TextRenderingModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.UI">
-	    <HintPath>..\lib\interop\UnityEngine.UI.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.UIModule">
-	    <HintPath>..\lib\interop\UnityEngine.UIModule.dll</HintPath>
-	  </Reference>
-	  <Reference Include="UnityEngine.UnityWebRequestModule">
-	    <HintPath>..\lib\interop\UnityEngine.UnityWebRequestModule.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
+  <!-- ~~~~~ NUGET ~~~~~ -->
+  <ItemGroup>
+    <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+    <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
+  </ItemGroup>
 
-	<!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
-	<ItemGroup>
-		<Compile Update="Properties\Resources.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Resources.resx</DependentUpon>
-		</Compile>
-	</ItemGroup>
-	<ItemGroup>
-		<EmbeddedResource Update="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
+  <!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
+  <!-- BepinEx -->
+  <ItemGroup Condition="'$(Configuration)'=='BIE'">
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\lib\bie\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\lib\bie\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.IL2CPP">
+      <HintPath>..\lib\bie\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\lib\bie\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\lib\bie\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\lib\bie\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\lib\bie\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\bie\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\lib\bie\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\lib\bie\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\lib\bie\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\lib\bie\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\lib\bie\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\lib\bie\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\lib\bie\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\lib\bie\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\lib\bie\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\lib\bie\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\lib\bie\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Limbus Company\BepInEx\unity-libs\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyFile" AfterTargets="build">
+    <Message Text="Copying BIE files..." Importance="high" Condition="'$(Configuration)' == 'BIE'" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins" Condition="'$(Configuration)' == 'BIE'" />
+  </Target>
 </Project>

@@ -1,15 +1,16 @@
-﻿using HarmonyLib;
-using Il2Cpp;
-using Il2CppAddressable;
-using Il2CppSimpleJSON;
-using Il2CppStorySystem;
+﻿using Addressable;
+using HarmonyLib;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using Il2CppInterop.Runtime.Runtime;
 using Il2CppSystem.Collections.Generic;
-using Il2CppTMPro;
-using Il2CppUtilityUI;
+using Il2CppSystem.Net;
+using SimpleJSON;
+using StorySystem;
 using System;
 using System.IO;
+using TMPro;
 using UnityEngine;
-using static MelonLoader.MelonLogger;
+using UtilityUI;
 
 namespace LimbusLocalizeRUS
 {
@@ -17,11 +18,14 @@ namespace LimbusLocalizeRUS
     {
         public static List<TMP_FontAsset> tmpcyrillicfonts = new();
         public static List<string> tmpcyrillicfontsnames = new();
-        #region Handwriting
+        public static List<Material> tmpcyrillicmats = new();
+        public static List<string> tmpcyrillicmatsnames = new();
         public static bool AddCyrillicFont(string path)
         {
             if (File.Exists(path))
             {
+                bool result1 = false;
+                bool result2 = false;
                 bool __result = false;
                 var AllAssets = AssetBundle.LoadFromFile(path).LoadAllAssets();
 
@@ -35,8 +39,21 @@ namespace LimbusLocalizeRUS
                         TryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
                         tmpcyrillicfonts.Add(TryCastFontAsset);
                         tmpcyrillicfontsnames.Add(TryCastFontAsset.name);
-                        __result = true;
+                        result1 = true;
                     }
+                    var TryCastMaterial = Asset.TryCast<Material>();
+                    if (TryCastMaterial)
+                    {
+
+                        UnityEngine.Object.DontDestroyOnLoad(TryCastMaterial);
+                        TryCastMaterial.hideFlags |= HideFlags.HideAndDontSave;
+                        tmpcyrillicmats.Add(TryCastMaterial);
+                        tmpcyrillicmatsnames.Add(TryCastMaterial.name);
+                        result2 = true;
+                    }
+
+                    if (result1 = result2)
+                        __result = true;
                 }
 
                 return __result;
@@ -78,32 +95,24 @@ namespace LimbusLocalizeRUS
         public static TMP_FontAsset GetCyrillicFonts(int idx)
         {
             int Count = tmpcyrillicfonts.Count - 1;
-            if(Count < idx)
-                idx=Count;
+            if (Count < idx)
+                idx = Count;
             return tmpcyrillicfonts[idx];
+        }
+        public static Material GetCyrillicMats(int idx)
+        {
+            int Count = tmpcyrillicmats.Count - 1;
+            if (Count < idx)
+                idx = Count;
+            return tmpcyrillicmats[idx];
         }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
         {
             return tmpcyrillicfontsnames.Contains(fontAsset.name);
         }
-        public static Texture2D duplicateTexture(Texture2D source)
+        public static bool IsCyrillicMat(Material matAsset)
         {
-            RenderTexture renderTex = RenderTexture.GetTemporary(
-                        source.width,
-                        source.height,
-                        0,
-                        RenderTextureFormat.Default,
-                        RenderTextureReadWrite.Linear);
-
-            Graphics.Blit(source, renderTex);
-            RenderTexture previous = RenderTexture.active;
-            RenderTexture.active = renderTex;
-            Texture2D readableText = new Texture2D(source.width, source.height);
-            readableText.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
-            readableText.Apply();
-            RenderTexture.active = previous;
-            RenderTexture.ReleaseTemporary(renderTex);
-            return readableText;
+            return tmpcyrillicmatsnames.Contains(matAsset.name);
         }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
@@ -113,9 +122,6 @@ namespace LimbusLocalizeRUS
             string fontname = __instance.m_fontAsset.name;
             if (GetCyrillicFonts(fontname, out TMP_FontAsset font))
             {
-
-                Debug.Log("Material Name : " + __instance.fontMaterial.name);
-                Debug.Log("Test : " + __instance.text);
                 if (__instance.fontMaterial.name.Contains("Mikodacs SDF UnderLine") || __instance.fontMaterial.name.Contains("KOTRA_BOLD SDF Underline"))
                 {
                     if (__instance.fontMaterial.IsKeywordEnabled("UNDERLAY_ON"))
@@ -127,15 +133,15 @@ namespace LimbusLocalizeRUS
                         }
                     }
                 }
-
                 value = font;
             }
             return true;
         }
-        public static Dictionary<TMP_Text,Material>  premat = new Dictionary<TMP_Text, Material>();
+        public static Dictionary<TMP_Text, Material> premat = new Dictionary<TMP_Text, Material>();
+        public static Dictionary<TMP_Text, Material> prematGlow = new Dictionary<TMP_Text, Material>();
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
-        private static void set_fontMaterial(TMP_Text __instance, ref Material value)
+        static void set_fontMaterialUnderlay(TMP_Text __instance, ref Material value)
         {
             if (IsCyrillicFont(__instance.m_fontAsset))
             {
@@ -149,18 +155,25 @@ namespace LimbusLocalizeRUS
                     }
                     value = CloneMat;
                     Material pre = premat[__instance];
-                    CloneMat.shader = Shader.Find("TextMeshPro/Distance Field");
-                    CloneMat.SetColor("_UnderlayColor", pre.GetColor("_UnderlayColor"));
-                    CloneMat.SetFloat("_UnderlayOffsetX", pre.GetFloat("_UnderlayOffsetX"));
-                    CloneMat.SetFloat("_UnderlayOffsetY", pre.GetFloat("_UnderlayOffsetY"));
-                    CloneMat.SetFloat("_UnderlayDilate", pre.GetFloat("_UnderlayDilate"));
-                    CloneMat.SetFloat("_UnderlaySoftness", pre.GetFloat("_UnderlaySoftness"));
+                    Color f1 = Color.black;
 
+                    CloneMat.shader = Shader.Find("TextMeshPro/Distance Field");
+                    CloneMat.SetColor("_UnderlayColor", f1);
+                    CloneMat.SetFloat("_UnderlayOffsetX", 5);
+                    CloneMat.SetFloat("_UnderlayOffsetY", -5);
+                    CloneMat.SetFloat("_UnderlayDilate", 3);
+                    CloneMat.SetFloat("_UnderlaySoftness", 0);
                     CloneMat.EnableKeyword("UNDERLAY_ON");
+
+                    __instance.m_fontAsset.material.shader = Shader.Find("TextMeshPro/Distance Field");
+                    __instance.m_fontAsset.material.SetColor("_UnderlayColor", f1);
+                    __instance.m_fontAsset.material.SetFloat("_UnderlayOffsetX", 0);
+                    __instance.m_fontAsset.material.SetFloat("_UnderlayOffsetY", (float)-0.5);
+                    __instance.m_fontAsset.material.EnableKeyword("UNDERLAY_ON");
                 }
             }
         }
-                public static Material CloneMat;
+        public static Material CloneMat;
         [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
         [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
@@ -181,19 +194,23 @@ namespace LimbusLocalizeRUS
 
             __instance._text.font = fontAsset;
             __instance._text.fontMaterial = fontMaterial;
-            if (__instance._matSetter != null)
+            if (__instance._matSetter)
             {
                 __instance._matSetter.defaultMat = fontMaterial;
                 __instance._matSetter.ResetMaterial();
-                return false;
-            }
-            __instance.gameObject.TryGetComponent(out TextMeshProMaterialSetter textMeshProMaterialSetter);
-            if (textMeshProMaterialSetter != null)
-            {
-                textMeshProMaterialSetter.defaultMat = fontMaterial;
-                textMeshProMaterialSetter.ResetMaterial();
             }
             return false;
+        }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
+        [HarmonyPrefix]
+        private static void Awake(TextMeshProLanguageSetter __instance)
+        {
+            if (!__instance._text)
+                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
+                    __instance._text = textMeshProUGUI;
+            if (!__instance._matSetter)
+                if (__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
+                    __instance._matSetter = textMeshProMaterialSetter;
         }
         //[HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
         //[HarmonyPrefix]
@@ -222,14 +239,13 @@ namespace LimbusLocalizeRUS
         //            underlayColor.g *= num;
         //            underlayColor.b *= num;
         //        }
-        //        underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
-        //        if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
-        //            __instance._text.color = underlayColor;
+        //        underlayColor = __instance.underlayHdrColorOn ? __instance.underlayColor : __instance.underlayColor;
+        //            if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
+        //                __instance._text.color = underlayColor;
         //    }
         //    return false;
         //}
-        #endregion
-        #region Я заебался переводить китайский
+        
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -239,7 +255,6 @@ namespace LimbusLocalizeRUS
             tm._personalityList.Init(romoteLocalizeFileList.PersonalityFilePaths);
             tm._enemyList.Init(romoteLocalizeFileList.EnemyFilePaths);
             tm._egoList.Init(romoteLocalizeFileList.EgoFilePaths);
-            tm._skillList.Init(romoteLocalizeFileList.SkillFilePaths);
             tm._passiveList.Init(romoteLocalizeFileList.PassiveFilePaths);
             tm._bufList.Init(romoteLocalizeFileList.BufFilePaths);
             tm._itemList.Init(romoteLocalizeFileList.ItemFilePaths);
@@ -283,14 +298,98 @@ namespace LimbusLocalizeRUS
             tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
             tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
             tm._mentalConditionList.Init(romoteLocalizeFileList.mentalCondition);
-            //tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
+            tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
+            tm._railwayDungeonBuffText.Init(romoteLocalizeFileList.RailwayDungeonBuff);
+            tm._buffAbilityList.Init(romoteLocalizeFileList.buffAbilities);
+            tm._egoGiftCategory.Init(romoteLocalizeFileList.EgoGiftCategory);
+            tm._mirrorDungeonEgoGiftLockedDescList.Init(romoteLocalizeFileList.MirrorDungeonEgoGiftLockedDesc);
+            tm._mirrorDungeonEnemyBuffDescList.Init(romoteLocalizeFileList.MirrorDungeonEnemyBuffDesc);
+            tm._iapStickerText.Init(romoteLocalizeFileList.IAPSticker);
+            tm._danteAbilityDataList.Init(romoteLocalizeFileList.DanteAbility);
+            tm._mirrorDungeonThemeList.Init(romoteLocalizeFileList.MirrorDungeonTheme);
+            tm._unlockCodeList.Init(romoteLocalizeFileList.UnlockCode);
+            tm._battleSpeechBubbleText.Init(romoteLocalizeFileList.BattleSpeechBubble);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
-            tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
+            //tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
+            tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.personalityVoice);
             tm._announcerVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
             tm._bgmLyricsText._lyricsDictionary.JsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.EGOVoice);
+            
+            if (LCBR_Russian_Settings.IsUseRussianSpec.Value == true)
+            {
+                tm._skillList.InitForSkill(romoteLocalizeFileList.SkillFilePaths);
+            }
+            if (LCBR_Russian_Settings.IsUseRussian.Value == true)
+            {
+                tm._skillList.Init(romoteLocalizeFileList.SkillFilePaths);
+            }
+            tm._uiList.Init(romoteLocalizeFileList.UIFilePaths);
+            LCB_LCBRMod.LogInfo((string.Format(Singleton<TextDataManager>.Instance.UIList.GetData("PersonalityStory_OpenCodition"), 3)));
+        }
+        [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
+        [HarmonyPostfix]
+        private static void SetLoginInfo(LoginSceneManager __instance)
+        {
+            LoadLocal(LOCALIZE_LANGUAGE.EN);
+            __instance.tmp_loginAccount.text = "Русификатор Limbus Company v" + LCB_LCBRMod.VERSION;
+            __instance.tmp_loginAccount.characterSpacing = -2;
+            __instance.tmp_loginAccount.lineSpacing = -20;
+        }
+        private static void InitForSkill<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
+        {
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LCBR_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
+                foreach (T t in localizeTextData.dataList)
+                {
+                    object data = jsonDataList.GetData(t.id);
+                    TextData_Skill awa = (TextData_Skill)Convert.ChangeType(data, typeof(TextData_Skill));
+                    TextData_Skill awa1 = (TextData_Skill)Convert.ChangeType(t, typeof(TextData_Skill));
+                    for (int i = 0; i < awa.levelList.Count; i++)
+                    {
+                        awa.levelList[i].rawDesc = awa1.levelList[i].rawDesc;
+                        awa.levelList[i].desc = awa1.levelList[i].desc;
+                        awa.levelList[i].coinlist = awa1.levelList[i].coinlist;
+                        awa.levelList[i].abName = awa1.levelList[i].abName;
+                    }
+                }
+            }
+        }
+        private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
+        {
+            var tm = TextDataManager.Instance;
+            TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
+            tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
+            tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
+            tm._battleHint._dic.Clear();
+            tm._battleHint.Init(localizeFileList.BattleHint);
+            return false;
+        }
+        private static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
+        {
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LCBR_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                LCB_LCBRMod.LogInfo("Text: " + text);
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
+                foreach (T t in localizeTextData.DataList)
+                {
+                    jsonDataList._dic[t.ID.ToString()] = t;
+                }
+            }
+        }
+        private static void JsonDataListInit<T>(this Dictionary<string, LocalizeTextDataRoot<T>> jsonDataList, List<string> jsonFilePathList)
+        {
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LCBR_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
+                jsonDataList[text.Split('_')[^1]] = localizeTextData;
+            }
         }
         [HarmonyPatch(typeof(EGOVoiceJsonDataList), nameof(EGOVoiceJsonDataList.Init))]
         [HarmonyPrefix]
@@ -317,20 +416,20 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
+        [HarmonyPatch(typeof(StoryDataParser), nameof(StoryDataParser.GetScenario))]
         [HarmonyPrefix]
-        private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
+        private static bool GetScenario(string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            TextAsset textAsset = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             if (!textAsset)
             {
-                LCB_LCBRMod.LogError("Story Unknown Error! Call Story: Dirty Hacker");
+                LCB_LCBRMod.LogError("Story Unknown Error!Call Story: Dirty Hacker");
                 scenarioID = "SDUMMY";
-                textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+                textAsset = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             }
             if (!LCBR_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {
-                LCB_LCBRMod.LogError("Story error! We can't find the RU story file, so we'll use EN story");
+                LCB_LCBRMod.LogError("Story Error!Can'n Find CN Story File,Use Raw EN Story");
                 text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/en/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
             }
             string text2 = textAsset.ToString();
@@ -340,88 +439,60 @@ namespace LimbusLocalizeRUS
             };
             JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
             JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
+            int s = 0;
             for (int i = 0; i < jsonarray.Count; i++)
             {
-                int num = jsonarray[i][0].AsInt;
-                if (num >= 0)
+                var jSONNode = jsonarray[i];
+                if (jSONNode.Count < 1)
                 {
-                    JSONNode jsonnode;
-                    if (jsonarray2[i][0].AsInt == num)
-                        jsonnode = jsonarray2[i];
-                    else
-                        jsonnode = new JSONObject();
-                    scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
+                    s++;
+                    continue;
                 }
+                int num;
+                if (jSONNode[0].IsNumber && jSONNode[0].AsInt < 0)
+                    continue;
+                num = i - s;
+                JSONNode effectToken = jsonarray2[num];
+                if ("{\"controlCG\": {\"IsNotPlayDialog\":true}}".Equals(effectToken["effectv2"]))
+                {
+                    s--;
+                    scenario.Scenarios.Add(new Dialog(num, new(), effectToken));
+                    effectToken = jsonarray2[num + 1];
+                }
+                scenario.Scenarios.Add(new Dialog(num, jSONNode, effectToken));
             }
             __result = scenario;
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.GetTellerName))]
         [HarmonyPrefix]
-        private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
+        private static bool GetTellerName(StoryAssetLoader __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
-                __result = scenarioAssetData.krname ?? string.Empty;
+                __result = scenarioAssetData.krname ?? string.Empty;    
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.GetTellerTitle))]
         [HarmonyPrefix]
-        private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
+        private static bool GetTellerTitle(StoryAssetLoader __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
                 __result = scenarioAssetData.nickName ?? string.Empty;
             return false;
         }
-        private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
-        {
-            var tm = TextDataManager.Instance;
-            TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
-            tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
-            tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
-            tm._battleHint.Init(localizeFileList.BattleHint);
-            return false;
-        }
         [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
-        {
-            lang = LOCALIZE_LANGUAGE.EN;
-        }
-        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
-        [HarmonyPrefix]
-        private static void Awake(TextMeshProLanguageSetter __instance)
-        {
-            if (!__instance._text)
-                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
-                    __instance._text = textMeshProUGUI;
-        }
+           => lang = LOCALIZE_LANGUAGE.EN;
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
         private static void StoryDataInit(StoryData __instance)
         {
             foreach (ScenarioAssetData scenarioAssetData in JsonUtility.FromJson<ScenarioAssetDataList>(LCBR_Manager.Localizes["NickName"]).assetData)
-                __instance._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
-        }
-        [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
-        [HarmonyPostfix]
-        private static void SetLoginInfo(LoginSceneManager __instance)
-        {
-            LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "Localize LCB v" + LCB_LCBRMod.VERSION;
-        }
-        private static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
-        {
-            foreach (string text in jsonFilePathList)
             {
-                if (!LCBR_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
-                foreach (T t in localizeTextData.DataList)
-                {
-                    jsonDataList._dic[t.ID.ToString()] = t;
-                }
+                __instance._modelAssetMap._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
             }
         }
-
         private static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFilePathList)
         {
             root._personalityDict = new();
@@ -449,17 +520,6 @@ namespace LimbusLocalizeRUS
 
             }
         }
-        private static void JsonDataListInit<T>(this Dictionary<string, LocalizeTextDataRoot<T>> jsonDataList, List<string> jsonFilePathList)
-        {
-            foreach (string text in jsonFilePathList)
-            {
-                if (!LCBR_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
-                jsonDataList[text.Split('_')[^1]] = localizeTextData;
-            }
-        }
-
-        #endregion
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {
             var entries = dic._entries;

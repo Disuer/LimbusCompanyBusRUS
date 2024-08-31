@@ -1,9 +1,8 @@
 ﻿using HarmonyLib;
-using Il2Cpp;
+using MainUI;
+using MainUI.Gacha;
+using TMPro;
 using Il2CppInterop.Runtime.Injection;
-using Il2CppMainUI;
-using Il2CppMainUI.Gacha;
-using Il2CppTMPro;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -25,12 +24,12 @@ namespace LimbusLocalizeRUS
         }
         public static LCBR_Manager Instance;
         public LCBR_Manager(IntPtr ptr) : base(ptr) { }
-
+        void OnApplicationQuit() => LCB_LCBRMod.CopyLog();
         public static void OpenGlobalPopup(string description, string title = null, string close = "Закрыть", string confirm = "ОК", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
             TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
-            TMP_FontAsset fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[5];
+            TMP_FontAsset fontAsset = LCB_Cyrillic_Font.GetCyrillicFonts(3);
             if (fontAsset)
             {
                 TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TextMeshProUGUI>(true);
@@ -72,12 +71,10 @@ namespace LimbusLocalizeRUS
             {
                 InitLocalizes(directoryInfo);
             }
-
         }
         public static Dictionary<string, string> Localizes = new();
         public static Action FatalErrorAction;
         public static string FatalErrorlog;
-        #region Предупреждение о... бессмысленном блокинге????
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
         {
             typeof(LogType),
@@ -113,41 +110,26 @@ namespace LimbusLocalizeRUS
             }
             return true;
         }
-        #endregion
-        #region КАК Я ПОНИМАЮ (нет)
+        
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
-        {
-            return __instance._parent.EffectChainCamera;
-        }
+            => __instance._parent.EffectChainCamera;
 
-        [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
-        [HarmonyPrefix]
-        private static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
-        {
-            if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
-            {
-                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
-                localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new Il2CppSystem.Collections.Generic.List<TextData_PersonalityVoice>() };
-            }
-            __result = localizeTextDataRoot;
-            return false;
-        }
-        #endregion
+        
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         public static void CheckModActions()
         {
             if (LCBR_UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Есть обновление" + LCBR_UpdateChecker.Updatelog + "Есть обновление!\nПожалуйста, выйдите из игры и обновите мод.\nThe mod has been updated!\nExit the game and download the update." + LCBR_UpdateChecker.Updatelog + "Распакуйте обновление пжаста", "Мод обновлён!\nThe mod has an update!", null, "OK", () =>
+                OpenGlobalPopup("Есть обновление" + LCBR_UpdateChecker.Updatelog + "Есть обновление!\nПожалуйста, выйдите из игры и обновите мод." + LCBR_UpdateChecker.Updatelog + "Распакуйте обновление пжаста", "Мод обновлён!", null, "OK", () =>
                 {
                     LCBR_UpdateChecker.UpdateCall.Invoke();
                     LCBR_UpdateChecker.UpdateCall = null;
                     LCBR_UpdateChecker.Updatelog = string.Empty;
                 });
             else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalErrorlog, "Произошла фатальная ошибка!\nThe fatal error has occured!", null, "Open LCBR URL", () =>
+                OpenGlobalPopup(FatalErrorlog, "Произошла фатальная ошибка!", null, "Перейти на Гитхаб", () =>
                 {
                     FatalErrorAction.Invoke();
                     FatalErrorAction = null;
