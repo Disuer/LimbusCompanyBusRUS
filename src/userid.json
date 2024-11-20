@@ -1,0 +1,8 @@
+{
+    "enablebanners": false,
+    "checkyourfriends": true,
+    "friendlist": [
+        {"true_id": "N668014563","custom_name": "EncryptedID"},
+        {"true_id": "LimbusID","custom_name": "YourCustomName"}
+    ]
+}
