@@ -6,61 +6,26 @@ namespace LimbusModss
 {
     public static class LCB_Voice
     {
-        [HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.SetPlayVoice))]
-        [HarmonyPostfix]
-        private static void BattleUnitView_Func(BattleUnitView __instance, ref BattleCharacterVoiceType key, bool isSpecial = false, BattleSkillViewer skillViewer = null)
+        [HarmonyPatch(typeof(VoiceGenerator), nameof(VoiceGenerator.CreateVoiceInstance))]
+        [HarmonyPrefix]
+        private static void CreateVoiceInstance(string path, bool isSpecial)
         {
-            var sinners = new System.Collections.Generic.List<string>() { "Yi Sang", "Faust", "Don Quixote", "Ryōshū", "Meursault", "Hong Lu", "Heathcliff", "Ishmael", "Rodion", "Sinclair", "Outis", "Gregor" };
-            string id_sin = __instance.Appearance.name.Substring(0, 5);
-            TextData_Personality data = Singleton<TextDataManager>.Instance.PersonalityList.GetData(id_sin);
-            string haha;
-            if (sinners.Contains(data.name))
-            {
-                string id_voice;
-                switch (key)
-                {
-                    case BattleCharacterVoiceType.AllyDead:
-                        id_voice = $"battle_allydead_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.AllyBreak:
-                        id_voice = $"battle_break_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.BattleStart:
-                        id_voice = $"battleentry_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.Dead:
-                        id_voice = $"battle_dead_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.EndCommand:
-                        id_voice = $"battle_endcommand_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.EnemyBreak:
-                        id_voice = $"battle_enemy_break_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.Kill:
-                        id_voice = $"battle_kill_{id_sin}_1";
-                        break;
-                    case BattleCharacterVoiceType.Select:
-                        id_voice = $"battle_select_{id_sin}_1";
-                        break;
-                    default:
-                        id_voice = "";
-                        break;
-                }
-                if (id_voice != "")
-                {
-                    LocalizeTextDataRoot<TextData_PersonalityVoice> dataList = Singleton<TextDataManager>.Instance.personalityVoiceText.GetDataList(id_sin);
-                    foreach (var lala in dataList.dataList)
-                    {
-                        if (id_voice == lala.id)
-                        {
-                            haha = lala.dlg;
-                            BattleDialogLine battleDialogLine = new BattleDialogLine(haha, null);
-                            __instance._uiManager.ShowDialog(battleDialogLine);
-                        }
-                    }
-                }
-            }
+            if (!path.StartsWith("event:/Voice/battle_")) return;
+            path = path[VoiceGenerator.VOICE_EVENT_PATH.Length..];
+            string id_sin = path.Split('_')[^2];
+            var dataList = TextDataManager.Instance.personalityVoiceText.GetDataList(id_sin);
+            Func<TextData_PersonalityVoice, bool> func = (x) => { return path == x.id; };
+            var data = dataList.dataList.Find(func);
+            if (data == null) return;
+            BattleDialogLine battleDialogLine = new(data.dlg, null);
+            UnitView._uiManager.ShowDialog(battleDialogLine);
         }
+        [HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.SetPlayVoice))]
+        [HarmonyPrefix]
+        private static void BattleUnitView_Func(BattleUnitView __instance, BattleCharacterVoiceType key, bool isSpecial, BattleSkillViewer skillViewer)
+        {
+            UnitView = __instance;
+        }
+        static BattleUnitView UnitView;
     }
 }
