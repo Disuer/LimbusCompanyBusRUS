@@ -16,7 +16,7 @@ namespace LimbusLocalize
         private static void LoadRemote2()
         {
             var tm = TextDataManager.Instance;
-            TextDataManager.RomoteLocalizeFileList romoteLocalizeFileList = JsonUtility.FromJson<TextDataManager.RomoteLocalizeFileList>(AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList", null, null).Item1.ToString());
+            TextDataSet.RomoteLocalizeFileList romoteLocalizeFileList = JsonUtility.FromJson<TextDataSet.RomoteLocalizeFileList>(AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList", null, null).Item1.ToString());
             tm._uiList.Init(romoteLocalizeFileList.UIFilePaths);
             tm._characterList.Init(romoteLocalizeFileList.CharacterFilePaths);
             tm._personalityList.Init(romoteLocalizeFileList.PersonalityFilePaths);
@@ -186,14 +186,14 @@ namespace LimbusLocalize
         private static bool LoadLocal()
         {
             var tm = TextDataManager.Instance;
-            TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
+            TextDataSet.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
             tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
             tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
             tm._battleHint._dic.Clear();
             tm._battleHint.Init(localizeFileList.BattleHint);
             return false;
         }
-        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
+        [HarmonyPatch(typeof(TextDataSet), nameof(TextDataSet.LoadRemote))]
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
            => lang = LOCALIZE_LANGUAGE.EN;
