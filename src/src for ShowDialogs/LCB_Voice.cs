@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.Burst.Intrinsics;
 using Newtonsoft.Json;
+using UnityEngine;
+using Mono.Cecil;
+using UnityEngine.UI;
 
 namespace LimbusModss
 {
@@ -33,36 +36,44 @@ namespace LimbusModss
         [HarmonyPrefix]
         private static async void CreateVoiceInstance(string path, bool isSpecial)
         {
-            if (!path.StartsWith("event:/Voice/battle_") || path.StartsWith("event:/Voice/battle_awaken"))
+            if (!path.StartsWith(VoiceGenerator.VOICE_EVENT_PATH + "battle_") || !UnitView)
                 return;
             path = path[VoiceGenerator.VOICE_EVENT_PATH.Length..];
             var polu = SingletonBehavior<OutterGradiantEffectController>.Instance;
             if (path.Contains("devai"))
             {
+                var currMat = polu._dialogText_Upper.material;
+                Material GreenGlow = Resources.Load<Material>("Font/EN/Pretendard/Pretendard-Regular SDF GreenGlow");
                 polu._dialogText_Upper.m_FontStyleInternal = TMPro.FontStyles.Normal;
                 polu._dialogText_Upper.m_fontStyle = TMPro.FontStyles.Normal;
+                polu._dialogText_Upper.fontSharedMaterial = GreenGlow;
                 var poludlg = lookingfordlg(path);
                 var polutime = lookingfortime(path);
+                Image shadow = polu._dialogText_Upper.transform.parent.GetComponent<Image>();
+                shadow.enabled = true;
                 for (int i = 0; i < polutime.Count; i++)
                 {
-                    polu.SetDialog_Upper($"<color=\"green\">{poludlg[i]}</color>", 0, polutime[i]);
+                    polu.SetDialog_Upper($"<color=#8B9C15FF>{poludlg[i]}</color>", 0, polutime[i]);
                     await Task.Delay((int)Math.Round(polutime[i] * 1000));
                 }
                 float sum = polutime.Sum();
-                await Task.Delay((int)(sum * 1500));
+                await Task.Delay((int)Math.Round(sum * 1000));
                 polu._dialogText_Upper.m_FontStyleInternal = TMPro.FontStyles.Italic;
                 polu._dialogText_Upper.m_fontStyle = TMPro.FontStyles.Italic;
+                polu._dialogText_Upper.fontSharedMaterial = currMat;
+                shadow.enabled = false;
             }
-            string id_sin = path.Split('_')[^2];
-            var dataList = Singleton<TextDataSet>.Instance.personalityVoiceText.GetDataList(id_sin);
-            Func<TextData_PersonalityVoice, bool> func = (x) => {return path == x.id; };
-            var data = dataList.dataList.Find(func);
-            if (data == null)
-                return;
-            BattleDialogLine battleDialogLine = new(data.dlg, null);
-            if (UnitView != null)
+            if (!TextDataManager.Instance.personalityVoiceText._voiceDictionary.TryGetValue(path.Split('_')[^2], out var dataList))
             {
-                UnitView._uiManager.ShowDialog(battleDialogLine);
+                return;
+            }
+            foreach (var data in dataList.dataList)
+            {
+                if (path.Equals(data.id))
+                {
+                    UnitView._uiManager.ShowDialog(new BattleDialogLine(data.dlg, null));
+                    break;
+                }
             }
         }
         [HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.SetPlayVoice))]
