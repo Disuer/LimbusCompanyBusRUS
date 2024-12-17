@@ -1,8 +1,8 @@
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!DISCLAIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !!!!!!!!!!!!!!!!!!!!!!!!!!DISCLAIMER!!!!!!!!!!!!!!!!!!!!!!!!
 # This fork assumes the basis of Bright's mods.
 # Still, I dont have any rights to distribute or use from PM.
-# By using these mods, you're accepting any risk that could happen.
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!DISCLAIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# By using these mods, you accept any risks that may occur.
+# !!!!!!!!!!!!!!!!!!!!!!!!!DISCLAIMER!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # Installation
 ### 1. Download and install [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.413-windows-x64-installer)
