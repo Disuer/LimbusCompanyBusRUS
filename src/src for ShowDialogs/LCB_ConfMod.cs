@@ -1,4 +1,4 @@
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using System;
 using System.IO;
