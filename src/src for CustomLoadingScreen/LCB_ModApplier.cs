@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using MainUI;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,10 +7,6 @@ using UObject = UnityEngine.Object;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using System.Text.Json;
-using UnityEngine.Networking;
-using System.Threading;
-using System.Net.Http;
-using System.Net;
 
 namespace LimbusMODS
 {
@@ -28,8 +23,10 @@ namespace LimbusMODS
 
         static LCB_ModApplier()
         {
-            if(globalConfig.loadingScreenMode == "random" || globalConfig.loadingScreenMode == "onlyArts")
+            if (globalConfig.loadingScreenMode == "random" || globalConfig.loadingScreenMode == "onlyArts")
+            {
                 ReadMySprites();
+            }
         }
         public static Dictionary<string, Sprite> ReadSprites = new();
         public static void ReadMySprites()
@@ -58,11 +55,150 @@ namespace LimbusMODS
             List<TValue> values = new List<TValue>(dictionary.Values);
             return values[UnityEngine.Random.Range(0, values.Count)];
         }
-        public static List<string> egos = new List<string> {"20102", "20103", "20104", "20105", "20106", "20107", "20202","20203","20204","20205","20206","20207","20302","20303","20304","20305","20306","20307","20402","20403","20404","20405","20406","20407","20502","20503","20504","20505","20506","20507","20602","20603","20604","20605","20606","20607","20702","20703","20704","20705","20706","20707","20802","20803","20804","20805","20806","20807","20902","20903","20904","20905","20906","20907","21002","21003","21004","21005","21006","21007","21102","21103","21104","21105","21106","21107", "21202", "21203", "21204", "21205", "21206", "21207"};
-        public static List<string> personalities = new List<string> {"10103","10104","10106","10109","10110","10204","10206","10207","10208","10210","10302","10305","10306","10309","10403","10404","10405","10408","10410","10503","10504","10506","10508","10510","10511","10603","10605","10608","10609","10703","10705","10707","10708","10710","10802","10806","10807","10808","10810","10902","10905","10907","10908","10910","10911","11002","11005","11008","11009","11104","11105","11107","11108","11110","11111","11203","11206","11207","11209","11210"};
+        public static List<string> egos = new List<string> {
+            "20102",
+            "20103",
+            "20104",
+            "20105",
+            "20106",
+            "20107",
+            "20202",
+            "20203",
+            "20204",
+            "20205",
+            "20206",
+            "20207",
+            "20302",
+            "20303",
+            "20304",
+            "20305",
+            "20306",
+            "20307",
+            "20402",
+            "20403",
+            "20404",
+            "20405",
+            "20406",
+            "20407",
+            "20502",
+            "20503",
+            "20504",
+            "20505",
+            "20506",
+            "20507",
+            "20602",
+            "20603",
+            "20604",
+            "20605",
+            "20606",
+            "20607",
+            "20702",
+            "20703",
+            "20704",
+            "20705",
+            "20706",
+            "20707",
+            "20708",
+            "20802",
+            "20803",
+            "20804",
+            "20805",
+            "20806",
+            "20807",
+            "20808",
+            "20902",
+            "20903",
+            "20904",
+            "20905",
+            "20906",
+            "20907",
+            "21002",
+            "21003",
+            "21004",
+            "21005",
+            "21006",
+            "21007",
+            "21102",
+            "21103",
+            "21104",
+            "21105",
+            "21106",
+            "21107",
+            "21108",
+            "21202",
+            "21203",
+            "21204",
+            "21205",
+            "21206",
+            "21207",
+            "21208"};
+        public static List<string> personalities = new List<string> {
+            "10103",
+            "10104",
+            "10106",
+            "10109",
+            "10110",
+            "10204",
+            "10206",
+            "10207",
+            "10208",
+            "10210",
+            "10302",
+            "10305",
+            "10306",
+            "10309",
+            "10310",
+            "10403",
+            "10404",
+            "10405",
+            "10408",
+            "10410",
+            "10503",
+            "10504",
+            "10506",
+            "10508",
+            "10510",
+            "10511",
+            "10603",
+            "10605",
+            "10608",
+            "10609",
+            "10611",
+            "10703",
+            "10705",
+            "10707",
+            "10708",
+            "10710",
+            "10711",
+            "10802",
+            "10806",
+            "10807",
+            "10808",
+            "10810",
+            "10902",
+            "10905",
+            "10907",
+            "10908",
+            "10910",
+            "10911",
+            "11002",
+            "11005",
+            "11008",
+            "11009",
+            "11011",
+            "11104",
+            "11105",
+            "11107",
+            "11108",
+            "11110",
+            "11111",
+            "11203",
+            "11206",
+            "11207",
+            "11209",
+            "11210"};
         public static RenderTexture updateuss = Resources.Load<RenderTexture>("Title/UpdateVideoTexture");
         public static VideoClip videoClip1 = null;
-
         [HarmonyPatch(typeof(LoadingSceneManager), nameof(LoadingSceneManager.SetHintText))]
         [HarmonyPrefix]
         private static void LoadingSceneManager_Init14(LoadingSceneManager __instance)
