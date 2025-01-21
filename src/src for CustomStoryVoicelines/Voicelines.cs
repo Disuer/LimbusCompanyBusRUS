@@ -2,16 +2,12 @@
 using FMOD.Studio;
 using FMODUnity;
 using HarmonyLib;
-using LimbusLocalizeRUS;
-using LocalSave;
 using MainUI;
-using StorySystem;
 using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace LimbusCompanyBusRUS
+namespace LimbusCompanyModding
 {
     public class Voicelines : MonoBehaviour
     {
@@ -22,53 +18,46 @@ namespace LimbusCompanyBusRUS
         public static ChannelGroup storyGroup;
         public static ChannelGroup skillGroup;
         public static ChannelGroup announcerGroup;
-        [HarmonyPatch(typeof(VoiceGenerator), nameof(VoiceGenerator.CreateVoiceInstance))]
+        public static ChannelGroup sfxGroup;
+        [HarmonyPatch(typeof(RuntimeManager), nameof(RuntimeManager.CreateInstance), new Type[] { typeof(GUID) })]
         [HarmonyPrefix]
-        private static bool CreateVoiceInstance(string path, bool isSpecial)
+        private static bool RuntimeManager2_Instance(RuntimeManager __instance, ref GUID guid)
         {
-            LCB_CresCorpMod.LogInfo($"{path} : {isSpecial}");
-            string pathus = $"{LCB_CresCorpMod.ModPath}\\Voicelines\\{path.Substring(7)}.wav";
+            RuntimeManager.StudioSystem.lookupPath(guid, out string path);
+            string pathus = $"{LCB_ConfMod.ModPath}\\Voicelines\\{path.Substring(7)}.wav";
             FMOD.RESULT result = RuntimeManager.CoreSystem.createSound(pathus, FMOD.MODE.CREATESTREAM, out FMOD.Sound sound);
-            stopAllGroups();
+            switch (path)
+            {
+                case string when path.StartsWith("event:/Voice/"):
+                    skillGroup.stop();
+                    break;
+                case string when path.StartsWith("event:/Voice_Story/"):
+                    storyGroup.stop();
+                    break;
+                case string when path.StartsWith("event:/BattleAnnouncer/"):
+                    announcerGroup.stop();
+                    break;
+            }
             if (result == FMOD.RESULT.OK)
             {
                 switch (path)
                 {
                     case string when path.StartsWith("event:/Voice/"):
                         generalTuning(skillGroup, sound);
-                        //skillGroup.stop();
-                        //skillGroup.setVolume(overallVolume);
-                        //sound.setMusicChannelVolume(1, overallVolume);
-                        //RuntimeManager.CoreSystem.playSound(sound, skillGroup, false, out _);
                         break;
                     case string when path.StartsWith("event:/Voice_Story/"):
                         generalTuning(storyGroup, sound);
-                        //storyGroup.stop();
-                        //storyGroup.setVolume(overallVolume);
-                        //sound.setMusicChannelVolume(1, overallVolume);
-                        //RuntimeManager.CoreSystem.playSound(sound, storyGroup, false, out _);
                         break;
                     case string when path.StartsWith("event:/BattleAnnouncer/"):
                         generalTuning(announcerGroup, sound);
-                        //announcerGroup.stop();
-                        //announcerGroup.setVolume(overallVolume);
-                        //sound.setMusicChannelVolume(1, overallVolume);
-                        //RuntimeManager.CoreSystem.playSound(sound, announcerGroup, false, out _);
                         break;
                 }
                 return false;
             }
             return true;
         }
-        public static void stopAllGroups()
-        {
-            skillGroup.stop();
-            storyGroup.stop();
-            announcerGroup.stop();
-        }
         public static void generalTuning(ChannelGroup group, FMOD.Sound sound)
         {
-            group.stop();
             group.setVolume(overallVolume);
             sound.setMusicChannelVolume(1, overallVolume);
             RuntimeManager.CoreSystem.playSound(sound, group, false, out _);
@@ -86,6 +75,7 @@ namespace LimbusCompanyBusRUS
             RuntimeManager.CoreSystem.createChannelGroup("Story", out storyGroup);
             RuntimeManager.CoreSystem.createChannelGroup("Skill", out skillGroup);
             RuntimeManager.CoreSystem.createChannelGroup("Announcer", out announcerGroup);
+            RuntimeManager.CoreSystem.createChannelGroup("SFX", out sfxGroup);
         }
         [HarmonyPatch(typeof(GlobalGameManager), nameof(GlobalGameManager.OnApplicationQuit))]
         [HarmonyPostfix]
@@ -94,6 +84,7 @@ namespace LimbusCompanyBusRUS
             storyGroup.release();
             skillGroup.release();
             announcerGroup.release();
+            sfxGroup.release();
         }
         [HarmonyPatch(typeof(GlobalGameManager), nameof(GlobalGameManager.QuitGame))]
         [HarmonyPostfix]
@@ -102,13 +93,7 @@ namespace LimbusCompanyBusRUS
             storyGroup.release();
             skillGroup.release();
             announcerGroup.release();
+            sfxGroup.release();
         }
-        //[HarmonyPatch(typeof(LoadingSceneManager), nameof(LoadingSceneManager.SetHintText))]
-        //[HarmonyPrefix]
-        //private static void LoadingSceneManager_Init(LoadingSceneManager __instance)
-        //{
-        //    RuntimeManager.CoreSystem.getMasterChannelGroup(out var group);
-        //    group.stop();
-        //}
     }
 }
