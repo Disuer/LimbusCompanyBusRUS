@@ -19,7 +19,7 @@ namespace LimbusMODS
         public static string GamePath;
         public const string GUID = "com.Disaer.CustomLoadingScreen";
         public const string NAME = "LMods.CustomLoadingScreen";
-        public const string VERSION = "0.0.4";
+        public const string VERSION = "0.0.5";
         public const string AUTHOR = "Base: Bright\n\t\t\t\t    Edit: Disaer";
         public static Action<string> LogInfo { get; set; }
         public static Action<string> LogError { get; set; }
